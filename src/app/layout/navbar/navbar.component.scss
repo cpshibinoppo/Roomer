@@ -1,55 +1,55 @@
-a{
+a {
   text-decoration: none;
 }
 
-.navsection{
-     box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
-     padding-top: 1rem;
-     padding-bottom: 1rem;
+.navsection {
+  box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-.navbarmaindiv{
+.navbarmaindiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .logodiv{
+  .logodiv {
     color: var(--logo-color);
     width: 115px;
-    img{
+    img {
       width: 100%;
     }
   }
-  .buttonmaindiv{
-    border: 1px solid var( --light-background);
+  .buttonmaindiv {
+    border: 1px solid var(--light-background);
     border-radius: 40px;
     width: fit-content;
     padding: 5px 0px 5px 15px;
     height: fit-content;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.05);
-    transition: all .2s ease;
-    &:hover{
-      box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    &:hover {
+      box-shadow: var(--hover-boxshadow);
     }
-    .butdiv{
+    .butdiv {
       display: flex;
-      button{
+      button {
         border: none;
         background: none;
-        font-size: 16px;
-        line-height: 18px;
+        font-size: var(--text-size);
+        line-height: var(line-height);
         font-weight: 400;
         padding: 0px 10px;
       }
-      .line{
-        background-color: var( --light-background);
+      .line {
+        background-color: var(--light-background);
         height: 30px;
         width: 1px;
       }
-      .serachbutmain{
+      .serachbutmain {
         color: var(--light-color);
         align-items: center;
         display: flex;
         font-weight: 300;
-        .searchspan{
+        .searchspan {
           background-color: var(--logo-color);
           color: var(--white);
           border-radius: 50%;
@@ -61,61 +61,59 @@ a{
       }
     }
   }
-  .usermaindiv{
+  .usermaindiv {
     display: flex;
     align-items: center;
-    .hostdiv{
-      font-size: 16px;
-      line-height: 18px;
+    .hostdiv {
+      font-size: var(--text-size);
+      line-height: var(line-height);
       font-weight: 500;
       height: fit-content;
       padding: 12px;
-      border-radius:22px;
-      transition: all .3s ease;
-      &:hover{
+      border-radius: 22px;
+      transition: all 0.3s ease;
+      &:hover {
         background-color: var(--hover-background);
       }
-      a{
-      color: var(--text-color);
+      a {
+        color: var(--text-color);
       }
     }
-    .landiv{
+    .landiv {
       height: fit-content;
       padding: 12px;
-      border-radius:22px;
-      transition: all .3s ease;
-      &:hover{
+      border-radius: 22px;
+      transition: all 0.3s ease;
+      &:hover {
         background-color: var(--hover-background);
       }
     }
-    .userdiv{
-
-      button{
+    .userdiv {
+      button {
         display: flex;
         background: none;
         border: none;
         padding: 5px 5px 5px 10px;
         height: fit-content;
-        border: 1px solid var( --light-background) ;
+        border: 1px solid var(--light-background);
         border-radius: 21px;
         margin: 0;
         align-items: center;
         vertical-align: middle;
-        transition: all .3s;
-        &:hover{
-          box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+        transition: all 0.3s;
+        &:hover {
+          box-shadow: var(--hover-boxshadow);
         }
       }
-      .usericon{
+      .usericon {
         margin-left: 12px;
         height: 30px;
         position: relative;
         width: 30px;
         z-index: 1;
       }
-      svg{
+      svg {
         color: var(--light-color);
-
       }
     }
   }
