@@ -147,6 +147,75 @@ a {
     }
   }
 }
+/* sub navbar start*/
+.subnavbarmaindiv {
+  .subnavdiv {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+    border-radius: 100px;
+    padding: 10px 5px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    .firstsection {
+      display: flex;
+      .logodiv {
+        align-self: center;
+        img {
+          display: block;
+          height: 16px;
+          width: 16px;
+        }
+      }
+      .textmaindiv {
+        .headtext {
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 20px;
+          color: var(--text-color);
+        }
+        // .subtext{
+        //   font-size: 12px;
+        //   line-height: 16px;
+        //   color: var(--light-color);
+        // }
+        .submaintext {
+          display: flex;
+          font-size: 12px;
+          line-height: 16px;
+          color: var(--light-color);
+          min-width: 0;
+          .textcon {
+            display: flex;
+            min-width: 50px;
+            span {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+    .flitermaindiv {
+      border: 1px solid var(--light-background);
+      border-radius: 25px;
+      margin: 0 10px;
+      align-items: center;
+      display: flex;
+      height: 36px;
+      justify-content: center;
+      width: 36px;
+      .fliterimgdiv {
+        img {
+          display: block;
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 600px) {
 }
 @media only screen and (min-width: 600px) {
