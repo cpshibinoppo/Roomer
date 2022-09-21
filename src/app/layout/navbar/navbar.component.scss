@@ -1,0 +1,122 @@
+a{
+  text-decoration: none;
+}
+
+.navsection{
+     box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+}
+.navbarmaindiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logodiv{
+    color: var(--logo-color);
+    width: 115px;
+    img{
+      width: 100%;
+    }
+  }
+  .buttonmaindiv{
+    border: 1px solid var( --light-background);
+    border-radius: 40px;
+    width: fit-content;
+    padding: 5px 0px 5px 15px;
+    height: fit-content;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.05);
+    transition: all .2s ease;
+    &:hover{
+      box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+    }
+    .butdiv{
+      display: flex;
+      button{
+        border: none;
+        background: none;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        padding: 0px 10px;
+      }
+      .line{
+        background-color: var( --light-background);
+        height: 30px;
+        width: 1px;
+      }
+      .serachbutmain{
+        color: var(--light-color);
+        align-items: center;
+        display: flex;
+        font-weight: 300;
+        .searchspan{
+          background-color: var(--logo-color);
+          color: var(--white);
+          border-radius: 50%;
+          padding: 10px;
+          height: 32px;
+          width: 32px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .usermaindiv{
+    display: flex;
+    align-items: center;
+    .hostdiv{
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 500;
+      height: fit-content;
+      padding: 12px;
+      border-radius:22px;
+      transition: all .3s ease;
+      &:hover{
+        background-color: var(--hover-background);
+      }
+      a{
+      color: var(--text-color);
+      }
+    }
+    .landiv{
+      height: fit-content;
+      padding: 12px;
+      border-radius:22px;
+      transition: all .3s ease;
+      &:hover{
+        background-color: var(--hover-background);
+      }
+    }
+    .userdiv{
+
+      button{
+        display: flex;
+        background: none;
+        border: none;
+        padding: 5px 5px 5px 10px;
+        height: fit-content;
+        border: 1px solid var( --light-background) ;
+        border-radius: 21px;
+        margin: 0;
+        align-items: center;
+        vertical-align: middle;
+        transition: all .3s;
+        &:hover{
+          box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+        }
+      }
+      .usericon{
+        margin-left: 12px;
+        height: 30px;
+        position: relative;
+        width: 30px;
+        z-index: 1;
+      }
+      svg{
+        color: var(--light-color);
+
+      }
+    }
+  }
+}

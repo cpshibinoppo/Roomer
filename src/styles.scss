@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --text-color: #222222;
+  --logo-color: #ff385c;
+  --light-color: #717171;
+  --light-background:#DDDDDD;
+  --linear-background: linear-gradient(
+    to right,
+    rgb(230, 30, 77) 0%,
+    rgb(227, 28, 95) 50%,
+    rgb(215, 4, 102) 100%
+  );
+  --white: #fff;
+  --black: #000;
+  --hover-background:#F7F7F7;
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
