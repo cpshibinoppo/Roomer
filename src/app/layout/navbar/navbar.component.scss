@@ -14,6 +14,12 @@ a {
   .logodiv {
     color: var(--logo-color);
     width: 115px;
+    .sublogo{
+      display: none;
+    }
+    .logo{
+      display: block;
+    }
     img {
       width: 100%;
     }
@@ -116,5 +122,46 @@ a {
         color: var(--light-color);
       }
     }
+  }
+}
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (min-width: 600px) {
+  .logodiv{
+    width: auto !important;
+  }
+  .logo{
+    display: none !important;
+  }
+  .sublogo{
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .logodiv{
+    width: auto !important;
+  }
+  .logo{
+    display: none !important;
+  }
+  .sublogo{
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+.logo{
+  display: none !important;
+}
+.sublogo{
+  display: block !important;
+}
+}
+@media only screen and (min-width: 1200px) {
+  .logo{
+    display: block !important;
+  }
+  .sublogo{
+    display: none !important;
   }
 }
