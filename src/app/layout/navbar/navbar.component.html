@@ -2,14 +2,14 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="navbarmaindiv" style="display: none;">
+        <div class="navbarmaindiv">
           <div class="logodiv">
             <img width="102" height="32" class="logo" src="../../../assets/img/logo.svg" alt="">
             <img src="../../../assets/img/sublogo.svg" width="30" height="32" class="sublogo" alt="">
           </div>
-          <div class="buttonmaindiv">
+          <div class="buttonmaindiv" id="navbar">
             <div class="butdiv">
-              <button>
+              <button type="button" (click)="showsubnavbar()">
                 <div>Anywhere</div>
               </button>
               <span class="line"></span>
@@ -22,6 +22,19 @@
                 <div class="searchspan">
                   <img src="../../../assets/img/searchicon.svg" alt="">
                 </div>
+              </button>
+            </div>
+          </div>
+          <div class="subbuttonmiandiv" id="subnav">
+            <div class="subbtn">
+              <button>
+                <div class="subactivebtn"><span>Stays</span></div>
+              </button>
+              <button>
+                <div><span>Experiences</span></div>
+              </button>
+              <button>
+                <div><span>Online Experiences</span></div>
               </button>
             </div>
           </div>

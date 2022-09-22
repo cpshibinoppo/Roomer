@@ -149,6 +149,7 @@ a {
 }
 /* sub navbar start*/
 .subnavbarmaindiv {
+  display: none;
   .subnavdiv {
     border: 0.5px solid rgba(0, 0, 0, 0.08);
     box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
@@ -215,8 +216,84 @@ a {
     }
   }
 }
+/* end */
+/* sub btn start */
+.subbuttonmiandiv {
+  display: none;
+  animation-duration: 1s;
+  animation-name: example;
 
+  .subbtn {
+    button {
+      background: none;
+      border: none;
+      color: var(--text-color);
+      font-size: var(--text-size);
+      line-height: var(--lineheight);
+      font-weight: 400;
+      margin-left: 15px;
+      transition: all 0.2s ease;
+      div {
+        &::after {
+          content: "";
+          height: 2px;
+          position: absolute;
+          top: calc(100% + 8px);
+          width: 100%;
+          background-color: var(--black);
+          inset-inline: 0;
+          opacity: 1;
+          transform: scaleX(0);
+          transition: transform 0.3s ease;
+        }
+      }
+      &:hover {
+        color: var(--light-color);
+        div {
+          &::after {
+            transform: scaleX(1);
+            opacity: 0.65;
+          }
+        }
+      }
+    }
+    div {
+      width: fit-content;
+      position: relative;
+    }
+    .subactivebtn {
+      color: var(--text-color);
+      &::after {
+        content: "";
+        height: 2px;
+        position: absolute;
+        top: calc(100% + 8px);
+        width: 100%;
+        transition: transform 0.2s ease;
+        background-color: var(--black);
+        inset-inline: 0;
+        transform: scaleX(1) !important;
+        opacity: 1 !important;
+      }
+    }
+  }
+}
+@keyframes example {
+  from {
+    transform: translateY(-70px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+/* end*/
 @media only screen and (max-width: 600px) {
+  .subnavbarmaindiv {
+    display: block;
+  }
+  .navbarmaindiv {
+    display: none;
+  }
 }
 @media only screen and (min-width: 600px) {
   .logodiv {
@@ -228,6 +305,12 @@ a {
   .sublogo {
     display: block !important;
   }
+  .subnavbarmaindiv {
+    display: block;
+  }
+  .navbarmaindiv {
+    display: none;
+  }
 }
 @media only screen and (min-width: 768px) {
   .logodiv {
@@ -238,6 +321,12 @@ a {
   }
   .sublogo {
     display: block !important;
+  }
+  .subnavbarmaindiv {
+    display: none;
+  }
+  .navbarmaindiv {
+    display: flex;
   }
 }
 @media only screen and (min-width: 992px) {
