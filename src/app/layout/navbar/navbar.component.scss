@@ -290,19 +290,23 @@ a {
 /* map section start */
 .mapmaindiv {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 60%;
+  // width: 65%;
+  width: 100%;
   border: 1px solid var(--light-background);
   border-radius: 40px;
-  padding: 12px 0px 12px 25px;
+  padding: 6px 0px 6px 25px;
   height: fit-content;
   .wherediv {
+    // width: 240px;
     display: flex;
     input {
       outline: none;
       border: none;
     }
     .clearicondiv {
+      display: none;
       button {
         background: var(--icon-bacground);
         border: none;
@@ -341,6 +345,25 @@ a {
   .whodiv {
     display: flex;
     cursor: pointer;
+    .norseardiv{
+      button{
+        background-color: var(--logo-color);
+        color: var(--white);
+        border-radius: 50%;
+        padding: 13px;
+        border: none;
+        height: 45px;
+        width: 45px;
+        margin-left: 195px;
+        img {
+          display: block;
+          fill: none;
+          stroke: currentcolor;
+          stroke-width: 5.33333;
+          overflow: visible;
+        }
+      }
+    }
     .seadiv {
       margin-left: 75px;
       display: flex;
@@ -363,6 +386,7 @@ a {
     }
   }
 }
+
 /* end */
 @media only screen and (max-width: 600px) {
   .subnavbarmaindiv {
