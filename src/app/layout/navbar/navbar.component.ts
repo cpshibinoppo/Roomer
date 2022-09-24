@@ -5,9 +5,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  line1: any;
+  line2: any;
+  line3: any;
+  where:any
+  checkin:any;
+  mapmaindiv:any
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.mapmaindiv = document.getElementById('mapmaindiv')
+    this.where = document.getElementById('wherediv')
+    this.checkin = document.getElementById('checkindiv');
+  }
   showsubnavbar() {
     const sub = document.getElementById('subnav');
     const navbar = document.getElementById('navbar');
@@ -17,9 +27,6 @@ export class NavbarComponent implements OnInit {
     sub!.style.display = 'block';
     test!.style.display = 'block';
   }
-  line1: any;
-  line2: any;
-  line3: any;
   over(n: any) {
     this.line1 = document.getElementById('line1');
     this.line2 = document.getElementById('line2');
@@ -38,11 +45,24 @@ export class NavbarComponent implements OnInit {
     this.line3!.style.display = 'block';
   }
   searchiconshow = false;
-  activefun() {
-    if (innerWidth < 980) {
-      this.searchiconshow = false;
-    } else {
-      this.searchiconshow = true;
+
+  activefun(check:any) {
+    console.log(this.where);
+
+    this.mapmaindiv.style.background = 'var(--icon-bacground)'
+    if(check == 'where'){
+      this.where?.classList.add('active');
+      // this.checkin?.classList.remove('active');
+      // this.line1!.style.display = 'none !important';
+      if (innerWidth < 980) {
+        this.searchiconshow = false;
+      } else {
+        this.searchiconshow = true;
+      }
+    }
+    else if(check == 'checkin'){
+    this.where?.classList.remove('active');
+    this.checkin?.classList.add('active');
     }
   }
 }

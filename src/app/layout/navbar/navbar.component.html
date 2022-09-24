@@ -93,10 +93,10 @@
       <div class="col-12 col-md-12 col-lg-11 col-xl-8 dropcolmaindiv" id="test" data-aos="zoom-in"
         data-aos-duration="3000">
         <section class="d-flex justify-content-center mt-3">
-          <div class="mapmaindiv">
-            <div class="col-5 d-flex justify-content-between position-relative" (click)="activefun()">
-              <div class="wherediv">
-                <div>
+          <div class="mapmaindiv" id="mapmaindiv">
+            <div class="col-5 d-flex justify-content-between position-relative" (click)="activefun('where')">
+              <div class="wherediv" id="wherediv">
+                <div class="w-100" style="z-index: 2;">
                   <div class="hetext">Where</div>
                   <input type="text" placeholder="Search destinations">
                 </div>
@@ -108,10 +108,12 @@
               </div>
               <div class="line" id="line1"></div>
             </div>
-            <div class="col-2 d-flex justify-content-between position-relative">
-              <div class="checkindiv" (mouseover)='over(2)' (mouseout)='out(2)'>
+            <div class="col-2 d-flex justify-content-between position-relative" >
+              <div class="checkindiv"  (mouseover)='over(2)' (mouseout)='out(2)' (click)="activefun('checkin')">
+                <div class="w-100" style="z-index: 2;">
                 <div class="hetext">Check in</div>
                 <div>Add dates</div>
+                </div>
               </div>
               <div class="line" id="line2"></div>
             </div>

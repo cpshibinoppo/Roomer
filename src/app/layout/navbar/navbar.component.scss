@@ -340,6 +340,7 @@ a {
       outline: none;
       border: none;
       background: transparent;
+      width: 80%;
     }
     .clearicondiv {
       display: none;
@@ -474,6 +475,36 @@ a {
         line-height: var(--sublineheight);
       }
     }
+  }
+}
+.active{
+  &:hover{
+    ::after{
+      background-color: var(--white) !important;
+      border: 1px solid #FFF;
+      border-radius: 32px;
+      left: -25px;
+      right: 11px !important;
+      bottom: -12px !important;
+      content: "";
+      position: absolute;
+      top: -12px !important;
+      box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
+      z-index: 0;
+    }
+  }
+::after{
+  background-color: var(--white) !important;
+  border: 1px solid #FFF;
+  border-radius: 32px;
+  left: -25px;
+  right: 11px;
+  bottom: -12px;
+  content: "";
+  position: absolute;
+  top: -12px;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
+  z-index: -1;
   }
 }
 
