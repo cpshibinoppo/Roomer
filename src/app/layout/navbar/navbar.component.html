@@ -90,10 +90,11 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-12 col-lg-11 col-xl-8 dropcolmaindiv">
+      <div class="col-12 col-md-12 col-lg-11 col-xl-8 dropcolmaindiv" id="test" data-aos="zoom-in"
+        data-aos-duration="3000">
         <section class="d-flex justify-content-center mt-3">
           <div class="mapmaindiv">
-            <div class="col-5 d-flex justify-content-between">
+            <div class="col-5 d-flex justify-content-between position-relative" (click)="activefun()">
               <div class="wherediv">
                 <div>
                   <div class="hetext">Where</div>
@@ -105,36 +106,36 @@
                   </button>
                 </div>
               </div>
-              <div class="line"></div>
+              <div class="line" id="line1"></div>
             </div>
-            <div class="col-2 d-flex justify-content-between">
-              <div class="checkindiv">
+            <div class="col-2 d-flex justify-content-between position-relative">
+              <div class="checkindiv" (mouseover)='over(2)' (mouseout)='out(2)'>
                 <div class="hetext">Check in</div>
                 <div>Add dates</div>
               </div>
-              <div class="line "></div>
+              <div class="line" id="line2"></div>
             </div>
-            <div class="col-2 d-flex justify-content-between">
-              <div class="checkoutdiv">
+            <div class="col-2 d-flex justify-content-between position-relative">
+              <div class="checkoutdiv" (mouseover)='over(3)' (mouseout)='out(3)'>
                 <div class="hetext">Check out</div>
                 <div>Add dates</div>
               </div>
-              <div class="line "></div>
+              <div class="line" id="line3"></div>
             </div>
-            <div class="col-3 ">
-              <div class="whodiv d-flex justify-content-between">
+            <div class="col-3 position-relative ">
+              <div class="whodiv d-flex justify-content-between " (mouseover)='over(4)' (mouseout)='out(4)'>
                 <div>
                   <div class="hetext">Who</div>
                   <div>Add guests</div>
                 </div>
-                <div class="norseardiv">
+                <div class="norseardiv" *ngIf="!this.searchiconshow">
                   <button>
                     <div>
                       <img src="../../../assets/img/subseach.svg" alt="">
                     </div>
                   </button>
                 </div>
-                <div style="display: none;">
+                <div class="seadivmain" *ngIf="this.searchiconshow">
                   <div class="seadiv">
                     <span class="mx-2">
                       <img src="../../../assets/img/searchicon.svg" alt="">

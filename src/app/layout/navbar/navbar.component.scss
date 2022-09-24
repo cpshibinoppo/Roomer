@@ -220,10 +220,11 @@ a {
 /* sub btn start */
 .subbuttonmiandiv {
   display: none;
-  animation-duration: 1s;
-  animation-name: example;
+  animation-duration: 0.5s;
+  animation-name: subnav;
 
   .subbtn {
+    transform: scale(1);
     button {
       background: none;
       border: none;
@@ -278,16 +279,33 @@ a {
     }
   }
 }
-@keyframes example {
+@keyframes subnav {
   from {
     transform: translateY(-70px);
+    transform: scale(0);
   }
   to {
     transform: translateY(0px);
+    transform: scale(1);
   }
 }
 /* end*/
 /* map section start */
+
+.dropcolmaindiv {
+  display: none;
+  transform: scale(1);
+  animation-duration: 0.5s;
+  animation-name: dropdownnavani;
+}
+@keyframes dropdownnavani {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .mapmaindiv {
   display: flex;
   justify-content: space-between;
@@ -296,12 +314,32 @@ a {
   border: 1px solid var(--light-background);
   border-radius: 40px;
   padding: 6px 0px 6px 25px;
-  height: fit-content;
+  height: 60px;
   .wherediv {
+    width: 100%;
+    cursor: pointer;
     display: flex;
+    &:hover {
+      + .line {
+        display: none !important;
+      }
+      ::after {
+        background-color: var(--icon-bacground);
+        border: 1px solid transparent;
+        border-radius: 32px;
+        left: -25px;
+        right: 15px;
+        bottom: -11px;
+        content: "";
+        position: absolute;
+        top: -11px;
+        z-index: -1;
+      }
+    }
     input {
       outline: none;
       border: none;
+      background: transparent;
     }
     .clearicondiv {
       display: none;
@@ -315,6 +353,47 @@ a {
         i {
           font-size: 20px;
         }
+      }
+    }
+  }
+
+  .checkindiv {
+    cursor: pointer;
+    &:hover {
+      + .line {
+        display: none !important;
+      }
+      ::after {
+        background-color: var(--icon-bacground);
+        border: 1px solid transparent;
+        border-radius: 32px;
+        left: -25px;
+        right: 15px;
+        bottom: -11px;
+        content: "";
+        position: absolute;
+        top: -11px;
+        z-index: -1;
+      }
+    }
+  }
+  .checkoutdiv {
+    cursor: pointer;
+    &:hover {
+      + .line {
+        display: none !important;
+      }
+      ::after {
+        background-color: var(--icon-bacground);
+        border: 1px solid transparent;
+        border-radius: 32px;
+        left: -25px;
+        right: 15px;
+        bottom: -11px;
+        content: "";
+        position: absolute;
+        top: -11px;
+        z-index: -1;
       }
     }
   }
@@ -340,6 +419,18 @@ a {
   .whodiv {
     display: flex;
     cursor: pointer;
+    &:hover::after {
+      background-color: var(--icon-bacground);
+      border: 1px solid transparent;
+      border-radius: 32px;
+      left: -25px;
+      right: 0px;
+      bottom: -7px;
+      content: "";
+      position: absolute;
+      top: -7px;
+      z-index: -1;
+    }
     .norseardiv {
       margin-right: 7px;
       button {
@@ -359,11 +450,15 @@ a {
         }
       }
     }
+    .seadivmain{
+      position: absolute;
+      right: 5px;
+    }
     .seadiv {
       margin-left: 75px;
       display: flex;
       background: var(--linear-background);
-      padding: 15px 15px 15px 10px;
+      padding: 13px 15px 13px 10px;
       border-radius: 24px;
       span {
         height: 16px;
@@ -430,9 +525,7 @@ a {
   .navbarmaindiv {
     display: flex;
   }
-  .dropcolmaindiv {
-    display: block;
-  }
+
 }
 @media only screen and (min-width: 992px) {
   .logo {
