@@ -11,7 +11,11 @@ export class NavbarComponent implements OnInit {
   showsubnavbar() {
     const sub = document.getElementById('subnav');
     const navbar = document.getElementById('navbar');
+    const test = document.getElementById('test');
+    console.log(test);
+
     navbar!.style.display = 'none';
     sub!.style.display = 'block';
+    test!.style.display = 'block';
   }
 }

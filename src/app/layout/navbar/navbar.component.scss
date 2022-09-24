@@ -220,10 +220,11 @@ a {
 /* sub btn start */
 .subbuttonmiandiv {
   display: none;
-  animation-duration: 1s;
-  animation-name: example;
+  animation-duration: 0.5s;
+  animation-name: subnav;
 
   .subbtn {
+    transform: scale(1);
     button {
       background: none;
       border: none;
@@ -278,18 +279,29 @@ a {
     }
   }
 }
-@keyframes example {
+@keyframes subnav {
   from {
-    transform: translateY(-70px);
+    transform: translateY(-70px); transform: scale(0);
   }
   to {
-    transform: translateY(0px);
+    transform: translateY(0px);transform: scale(1);
   }
 }
 /* end*/
 /* map section start */
 .dropcolmaindiv{
-  display: none !important;
+  display: none ;
+  transform: scale(1);
+  animation-duration: 0.5s;
+  animation-name: dropdownnavani;
+}
+@keyframes dropdownnavani {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 .mapmaindiv {
   display: flex;
@@ -302,9 +314,24 @@ a {
   height: fit-content;
   .wherediv {
     display: flex;
+    &:hover{
+      &::after{
+        background-color:var(--icon-bacground);
+        border: 1px solid transparent;
+        border-radius: 32px;
+        left: -25px;
+        right: 15px;
+        bottom: -11px;
+        content: "";
+        position: absolute;
+        top: -11px;
+        z-index: -1;
+      }
+    }
     input {
       outline: none;
       border: none;
+      background: transparent;
     }
     .clearicondiv {
       display: none;
@@ -384,6 +411,20 @@ a {
     }
   }
 }
+// .wherediv{
+//   &::after{
+//     background-color:var(--icon-bacground);
+//     border: 1px solid transparent;
+//     border-radius: 32px;
+//     left: -25px;
+//     right: 15px;
+//     bottom: -11px;
+//     content: "";
+//     position: absolute;
+//     top: -11px;
+//     z-index: -1;
+// }
+// }
 
 /* end */
 @media only screen and (max-width: 600px) {
@@ -414,7 +455,7 @@ a {
     display: none;
   }
   .dropcolmaindiv {
-    display: none;
+    display: none ;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -432,9 +473,6 @@ a {
   }
   .navbarmaindiv {
     display: flex;
-  }
-  .dropcolmaindiv {
-    display: block;
   }
 }
 @media only screen and (min-width: 992px) {
