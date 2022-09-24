@@ -12,7 +12,6 @@ export class NavbarComponent implements OnInit {
     const sub = document.getElementById('subnav');
     const navbar = document.getElementById('navbar');
     const test = document.getElementById('test');
-    console.log(test);
 
     navbar!.style.display = 'none';
     sub!.style.display = 'block';
@@ -27,16 +26,23 @@ export class NavbarComponent implements OnInit {
     this.line3 = document.getElementById('line3');
     if (n == 2) {
       this.line1!.style.display = 'none';
-    }else if(n == 3){
-      this.line2!.style.display = 'none'
-    }else if(n == 4){
-      this.line3!.style.display = 'none'
+    } else if (n == 3) {
+      this.line2!.style.display = 'none';
+    } else if (n == 4) {
+      this.line3!.style.display = 'none';
     }
   }
   out(n: any) {
     this.line1!.style.display = 'block';
-    this.line2!.style.display = 'block'
-    this.line3!.style.display = 'block'
-
+    this.line2!.style.display = 'block';
+    this.line3!.style.display = 'block';
+  }
+  searchiconshow = false;
+  activefun() {
+    if (innerWidth < 980) {
+      this.searchiconshow = false;
+    } else {
+      this.searchiconshow = true;
+    }
   }
 }

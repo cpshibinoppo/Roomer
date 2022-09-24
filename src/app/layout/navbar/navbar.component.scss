@@ -314,7 +314,7 @@ a {
   border: 1px solid var(--light-background);
   border-radius: 40px;
   padding: 6px 0px 6px 25px;
-  height: fit-content;
+  height: 60px;
   .wherediv {
     width: 100%;
     cursor: pointer;
@@ -425,10 +425,10 @@ a {
       border-radius: 32px;
       left: -25px;
       right: 0px;
-      bottom: -11px;
+      bottom: -7px;
       content: "";
       position: absolute;
-      top: -11px;
+      top: -7px;
       z-index: -1;
     }
     .norseardiv {
@@ -450,11 +450,15 @@ a {
         }
       }
     }
+    .seadivmain{
+      position: absolute;
+      right: 5px;
+    }
     .seadiv {
       margin-left: 75px;
       display: flex;
       background: var(--linear-background);
-      padding: 15px 15px 15px 10px;
+      padding: 13px 15px 13px 10px;
       border-radius: 24px;
       span {
         height: 16px;
@@ -521,6 +525,7 @@ a {
   .navbarmaindiv {
     display: flex;
   }
+
 }
 @media only screen and (min-width: 992px) {
   .logo {
