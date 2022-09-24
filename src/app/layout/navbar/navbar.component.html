@@ -105,24 +105,24 @@
                   </button>
                 </div>
               </div>
-              <div class="line"></div>
+              <div class="line" id="line1"></div>
             </div>
             <div class="col-2 d-flex justify-content-between position-relative">
-              <div class="checkindiv">
+              <div class="checkindiv" (mouseover)='over(2)' (mouseout)='out(2)'>
                 <div class="hetext">Check in</div>
                 <div>Add dates</div>
               </div>
-              <div class="line "></div>
+              <div class="line" id="line2"></div>
             </div>
             <div class="col-2 d-flex justify-content-between position-relative">
-              <div class="checkoutdiv">
+              <div class="checkoutdiv" (mouseover)='over(3)' (mouseout)='out(3)'>
                 <div class="hetext">Check out</div>
                 <div>Add dates</div>
               </div>
-              <div class="line "></div>
+              <div class="line" id="line3"></div>
             </div>
             <div class="col-3 position-relative ">
-              <div class="whodiv d-flex justify-content-between ">
+              <div class="whodiv d-flex justify-content-between " (mouseover)='over(4)' (mouseout)='out(4)'>
                 <div>
                   <div class="hetext">Who</div>
                   <div>Add guests</div>
