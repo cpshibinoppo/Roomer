@@ -290,21 +290,39 @@ a {
 /* map section start */
 .mapmaindiv {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 100%;
   border: 1px solid var(--light-background);
   border-radius: 40px;
-    padding: 12px 0px 12px 25px;
-    height: fit-content;
+  padding: 6px 0px 6px 25px;
+  height: fit-content;
   .wherediv {
+    display: flex;
     input {
+      outline: none;
       border: none;
+    }
+    .clearicondiv {
+      display: none;
+      button {
+        background: var(--icon-bacground);
+        border: none;
+        border-radius: 50%;
+        padding: 2.5px;
+        height: 25px;
+        width: 25px;
+        i {
+          font-size: 20px;
+        }
+      }
     }
   }
   .line {
     background-color: var(--light-background);
     height: 30px;
     width: 1px;
+    margin-right: 15px;
   }
   .hetext {
     color: var(--text-color);
@@ -319,14 +337,30 @@ a {
     font-weight: 300;
     align-items: center;
   }
-  // .checkindiv {
-  // }
-  // .checkoutdiv {
-  // }
   .whodiv {
     display: flex;
+    cursor: pointer;
+    .norseardiv {
+      margin-right: 7px;
+      button {
+        background-color: var(--logo-color);
+        color: var(--white);
+        border-radius: 50%;
+        padding: 13px;
+        border: none;
+        height: 45px;
+        width: 45px;
+        img {
+          display: block;
+          fill: none;
+          stroke: currentcolor;
+          stroke-width: 5.33333;
+          overflow: visible;
+        }
+      }
+    }
     .seadiv {
-      margin-left: 85px;
+      margin-left: 75px;
       display: flex;
       background: var(--linear-background);
       padding: 15px 15px 15px 10px;
@@ -338,7 +372,7 @@ a {
           width: 100%;
         }
       }
-      div{
+      div {
         color: var(--white);
         font-size: var(--text-size);
         font-weight: 500;
@@ -347,12 +381,16 @@ a {
     }
   }
 }
+
 /* end */
 @media only screen and (max-width: 600px) {
   .subnavbarmaindiv {
     display: block;
   }
   .navbarmaindiv {
+    display: none;
+  }
+  .dropcolmaindiv {
     display: none;
   }
 }
@@ -372,6 +410,9 @@ a {
   .navbarmaindiv {
     display: none;
   }
+  .dropcolmaindiv {
+    display: none;
+  }
 }
 @media only screen and (min-width: 768px) {
   .logodiv {
@@ -388,6 +429,9 @@ a {
   }
   .navbarmaindiv {
     display: flex;
+  }
+  .dropcolmaindiv {
+    display: block;
   }
 }
 @media only screen and (min-width: 992px) {
