@@ -288,6 +288,9 @@ a {
 }
 /* end*/
 /* map section start */
+.dropcolmaindiv{
+  display: none !important;
+}
 .mapmaindiv {
   display: flex;
   justify-content: space-between;
