@@ -292,14 +292,12 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // width: 65%;
   width: 100%;
   border: 1px solid var(--light-background);
   border-radius: 40px;
   padding: 6px 0px 6px 25px;
   height: fit-content;
   .wherediv {
-    // width: 240px;
     display: flex;
     input {
       outline: none;
@@ -324,6 +322,7 @@ a {
     background-color: var(--light-background);
     height: 30px;
     width: 1px;
+    margin-right: 15px;
   }
   .hetext {
     color: var(--text-color);
@@ -338,15 +337,12 @@ a {
     font-weight: 300;
     align-items: center;
   }
-  // .checkindiv {
-  // }
-  // .checkoutdiv {
-  // }
   .whodiv {
     display: flex;
     cursor: pointer;
-    .norseardiv{
-      button{
+    .norseardiv {
+      margin-right: 7px;
+      button {
         background-color: var(--logo-color);
         color: var(--white);
         border-radius: 50%;
@@ -354,7 +350,6 @@ a {
         border: none;
         height: 45px;
         width: 45px;
-        margin-left: 195px;
         img {
           display: block;
           fill: none;
@@ -395,6 +390,9 @@ a {
   .navbarmaindiv {
     display: none;
   }
+  .dropcolmaindiv {
+    display: none;
+  }
 }
 @media only screen and (min-width: 600px) {
   .logodiv {
@@ -410,6 +408,9 @@ a {
     display: block;
   }
   .navbarmaindiv {
+    display: none;
+  }
+  .dropcolmaindiv {
     display: none;
   }
 }
@@ -428,6 +429,9 @@ a {
   }
   .navbarmaindiv {
     display: flex;
+  }
+  .dropcolmaindiv {
+    display: block;
   }
 }
 @media only screen and (min-width: 992px) {

@@ -1,68 +1,67 @@
 <section class="navsection ">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-12">
         <div class="navbarmaindiv">
-          <!-- <div class="col-4"> -->
-          <div class="logodiv">
-            <img width="102" height="32" class="logo" src="../../../assets/img/logo.svg" alt="">
-            <img src="../../../assets/img/sublogo.svg" width="30" height="32" class="sublogo" alt="">
-          </div>
-        <!-- </div> -->
-        <!-- <div class="col-4"> -->
-          <div class="buttonmaindiv" id="navbar">
-            <div class="butdiv">
-              <button type="button" (click)="showsubnavbar()">
-                <div>Anywhere</div>
-              </button>
-              <span class="line"></span>
-              <button>
-                <div>Any week</div>
-              </button>
-              <span class="line"></span>
-              <button class="serachbutmain">
-                <div>Add guests</div>
-                <div class="searchspan">
-                  <img src="../../../assets/img/searchicon.svg" alt="">
-                </div>
-              </button>
+          <div class="col-1 col-lg-3  col-xl-3 d-flex justify-content-start">
+            <div class="logodiv">
+              <img width="102" height="32" class="logo" src="../../../assets/img/logo.svg" alt="">
+              <img src="../../../assets/img/sublogo.svg" width="30" height="32" class="sublogo" alt="">
             </div>
           </div>
-
-          <div class="subbuttonmiandiv" id="subnav">
-            <div class="subbtn">
-              <button>
-                <div class="subactivebtn"><span>Stays</span></div>
-              </button>
-              <button>
-                <div><span>Experiences</span></div>
-              </button>
-              <button>
-                <div><span>Online Experiences</span></div>
-              </button>
+          <div class="col-6 col-lg-5 col-xl-6 d-flex justify-content-center">
+            <div class="buttonmaindiv" id="navbar">
+              <div class="butdiv">
+                <button type="button" (click)="showsubnavbar()">
+                  <div>Anywhere</div>
+                </button>
+                <span class="line"></span>
+                <button>
+                  <div>Any week</div>
+                </button>
+                <span class="line"></span>
+                <button class="serachbutmain">
+                  <div>Add guests</div>
+                  <div class="searchspan">
+                    <img src="../../../assets/img/searchicon.svg" alt="">
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="subbuttonmiandiv" id="subnav">
+              <div class="subbtn">
+                <button>
+                  <div class="subactivebtn"><span>Stays</span></div>
+                </button>
+                <button>
+                  <div><span>Experiences</span></div>
+                </button>
+                <button>
+                  <div><span>Online Experiences</span></div>
+                </button>
+              </div>
             </div>
           </div>
-        <!-- </div> -->
-          <!-- <div class="col-4"> -->
-          <div class="usermaindiv">
-            <div class="hostdiv">
-              <a href="">Become a host</a>
-            </div>
-            <div class="landiv me-2">
-              <img src="../../../assets/img/globicon.svg" alt="">
-            </div>
-            <div class="userdiv">
-              <button>
-                <div>
-                  <img src="../../../assets/img/menuicon.svg" alt="" class="menuicon">
-                </div>
-                <div class="usericon">
-                  <img src="../../../assets/img/usericon.svg">
-                </div>
-              </button>
+          <div class="col-5 col-lg-4 col-xl-3 d-flex justify-content-end">
+            <div class="usermaindiv">
+              <div class="hostdiv">
+                <a href="">Become a host</a>
+              </div>
+              <div class="landiv me-2">
+                <img src="../../../assets/img/globicon.svg" alt="">
+              </div>
+              <div class="userdiv">
+                <button>
+                  <div>
+                    <img src="../../../assets/img/menuicon.svg" alt="" class="menuicon">
+                  </div>
+                  <div class="usericon">
+                    <img src="../../../assets/img/usericon.svg">
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
-          <!-- </div> -->
         </div>
         <div class="subnavbarmaindiv">
           <div class="subnavdiv">
@@ -91,55 +90,57 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-12 col-lg-11 col-xl-8">
+      <div class="col-12 col-md-12 col-lg-11 col-xl-8 dropcolmaindiv">
         <section class="d-flex justify-content-center mt-3">
           <div class="mapmaindiv">
-            <div class="wherediv">
-              <div>
-                <div class="hetext">Where</div>
-                <input type="text" placeholder="Search destinations">
+            <div class="col-5 d-flex justify-content-between">
+              <div class="wherediv">
+                <div>
+                  <div class="hetext">Where</div>
+                  <input type="text" placeholder="Search destinations">
+                </div>
+                <div class="clearicondiv">
+                  <button>
+                    <i class='bx bx-x'></i>
+                  </button>
+                </div>
               </div>
-              <div class="clearicondiv">
-                <button>
-                  <i class='bx bx-x'></i>
-                </button>
+              <div class="line"></div>
+            </div>
+            <div class="col-2 d-flex justify-content-between">
+              <div class="checkindiv">
+                <div class="hetext">Check in</div>
+                <div>Add dates</div>
               </div>
+              <div class="line "></div>
             </div>
-            <!-- <div class="line  me-4"></div> -->
-            <div class="line "></div>
-
-            <div class="checkindiv">
-              <div class="hetext">Check in</div>
-              <div>Add dates</div>
-            </div>
-            <!-- <div class="line mx-4"></div> -->
-            <div class="line "></div>
-
-            <div class="checkoutdiv">
-              <div class="hetext">Check out</div>
-              <div>Add dates</div>
-            </div>
-            <!-- <div class="line mx-4"></div> -->
-            <div class="line "></div>
-
-            <div class="whodiv">
-              <div>
-                <div class="hetext">Who</div>
-                <div>Add guests</div>
+            <div class="col-2 d-flex justify-content-between">
+              <div class="checkoutdiv">
+                <div class="hetext">Check out</div>
+                <div>Add dates</div>
               </div>
-              <div class="norseardiv">
-                <button>
-                  <div>
-                    <img src="../../../assets/img/subseach.svg" alt="">
+              <div class="line "></div>
+            </div>
+            <div class="col-3 ">
+              <div class="whodiv d-flex justify-content-between">
+                <div>
+                  <div class="hetext">Who</div>
+                  <div>Add guests</div>
+                </div>
+                <div class="norseardiv">
+                  <button>
+                    <div>
+                      <img src="../../../assets/img/subseach.svg" alt="">
+                    </div>
+                  </button>
+                </div>
+                <div style="display: none;">
+                  <div class="seadiv">
+                    <span class="mx-2">
+                      <img src="../../../assets/img/searchicon.svg" alt="">
+                    </span>
+                    <div>Search</div>
                   </div>
-                </button>
-              </div>
-              <div style="display: none;">
-                <div class="seadiv">
-                  <span class="mx-2">
-                    <img src="../../../assets/img/searchicon.svg" alt="">
-                  </span>
-                  <div>Search</div>
                 </div>
               </div>
             </div>
