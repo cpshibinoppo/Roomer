@@ -281,16 +281,18 @@ a {
 }
 @keyframes subnav {
   from {
-    transform: translateY(-70px); transform: scale(0);
+    transform: translateY(-70px);
+    transform: scale(0);
   }
   to {
-    transform: translateY(0px);transform: scale(1);
+    transform: translateY(0px);
+    transform: scale(1);
   }
 }
 /* end*/
 /* map section start */
-.dropcolmaindiv{
-  display: none ;
+.dropcolmaindiv {
+  display: none;
   transform: scale(1);
   animation-duration: 0.5s;
   animation-name: dropdownnavani;
@@ -313,10 +315,14 @@ a {
   padding: 6px 0px 6px 25px;
   height: fit-content;
   .wherediv {
+    cursor: pointer;
     display: flex;
-    &:hover{
-      &::after{
-        background-color:var(--icon-bacground);
+    &:hover {
+      + .line {
+        display: none;
+      }
+      ::after {
+        background-color: var(--icon-bacground);
         border: 1px solid transparent;
         border-radius: 32px;
         left: -25px;
@@ -348,6 +354,45 @@ a {
       }
     }
   }
+
+  .checkindiv {
+    &:hover {
+      + .line {
+        display: none;
+      }
+      ::after {
+        background-color: var(--icon-bacground);
+        border: 1px solid transparent;
+        border-radius: 32px;
+        left: -25px;
+        right: 15px;
+        bottom: -11px;
+        content: "";
+        position: absolute;
+        top: -11px;
+        z-index: -1;
+      }
+    }
+  }
+  .checkoutdiv {
+    &:hover {
+      + .line {
+        display: none;
+      }
+      ::after {
+        background-color: var(--icon-bacground);
+        border: 1px solid transparent;
+        border-radius: 32px;
+        left: -25px;
+        right: 15px;
+        bottom: -11px;
+        content: "";
+        position: absolute;
+        top: -11px;
+        z-index: -1;
+      }
+    }
+  }
   .line {
     background-color: var(--light-background);
     height: 30px;
@@ -370,6 +415,18 @@ a {
   .whodiv {
     display: flex;
     cursor: pointer;
+    &:hover::after {
+      background-color: var(--icon-bacground);
+      border: 1px solid transparent;
+      border-radius: 32px;
+      left: -25px;
+      right: 0px;
+      bottom: -11px;
+      content: "";
+      position: absolute;
+      top: -11px;
+      z-index: -1;
+    }
     .norseardiv {
       margin-right: 7px;
       button {
@@ -411,20 +468,6 @@ a {
     }
   }
 }
-// .wherediv{
-//   &::after{
-//     background-color:var(--icon-bacground);
-//     border: 1px solid transparent;
-//     border-radius: 32px;
-//     left: -25px;
-//     right: 15px;
-//     bottom: -11px;
-//     content: "";
-//     position: absolute;
-//     top: -11px;
-//     z-index: -1;
-// }
-// }
 
 /* end */
 @media only screen and (max-width: 600px) {
@@ -455,7 +498,7 @@ a {
     display: none;
   }
   .dropcolmaindiv {
-    display: none ;
+    display: none;
   }
 }
 @media only screen and (min-width: 768px) {
