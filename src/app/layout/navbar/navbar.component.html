@@ -1,4 +1,4 @@
-<section class="navsection ">
+<section class="navsection">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12">
@@ -94,7 +94,7 @@
         data-aos-duration="3000">
         <section class="d-flex justify-content-center mt-3">
           <div class="mapmaindiv" id="mapmaindiv">
-            <div class="col-5 d-flex justify-content-between position-relative" (click)="activefun('where')">
+            <div class="col-5 d-flex justify-content-between position-relative" (click)="activefun('where')" (focusout)="removeactivefu()">
               <div class="wherediv" id="wherediv">
                 <div class="w-100" style="z-index: 2;">
                   <div class="hetext">Where</div>
@@ -109,7 +109,7 @@
               <div class="line" id="line1"></div>
             </div>
             <div class="col-2 d-flex justify-content-between position-relative" >
-              <div class="checkindiv"  (mouseover)='over(2)' (mouseout)='out(2)' (click)="activefun('checkin')">
+              <div class="checkindiv" id="checkindiv"  (mouseover)='over(2)' (mouseout)='out(2)' (click)="activefun('checkin')" (focusout)="removeactivefu()">
                 <div class="w-100" style="z-index: 2;">
                 <div class="hetext">Check in</div>
                 <div>Add dates</div>
@@ -118,18 +118,20 @@
               <div class="line" id="line2"></div>
             </div>
             <div class="col-2 d-flex justify-content-between position-relative">
-              <div class="checkoutdiv" (mouseover)='over(3)' (mouseout)='out(3)'>
+              <div class="checkoutdiv" id="checkoutdiv" (mouseover)='over(3)' (mouseout)='out(3)' (click)="activefun('checkout')" (focusout)="removeactivefu()">
                 <div class="hetext">Check out</div>
                 <div>Add dates</div>
               </div>
               <div class="line" id="line3"></div>
             </div>
-            <div class="col-3 position-relative ">
-              <div class="whodiv d-flex justify-content-between " (mouseover)='over(4)' (mouseout)='out(4)'>
+            <div class="col-3 d-flex justify-content-between position-relative">
+              <div class="whodiv" id="whodiv" (mouseover)='over(4)' (mouseout)='out(4)' (click)="activefun('who')" (focusout)="removeactivefu()">
                 <div>
-                  <div class="hetext">Who</div>
-                  <div>Add guests</div>
-                </div>
+                <div class="hetext">Who</div>
+                <div>Add guests</div>
+              </div>
+              </div>
+              <div style="z-index: 2;" >
                 <div class="norseardiv" *ngIf="!this.searchiconshow">
                   <button>
                     <div>
@@ -137,7 +139,7 @@
                     </div>
                   </button>
                 </div>
-                <div class="seadivmain" *ngIf="this.searchiconshow">
+                <div class="seadivmain" *ngIf="this.searchiconshow" >
                   <div class="seadiv">
                     <span class="mx-2">
                       <img src="../../../assets/img/searchicon.svg" alt="">

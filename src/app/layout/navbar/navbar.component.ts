@@ -8,15 +8,19 @@ export class NavbarComponent implements OnInit {
   line1: any;
   line2: any;
   line3: any;
-  where:any
-  checkin:any;
-  mapmaindiv:any
+  where: any;
+  checkin: any;
+  checkout: any;
+  mapmaindiv: any;
+  who:any;
   constructor() {}
 
   ngOnInit(): void {
-    this.mapmaindiv = document.getElementById('mapmaindiv')
-    this.where = document.getElementById('wherediv')
+    this.mapmaindiv = document.getElementById('mapmaindiv');
+    this.where = document.getElementById('wherediv');
     this.checkin = document.getElementById('checkindiv');
+    this.checkout = document.getElementById('checkoutdiv');
+    this.who = document.getElementById('whodiv');
   }
   showsubnavbar() {
     const sub = document.getElementById('subnav');
@@ -25,7 +29,7 @@ export class NavbarComponent implements OnInit {
 
     navbar!.style.display = 'none';
     sub!.style.display = 'block';
-    test!.style.display = 'block';
+    test!.style.display = 'block ';
   }
   over(n: any) {
     this.line1 = document.getElementById('line1');
@@ -46,23 +50,45 @@ export class NavbarComponent implements OnInit {
   }
   searchiconshow = false;
 
-  activefun(check:any) {
-    console.log(this.where);
-
-    this.mapmaindiv.style.background = 'var(--icon-bacground)'
-    if(check == 'where'){
+  activefun(check: any) {
+    var aciveclass = document.querySelector('.active');
+    this.mapmaindiv.style.background = 'var(--icon-bacground)';
+    if (innerWidth < 980) {
+      this.searchiconshow = false;
+    } else {
+      this.searchiconshow = true;
+    }
+    if (check == 'where') {
       this.where?.classList.add('active');
-      // this.checkin?.classList.remove('active');
-      // this.line1!.style.display = 'none !important';
-      if (innerWidth < 980) {
-        this.searchiconshow = false;
-      } else {
-        this.searchiconshow = true;
+      aciveclass?.classList.remove('active');
+    } else if (check == 'checkin') {
+      if(this.checkin?.classList.contains('active')){
+        aciveclass?.classList.remove('active');
+      }else{
+      aciveclass?.classList.remove('active');
+      this.checkin?.classList.add('active');
+      }
+
+    } else if (check == 'checkout') {
+      if(this.checkout?.classList.contains('active')){
+        aciveclass?.classList.remove('active');
+      }else{
+      aciveclass?.classList.remove('active');
+      this.checkout?.classList.add('active');
+      }
+    } else if(check == 'who'){
+      if(this.who?.classList.contains('active')){
+        aciveclass?.classList.remove('active');
+      }else{
+      aciveclass?.classList.remove('active');
+      this.who?.classList.add('active');
       }
     }
-    else if(check == 'checkin'){
-    this.where?.classList.remove('active');
-    this.checkin?.classList.add('active');
-    }
+  }
+  removeactivefu(){
+    console.log('checktootle');
+    this.searchiconshow = false
+    var aciveclass = document.querySelector('.active');
+    aciveclass?.classList.remove('active');
   }
 }
