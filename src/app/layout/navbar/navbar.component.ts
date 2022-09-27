@@ -158,4 +158,9 @@ export class NavbarComponent implements OnInit {
     aciveclass?.classList.remove('active');
     this.searchiconshow = false;
   }
+  addadults() {
+    if (this.guests.adults == 0) {
+      this.guests.adults = 1;
+    }
+  }
 }
