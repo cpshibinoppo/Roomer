@@ -313,7 +313,7 @@ a {
   width: 100%;
   border: 1px solid var(--light-background);
   border-radius: 40px;
-  padding: 6px 0px 6px 25px;
+  // padding: 6px 0px 6px 25px;
   height: 60px;
   .wherediv {
     width: 100%;
@@ -327,8 +327,8 @@ a {
         background-color: var(--icon-bacground);
         border: 1px solid transparent;
         border-radius: 32px;
-        left: -25px;
-        right: 15px;
+        left: 0px;
+        right: 0px;
         bottom: -11px;
         content: "";
         position: absolute;
@@ -370,8 +370,8 @@ a {
         background-color: var(--hoverup);
         border: 1px solid transparent;
         border-radius: 32px;
-        left: -25px;
-        right: 15px;
+        left: 0px;
+        right: 0px;
         bottom: -11px;
         content: "";
         position: absolute;
@@ -392,8 +392,8 @@ a {
         background-color: var(--hoverup);
         border: 1px solid transparent;
         border-radius: 32px;
-        left: -25px;
-        right: 15px;
+        left: 0px;
+        right: 0px;
         bottom: -11px;
         content: "";
         position: absolute;
@@ -406,7 +406,6 @@ a {
     background-color: var(--light-background);
     height: 30px;
     width: 1px;
-    margin-right: 15px;
   }
   .hetext {
     color: var(--text-color);
@@ -437,7 +436,7 @@ a {
         background-color: var(--hoverup);
         border: 1px solid transparent;
         border-radius: 32px;
-        left: -25px;
+        left: 0px;
         right: 0px;
         bottom: -7px;
         content: "";
@@ -498,7 +497,7 @@ a {
       background-color: var(--white) !important;
       border: 1px solid #fff;
       border-radius: 32px;
-      left: -25px;
+      left: 0px;
       right: 0px !important;
       bottom: -12px !important;
       content: "";
@@ -513,7 +512,7 @@ a {
     background-color: var(--white) !important;
     border: 1px solid #fff;
     border-radius: 32px;
-    left: -25px;
+    left: 0px;
     right: 0px;
     bottom: -12px;
     content: "";

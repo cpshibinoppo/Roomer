@@ -1,4 +1,4 @@
-<section class="navsection">
+<section class="navsection" >
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12">
@@ -9,18 +9,18 @@
               <img src="../../../assets/img/sublogo.svg" width="30" height="32" class="sublogo" alt="">
             </div>
           </div>
-          <div class="col-6 col-lg-5 col-xl-6 d-flex justify-content-center">
+          <div class="col-6 col-lg-5 col-xl-6 d-flex justify-content-center" >
             <div class="buttonmaindiv" id="navbar">
               <div class="butdiv">
-                <button type="button" (click)="showsubnavbar()">
+                <button type="button" (click)="showsubnavbar('where')">
                   <div>Anywhere</div>
                 </button>
                 <span class="line"></span>
-                <button>
+                <button (click)="showsubnavbar('week')">
                   <div>Any week</div>
                 </button>
                 <span class="line"></span>
-                <button class="serachbutmain">
+                <button class="serachbutmain" (click)="showsubnavbar('who')">
                   <div>Add guests</div>
                   <div class="searchspan">
                     <img src="../../../assets/img/searchicon.svg" alt="">
@@ -45,7 +45,7 @@
           <div class="col-5 col-lg-4 col-xl-3 d-flex justify-content-end">
             <div class="usermaindiv">
               <div class="hostdiv">
-                <a href="">Become a host</a>
+                <a href="">Become a </a>
               </div>
               <div class="landiv me-2">
                 <img src="../../../assets/img/globicon.svg" alt="">
@@ -94,9 +94,9 @@
         data-aos-duration="3000">
         <section class="d-flex justify-content-center mt-3">
           <div class="mapmaindiv" id="mapmaindiv">
-            <div class="col-5 d-flex justify-content-between position-relative" (click)="activefun('where')" (focusout)="removeactivefu()">
+            <div class="col-4 d-flex justify-content-between position-relative" (click)="activefun('where')" >
               <div class="wherediv" id="wherediv">
-                <div class="w-100" style="z-index: 2;">
+                <div class="w-100 ms-4" style="z-index: 2;">
                   <div class="hetext">Where</div>
                   <input type="text" placeholder="Search destinations">
                 </div>
@@ -109,8 +109,8 @@
               <div class="line" id="line1"></div>
             </div>
             <div class="col-2 d-flex justify-content-between position-relative" >
-              <div class="checkindiv" id="checkindiv"  (mouseover)='over(2)' (mouseout)='out(2)' (click)="activefun('checkin')" (focusout)="removeactivefu()">
-                <div class="w-100" style="z-index: 2;">
+              <div class="checkindiv" id="checkindiv"  (mouseover)='over(2)' (mouseout)='out(2)' (click)="activefun('checkin')" >
+                <div class="w-100 ms-4" style="z-index: 2;">
                 <div class="hetext">Check in</div>
                 <div>Add dates</div>
                 </div>
@@ -118,15 +118,17 @@
               <div class="line" id="line2"></div>
             </div>
             <div class="col-2 d-flex justify-content-between position-relative">
-              <div class="checkoutdiv" id="checkoutdiv" (mouseover)='over(3)' (mouseout)='out(3)' (click)="activefun('checkout')" (focusout)="removeactivefu()">
+              <div class="checkoutdiv" id="checkoutdiv" (mouseover)='over(3)' (mouseout)='out(3)' (click)="activefun('checkout')" >
+                <div class="ms-4">
                 <div class="hetext">Check out</div>
                 <div>Add dates</div>
               </div>
+              </div>
               <div class="line" id="line3"></div>
             </div>
-            <div class="col-3 d-flex justify-content-between position-relative">
-              <div class="whodiv" id="whodiv" (mouseover)='over(4)' (mouseout)='out(4)' (click)="activefun('who')" (focusout)="removeactivefu()">
-                <div>
+            <div class="col-4 d-flex justify-content-between position-relative">
+              <div class="whodiv" id="whodiv" (mouseover)='over(4)' (mouseout)='out(4)' (click)="activefun('who')" >
+                <div class="ms-4">
                 <div class="hetext">Who</div>
                 <div>Add guests</div>
               </div>

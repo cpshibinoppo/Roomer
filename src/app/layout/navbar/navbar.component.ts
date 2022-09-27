@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeComponent } from 'src/app/pages/home/home.component';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -12,8 +13,8 @@ export class NavbarComponent implements OnInit {
   checkin: any;
   checkout: any;
   mapmaindiv: any;
-  who:any;
-  constructor() {}
+  who: any;
+  constructor(public homecom: HomeComponent) {}
 
   ngOnInit(): void {
     this.mapmaindiv = document.getElementById('mapmaindiv');
@@ -22,14 +23,31 @@ export class NavbarComponent implements OnInit {
     this.checkout = document.getElementById('checkoutdiv');
     this.who = document.getElementById('whodiv');
   }
-  showsubnavbar() {
+  showsubnavbar(check: any) {
+    var aciveclass = document.querySelector('.active');
     const sub = document.getElementById('subnav');
     const navbar = document.getElementById('navbar');
     const test = document.getElementById('test');
-
+    this.mapmaindiv.style.background = 'var(--icon-bacground)';
+    this.homecom.off();
     navbar!.style.display = 'none';
     sub!.style.display = 'block';
     test!.style.display = 'block ';
+    if (innerWidth < 980) {
+      this.searchiconshow = false;
+    } else {
+      this.searchiconshow = true;
+    }
+    if (check == 'where') {
+      this.where?.classList.add('active');
+      aciveclass?.classList.remove('active');
+    } else if (check == 'week') {
+      aciveclass?.classList.remove('active');
+      this.checkin?.classList.add('active');
+    } else if (check == 'who') {
+      aciveclass?.classList.remove('active');
+      this.who?.classList.add('active');
+    }
   }
   over(n: any) {
     this.line1 = document.getElementById('line1');
@@ -62,33 +80,34 @@ export class NavbarComponent implements OnInit {
       this.where?.classList.add('active');
       aciveclass?.classList.remove('active');
     } else if (check == 'checkin') {
-      if(this.checkin?.classList.contains('active')){
+      if (this.checkin?.classList.contains('active')) {
         aciveclass?.classList.remove('active');
-      }else{
-      aciveclass?.classList.remove('active');
-      this.checkin?.classList.add('active');
+      } else {
+        aciveclass?.classList.remove('active');
+        this.checkin?.classList.add('active');
       }
-
     } else if (check == 'checkout') {
-      if(this.checkout?.classList.contains('active')){
+      if (this.checkout?.classList.contains('active')) {
         aciveclass?.classList.remove('active');
-      }else{
-      aciveclass?.classList.remove('active');
-      this.checkout?.classList.add('active');
+      } else {
+        aciveclass?.classList.remove('active');
+        this.checkout?.classList.add('active');
       }
-    } else if(check == 'who'){
-      if(this.who?.classList.contains('active')){
+    } else if (check == 'who') {
+      if (this.who?.classList.contains('active')) {
         aciveclass?.classList.remove('active');
-      }else{
-      aciveclass?.classList.remove('active');
-      this.who?.classList.add('active');
+      } else {
+        aciveclass?.classList.remove('active');
+        this.who?.classList.add('active');
       }
     }
   }
-  removeactivefu(){
-    console.log('checktootle');
-    this.searchiconshow = false
-    var aciveclass = document.querySelector('.active');
-    aciveclass?.classList.remove('active');
+  restfun(){
+    const sub = document.getElementById('subnav');
+    const navbar = document.getElementById('navbar');
+    const test = document.getElementById('test');
+    navbar!.style.display = 'block';
+    sub!.style.display = 'none';
+    test!.style.display = 'none ';
   }
 }
