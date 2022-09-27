@@ -18,6 +18,13 @@ export class NavbarComponent implements OnInit {
   menuBtnClick = false;
   subusershow = false;
   mapshow = false;
+  guestshow = false;
+  guests = {
+    adults: 0,
+    children: 0,
+    infants: 0,
+    pets: 0,
+  };
 
   constructor(public homecom: HomeComponent, private renderer: Renderer2) {
     this.renderer.listen('window', 'click', (e: Event) => {
@@ -28,6 +35,7 @@ export class NavbarComponent implements OnInit {
         this.searchiconshow = false;
         this.subusershow = false;
         this.mapshow = false;
+        this.guestshow = false;
       } else {
         this.menuBtnClick = false;
       }
@@ -66,6 +74,7 @@ export class NavbarComponent implements OnInit {
       this.checkin?.classList.add('active');
     } else if (check == 'who') {
       aciveclass?.classList.remove('active');
+      this.guestshow = true;
       this.who?.classList.add('active');
     }
   }
@@ -99,6 +108,7 @@ export class NavbarComponent implements OnInit {
     if (check == 'where') {
       this.where?.classList.add('active');
       this.mapshow = true;
+      this.guestshow = false;
       aciveclass?.classList.remove('active');
     } else if (check == 'checkin') {
       if (this.checkin?.classList.contains('active')) {
@@ -106,6 +116,7 @@ export class NavbarComponent implements OnInit {
       } else {
         aciveclass?.classList.remove('active');
         this.mapshow = false;
+        this.guestshow = false;
         this.checkin?.classList.add('active');
       }
     } else if (check == 'checkout') {
@@ -116,6 +127,7 @@ export class NavbarComponent implements OnInit {
       } else {
         aciveclass?.classList.remove('active');
         this.mapshow = false;
+        this.guestshow = false;
         this.checkout?.classList.add('active');
       }
     } else if (check == 'who') {
@@ -124,6 +136,7 @@ export class NavbarComponent implements OnInit {
       } else {
         aciveclass?.classList.remove('active');
         this.mapshow = false;
+        this.guestshow = true;
         this.who?.classList.add('active');
       }
     }
