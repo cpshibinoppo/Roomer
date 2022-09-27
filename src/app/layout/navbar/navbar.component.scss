@@ -32,6 +32,10 @@ a {
     height: fit-content;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: all 0.2s ease;
+    transform: scale(1);
+    animation-duration: 0.5s;
+    transform: translateY(0px);
+    animation-name: nav;
     &:hover {
       box-shadow: var(--hover-boxshadow);
     }
@@ -72,6 +76,16 @@ a {
           }
         }
       }
+    }
+  }
+  @keyframes nav {
+    from {
+      transform: translateY(60px);
+      transform: scale(0);
+    }
+    to {
+      transform: translateY(0px);
+      transform: scale(1);
     }
   }
   .usermaindiv {
@@ -147,6 +161,38 @@ a {
     }
   }
 }
+.submaindiv{
+  position: absolute;
+  top: 70px;
+  background-color:var(--white);
+  border-radius : 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 5px 0 5px 0;
+  height: 220px;
+  z-index: 3;
+  div{
+    font-weight: 400;
+    ul{
+      list-style: none;
+      padding: 0;
+      li{
+        padding: 5px 75px 5px 25px;
+        &:hover{
+          background: var(--hover-background);
+        }
+        a{
+          color: var(--light-color);
+        }
+      }
+    }
+  }
+  .sigdrdiv{
+    border-bottom: 1px solid var(--icon-bacground);
+  }
+  .signlinka{
+    color: var(--black) !important;
+  }
+}
 /* sub navbar start*/
 .subnavbarmaindiv {
   display: none;
@@ -174,11 +220,6 @@ a {
           line-height: 20px;
           color: var(--text-color);
         }
-        // .subtext{
-        //   font-size: 12px;
-        //   line-height: 16px;
-        //   color: var(--light-color);
-        // }
         .submaintext {
           display: flex;
           font-size: 12px;
@@ -313,7 +354,6 @@ a {
   width: 100%;
   border: 1px solid var(--light-background);
   border-radius: 40px;
-  // padding: 6px 0px 6px 25px;
   height: 60px;
   .wherediv {
     width: 100%;
@@ -366,7 +406,6 @@ a {
         display: none !important;
       }
       ::after {
-        // background-color: var(--icon-bacground);
         background-color: var(--hoverup);
         border: 1px solid transparent;
         border-radius: 32px;
@@ -388,7 +427,6 @@ a {
         display: none !important;
       }
       ::after {
-        // background-color: var(--icon-bacground);
         background-color: var(--hoverup);
         border: 1px solid transparent;
         border-radius: 32px;
@@ -432,7 +470,6 @@ a {
     }
     &:hover {
       ::after {
-        // background-color: var(--icon-bacground);
         background-color: var(--hoverup);
         border: 1px solid transparent;
         border-radius: 32px;
@@ -472,7 +509,6 @@ a {
   top: 0px;
 }
 .seadiv {
-  // margin-left: 75px;
   display: flex;
   background: var(--linear-background);
   padding: 13px 15px 13px 10px;
@@ -503,7 +539,6 @@ a {
       content: "";
       position: absolute;
       top: -12px !important;
-      // box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       z-index: -1 !important;
     }
@@ -518,7 +553,6 @@ a {
     content: "";
     position: absolute;
     top: -12px;
-    // box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     z-index: -1;
   }

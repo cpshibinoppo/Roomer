@@ -45,12 +45,12 @@
           <div class="col-5 col-lg-4 col-xl-3 d-flex justify-content-end">
             <div class="usermaindiv">
               <div class="hostdiv">
-                <a href="">Become a </a>
+                <a href="">Become a host</a>
               </div>
               <div class="landiv me-2">
                 <img src="../../../assets/img/globicon.svg" alt="">
               </div>
-              <div class="userdiv">
+              <div class="userdiv" (click)="showsubuser()">
                 <button>
                   <div>
                     <img src="../../../assets/img/menuicon.svg" alt="" class="menuicon">
@@ -59,6 +59,21 @@
                     <img src="../../../assets/img/usericon.svg">
                   </div>
                 </button>
+              </div>
+            </div>
+            <div class="submaindiv" *ngIf="this.subusershow">
+              <div class="sigdrdiv">
+                <ul>
+                  <li><a class="signlinka" href="">Sign up</a></li>
+                  <li><a href="">Log in</a></li>
+                </ul>
+              </div>
+              <div class="pt-2">
+                <ul>
+                  <li><a href="">Host your home</a></li>
+                  <li class="mt-1"><a href="">Host an experience</a></li>
+                  <li class="mt-1"><a href="">Help</a></li>
+                </ul>
               </div>
             </div>
           </div>

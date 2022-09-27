@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { HomeComponent } from 'src/app/pages/home/home.component';
 @Component({
   selector: 'app-navbar',
@@ -14,7 +14,23 @@ export class NavbarComponent implements OnInit {
   checkout: any;
   mapmaindiv: any;
   who: any;
-  constructor(public homecom: HomeComponent) {}
+  searchiconshow = false;
+  menuBtnClick = false;
+  subusershow = false;
+
+  constructor(public homecom: HomeComponent, private renderer: Renderer2) {
+    this.renderer.listen('window', 'click', (e: Event) => {
+      if (this.menuBtnClick == false) {
+        var aciveclass = document.querySelector('.active');
+        this.mapmaindiv.style.background = 'var(--white)';
+        aciveclass?.classList.remove('active');
+        this.searchiconshow = false;
+        this.subusershow = false;
+      } else {
+        this.menuBtnClick = false;
+      }
+    });
+  }
 
   ngOnInit(): void {
     this.mapmaindiv = document.getElementById('mapmaindiv');
@@ -24,6 +40,7 @@ export class NavbarComponent implements OnInit {
     this.who = document.getElementById('whodiv');
   }
   showsubnavbar(check: any) {
+    this.menuBtnClick = true;
     var aciveclass = document.querySelector('.active');
     const sub = document.getElementById('subnav');
     const navbar = document.getElementById('navbar');
@@ -66,9 +83,9 @@ export class NavbarComponent implements OnInit {
     this.line2!.style.display = 'block';
     this.line3!.style.display = 'block';
   }
-  searchiconshow = false;
 
   activefun(check: any) {
+    this.menuBtnClick = true;
     var aciveclass = document.querySelector('.active');
     this.mapmaindiv.style.background = 'var(--icon-bacground)';
     if (innerWidth < 980) {
@@ -87,6 +104,8 @@ export class NavbarComponent implements OnInit {
         this.checkin?.classList.add('active');
       }
     } else if (check == 'checkout') {
+      this.menuBtnClick = true;
+
       if (this.checkout?.classList.contains('active')) {
         aciveclass?.classList.remove('active');
       } else {
@@ -102,12 +121,21 @@ export class NavbarComponent implements OnInit {
       }
     }
   }
-  restfun(){
+  restfun() {
+    this.menuBtnClick = true;
     const sub = document.getElementById('subnav');
     const navbar = document.getElementById('navbar');
     const test = document.getElementById('test');
     navbar!.style.display = 'block';
     sub!.style.display = 'none';
     test!.style.display = 'none ';
+  }
+  showsubuser() {
+    this.menuBtnClick = true;
+    this.subusershow = true;
+    var aciveclass = document.querySelector('.active');
+    this.mapmaindiv.style.background = 'var(--white)';
+    aciveclass?.classList.remove('active');
+    this.searchiconshow = false;
   }
 }
