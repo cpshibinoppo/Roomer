@@ -32,6 +32,10 @@ a {
     height: fit-content;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: all 0.2s ease;
+    transform: scale(1);
+    animation-duration: 0.5s;
+    transform: translateY(0px);
+    animation-name: nav;
     &:hover {
       box-shadow: var(--hover-boxshadow);
     }
@@ -72,6 +76,16 @@ a {
           }
         }
       }
+    }
+  }
+  @keyframes nav {
+    from {
+      transform: translateY(60px);
+      transform: scale(0);
+    }
+    to {
+      transform: translateY(0px);
+      transform: scale(1);
     }
   }
   .usermaindiv {
@@ -147,6 +161,38 @@ a {
     }
   }
 }
+.submaindiv {
+  position: absolute;
+  top: 70px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 5px 0 5px 0;
+  height: 220px;
+  z-index: 3;
+  div {
+    font-weight: 400;
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        padding: 5px 75px 5px 25px;
+        &:hover {
+          background: var(--hover-background);
+        }
+        a {
+          color: var(--light-color);
+        }
+      }
+    }
+  }
+  .sigdrdiv {
+    border-bottom: 1px solid var(--icon-bacground);
+  }
+  .signlinka {
+    color: var(--black) !important;
+  }
+}
 /* sub navbar start*/
 .subnavbarmaindiv {
   display: none;
@@ -174,11 +220,6 @@ a {
           line-height: 20px;
           color: var(--text-color);
         }
-        // .subtext{
-        //   font-size: 12px;
-        //   line-height: 16px;
-        //   color: var(--light-color);
-        // }
         .submaintext {
           display: flex;
           font-size: 12px;
@@ -313,7 +354,6 @@ a {
   width: 100%;
   border: 1px solid var(--light-background);
   border-radius: 40px;
-  padding: 6px 0px 6px 25px;
   height: 60px;
   .wherediv {
     width: 100%;
@@ -327,8 +367,8 @@ a {
         background-color: var(--icon-bacground);
         border: 1px solid transparent;
         border-radius: 32px;
-        left: -25px;
-        right: 15px;
+        left: 0px;
+        right: 0px;
         bottom: -11px;
         content: "";
         position: absolute;
@@ -340,6 +380,7 @@ a {
       outline: none;
       border: none;
       background: transparent;
+      width: 80%;
     }
     .clearicondiv {
       display: none;
@@ -358,17 +399,18 @@ a {
   }
 
   .checkindiv {
+    z-index: 2;
     cursor: pointer;
     &:hover {
       + .line {
         display: none !important;
       }
       ::after {
-        background-color: var(--icon-bacground);
+        background-color: var(--hoverup);
         border: 1px solid transparent;
         border-radius: 32px;
-        left: -25px;
-        right: 15px;
+        left: 0px;
+        right: 0px;
         bottom: -11px;
         content: "";
         position: absolute;
@@ -378,17 +420,18 @@ a {
     }
   }
   .checkoutdiv {
+    z-index: 2;
     cursor: pointer;
     &:hover {
       + .line {
         display: none !important;
       }
       ::after {
-        background-color: var(--icon-bacground);
+        background-color: var(--hoverup);
         border: 1px solid transparent;
         border-radius: 32px;
-        left: -25px;
-        right: 15px;
+        left: 0px;
+        right: 0px;
         bottom: -11px;
         content: "";
         position: absolute;
@@ -401,7 +444,6 @@ a {
     background-color: var(--light-background);
     height: 30px;
     width: 1px;
-    margin-right: 15px;
   }
   .hetext {
     color: var(--text-color);
@@ -417,75 +459,155 @@ a {
     align-items: center;
   }
   .whodiv {
+    z-index: 2;
     display: flex;
+    height: 45px;
     cursor: pointer;
-    &:hover::after {
-      background-color: var(--icon-bacground);
-      border: 1px solid transparent;
-      border-radius: 32px;
-      left: -25px;
-      right: 0px;
-      bottom: -7px;
-      content: "";
-      position: absolute;
-      top: -7px;
-      z-index: -1;
+    .whosubdiv {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
     }
-    .norseardiv {
-      margin-right: 7px;
-      button {
-        background-color: var(--logo-color);
-        color: var(--white);
-        border-radius: 50%;
-        padding: 13px;
-        border: none;
-        height: 45px;
-        width: 45px;
-        img {
-          display: block;
-          fill: none;
-          stroke: currentcolor;
-          stroke-width: 5.33333;
-          overflow: visible;
-        }
+    &:hover {
+      ::after {
+        background-color: var(--hoverup);
+        border: 1px solid transparent;
+        border-radius: 32px;
+        left: 0px;
+        right: 0px;
+        bottom: -7px;
+        content: "";
+        position: absolute;
+        top: -7px;
+        z-index: -1;
       }
     }
-    .seadivmain{
-      position: absolute;
-      right: 5px;
+  }
+}
+.norseardiv {
+  margin-right: 7px;
+  button {
+    background-color: var(--logo-color);
+    color: var(--white);
+    border-radius: 50%;
+    padding: 13px;
+    border: none;
+    height: 45px;
+    width: 45px;
+    img {
+      display: block;
+      fill: none;
+      stroke: currentcolor;
+      stroke-width: 5.33333;
+      overflow: visible;
     }
-    .seadiv {
-      margin-left: 75px;
-      display: flex;
-      background: var(--linear-background);
-      padding: 13px 15px 13px 10px;
-      border-radius: 24px;
-      span {
-        height: 16px;
-        width: 16px;
+  }
+}
+.seadivmain {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+}
+.seadiv {
+  display: flex;
+  background: var(--linear-background);
+  padding: 13px 15px 13px 10px;
+  border-radius: 24px;
+  span {
+    height: 16px;
+    width: 16px;
+    img {
+      width: 100%;
+    }
+  }
+  div {
+    color: var(--white);
+    font-size: var(--text-size);
+    font-weight: 500;
+    line-height: var(--sublineheight);
+  }
+}
+.active {
+  &:hover {
+    ::after {
+      background-color: var(--white) !important;
+      border: 1px solid #fff;
+      border-radius: 32px;
+      left: 0px;
+      right: 0px !important;
+      bottom: -12px !important;
+      content: "";
+      position: absolute;
+      top: -12px !important;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      z-index: -1 !important;
+    }
+  }
+  ::after {
+    background-color: var(--white) !important;
+    border: 1px solid #fff;
+    border-radius: 32px;
+    left: 0px;
+    right: 0px;
+    bottom: -12px;
+    content: "";
+    position: absolute;
+    top: -12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: -1;
+  }
+}
+/* end */
+/* map start */
+.mapshowmaindiv {
+  background: var(--white);
+  top: 90px;
+  position: absolute;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 8px 16px rgb(0 0 0 / 15%);
+  z-index: 5;
+  border-radius: 32px;
+  padding: 16px 32px;
+  .mapimgmain {
+    grid-column-gap: 5px;
+    column-gap: 15px;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, min-content);
+    grid-row-gap: 24px;
+    row-gap: 24px;
+    .mapcard {
+      height: 158px;
+      width: 132px;
+      .mapimg {
+        border: 1px solid rgb(221, 221, 221);
+        outline: none;
+        border-radius: 12px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        transition: all .3s ease;
+        &:hover{
+        border: 1px solid var(--black);
+        }
         img {
           width: 100%;
         }
       }
       div {
-        color: var(--white);
-        font-size: var(--text-size);
-        font-weight: 500;
-        line-height: var(--sublineheight);
+        font-size: 14px;
+        line-height: var(--lineheight);
+        color: var(--text-color);
       }
     }
   }
 }
-
 /* end */
 @media only screen and (max-width: 600px) {
   .subnavbarmaindiv {
     display: block;
   }
   .navbarmaindiv {
-    display: none;
-  }
-  .dropcolmaindiv {
     display: none;
   }
 }
@@ -505,9 +627,6 @@ a {
   .navbarmaindiv {
     display: none;
   }
-  .dropcolmaindiv {
-    display: none;
-  }
 }
 @media only screen and (min-width: 768px) {
   .logodiv {
@@ -525,7 +644,6 @@ a {
   .navbarmaindiv {
     display: flex;
   }
-
 }
 @media only screen and (min-width: 992px) {
   .logo {
