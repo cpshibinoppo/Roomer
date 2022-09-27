@@ -150,7 +150,7 @@
                   <div>Add guests</div>
                 </div>
               </div>
-              <div style="z-index: 2;">
+              <div style="z-index: 2;" (click)="activefun('who')">
                 <div class="norseardiv" *ngIf="!this.searchiconshow">
                   <button>
                     <div>
@@ -211,6 +211,73 @@
                   <img src="../../../assets/img/map/map6.jpg" alt="">
                 </button>
                 <div class="mt-2">United States</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-7 float-end" *ngIf="this.guestshow" (click)=" this.menuBtnClick = true;">
+          <div class="addguestsmaindiv">
+            <div class="subaddguest">
+              <div class="headtextdiv">
+                <h6>Adults</h6>
+                <p>Ages 13 or above</p>
+              </div>
+              <div class="btnmaindiv">
+                <button *ngIf="this.guests.adults !== 0" [disabled]="this.guests.children >= 1"
+                  (click)="this.guests.adults = this.guests.adults - 1"><span><img src="../../../assets/img/minus.svg"
+                      alt=""></span></button>
+                <button class="zero" *ngIf="this.guests.adults == 0" [disabled]="this.guests.adults == 0"><span><img
+                      src="../../../assets/img/minus.svg" alt=""></span></button>
+                <div><span>{{this.guests.adults}}</span></div>
+                <button (click)="this.guests.adults = this.guests.adults + 1"><span><img
+                      src="../../../assets/img/plus.svg" alt=""></span></button>
+              </div>
+            </div>
+            <div class="subaddguest mt-3">
+              <div class="headtextdiv">
+                <h6>Children</h6>
+                <p>Ages 2-12</p>
+              </div>
+              <div class="btnmaindiv">
+                <button *ngIf="this.guests.children !== 0"
+                  (click)="this.guests.children = this.guests.children - 1"><span><img
+                      src="../../../assets/img/minus.svg" alt=""></span></button>
+                <button class="zero" *ngIf="this.guests.children == 0" [disabled]="this.guests.children == 0"><span><img
+                      src="../../../assets/img/minus.svg" alt=""></span></button>
+                <div><span>{{this.guests.children}}</span></div>
+                <button (click)="this.guests.children = this.guests.children + 1;addadults()"><span><img
+                      src="../../../assets/img/plus.svg" alt=""></span></button>
+              </div>
+            </div>
+            <div class="subaddguest mt-3">
+              <div class="headtextdiv">
+                <h6>Infants</h6>
+                <p>Under 2</p>
+              </div>
+              <div class="btnmaindiv">
+                <button *ngIf="this.guests.infants !== 0"
+                  (click)="this.guests.infants = this.guests.infants - 1"><span><img src="../../../assets/img/minus.svg"
+                      alt=""></span></button>
+                <button class="zero" *ngIf="this.guests.infants == 0" [disabled]="this.guests.infants == 0"><span><img
+                      src="../../../assets/img/minus.svg" alt=""></span></button>
+                <div><span>{{this.guests.infants}}</span></div>
+                <button (click)="this.guests.infants = this.guests.infants + 1;addadults()"><span><img
+                      src="../../../assets/img/plus.svg" alt=""></span></button>
+              </div>
+            </div>
+            <div class="subaddguest petdiv mt-3">
+              <div class="headtextdiv">
+                <h6>Pets</h6>
+                <p><a href="">Bringing a service animal?</a></p>
+              </div>
+              <div class="btnmaindiv">
+                <button *ngIf="this.guests.pets !== 0" (click)="this.guests.pets = this.guests.pets - 1"><span><img
+                      src="../../../assets/img/minus.svg" alt=""></span></button>
+                <button class="zero" *ngIf="this.guests.pets == 0" [disabled]="this.guests.pets == 0"><span><img
+                      src="../../../assets/img/minus.svg" alt=""></span></button>
+                <div><span>{{this.guests.pets}}</span></div>
+                <button (click)="this.guests.pets = this.guests.pets + 1;addadults()"><span><img
+                      src="../../../assets/img/plus.svg" alt=""></span></button>
               </div>
             </div>
           </div>
