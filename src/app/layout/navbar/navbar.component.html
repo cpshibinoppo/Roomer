@@ -109,11 +109,11 @@
         data-aos-duration="3000">
         <section class="d-flex justify-content-center mt-3">
           <div class="mapmaindiv" id="mapmaindiv">
-            <div class="col-4 d-flex justify-content-between position-relative" (click)="activefun('where')">
-              <div class="wherediv" id="wherediv">
-                <div class="w-100 ms-4" style="z-index: 2;" (click)="activefun('where')">
+            <div class="col-4 d-flex justify-content-between position-relative" >
+              <div class="wherediv" id="wherediv" (click)="activefun('where')"  >
+                <div class="w-100 ms-4" style="z-index: 2;" >
                   <div class="hetext">Where</div>
-                  <input type="text" placeholder="Search destinations" (click)="activefun('where')" id="searhinptid"
+                  <input type="text" placeholder="Search destinations"  id="searhinptid"
                     (input)="cleariconshow(search.value)" #search>
                 </div>
               </div>
@@ -283,7 +283,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 text-center pt-3">
+        <div class="col-12 text-center pt-3" *ngIf="this.calendarshow" (click)=" this.menuBtnClick = true;">
           <div class="maincalendtordiv">
             <div class="d-flex justify-content-center">
               <div class="headbunmaindiv">

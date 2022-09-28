@@ -37,6 +37,7 @@ export class NavbarComponent implements OnInit {
   autofocus: any;
   searchvalue: any;
   searhinptid: any;
+  calendarshow = false;
   constructor(public homecom: HomeComponent, private renderer: Renderer2) {
     this.renderer.listen('window', 'click', (e: Event) => {
       if (this.menuBtnClick == false) {
@@ -48,6 +49,7 @@ export class NavbarComponent implements OnInit {
         this.mapshow = false;
         this.guestshow = false;
         this.clearicon = false;
+        this.calendarshow = false;
       } else {
         this.menuBtnClick = false;
       }
@@ -88,6 +90,7 @@ export class NavbarComponent implements OnInit {
     } else if (check == 'week') {
       aciveclass?.classList.remove('active');
       this.checkin?.classList.add('active');
+      this.calendarshow = true;
     } else if (check == 'who') {
       aciveclass?.classList.remove('active');
       this.guestshow = true;
@@ -127,6 +130,8 @@ export class NavbarComponent implements OnInit {
       this.search!.nativeElement.focus();
       this.guestshow = false;
       aciveclass?.classList.remove('active');
+      this.calendarshow = false;
+
       if (this.searhinptid.value == '') {
         this.clearicon = false;
       } else {
@@ -139,6 +144,7 @@ export class NavbarComponent implements OnInit {
         aciveclass?.classList.remove('active');
         this.mapshow = false;
         this.guestshow = false;
+      this.calendarshow = true;
         this.checkin?.classList.add('active');
         this.clearicon = false;
       }
@@ -151,6 +157,7 @@ export class NavbarComponent implements OnInit {
         aciveclass?.classList.remove('active');
         this.mapshow = false;
         this.guestshow = false;
+      this.calendarshow = true;
         this.checkout?.classList.add('active');
         this.clearicon = false;
       }
@@ -163,6 +170,8 @@ export class NavbarComponent implements OnInit {
         this.guestshow = true;
         this.who?.classList.add('active');
         this.clearicon = false;
+      this.calendarshow = false;
+
       }
     }
   }
