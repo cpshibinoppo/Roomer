@@ -1,11 +1,19 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewChild,
+} from '@angular/core';
 import { HomeComponent } from 'src/app/pages/home/home.component';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  @ViewChild('search') search: ElementRef<HTMLInputElement> | undefined;
   line1: any;
   line2: any;
   line3: any;
@@ -25,7 +33,10 @@ export class NavbarComponent implements OnInit {
     infants: 0,
     pets: 0,
   };
-
+  clearicon = false;
+  autofocus: any;
+  searchvalue: any;
+  searhinptid: any;
   constructor(public homecom: HomeComponent, private renderer: Renderer2) {
     this.renderer.listen('window', 'click', (e: Event) => {
       if (this.menuBtnClick == false) {
@@ -36,6 +47,7 @@ export class NavbarComponent implements OnInit {
         this.subusershow = false;
         this.mapshow = false;
         this.guestshow = false;
+        this.clearicon = false;
       } else {
         this.menuBtnClick = false;
       }
@@ -43,11 +55,13 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.autofocus = document.getElementById('autofocus');
     this.mapmaindiv = document.getElementById('mapmaindiv');
     this.where = document.getElementById('wherediv');
     this.checkin = document.getElementById('checkindiv');
     this.checkout = document.getElementById('checkoutdiv');
     this.who = document.getElementById('whodiv');
+    this.searhinptid = document.getElementById('searhinptid');
   }
   showsubnavbar(check: any) {
     this.menuBtnClick = true;
@@ -68,6 +82,8 @@ export class NavbarComponent implements OnInit {
     if (check == 'where') {
       this.where?.classList.add('active');
       this.mapshow = true;
+      // this.clearicon = true;
+      this.search!.nativeElement.focus();
       aciveclass?.classList.remove('active');
     } else if (check == 'week') {
       aciveclass?.classList.remove('active');
@@ -108,8 +124,14 @@ export class NavbarComponent implements OnInit {
     if (check == 'where') {
       this.where?.classList.add('active');
       this.mapshow = true;
+      this.search!.nativeElement.focus();
       this.guestshow = false;
       aciveclass?.classList.remove('active');
+      if (this.searhinptid.value == '') {
+        this.clearicon = false;
+      } else {
+        this.clearicon = true;
+      }
     } else if (check == 'checkin') {
       if (this.checkin?.classList.contains('active')) {
         aciveclass?.classList.remove('active');
@@ -118,6 +140,7 @@ export class NavbarComponent implements OnInit {
         this.mapshow = false;
         this.guestshow = false;
         this.checkin?.classList.add('active');
+        this.clearicon = false;
       }
     } else if (check == 'checkout') {
       this.menuBtnClick = true;
@@ -129,6 +152,7 @@ export class NavbarComponent implements OnInit {
         this.mapshow = false;
         this.guestshow = false;
         this.checkout?.classList.add('active');
+        this.clearicon = false;
       }
     } else if (check == 'who') {
       if (this.who?.classList.contains('active')) {
@@ -138,6 +162,7 @@ export class NavbarComponent implements OnInit {
         this.mapshow = false;
         this.guestshow = true;
         this.who?.classList.add('active');
+        this.clearicon = false;
       }
     }
   }
@@ -162,5 +187,29 @@ export class NavbarComponent implements OnInit {
     if (this.guests.adults == 0) {
       this.guests.adults = 1;
     }
+  }
+  calendhaedbtnactive(check: any) {
+    var first = document.getElementById('first');
+    var last = document.getElementById('last');
+    var aciveclass = document.querySelector('.headbtnacive');
+    if (check == 'first') {
+      first!.classList.add('headbtnacive');
+      aciveclass?.classList.remove('headbtnacive');
+    } else if (check == 'last') {
+      last!.classList.add('headbtnacive');
+      aciveclass?.classList.remove('headbtnacive');
+    }
+  }
+  cleariconshow(check: any) {
+    this.searchvalue = check;
+    if (check == '') {
+      this.clearicon = false;
+    } else {
+      this.clearicon = true;
+    }
+  }
+  clearinputdate() {
+    console.log(this.searhinptid.value);
+    this.searhinptid.value = '';
   }
 }
