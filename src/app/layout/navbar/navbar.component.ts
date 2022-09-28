@@ -1,11 +1,19 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewChild,
+} from '@angular/core';
 import { HomeComponent } from 'src/app/pages/home/home.component';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  @ViewChild('search') search: ElementRef<HTMLInputElement> | undefined;
   line1: any;
   line2: any;
   line3: any;
@@ -25,7 +33,8 @@ export class NavbarComponent implements OnInit {
     infants: 0,
     pets: 0,
   };
-
+  clearicon = false;
+  autofocus: any;
   constructor(public homecom: HomeComponent, private renderer: Renderer2) {
     this.renderer.listen('window', 'click', (e: Event) => {
       if (this.menuBtnClick == false) {
@@ -43,6 +52,7 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.autofocus = document.getElementById('autofocus');
     this.mapmaindiv = document.getElementById('mapmaindiv');
     this.where = document.getElementById('wherediv');
     this.checkin = document.getElementById('checkindiv');
@@ -68,6 +78,7 @@ export class NavbarComponent implements OnInit {
     if (check == 'where') {
       this.where?.classList.add('active');
       this.mapshow = true;
+      this.search!.nativeElement.focus();
       aciveclass?.classList.remove('active');
     } else if (check == 'week') {
       aciveclass?.classList.remove('active');
@@ -108,6 +119,7 @@ export class NavbarComponent implements OnInit {
     if (check == 'where') {
       this.where?.classList.add('active');
       this.mapshow = true;
+      this.search!.nativeElement.focus();
       this.guestshow = false;
       aciveclass?.classList.remove('active');
     } else if (check == 'checkin') {
@@ -163,7 +175,7 @@ export class NavbarComponent implements OnInit {
       this.guests.adults = 1;
     }
   }
-  calculhaedbtnactive(check: any) {
+  calendhaedbtnactive(check: any) {
     var first = document.getElementById('first');
     var last = document.getElementById('last');
     var aciveclass = document.querySelector('.headbtnacive');
@@ -173,6 +185,13 @@ export class NavbarComponent implements OnInit {
     } else if (check == 'last') {
       last!.classList.add('headbtnacive');
       aciveclass?.classList.remove('headbtnacive');
+    }
+  }
+  cleariconshow(check: any) {
+    if (check == '') {
+      this.clearicon = false;
+    } else {
+      this.clearicon = true;
     }
   }
 }

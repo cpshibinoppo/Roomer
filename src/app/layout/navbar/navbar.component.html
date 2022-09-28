@@ -113,13 +113,13 @@
               <div class="wherediv" id="wherediv">
                 <div class="w-100 ms-4" style="z-index: 2;">
                   <div class="hetext">Where</div>
-                  <input type="text" placeholder="Search destinations">
+                  <input type="text" placeholder="Search destinations" (click)="activefun('where')" (input)="cleariconshow(search.value)" #search  >
                 </div>
-                <div class="clearicondiv">
-                  <button>
-                    <i class='bx bx-x'></i>
-                  </button>
-                </div>
+              </div>
+              <div class="clearicondiv" *ngIf="this.clearicon" >
+                <button>
+                  <i class='bx bx-x'></i>
+                </button>
               </div>
               <div class="line" id="line1"></div>
             </div>
