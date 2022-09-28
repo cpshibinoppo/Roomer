@@ -163,4 +163,16 @@ export class NavbarComponent implements OnInit {
       this.guests.adults = 1;
     }
   }
+  calculhaedbtnactive(check: any) {
+    var first = document.getElementById('first');
+    var last = document.getElementById('last');
+    var aciveclass = document.querySelector('.headbtnacive');
+    if (check == 'first') {
+      first!.classList.add('headbtnacive');
+      aciveclass?.classList.remove('headbtnacive');
+    } else if (check == 'last') {
+      last!.classList.add('headbtnacive');
+      aciveclass?.classList.remove('headbtnacive');
+    }
+  }
 }
