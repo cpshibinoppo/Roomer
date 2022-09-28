@@ -360,7 +360,7 @@ a {
     cursor: pointer;
     display: flex;
     &:hover {
-       .line {
+      .line {
         display: none !important;
       }
       ::after {

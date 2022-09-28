@@ -35,6 +35,8 @@ export class NavbarComponent implements OnInit {
   };
   clearicon = false;
   autofocus: any;
+  searchvalue: any;
+  searhinptid: any;
   constructor(public homecom: HomeComponent, private renderer: Renderer2) {
     this.renderer.listen('window', 'click', (e: Event) => {
       if (this.menuBtnClick == false) {
@@ -45,6 +47,7 @@ export class NavbarComponent implements OnInit {
         this.subusershow = false;
         this.mapshow = false;
         this.guestshow = false;
+        this.clearicon = false;
       } else {
         this.menuBtnClick = false;
       }
@@ -58,6 +61,7 @@ export class NavbarComponent implements OnInit {
     this.checkin = document.getElementById('checkindiv');
     this.checkout = document.getElementById('checkoutdiv');
     this.who = document.getElementById('whodiv');
+    this.searhinptid = document.getElementById('searhinptid');
   }
   showsubnavbar(check: any) {
     this.menuBtnClick = true;
@@ -78,6 +82,7 @@ export class NavbarComponent implements OnInit {
     if (check == 'where') {
       this.where?.classList.add('active');
       this.mapshow = true;
+      // this.clearicon = true;
       this.search!.nativeElement.focus();
       aciveclass?.classList.remove('active');
     } else if (check == 'week') {
@@ -122,6 +127,11 @@ export class NavbarComponent implements OnInit {
       this.search!.nativeElement.focus();
       this.guestshow = false;
       aciveclass?.classList.remove('active');
+      if (this.searhinptid.value == '') {
+        this.clearicon = false;
+      } else {
+        this.clearicon = true;
+      }
     } else if (check == 'checkin') {
       if (this.checkin?.classList.contains('active')) {
         aciveclass?.classList.remove('active');
@@ -130,6 +140,7 @@ export class NavbarComponent implements OnInit {
         this.mapshow = false;
         this.guestshow = false;
         this.checkin?.classList.add('active');
+        this.clearicon = false;
       }
     } else if (check == 'checkout') {
       this.menuBtnClick = true;
@@ -141,6 +152,7 @@ export class NavbarComponent implements OnInit {
         this.mapshow = false;
         this.guestshow = false;
         this.checkout?.classList.add('active');
+        this.clearicon = false;
       }
     } else if (check == 'who') {
       if (this.who?.classList.contains('active')) {
@@ -150,6 +162,7 @@ export class NavbarComponent implements OnInit {
         this.mapshow = false;
         this.guestshow = true;
         this.who?.classList.add('active');
+        this.clearicon = false;
       }
     }
   }
@@ -188,10 +201,15 @@ export class NavbarComponent implements OnInit {
     }
   }
   cleariconshow(check: any) {
+    this.searchvalue = check;
     if (check == '') {
       this.clearicon = false;
     } else {
       this.clearicon = true;
     }
+  }
+  clearinputdate() {
+    console.log(this.searhinptid.value);
+    this.searhinptid.value = '';
   }
 }
