@@ -22,6 +22,7 @@ export class NavbarComponent implements OnInit {
   checkout: any;
   mapmaindiv: any;
   who: any;
+  dateid: any;
   searchiconshow = false;
   menuBtnClick = false;
   subusershow = false;
@@ -38,6 +39,7 @@ export class NavbarComponent implements OnInit {
   searchvalue: any;
   searhinptid: any;
   calendarshow = false;
+  experienceshow = false;
   constructor(public homecom: HomeComponent, private renderer: Renderer2) {
     this.renderer.listen('window', 'click', (e: Event) => {
       if (this.menuBtnClick == false) {
@@ -64,6 +66,7 @@ export class NavbarComponent implements OnInit {
     this.checkout = document.getElementById('checkoutdiv');
     this.who = document.getElementById('whodiv');
     this.searhinptid = document.getElementById('searhinptid');
+    this.dateid = document.getElementById('datediv');
   }
   showsubnavbar(check: any) {
     this.menuBtnClick = true;
@@ -101,18 +104,18 @@ export class NavbarComponent implements OnInit {
     this.line1 = document.getElementById('line1');
     this.line2 = document.getElementById('line2');
     this.line3 = document.getElementById('line3');
-    if (n == 2) {
-      this.line1!.style.display = 'none';
-    } else if (n == 3) {
-      this.line2!.style.display = 'none';
-    } else if (n == 4) {
-      this.line3!.style.display = 'none';
-    }
+    // if (n == 2) {
+    //   this.line1!.style.display = 'none';
+    // } else if (n == 3) {
+    //   this.line2!.style.display = 'none';
+    // } else if (n == 4) {
+    //   this.line3!.style.display = 'none';
+    // }
   }
   out(n: any) {
-    this.line1!.style.display = 'block';
-    this.line2!.style.display = 'block';
-    this.line3!.style.display = 'block';
+    // this.line1!.style.display = 'block';
+    // this.line2!.style.display = 'block';
+    // this.line3!.style.display = 'block';
   }
 
   activefun(check: any) {
@@ -144,8 +147,21 @@ export class NavbarComponent implements OnInit {
         aciveclass?.classList.remove('active');
         this.mapshow = false;
         this.guestshow = false;
-      this.calendarshow = true;
+        this.calendarshow = true;
         this.checkin?.classList.add('active');
+        this.clearicon = false;
+      }
+    } else if (check == 'date') {
+      this.menuBtnClick = true;
+
+      if (this.dateid?.classList.contains('active')) {
+        aciveclass?.classList.remove('active');
+      } else {
+        aciveclass?.classList.remove('active');
+        this.mapshow = false;
+        this.guestshow = false;
+        this.calendarshow = true;
+        this.dateid?.classList.add('active');
         this.clearicon = false;
       }
     } else if (check == 'checkout') {
@@ -157,7 +173,7 @@ export class NavbarComponent implements OnInit {
         aciveclass?.classList.remove('active');
         this.mapshow = false;
         this.guestshow = false;
-      this.calendarshow = true;
+        this.calendarshow = true;
         this.checkout?.classList.add('active');
         this.clearicon = false;
       }
@@ -170,8 +186,7 @@ export class NavbarComponent implements OnInit {
         this.guestshow = true;
         this.who?.classList.add('active');
         this.clearicon = false;
-      this.calendarshow = false;
-
+        this.calendarshow = false;
       }
     }
   }

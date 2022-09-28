@@ -440,6 +440,28 @@ a {
       }
     }
   }
+  .datediv {
+    z-index: 2;
+    cursor: pointer;
+    width: 100%;
+    &:hover {
+      + .line {
+        display: none !important;
+      }
+      ::after {
+        background-color: var(--hoverup);
+        border: 1px solid transparent;
+        border-radius: 32px;
+        left: 0px;
+        right: 0px;
+        bottom: -11px;
+        content: "";
+        position: absolute;
+        top: -11px;
+        z-index: -1;
+      }
+    }
+  }
   .line {
     background-color: var(--light-background);
     height: 30px;
