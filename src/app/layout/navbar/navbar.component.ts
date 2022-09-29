@@ -14,6 +14,8 @@ import { HomeComponent } from 'src/app/pages/home/home.component';
 })
 export class NavbarComponent implements OnInit {
   @ViewChild('search') search: ElementRef<HTMLInputElement> | undefined;
+  staysid: any;
+  experienceid: any;
   line1: any;
   line2: any;
   line3: any;
@@ -22,6 +24,7 @@ export class NavbarComponent implements OnInit {
   checkout: any;
   mapmaindiv: any;
   who: any;
+  dateid: any;
   searchiconshow = false;
   menuBtnClick = false;
   subusershow = false;
@@ -37,6 +40,9 @@ export class NavbarComponent implements OnInit {
   autofocus: any;
   searchvalue: any;
   searhinptid: any;
+  calendarshow = false;
+  checkinandout: any;
+  experienceshowid: any;
   constructor(public homecom: HomeComponent, private renderer: Renderer2) {
     this.renderer.listen('window', 'click', (e: Event) => {
       if (this.menuBtnClick == false) {
@@ -48,6 +54,7 @@ export class NavbarComponent implements OnInit {
         this.mapshow = false;
         this.guestshow = false;
         this.clearicon = false;
+        this.calendarshow = false;
       } else {
         this.menuBtnClick = false;
       }
@@ -55,6 +62,8 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.staysid = document.getElementById('staysid');
+    this.experienceid = document.getElementById('experienceid');
     this.autofocus = document.getElementById('autofocus');
     this.mapmaindiv = document.getElementById('mapmaindiv');
     this.where = document.getElementById('wherediv');
@@ -62,6 +71,9 @@ export class NavbarComponent implements OnInit {
     this.checkout = document.getElementById('checkoutdiv');
     this.who = document.getElementById('whodiv');
     this.searhinptid = document.getElementById('searhinptid');
+    this.dateid = document.getElementById('datediv');
+    this.checkinandout = document.getElementById('checkinout');
+    this.experienceshowid = document.getElementById('experienceshowid');
   }
   showsubnavbar(check: any) {
     this.menuBtnClick = true;
@@ -88,6 +100,7 @@ export class NavbarComponent implements OnInit {
     } else if (check == 'week') {
       aciveclass?.classList.remove('active');
       this.checkin?.classList.add('active');
+      this.calendarshow = true;
     } else if (check == 'who') {
       aciveclass?.classList.remove('active');
       this.guestshow = true;
@@ -98,35 +111,37 @@ export class NavbarComponent implements OnInit {
     this.line1 = document.getElementById('line1');
     this.line2 = document.getElementById('line2');
     this.line3 = document.getElementById('line3');
-    if (n == 2) {
-      this.line1!.style.display = 'none';
-    } else if (n == 3) {
-      this.line2!.style.display = 'none';
-    } else if (n == 4) {
-      this.line3!.style.display = 'none';
-    }
+    // if (n == 2) {
+    //   this.line1!.style.display = 'none';
+    // } else if (n == 3) {
+    //   this.line2!.style.display = 'none';
+    // } else if (n == 4) {
+    //   this.line3!.style.display = 'none';
+    // }
   }
   out(n: any) {
-    this.line1!.style.display = 'block';
-    this.line2!.style.display = 'block';
-    this.line3!.style.display = 'block';
+    // this.line1!.style.display = 'block';
+    // this.line2!.style.display = 'block';
+    // this.line3!.style.display = 'block';
   }
 
   activefun(check: any) {
     this.menuBtnClick = true;
     var aciveclass = document.querySelector('.active');
     this.mapmaindiv.style.background = 'var(--icon-bacground)';
-    if (innerWidth < 980) {
-      this.searchiconshow = false;
-    } else {
-      this.searchiconshow = true;
-    }
+    // if (innerWidth < 980) {
+    //   this.searchiconshow = false;
+    // } else {
+    //   this.searchiconshow = true;
+    // }
     if (check == 'where') {
       this.where?.classList.add('active');
       this.mapshow = true;
       this.search!.nativeElement.focus();
       this.guestshow = false;
       aciveclass?.classList.remove('active');
+      this.calendarshow = false;
+
       if (this.searhinptid.value == '') {
         this.clearicon = false;
       } else {
@@ -139,7 +154,22 @@ export class NavbarComponent implements OnInit {
         aciveclass?.classList.remove('active');
         this.mapshow = false;
         this.guestshow = false;
+        this.calendarshow = true;
         this.checkin?.classList.add('active');
+        this.clearicon = false;
+      }
+    } else if (check == 'date') {
+      this.menuBtnClick = true;
+
+      if (this.dateid?.classList.contains('active')) {
+        aciveclass?.classList.remove('active');
+      } else {
+        console.log('showsubnavba if');
+        aciveclass?.classList.remove('active');
+        this.mapshow = false;
+        this.guestshow = false;
+        this.calendarshow = true;
+        this.dateid?.classList.add('active');
         this.clearicon = false;
       }
     } else if (check == 'checkout') {
@@ -151,6 +181,7 @@ export class NavbarComponent implements OnInit {
         aciveclass?.classList.remove('active');
         this.mapshow = false;
         this.guestshow = false;
+        this.calendarshow = true;
         this.checkout?.classList.add('active');
         this.clearicon = false;
       }
@@ -163,7 +194,10 @@ export class NavbarComponent implements OnInit {
         this.guestshow = true;
         this.who?.classList.add('active');
         this.clearicon = false;
+        this.calendarshow = false;
       }
+    } else {
+      console.log('showsubnavba else');
     }
   }
   restfun() {
@@ -211,5 +245,19 @@ export class NavbarComponent implements OnInit {
   clearinputdate() {
     console.log(this.searhinptid.value);
     this.searhinptid.value = '';
+  }
+  experienceshow(check: any) {
+    var aciveclass = document.querySelector('.subactivebtn');
+    if (check == 'stays') {
+      this.checkinandout.style.display = 'contents';
+      this.experienceshowid.style.display = 'none';
+      this.staysid.classList.add('subactivebtn');
+      aciveclass?.classList.remove('subactivebtn');
+    } else {
+      this.checkinandout.style.display = 'none';
+      this.experienceshowid.style.display = 'block';
+      this.experienceid.classList.add('subactivebtn');
+      aciveclass?.classList.remove('subactivebtn');
+    }
   }
 }
