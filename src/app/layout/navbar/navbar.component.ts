@@ -14,6 +14,8 @@ import { HomeComponent } from 'src/app/pages/home/home.component';
 })
 export class NavbarComponent implements OnInit {
   @ViewChild('search') search: ElementRef<HTMLInputElement> | undefined;
+  staysid:any;
+  experienceid:any;
   line1: any;
   line2: any;
   line3: any;
@@ -39,7 +41,8 @@ export class NavbarComponent implements OnInit {
   searchvalue: any;
   searhinptid: any;
   calendarshow = false;
-  experienceshow = false;
+  checkinandout: any;
+  experienceshowid: any;
   constructor(public homecom: HomeComponent, private renderer: Renderer2) {
     this.renderer.listen('window', 'click', (e: Event) => {
       if (this.menuBtnClick == false) {
@@ -59,6 +62,8 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.staysid = document.getElementById("staysid");
+    this.experienceid = document.getElementById("experienceid");
     this.autofocus = document.getElementById('autofocus');
     this.mapmaindiv = document.getElementById('mapmaindiv');
     this.where = document.getElementById('wherediv');
@@ -67,6 +72,8 @@ export class NavbarComponent implements OnInit {
     this.who = document.getElementById('whodiv');
     this.searhinptid = document.getElementById('searhinptid');
     this.dateid = document.getElementById('datediv');
+    this.checkinandout = document.getElementById('checkinout');
+    this.experienceshowid = document.getElementById('experienceshowid');
   }
   showsubnavbar(check: any) {
     this.menuBtnClick = true;
@@ -122,11 +129,11 @@ export class NavbarComponent implements OnInit {
     this.menuBtnClick = true;
     var aciveclass = document.querySelector('.active');
     this.mapmaindiv.style.background = 'var(--icon-bacground)';
-    if (innerWidth < 980) {
-      this.searchiconshow = false;
-    } else {
-      this.searchiconshow = true;
-    }
+    // if (innerWidth < 980) {
+    //   this.searchiconshow = false;
+    // } else {
+    //   this.searchiconshow = true;
+    // }
     if (check == 'where') {
       this.where?.classList.add('active');
       this.mapshow = true;
@@ -157,6 +164,7 @@ export class NavbarComponent implements OnInit {
       if (this.dateid?.classList.contains('active')) {
         aciveclass?.classList.remove('active');
       } else {
+        console.log('showsubnavba if');
         aciveclass?.classList.remove('active');
         this.mapshow = false;
         this.guestshow = false;
@@ -188,6 +196,8 @@ export class NavbarComponent implements OnInit {
         this.clearicon = false;
         this.calendarshow = false;
       }
+    }else{
+    console.log('showsubnavba else');
     }
   }
   restfun() {
@@ -235,5 +245,20 @@ export class NavbarComponent implements OnInit {
   clearinputdate() {
     console.log(this.searhinptid.value);
     this.searhinptid.value = '';
+  }
+  experienceshow(check:any) {
+    var aciveclass = document.querySelector('.subactivebtn');
+    if (check == 'stays') {
+      this.checkinandout.style.display = 'contents';
+      this.experienceshowid.style.display = 'none';
+      this.staysid.classList.add('subactivebtn');
+      aciveclass?.classList.remove('subactivebtn');
+    }else{
+      this.checkinandout.style.display = 'none';
+      this.experienceshowid.style.display = 'block';
+      this.experienceid.classList.add('subactivebtn');
+      aciveclass?.classList.remove('subactivebtn');
+    }
+
   }
 }
