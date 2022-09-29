@@ -14,8 +14,8 @@ import { HomeComponent } from 'src/app/pages/home/home.component';
 })
 export class NavbarComponent implements OnInit {
   @ViewChild('search') search: ElementRef<HTMLInputElement> | undefined;
-  staysid:any;
-  experienceid:any;
+  staysid: any;
+  experienceid: any;
   line1: any;
   line2: any;
   line3: any;
@@ -62,8 +62,8 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.staysid = document.getElementById("staysid");
-    this.experienceid = document.getElementById("experienceid");
+    this.staysid = document.getElementById('staysid');
+    this.experienceid = document.getElementById('experienceid');
     this.autofocus = document.getElementById('autofocus');
     this.mapmaindiv = document.getElementById('mapmaindiv');
     this.where = document.getElementById('wherediv');
@@ -196,8 +196,8 @@ export class NavbarComponent implements OnInit {
         this.clearicon = false;
         this.calendarshow = false;
       }
-    }else{
-    console.log('showsubnavba else');
+    } else {
+      console.log('showsubnavba else');
     }
   }
   restfun() {
@@ -246,19 +246,18 @@ export class NavbarComponent implements OnInit {
     console.log(this.searhinptid.value);
     this.searhinptid.value = '';
   }
-  experienceshow(check:any) {
+  experienceshow(check: any) {
     var aciveclass = document.querySelector('.subactivebtn');
     if (check == 'stays') {
       this.checkinandout.style.display = 'contents';
       this.experienceshowid.style.display = 'none';
       this.staysid.classList.add('subactivebtn');
       aciveclass?.classList.remove('subactivebtn');
-    }else{
+    } else {
       this.checkinandout.style.display = 'none';
       this.experienceshowid.style.display = 'block';
       this.experienceid.classList.add('subactivebtn');
       aciveclass?.classList.remove('subactivebtn');
     }
-
   }
 }
