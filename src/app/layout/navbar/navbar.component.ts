@@ -43,6 +43,7 @@ export class NavbarComponent implements OnInit {
   calendarshow = false;
   checkinandout: any;
   experienceshowid: any;
+  navbarloiginsection: any;
   constructor(public homecom: HomeComponent, private renderer: Renderer2) {
     this.renderer.listen('window', 'click', (e: Event) => {
       if (this.menuBtnClick == false) {
@@ -74,6 +75,7 @@ export class NavbarComponent implements OnInit {
     this.dateid = document.getElementById('datediv');
     this.checkinandout = document.getElementById('checkinout');
     this.experienceshowid = document.getElementById('experienceshowid');
+    this.navbarloiginsection = document.getElementById('navbarloiginsection');
   }
   showsubnavbar(check: any) {
     this.menuBtnClick = true;
@@ -259,5 +261,13 @@ export class NavbarComponent implements OnInit {
       this.experienceid.classList.add('subactivebtn');
       aciveclass?.classList.remove('subactivebtn');
     }
+  }
+  logoingshow() {
+    this.navbarloiginsection.style.display = 'block';
+    this.homecom.loginandsighshowfn();
+  }
+  logoingremove() {
+    this.navbarloiginsection.style.display = 'none';
+    this.homecom.loginandsighshowfn();
   }
 }

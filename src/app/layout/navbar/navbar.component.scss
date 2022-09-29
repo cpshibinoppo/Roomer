@@ -6,6 +6,7 @@ a {
   box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  z-index: 1;
 }
 .navbarmaindiv {
   display: flex;
@@ -788,4 +789,7 @@ a {
   .sublogo {
     display: none !important;
   }
+}
+.navbarloiginsection {
+  display: none;
 }

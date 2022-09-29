@@ -64,8 +64,8 @@
             <div class="submaindiv" *ngIf="this.subusershow">
               <div class="sigdrdiv">
                 <ul>
-                  <li><a class="signlinka" href="">Sign up</a></li>
-                  <li><a href="">Log in</a></li>
+                  <li><a class="signlinka" (click)="logoingshow()">Sign up</a></li>
+                  <li><a (click)="logoingshow()">Log in</a></li>
                 </ul>
               </div>
               <div class="pt-2">
@@ -307,4 +307,7 @@
       </div>
     </div>
   </div>
+</section>
+<section class="navbarloiginsection" id="navbarloiginsection">
+  <app-logoinandsighup></app-logoinandsighup>
 </section>
