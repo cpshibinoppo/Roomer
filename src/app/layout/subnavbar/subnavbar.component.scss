@@ -66,10 +66,6 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--black);
-  border: 0.5px solid rgb(0 0 0 / 0.3);
-
-  // width: 30px;
-  // height: 30px;
   position: absolute;
   top: 50px;
   background: var(--white);
@@ -85,6 +81,7 @@
     align-items: center;
     border: 0.5px solid rgba(0, 0, 0, 0.3);
     justify-content: center;
+    padding: 15px;
   }
   &::before {
     content: "";

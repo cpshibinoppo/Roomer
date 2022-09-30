@@ -1,7 +1,7 @@
 [
   {
     "name": "first",
-    "img": "../../../assets/img/map/map1.jpg"
+    "img": "../../../assets/img/filterimg/5.jpg"
   },
   {
     "name": "Lakefront",
@@ -197,6 +197,6 @@
   },
   {
     "name": "last",
-    "img": "../../../assets/img/map/map1.jpg"
+    "img": "../../../assets/img/filterimg/15.jpg"
   }
 ]
