@@ -1,4 +1,4 @@
-.sighpopup{
+.sighpopup {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -6,12 +6,12 @@
   align-items: center;
   height: -webkit-fill-available;
   z-index: 5;
-  background:transparent;
+  background: transparent;
   top: 15px;
 }
-.miandiv{
+.miandiv {
   max-width: 565px;
-  border-radius:12px ;
+  border-radius: 12px;
   height: 650px;
   box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
   overflow-y: auto;
@@ -42,7 +42,7 @@ header {
       }
     }
     h1 {
-      font-size:1rem;
+      font-size: 1rem;
       margin: 0;
       padding: 0;
       display: flex;
@@ -51,62 +51,62 @@ header {
     }
   }
 }
-.inputmiansection{
+.inputmiansection {
   background: var(--white);
   padding: 15px 24px 25px 24px;
 
-  .welcometextdiv{
-    h3{
-    font-size: 22px ;
-    line-height: 26px ;
-    color: rgb(34, 34, 34) ;
-    font-weight: 600 ;
-    margin-bottom: 8px ;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  .welcometextdiv {
+    h3 {
+      font-size: 22px;
+      line-height: 26px;
+      color: rgb(34, 34, 34);
+      font-weight: 600;
+      margin-bottom: 8px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
   }
-  .inputmiandiv{
-    .inpbox{
-      border: .5px solid black;
+  .inputmiandiv {
+    .inpbox {
+      border: 0.5px solid black;
       border-radius: 12px;
-      .selectmiandiv{
-        padding: .5rem 1rem;
-        border-bottom: .5px solid black;
-        label{
+      .selectmiandiv {
+        padding: 0.5rem 1rem;
+        border-bottom: 0.5px solid black;
+        label {
           width: 100%;
-          .selectheadtext{
+          .selectheadtext {
             color: rgb(113, 113, 113);
             font-size: var(--subtext);
             line-height: 20px;
             font-weight: 400;
           }
-          .selectdiv{
-            select{
-              border:none;
+          .selectdiv {
+            select {
+              border: none;
               outline: none;
               width: 100%;
             }
           }
         }
       }
-      .phoneinputdiv{
-        padding: .5rem 1rem;
+      .phoneinputdiv {
+        padding: 0.5rem 1rem;
         height: 60px;
         display: flex;
         align-items: center;
-        label{
+        label {
           width: 100%;
         }
-        .phonetext{
+        .phonetext {
           color: rgb(113, 113, 113);
           font-size: var(--text-size);
           line-height: 20px;
           font-weight: 400;
         }
-        .numberinpdiv{
+        .numberinpdiv {
           display: none;
-          input{
+          input {
             width: 100%;
             border: none;
             outline: none;
@@ -114,11 +114,11 @@ header {
         }
       }
     }
-    .continuebtndiv{
-      button{
-        background:var(--linear-background);
-        color:var(--white);
-        font-size:var(--text-size);
+    .continuebtndiv {
+      button {
+        background: var(--linear-background);
+        color: var(--white);
+        font-size: var(--text-size);
         line-height: 20px;
         font-weight: 500;
         border-radius: 8px;
@@ -132,18 +132,18 @@ header {
   }
 }
 
-.phoneinputdivactive{
+.phoneinputdivactive {
   display: block !important;
-  .phonetextactive{
-    font-size:var(--subtext) !important ;
+  .phonetextactive {
+    font-size: var(--subtext) !important ;
   }
 }
-.or{
+.or {
   display: flex;
   align-items: center;
   margin: 16px 0px !important;
   color: var(--light-color);
-  &::before{
+  &::before {
     content: "" !important;
     display: block !important;
     width: 100% !important;
@@ -151,7 +151,7 @@ header {
     background-color: rgb(221, 221, 221) !important;
     margin-right: 16px !important;
   }
-  &::after{
+  &::after {
     content: "" !important;
     display: block !important;
     width: 100% !important;
@@ -160,8 +160,8 @@ header {
     margin-left: 16px !important;
   }
 }
-.autologinmaindiv{
-  .autologdiv{
+.autologinmaindiv {
+  .autologdiv {
     border: 1px solid var(--text-color);
     padding: 13px 23px;
     border-radius: 8px;
@@ -170,23 +170,28 @@ header {
     font-weight: 600 !important;
     font-size: 14px !important;
     transition: all 0.3s ease;
-    &:hover{
+    &:hover {
       background-color: var(--hover-background);
     }
-    .iconimagediv{
-      height: 25px; width: 25px;
-      img{
-width: 100%;
+    .iconimagediv {
+      height: 25px;
+      width: 25px;
+      img {
+        width: 100%;
       }
     }
-    .autologintext{
+    .autologintext {
       display: flex;
       width: 100%;
       justify-content: center;
-      letter-spacing: .5px;
+      letter-spacing: 0.5px;
       font-size: 14px;
       font-weight: 500;
       align-items: center;
     }
   }
+}
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
