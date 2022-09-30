@@ -1,1 +1,36 @@
-<p>subnavbar works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <section class="subnavbarmainsection">
+        <swiper [config]="swiperConfig"  class="mySwiper pt-3">
+          <ng-template swiperSlide  *ngFor="let data of this.filterData">
+            <div class="sidercard">
+              <button>
+                <div class="filetimgdiv">
+                  <span>
+                    <img width="24px" height="24px" src="{{data.img}}" alt="">
+                  </span>
+                  <div class="cardtext">
+                    <span>{{data.name}}</span>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </ng-template>
+        </swiper>
+        <div class="filterbtndiv">
+          <button>
+            <span><img src="../../../assets/img/filtericon.svg" alt="">
+            <span>Filters</span>
+            </span>
+          </button>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+
+
+

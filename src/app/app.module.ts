@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { LogoinandsighupComponent } from './pages/logoinandsighup/logoinandsighup.component';
 import { SubnavbarComponent } from './layout/subnavbar/subnavbar.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SubnavbarComponent } from './layout/subnavbar/subnavbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
