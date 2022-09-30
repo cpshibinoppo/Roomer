@@ -1,10 +1,10 @@
-import { Component,ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import filterdata from './filterdetails.json';
-import { SwiperComponent } from "swiper/angular";
+import { SwiperComponent } from 'swiper/angular';
 
-import SwiperCore, { Navigation } from 'swiper';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
 
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Pagination]);
 
 interface filterData {
   name: String;
@@ -25,9 +25,7 @@ export class SubnavbarComponent implements OnInit {
   swiperConfig: any = {
     slidesPerView: 'auto',
     navigation: true,
-    spaceBetween: 20,
-    // loop: true,
-    slidesPerGroup:10,
-}
-
+    slidesPerGroup: 10,
+    spaceBetween: 40,
+  };
 }

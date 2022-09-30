@@ -3,6 +3,7 @@
     <div class="col-12">
       <section class="subnavbarmainsection">
         <swiper [config]="swiperConfig"  class="mySwiper pt-3">
+
           <ng-template swiperSlide  *ngFor="let data of this.filterData">
             <div class="sidercard">
               <button>
@@ -18,7 +19,7 @@
             </div>
           </ng-template>
         </swiper>
-        <div class="filterbtndiv">
+        <div class="filterbtndiv pt-2">
           <button>
             <span><img src="../../../assets/img/filtericon.svg" alt="">
             <span>Filters</span>
