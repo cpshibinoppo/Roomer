@@ -1,11 +1,10 @@
 import { Component,ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import filterdata from './filterdetails.json';
 import { SwiperComponent } from "swiper/angular";
-// import SwiperCore, { Navigation } from "swiper";
-// import Swiper from 'swiper';
-import SwiperCore, { Navigation, Swiper, Virtual,Pagination } from 'swiper';
 
-SwiperCore.use([Navigation,Pagination]);
+import SwiperCore, { Navigation } from 'swiper';
+
+SwiperCore.use([Navigation]);
 
 interface filterData {
   name: String;
@@ -22,17 +21,12 @@ export class SubnavbarComponent implements OnInit {
   filterData: filterData[] = filterdata;
   constructor() {}
   @ViewChild('swiper', { static: false }) swiper?: SwiperComponent;
-  slideNext(){
-    this.swiper!.swiperRef.slideNext(100);
-  }
-  slidePrev(){
-    this.swiper!.swiperRef.slidePrev(100);
-  }
   ngOnInit(): void {}
   swiperConfig: any = {
-    slidesPerView: 20,
+    slidesPerView: 'auto',
     navigation: true,
     spaceBetween: 20,
+    // loop: true,
     slidesPerGroup:10,
 }
 

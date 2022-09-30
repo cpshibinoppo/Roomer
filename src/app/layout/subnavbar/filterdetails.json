@@ -1,7 +1,7 @@
 [
   {
-    "name": "Design",
-    "img": "../../../assets/img/filterimg/1.jpg"
+    "name": "first",
+    "img": "../../../assets/img/map/map1.jpg"
   },
   {
     "name": "Lakefront",
@@ -196,7 +196,7 @@
     "img": "../../../assets/img/filterimg/24.jpg"
   },
   {
-    "name": "Amazing pools",
-    "img": "../../../assets/img/filterimg/25.jpg"
+    "name": "last",
+    "img": "../../../assets/img/map/map1.jpg"
   }
 ]
