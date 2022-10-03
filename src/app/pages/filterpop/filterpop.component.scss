@@ -1,0 +1,144 @@
+.filterpop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: -webkit-fill-available;
+  z-index: 5;
+  background: transparent;
+  top: 15px;
+}
+.miandiv {
+  width: 100%;
+  max-width: 780px;
+  border-radius: 12px;
+  height: 650px;
+  background: var(--white);
+  box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
+  overflow-y: auto;
+}
+header {
+  padding: 15px 24px 0 24px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  border-bottom: 1px solid rgb(235, 235, 235);
+  .closebtnandheadingdiv {
+    display: flex;
+    align-items: center;
+    button {
+      background: transparent;
+      border: none;
+      border-radius: 50%;
+      padding: 2.5px;
+      height: 25px;
+      width: 25px;
+      transition: all 0.3s ease;
+      i {
+        font-size: 20px;
+      }
+      &:hover {
+        background: var(--icon-bacground);
+      }
+    }
+    h1 {
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+.consection {
+  padding: 20px 24px;
+}
+.typeplacemaindiv {
+  h2 {
+    font-size: 1.4em;
+    line-height: inherit;
+    margin: 0;
+    font-weight: 500;
+  }
+  .typeplaceselect {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px 50px;
+    width: 100%;
+    grid-template-columns: repeat(var(--filter-column_number, 1), 1fr);
+    .typecard {
+      display: flex;
+      &:hover {
+        + .checkboxdiv {
+          span {
+            border-color: red;
+          }
+        }
+      }
+      .checkboxdiv {
+        margin-right: 16px !important;
+        span {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          padding: 0;
+          input {
+            position: absolute;
+            opacity: 0;
+          }
+          span {
+            display: inline-block;
+            border: 1px solid rgb(176, 176, 176);
+            height: 24px;
+            width: 24px;
+            background: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 4px;
+            overflow: hidden;
+            vertical-align: top;
+            transition: border 0.3s ease;
+            // &:hover{
+            //   border-color: black;
+            // }
+            span {
+              display: block;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              height: 100%;
+              margin-top: 2px;
+              margin-left: 3px;
+              background: transparent;
+              border: none;
+              img {
+                display: block;
+                height: 16px;
+                width: 16px;
+              }
+            }
+          }
+        }
+      }
+      .typecardtext {
+        cursor: pointer;
+        .maintext {
+          color: rgb(34, 34, 34);
+          font-size: var(--sublineheight);
+          line-height: 20px;
+        }
+        .subtext {
+          color: rgb(113, 113, 113);
+          font-size: var(--subtext);
+          line-height: var(--lineheight);
+          word-break: break-word !important;
+        }
+      }
+    }
+  }
+}
+.typecard:hover .spancheck {
+  border: 1px solid black !important;
+}
