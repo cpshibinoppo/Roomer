@@ -34,6 +34,13 @@ export class SubnavbarComponent implements OnInit {
   swiperConfig: any = {
     slidesPerView: 'auto',
     navigation: true,
-    slidesPerGroup: 20,
+    slidesPerGroup: 1,
+    spaceBetween: 40,
+    breakpoints: {
+      768: {
+        slidesPerGroup: 11,
+        spaceBetween: 41,
+      },
+    },
   };
 }
