@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import filterdata from './filterdetails.json';
 import { SwiperComponent } from 'swiper/angular';
+import $ from 'jquery';
 
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 
@@ -21,10 +22,19 @@ export class SubnavbarComponent implements OnInit {
   filterData: filterData[] = filterdata;
   constructor() {}
   @ViewChild('swiper', { static: false }) swiper?: SwiperComponent;
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    $(document).ready(function () {
+      $('.btn').click(function () {
+        $('.ch').removeClass('ch');
+        $('.btn').removeClass('btn-active').addClass('inactive');
+        $(this).removeClass('inactive').addClass('btn-active');
+      });
+    });
+  }
   swiperConfig: any = {
     slidesPerView: 'auto',
     navigation: true,
+    mousewheelControl: false,
     slidesPerGroup: 10,
     spaceBetween: 40,
   };
