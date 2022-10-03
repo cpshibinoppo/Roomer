@@ -1,6 +1,7 @@
 .subnavbarmainsection {
   display: flex;
   align-items: center;
+  z-index: -5;
 }
 /* slider start */
 .swiper {
@@ -119,6 +120,16 @@
       }
     }
   }
+}
+
+.btn-active::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: black;
 }
 
 @media only screen and (max-width: 600px) {
