@@ -180,7 +180,7 @@
 .btn-active {
   color: var(--black) !important;
   transform: scale(1);
-  animation-name: example;
+  animation-name: buttonclick;
   animation-duration: 0.5s;
   &::after {
     content: "";
@@ -199,7 +199,7 @@
     }
   }
 }
-@keyframes example {
+@keyframes buttonclick {
   from {
     transform: scale(0.8);
   }
