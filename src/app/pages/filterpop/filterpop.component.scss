@@ -4,7 +4,7 @@
   justify-content: center;
   width: 100%;
   align-items: center;
-  height: -webkit-fill-available;
+  // height: -webkit-fill-available;
   z-index: 5;
   background: transparent;
   top: 15px;
@@ -23,6 +23,7 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
+  z-index: 5;
   background: var(--white);
   border-bottom: 1px solid rgb(235, 235, 235);
   .closebtnandheadingdiv {
@@ -55,8 +56,11 @@ header {
 }
 .consection {
   padding: 20px 24px;
+  padding-bottom: 12rem;
 }
 .typeplacemaindiv {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(235, 235, 235);
   h2 {
     font-size: 1.4em;
     line-height: inherit;
@@ -142,6 +146,81 @@ header {
 .typecard:hover .spancheck {
   border: 1px solid black !important;
 }
-.activecheckbox{
+.activecheckbox {
   background: rgb(34, 34, 34) !important;
+}
+.roomandbedsmaindiv {
+  border-bottom: 1px solid rgb(235, 235, 235);
+  padding-bottom: 1.5rem;
+  h2 {
+    font-size: 1.4em;
+    line-height: inherit;
+    margin: 0;
+    font-weight: 500;
+  }
+  .roombedcarddiv {
+    p {
+      font-size: var(--text-size);
+      line-height: 20px;
+      color: var(--light-color);
+    }
+    .roombedcardbtndiv {
+      display: flex;
+      .btnmain {
+        display: inline-block;
+        padding-right: 10px;
+        padding: 4px;
+        padding-bottom: 4px;
+        button {
+          background: rgb(255, 255, 255);
+          outline: none;
+          border: 1px solid rgb(221, 221, 221);
+          color: rgb(34, 34, 34);
+          position: relative;
+          padding: 10px 20px;
+          border-radius: 30px;
+          min-width: 59px;
+          line-height: var(--sublineheight);
+          transition: all 0.4s ease-in-out;
+          &:hover {
+            border-color: var(--black);
+          }
+          span {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: var(--lineheight);
+            width: 58px;
+          }
+        }
+      }
+    }
+  }
+}
+.roomactive {
+  background: rgb(34, 34, 34) !important;
+  border: rgb(34, 34, 34) !important;
+  span {
+    color: rgb(255, 255, 255) !important;
+  }
+}
+.fistbtn:nth-child(1) button {
+  background: rgb(34, 34, 34) !important;
+  border: rgb(34, 34, 34) !important;
+  span {
+    color: rgb(255, 255, 255) !important;
+  }
+}
+.fistbtnbeds:nth-child(1) button {
+  background: rgb(34, 34, 34) !important;
+  border: rgb(34, 34, 34) !important;
+  span {
+    color: rgb(255, 255, 255) !important;
+  }
+}
+.fistbtnbat:nth-child(1) button {
+  background: rgb(34, 34, 34) !important;
+  border: rgb(34, 34, 34) !important;
+  span {
+    color: rgb(255, 255, 255) !important;
+  }
 }

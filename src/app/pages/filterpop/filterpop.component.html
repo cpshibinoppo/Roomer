@@ -71,6 +71,39 @@
             </div>
           </div>
         </div>
+        <div class="roomandbedsmaindiv pt-4">
+          <h2>Rooms and beds</h2>
+          <div class="roombedcarddiv pt-3">
+            <p>Bedrooms</p>
+            <div class="roombedcardbtndiv">
+              <div class="btnmain fistbtn btnmainbedroom" *ngFor="let number of this.numberarraty">
+                <button class="btnn" (click)="roomfun()">
+                  <span>{{number}}</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="roombedcarddiv pt-3">
+            <p>Beds</p>
+            <div class="roombedcardbtndiv">
+              <div class="btnmain fistbtnbeds btnmainbeds" *ngFor="let number of this.numberarraty">
+                <button class="btnbeds" (click)="roomfun()">
+                  <span>{{number}}</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="roombedcarddiv pt-3">
+            <p>Bathrooms</p>
+            <div class="roombedcardbtndiv">
+              <div class="btnmain fistbtnbat btnmainbat" *ngFor="let number of this.numberarraty">
+                <button class="btnbat" (click)="roomfun()">
+                  <span>{{number}}</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
