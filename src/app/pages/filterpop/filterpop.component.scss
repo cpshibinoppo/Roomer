@@ -104,9 +104,6 @@ header {
             overflow: hidden;
             vertical-align: top;
             transition: border 0.3s ease;
-            // &:hover{
-            //   border-color: black;
-            // }
             span {
               display: block;
               align-items: center;
@@ -222,5 +219,55 @@ header {
   border: rgb(34, 34, 34) !important;
   span {
     color: rgb(255, 255, 255) !important;
+  }
+}
+.propertymaindiv {
+  h2 {
+    font-size: 1.4em;
+    line-height: inherit;
+    margin: 0;
+    font-weight: 500;
+  }
+  .propercon {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-rows: repeat(1, auto) !important;
+    gap: 16px !important;
+    .propertycardmaindivcard {
+      .procardbtn {
+        border: 1px solid rgba(176, 176, 176, 0.5);
+        background: rgb(255, 255, 255);
+        outline: none;
+        padding: 0;
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease;
+        &:hover{
+          border-color: black;
+        }
+        .procardmain {
+          .procard {
+            padding: 16px;
+            display: flex;
+            flex-direction: column !important;
+            justify-content: space-between;
+            min-height: 120px;
+            width: 100%;
+            height: 100%;
+            img {
+              width: 32px;
+              height: 32px;
+            }
+            .protext {
+              font-size: var(--text-size);
+              line-height: 20px;
+              font-weight: 600;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
   }
 }
