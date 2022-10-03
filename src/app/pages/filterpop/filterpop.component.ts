@@ -9,7 +9,13 @@ import $ from 'jquery';
 export class FilterpopComponent implements OnInit {
   constructor() {}
   numberarraty = ['Any', 1, 2, 3, 4, 5, 6, 7, '8+'];
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    $(document).ready(function () {
+      $('.propertycardmaindivcard button').click(function () {
+        $(this).toggleClass('propertyactive');
+      });
+    });
+  }
   tickfun(check: any) {
     if (check == 'ent') {
       $('.ent').toggleClass('activecheckbox');
