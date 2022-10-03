@@ -21,11 +21,11 @@
         <div class="typeplacemaindiv">
           <h2>Type of place</h2>
           <div class="typeplaceselect mt-4">
-            <div class="typecard">
+            <div class="typecard" (click)="tickfun('ent')">
               <div class="checkboxdiv">
                 <span>
                   <input type="checkbox">
-                  <span class="spancheck">
+                  <span class="spancheck ent">
                     <span>
                       <img src="../../../assets/img/tick.svg" alt="">
                     </span>
@@ -37,11 +37,11 @@
                 <div class="subtext">A place all to yourseif</div>
               </div>
             </div>
-            <div class="typecard">
+            <div class="typecard" (click)="tickfun('pri')">
               <div class="checkboxdiv">
                 <span>
                   <input type="checkbox">
-                  <span class="spancheck">
+                  <span class="spancheck pri">
                     <span>
                       <img src="../../../assets/img/tick.svg" alt="">
                     </span>
@@ -53,11 +53,11 @@
                 <div class="subtext">Your own room in a home or a hotel, plus some shared common spaces</div>
               </div>
             </div>
-            <div class="typecard">
+            <div class="typecard" (click)="tickfun('sha')">
               <div class="checkboxdiv">
                 <span>
                   <input type="checkbox">
-                  <span class="spancheck">
+                  <span class="spancheck sha">
                     <span>
                       <img src="../../../assets/img/tick.svg" alt="">
                     </span>
