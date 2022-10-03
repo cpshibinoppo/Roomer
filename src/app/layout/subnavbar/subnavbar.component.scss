@@ -1,3 +1,23 @@
+.ch:nth-child(1) .sidercard button {
+  color: black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: black !important;
+  }
+  .filetimgdiv {
+    span {
+      img {
+        filter: contrast(1) !important;
+      }
+    }
+  }
+}
 .subnavbarmainsection {
   display: flex;
   align-items: center;
@@ -35,6 +55,21 @@
     line-height: 16px;
     font-size: 12px;
     font-weight: 500;
+    transition: all 0.4s ease;
+    &:hover {
+      img {
+        filter: contrast(1) !important;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        background-color: var(--light-background);
+      }
+    }
     .filetimgdiv {
       span {
         display: flex;
@@ -121,15 +156,56 @@
     }
   }
 }
+.ch:nth-child(1) .sidercard button {
+  color: black;
 
-.btn-active::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  background-color: black;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: black !important;
+  }
+  .filetimgdiv {
+    span {
+      img {
+        filter: contrast(1) !important;
+      }
+    }
+  }
+}
+
+.btn-active {
+  color: var(--black) !important;
+  transform: scale(1);
+  animation-name: example;
+  animation-duration: 0.5s;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: black !important;
+  }
+  .filetimgdiv {
+    span {
+      img {
+        filter: contrast(1) !important;
+      }
+    }
+  }
+}
+@keyframes example {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 @media only screen and (max-width: 600px) {

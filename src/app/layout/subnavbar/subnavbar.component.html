@@ -4,9 +4,9 @@
       <section class="subnavbarmainsection">
         <swiper [config]="swiperConfig" class="mySwiper pt-3">
 
-          <ng-template swiperSlide *ngFor="let data of this.filterData">
+          <ng-template class="ch" swiperSlide *ngFor="let data of this.filterData">
             <div class="sidercard">
-              <button class="btn " >
+              <button class="btn">
                 <div class="filetimgdiv">
                   <span>
                     <img width="24px" height="24px" src="{{data.img}}" alt="">

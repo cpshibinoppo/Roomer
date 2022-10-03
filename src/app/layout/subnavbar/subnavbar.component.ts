@@ -25,6 +25,7 @@ export class SubnavbarComponent implements OnInit {
   ngOnInit(): void {
     $(document).ready(function () {
       $('.btn').click(function () {
+        $('.ch').removeClass('ch');
         $('.btn').removeClass('btn-active').addClass('inactive');
         $(this).removeClass('inactive').addClass('btn-active');
       });
@@ -33,6 +34,7 @@ export class SubnavbarComponent implements OnInit {
   swiperConfig: any = {
     slidesPerView: 'auto',
     navigation: true,
+    mousewheelControl: false,
     slidesPerGroup: 10,
     spaceBetween: 40,
   };
