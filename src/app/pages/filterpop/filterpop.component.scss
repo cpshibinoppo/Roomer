@@ -469,6 +469,9 @@ footer {
   .propercon {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+  .filterpop {
+    height: 100% !important;
+  }
 }
 
 @media only screen and (min-width: 600px) {
