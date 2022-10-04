@@ -33,4 +33,12 @@ export class PhnavbarpopupComponent implements OnInit {
       this.guests.adults = 1;
     }
   }
+  subshow(check:any){
+if (check == 'where'){
+  $('.whereshowdiv').css('display', 'block');
+  $('.gust').css('display', 'none');
+
+
+}
+  }
 }
