@@ -31,4 +31,10 @@ export class HomeComponent implements OnInit {
       this.overlayid.classList.add('overlaylogin');
     }
   }
+  showfilterpopupfun(){
+    document.getElementById('filterpopupfun')!.style.display = 'block';
+  }
+  hidefilterpopupfun(){
+    document.getElementById('filterpopupfun')!.style.display = 'none';
+  }
 }

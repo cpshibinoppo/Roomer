@@ -56,7 +56,7 @@ header {
 }
 .consection {
   padding: 20px 24px;
-  // padding-bottom: 12rem;
+  padding-bottom: 2rem;
 }
 .typeplacemaindiv {
   padding-bottom: 1.5rem;
@@ -170,6 +170,7 @@ header {
     }
     .roombedcardbtndiv {
       display: flex;
+      overflow-y: auto;
       .btnmain {
         display: inline-block;
         padding-right: 10px;
@@ -239,7 +240,7 @@ header {
   }
   .propercon {
     display: grid !important;
-    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, auto) !important;
     gap: 16px !important;
     .propertycardmaindivcard {
@@ -445,4 +446,46 @@ footer {
       color: var(--white) !important;
     }
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .typeplaceselect {
+    grid-template-columns: repeat(
+      var(--filter-column_numbersub, 1),
+      1fr
+    ) !important;
+  }
+  .propercon {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .typeplaceselect {
+    grid-template-columns: repeat(
+      var(--filter-column_numbersub, 1),
+      1fr
+    ) !important;
+  }
+  .propercon {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .typeplaceselect {
+    grid-template-columns: repeat(
+      var(--filter-column_number, 1),
+      1fr
+    ) !important;
+  }
+  .propercon {
+    grid-template-columns: repeat(4, 1fr) !important ;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
 }

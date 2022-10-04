@@ -270,4 +270,7 @@ export class NavbarComponent implements OnInit {
     this.navbarloiginsection.style.display = 'none';
     this.homecom.loginandsighshowfn();
   }
+  showfliter(){
+    this.homecom.showfilterpopupfun();
+  }
 }

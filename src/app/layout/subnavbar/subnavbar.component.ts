@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { HomeComponent } from 'src/app/pages/home/home.component';
 import filterdata from './filterdetails.json';
 import { SwiperComponent } from 'swiper/angular';
 import $ from 'jquery';
@@ -20,7 +21,7 @@ interface filterData {
 })
 export class SubnavbarComponent implements OnInit {
   filterData: filterData[] = filterdata;
-  constructor() {}
+  constructor(public homecom:HomeComponent) {}
   @ViewChild('swiper', { static: false }) swiper?: SwiperComponent;
   ngOnInit(): void {
     $(document).ready(function () {
@@ -43,4 +44,7 @@ export class SubnavbarComponent implements OnInit {
       },
     },
   };
+  showfliter(){
+    this.homecom.showfilterpopupfun();
+  }
 }
