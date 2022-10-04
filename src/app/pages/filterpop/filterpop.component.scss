@@ -59,7 +59,7 @@ header {
   padding-bottom: 12rem;
 }
 .typeplacemaindiv {
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid rgb(235, 235, 235);
   h2 {
     font-size: 1.4em;
@@ -67,9 +67,16 @@ header {
     margin: 0;
     font-weight: 500;
   }
+  p {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: var(--text-size);
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
   .typeplaceselect {
     display: inline-grid;
-    grid-template-columns: auto auto auto;
     gap: 10px 50px;
     width: 100%;
     grid-template-columns: repeat(var(--filter-column_number, 1), 1fr);
@@ -222,6 +229,8 @@ header {
   }
 }
 .propertymaindiv {
+  border-bottom: 1px solid rgb(235, 235, 235);
+  padding-bottom: 1.5rem;
   h2 {
     font-size: 1.4em;
     line-height: inherit;
@@ -284,4 +293,13 @@ header {
   to {
     transform: scale(1);
   }
+}
+.amenitiesseclect {
+  gap: 20px 50px !important;
+}
+.showmorelink {
+  color: rgb(34, 34, 34);
+  font-size: var(--text-size);
+  font-weight: 600;
+  line-height: 20px;
 }
