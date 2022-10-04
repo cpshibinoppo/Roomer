@@ -1,0 +1,491 @@
+.filterpop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  z-index: 5;
+  background: transparent;
+  top: 45px;
+}
+.miandiv {
+  width: 100%;
+  max-width: 780px;
+  border-radius: 12px;
+  height: 650px;
+  background: var(--white);
+  box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
+  overflow-y: auto;
+}
+header {
+  padding: 15px 24px 0 24px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: var(--white);
+  border-bottom: 1px solid rgb(235, 235, 235);
+  .closebtnandheadingdiv {
+    display: flex;
+    align-items: center;
+    button {
+      background: transparent;
+      border: none;
+      border-radius: 50%;
+      padding: 2.5px;
+      height: 25px;
+      width: 25px;
+      transition: all 0.3s ease;
+      i {
+        font-size: 20px;
+      }
+      &:hover {
+        background: var(--icon-bacground);
+      }
+    }
+    h1 {
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+.consection {
+  padding: 20px 24px;
+  padding-bottom: 2rem;
+}
+.typeplacemaindiv {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  h2 {
+    font-size: 1.4em;
+    line-height: inherit;
+    margin: 0;
+    font-weight: 500;
+  }
+  p {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: var(--text-size);
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  .typeplaceselect {
+    display: inline-grid;
+    gap: 10px 50px;
+    width: 100%;
+    grid-template-columns: repeat(var(--filter-column_number, 1), 1fr);
+    .typecard {
+      display: flex;
+      &:hover {
+        + .checkboxdiv {
+          span {
+            border-color: red;
+          }
+        }
+      }
+      .checkboxdiv {
+        margin-right: 16px !important;
+        span {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          padding: 0;
+          input {
+            position: absolute;
+            opacity: 0;
+          }
+          span {
+            display: inline-block;
+            border: 1px solid rgb(176, 176, 176);
+            height: 24px;
+            width: 24px;
+            background: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 4px;
+            overflow: hidden;
+            vertical-align: top;
+            transition: border 0.3s ease;
+            span {
+              display: block;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              height: 100%;
+              margin-top: 2px;
+              margin-left: 3px;
+              background: transparent;
+              border: none;
+              img {
+                display: block;
+                height: 16px;
+                width: 16px;
+              }
+            }
+          }
+        }
+      }
+      .typecardtext {
+        cursor: pointer;
+        .maintext {
+          color: rgb(34, 34, 34);
+          font-size: var(--sublineheight);
+          line-height: 20px;
+        }
+        .subtext {
+          color: rgb(113, 113, 113);
+          font-size: var(--subtext);
+          line-height: var(--lineheight);
+          word-break: break-word !important;
+        }
+      }
+    }
+  }
+}
+.typecard:hover .spancheck {
+  border: 1px solid black !important;
+}
+.activecheckbox {
+  background: rgb(34, 34, 34) !important;
+}
+.roomandbedsmaindiv {
+  border-bottom: 1px solid rgb(235, 235, 235);
+  padding-bottom: 1.5rem;
+  h2 {
+    font-size: 1.4em;
+    line-height: inherit;
+    margin: 0;
+    font-weight: 500;
+  }
+  .roombedcarddiv {
+    p {
+      font-size: var(--text-size);
+      line-height: 20px;
+      color: var(--light-color);
+    }
+    .roombedcardbtndiv {
+      display: flex;
+      overflow-y: auto;
+      .btnmain {
+        display: inline-block;
+        padding-right: 10px;
+        padding: 4px;
+        padding-bottom: 4px;
+        button {
+          background: rgb(255, 255, 255);
+          outline: none;
+          border: 1px solid rgb(221, 221, 221);
+          color: rgb(34, 34, 34);
+          position: relative;
+          padding: 10px 20px;
+          border-radius: 30px;
+          min-width: 59px;
+          line-height: var(--sublineheight);
+          transition: all 0.4s ease-in-out;
+          &:hover {
+            border-color: var(--black);
+          }
+          span {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: var(--lineheight);
+            width: 58px;
+          }
+        }
+      }
+    }
+  }
+}
+.roomactive {
+  background: rgb(34, 34, 34) !important;
+  border: rgb(34, 34, 34) !important;
+  span {
+    color: rgb(255, 255, 255) !important;
+  }
+}
+.fistbtn:nth-child(1) button {
+  background: rgb(34, 34, 34) !important;
+  border: rgb(34, 34, 34) !important;
+  span {
+    color: rgb(255, 255, 255) !important;
+  }
+}
+.fistbtnbeds:nth-child(1) button {
+  background: rgb(34, 34, 34) !important;
+  border: rgb(34, 34, 34) !important;
+  span {
+    color: rgb(255, 255, 255) !important;
+  }
+}
+.fistbtnbat:nth-child(1) button {
+  background: rgb(34, 34, 34) !important;
+  border: rgb(34, 34, 34) !important;
+  span {
+    color: rgb(255, 255, 255) !important;
+  }
+}
+.propertymaindiv {
+  border-bottom: 1px solid rgb(235, 235, 235);
+  padding-bottom: 1.5rem;
+  h2 {
+    font-size: 1.4em;
+    line-height: inherit;
+    margin: 0;
+    font-weight: 500;
+  }
+  .propercon {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto) !important;
+    gap: 16px !important;
+    .propertycardmaindivcard {
+      .procardbtn {
+        border: 1px solid rgba(176, 176, 176, 0.5);
+        background: rgb(255, 255, 255);
+        outline: none;
+        padding: 0;
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease;
+        &:hover {
+          border-color: black;
+        }
+        .procardmain {
+          .procard {
+            padding: 16px;
+            display: flex;
+            flex-direction: column !important;
+            justify-content: space-between;
+            min-height: 120px;
+            width: 100%;
+            height: 100%;
+            img {
+              width: 32px;
+              height: 32px;
+            }
+            .protext {
+              font-size: var(--text-size);
+              line-height: 20px;
+              font-weight: 600;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.propertyactive {
+  border-color: var(--black) !important;
+  background-color: rgb(247, 247, 247) !important;
+  animation-name: buttonclick;
+  animation-duration: 0.3s;
+}
+@keyframes buttonclick {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.amenitiesseclect {
+  gap: 20px 50px !important;
+}
+.showmorelink {
+  color: rgb(34, 34, 34);
+  font-size: var(--text-size);
+  font-weight: 600;
+  line-height: 20px;
+}
+.bookingopmiandiv {
+  h2 {
+    font-size: 1.4em;
+    line-height: inherit;
+    margin: 0;
+    font-weight: 500;
+  }
+  .bookingcardmain {
+    .bookingcard {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-right: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .bookingcardtext {
+        .bookingmaintext {
+          color: rgb(34, 34, 34);
+          font-weight: 400;
+          font-size: var(--text-color);
+          line-height: 20px;
+        }
+        .bookingsubtext {
+          padding-top: 4px;
+          font-size: 14px;
+          line-height: var(--sublineheight);
+          font-weight: 400;
+          color: rgb(113, 113, 113);
+        }
+      }
+      .bookingbuttondiv {
+        min-width: 50px;
+        margin-left: 12px;
+        button {
+          border-radius: 32px;
+          border: 1px solid rgb(176, 176, 176);
+          background-color: rgb(176, 176, 176);
+          outline: none;
+          width: 48px;
+          min-width: 48px;
+          position: relative;
+          height: 32px;
+          div {
+            background: rgb(255, 255, 255);
+            border-radius: 50%;
+            border: 2px solid rgb(176, 176, 176);
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            left: -1px;
+            top: -1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate3d(0px, 0px, 0px);
+            transition: -ms-transform 250ms ease-in-out 0s,
+              -webkit-transform 250ms ease-in-out 0s,
+              transform 250ms ease-in-out 0s !important;
+            img {
+              display: none;
+              width: 12px;
+              height: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.bookingactive {
+  background-color: rgb(34, 34, 34) !important;
+  border-color: rgb(34, 34, 34) !important;
+  div {
+    border-color: rgb(34, 34, 34) !important;
+    transform: translate3d(16px, 0px, 0px) !important;
+    img {
+      display: block !important;
+    }
+  }
+}
+.footersection {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+}
+footer {
+  display: flex;
+  flex: 0 0 auto;
+  border-top: 1px solid rgb(235, 235, 235);
+  padding: 16px 24px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-color);
+  line-height: 20px;
+  font-weight: 600;
+  button {
+    margin: 0px -10px;
+    text-align: center;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    transition: all 0.5s ease;
+    border: none;
+    background: transparent;
+    font-weight: 500;
+    text-decoration: underline;
+    &:hover {
+      border: none !important;
+      background: var(--hover-background) !important;
+      color: var(--black) !important;
+    }
+    &:active {
+      transform: scale(0.75) !important;
+      border: none !important;
+      background: var(--black) !important;
+      color: var(--white) !important;
+    }
+  }
+  a {
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 14px 24px;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    background: var(--text-color);
+    color: var(--white);
+    transform: scale(1);
+    &:hover {
+      border: none !important;
+      background: var(--black) !important;
+      color: var(--white) !important;
+    }
+    &:active {
+      transform: scale(0.75) !important;
+      border: none !important;
+      background: var(--black) !important;
+      color: var(--white) !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .typeplaceselect {
+    grid-template-columns: repeat(
+      var(--filter-column_numbersub, 1),
+      1fr
+    ) !important;
+  }
+  .propercon {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .typeplaceselect {
+    grid-template-columns: repeat(
+      var(--filter-column_numbersub, 1),
+      1fr
+    ) !important;
+  }
+  .propercon {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .typeplaceselect {
+    grid-template-columns: repeat(
+      var(--filter-column_number, 1),
+      1fr
+    ) !important;
+  }
+  .propercon {
+    grid-template-columns: repeat(4, 1fr) !important ;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

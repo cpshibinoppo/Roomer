@@ -8,6 +8,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { LogoinandsighupComponent } from './pages/logoinandsighup/logoinandsighup.component';
 import { SubnavbarComponent } from './layout/subnavbar/subnavbar.component';
 import { SwiperModule } from 'swiper/angular';
+import { FilterpopComponent } from './pages/filterpop/filterpop.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SwiperModule } from 'swiper/angular';
     HomeComponent,
     NavbarComponent,
     LogoinandsighupComponent,
-    SubnavbarComponent
+    SubnavbarComponent,
+    FilterpopComponent
   ],
   imports: [
     BrowserModule,

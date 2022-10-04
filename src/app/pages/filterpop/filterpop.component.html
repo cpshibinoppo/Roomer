@@ -1,0 +1,299 @@
+<section class="filterpop">
+  <div class="miandiv">
+    <header class="pb-3">
+      <div class="closebtnandheadingdiv">
+        <button (click)="hidefillter()">
+          <span><i class='bx bx-x'></i></span>
+        </button>
+        <h1>
+          <div>Filters</div>
+        </h1>
+      </div>
+    </header>
+    <section class="consection">
+      <div>
+        <div class="pricerangemaindiv">
+          <div class="pricetext">
+            <h2>Price range</h2>
+            <p>The average nightly price is ₹4,115</p>
+          </div>
+        </div>
+        <div class="typeplacemaindiv">
+          <h2>Type of place</h2>
+          <div class="typeplaceselect mt-4">
+            <div class="typecard" (click)="tickfun('ent')">
+              <div class="checkboxdiv">
+                <span>
+                  <input type="checkbox">
+                  <span class="spancheck ent">
+                    <span>
+                      <img src="../../../assets/img/tick.svg" alt="">
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="typecardtext">
+                <div class="maintext">Entire place</div>
+                <div class="subtext">A place all to yourseif</div>
+              </div>
+            </div>
+            <div class="typecard" (click)="tickfun('pri')">
+              <div class="checkboxdiv">
+                <span>
+                  <input type="checkbox">
+                  <span class="spancheck pri">
+                    <span>
+                      <img src="../../../assets/img/tick.svg" alt="">
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="typecardtext">
+                <div class="maintext">Private room</div>
+                <div class="subtext">Your own room in a home or a hotel, plus some shared common spaces</div>
+              </div>
+            </div>
+            <div class="typecard" (click)="tickfun('sha')">
+              <div class="checkboxdiv">
+                <span>
+                  <input type="checkbox">
+                  <span class="spancheck sha">
+                    <span>
+                      <img src="../../../assets/img/tick.svg" alt="">
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="typecardtext">
+                <div class="maintext">Shared room</div>
+                <div class="subtext">A sleeping space and common areas that may be shared with others</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="roomandbedsmaindiv pt-4">
+          <h2>Rooms and beds</h2>
+          <div class="roombedcarddiv pt-3">
+            <p>Bedrooms</p>
+            <div class="roombedcardbtndiv">
+              <div class="btnmain fistbtn btnmainbedroom" *ngFor="let number of this.numberarraty">
+                <button class="btnn" (click)="roomfun()">
+                  <span>{{number}}</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="roombedcarddiv pt-3">
+            <p>Beds</p>
+            <div class="roombedcardbtndiv">
+              <div class="btnmain fistbtnbeds btnmainbeds" *ngFor="let number of this.numberarraty">
+                <button class="btnbeds" (click)="roomfun()">
+                  <span>{{number}}</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="roombedcarddiv pt-3">
+            <p>Bathrooms</p>
+            <div class="roombedcardbtndiv">
+              <div class="btnmain fistbtnbat btnmainbat" *ngFor="let number of this.numberarraty">
+                <button class="btnbat" (click)="roomfun()">
+                  <span>{{number}}</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="propertymaindiv pt-3">
+          <h2>property type</h2>
+          <div class="propercon pt-3">
+            <div class="propertycardmaindivcard">
+              <button class="procardbtn">
+                <div class="procardmain">
+                  <div class="procard">
+                    <img src="../../../assets/img/filteriocns/homeicon.jpg" alt="">
+                    <div>
+                      <div class="protext">House</div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="propertycardmaindivcard">
+              <button class="procardbtn">
+                <div class="procardmain">
+                  <div class="procard">
+                    <img src="../../../assets/img/filteriocns/icon.jpg" alt="">
+                    <div>
+                      <div class="protext">Flat</div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="propertycardmaindivcard">
+              <button class="procardbtn">
+                <div class="procardmain">
+                  <div class="procard">
+                    <img src="../../../assets/img/filteriocns/guesthouseicon.jpg" alt="">
+                    <div>
+                      <div class="protext">Guest house</div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="propertycardmaindivcard">
+              <button class="procardbtn">
+                <div class="procardmain">
+                  <div class="procard">
+                    <img src="../../../assets/img/filteriocns/hotalicon.jpg" alt="">
+                    <div>
+                      <div class="protext">Hotal</div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="typeplacemaindiv pt-3">
+          <h2>Amenities</h2>
+          <p>Essentials</p>
+          <div class="typeplaceselect amenitiesseclect mt-1">
+            <div class="typecard" (click)="tickfun('ent')">
+              <div class="checkboxdiv">
+                <span>
+                  <input type="checkbox">
+                  <span class="spancheck ent">
+                    <span>
+                      <img src="../../../assets/img/tick.svg" alt="">
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="typecardtext">
+                <div class="maintext">Wifi</div>
+              </div>
+            </div>
+            <div class="typecard" (click)="tickfun('pri')">
+              <div class="checkboxdiv">
+                <span>
+                  <input type="checkbox">
+                  <span class="spancheck pri">
+                    <span>
+                      <img src="../../../assets/img/tick.svg" alt="">
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="typecardtext">
+                <div class="maintext">Kitchen</div>
+              </div>
+            </div>
+            <div class="typecard" (click)="tickfun('sha')">
+              <div class="checkboxdiv">
+                <span>
+                  <input type="checkbox">
+                  <span class="spancheck sha">
+                    <span>
+                      <img src="../../../assets/img/tick.svg" alt="">
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="typecardtext">
+                <div class="maintext">Washing machine</div>
+              </div>
+            </div>
+            <div class="typecard" (click)="tickfun('sha')">
+              <div class="checkboxdiv">
+                <span>
+                  <input type="checkbox">
+                  <span class="spancheck sha">
+                    <span>
+                      <img src="../../../assets/img/tick.svg" alt="">
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="typecardtext">
+                <div class="maintext">Dryer</div>
+              </div>
+            </div>
+            <div class="typecard" (click)="tickfun('sha')">
+              <div class="checkboxdiv">
+                <span>
+                  <input type="checkbox">
+                  <span class="spancheck sha">
+                    <span>
+                      <img src="../../../assets/img/tick.svg" alt="">
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="typecardtext">
+                <div class="maintext">Air conditioning</div>
+              </div>
+            </div>
+            <div class="typecard" (click)="tickfun('sha')">
+              <div class="checkboxdiv">
+                <span>
+                  <input type="checkbox">
+                  <span class="spancheck sha">
+                    <span>
+                      <img src="../../../assets/img/tick.svg" alt="">
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="typecardtext">
+                <div class="maintext">Heating</div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <a class="showmorelink" href="">Show more</a>
+          </div>
+        </div>
+        <div class="bookingopmiandiv pt-3">
+          <h2>Booking options</h2>
+          <div class="bookingcardmain pt-3">
+            <div class="bookingcard">
+              <div class="bookingcardtext">
+                <div class="bookingmaintext">Instant Book</div>
+                <div class="bookingsubtext">Listings you can book without waiting for host approval</div>
+              </div>
+              <div class="bookingbuttondiv">
+                <button class="bookingbtn">
+                  <div>
+                    <img src="../../../assets/img/subtick.svg" alt="">
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="bookingcard">
+              <div class="bookingcardtext">
+                <div class="bookingmaintext">Self check-in</div>
+                <div class="bookingsubtext">Easy access to the property once you arrive</div>
+              </div>
+              <div class="bookingbuttondiv">
+                <button class="bookingbtn">
+                  <div>
+                    <img src="../../../assets/img/subtick.svg" alt="">
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footersection">
+      <footer>
+        <button>Clear all</button>
+        <a href="">Show 694 homes</a>
+      </footer>
+    </div>
+  </div>
+</section>
