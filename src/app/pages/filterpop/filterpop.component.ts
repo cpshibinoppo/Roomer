@@ -14,6 +14,9 @@ export class FilterpopComponent implements OnInit {
       $('.propertycardmaindivcard button').click(function () {
         $(this).toggleClass('propertyactive');
       });
+      $('.bookingcardmain button').click(function () {
+        $(this).toggleClass('bookingactive');
+      });
     });
   }
   tickfun(check: any) {

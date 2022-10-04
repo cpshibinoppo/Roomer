@@ -303,3 +303,83 @@ header {
   font-weight: 600;
   line-height: 20px;
 }
+.bookingopmiandiv {
+  h2 {
+    font-size: 1.4em;
+    line-height: inherit;
+    margin: 0;
+    font-weight: 500;
+  }
+  .bookingcardmain {
+    .bookingcard {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-right: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .bookingcardtext {
+        .bookingmaintext {
+          color: rgb(34, 34, 34);
+          font-weight: 400;
+          font-size: var(--text-color);
+          line-height: 20px;
+        }
+        .bookingsubtext {
+          padding-top: 4px;
+          font-size: 14px;
+          line-height: var(--sublineheight);
+          font-weight: 400;
+          color: rgb(113, 113, 113);
+        }
+      }
+      .bookingbuttondiv {
+        min-width: 50px;
+        margin-left: 12px;
+        button {
+          border-radius: 32px;
+          border: 1px solid rgb(176, 176, 176);
+          background-color: rgb(176, 176, 176);
+          outline: none;
+          width: 48px;
+          min-width: 48px;
+          position: relative;
+          height: 32px;
+          div {
+            background: rgb(255, 255, 255);
+            border-radius: 50%;
+            border: 2px solid rgb(176, 176, 176);
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            left: -1px;
+            top: -1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate3d(0px, 0px, 0px);
+            transition: -ms-transform 250ms ease-in-out 0s,
+              -webkit-transform 250ms ease-in-out 0s,
+              transform 250ms ease-in-out 0s !important;
+            img {
+              display: none;
+              width: 12px;
+              height: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.bookingactive {
+  background-color: rgb(34, 34, 34) !important;
+  border-color: rgb(34, 34, 34) !important;
+  div {
+    border-color: rgb(34, 34, 34) !important;
+    transform: translate3d(16px, 0px, 0px) !important;
+    img {
+      display: block !important;
+    }
+  }
+}
