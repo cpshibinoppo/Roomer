@@ -8,6 +8,9 @@
   z-index: 5;
   background: transparent;
   top: 45px;
+  transform: translateY(0px);
+  animation-name: upanddown;
+  animation-duration: 0.3s;
 }
 .miandiv {
   width: 100%;
@@ -295,6 +298,14 @@ header {
     transform: scale(1);
   }
 }
+@keyframes upanddown {
+  from {
+    transform: translateY(700px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
 .amenitiesseclect {
   gap: 20px 50px !important;
 }
@@ -470,6 +481,9 @@ footer {
   .propercon {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+  .filterpop {
+    height: 100% !important;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -481,6 +495,9 @@ footer {
   }
   .propercon {
     grid-template-columns: repeat(4, 1fr) !important ;
+  }
+  .filterpop {
+    height: auto !important;
   }
 }
 
