@@ -3,11 +3,11 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  height: auto;
   align-items: center;
-  // height: -webkit-fill-available;
   z-index: 5;
   background: transparent;
-  top: 15px;
+  top: 45px;
 }
 .miandiv {
   width: 100%;
@@ -56,7 +56,7 @@ header {
 }
 .consection {
   padding: 20px 24px;
-  padding-bottom: 12rem;
+  // padding-bottom: 12rem;
 }
 .typeplacemaindiv {
   padding-bottom: 1.5rem;
@@ -380,6 +380,69 @@ header {
     transform: translate3d(16px, 0px, 0px) !important;
     img {
       display: block !important;
+    }
+  }
+}
+.footersection {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+}
+footer {
+  display: flex;
+  flex: 0 0 auto;
+  border-top: 1px solid rgb(235, 235, 235);
+  padding: 16px 24px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-color);
+  line-height: 20px;
+  font-weight: 600;
+  button {
+    margin: 0px -10px;
+    text-align: center;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    transition: all 0.5s ease;
+    border: none;
+    background: transparent;
+    font-weight: 500;
+    text-decoration: underline;
+    &:hover {
+      border: none !important;
+      background: var(--hover-background) !important;
+      color: var(--black) !important;
+    }
+    &:active {
+      transform: scale(0.75) !important;
+      border: none !important;
+      background: var(--black) !important;
+      color: var(--white) !important;
+    }
+  }
+  a {
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 14px 24px;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    background: var(--text-color);
+    color: var(--white);
+    transform: scale(1);
+    &:hover {
+      border: none !important;
+      background: var(--black) !important;
+      color: var(--white) !important;
+    }
+    &:active {
+      transform: scale(0.75) !important;
+      border: none !important;
+      background: var(--black) !important;
+      color: var(--white) !important;
     }
   }
 }
