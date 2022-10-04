@@ -1,0 +1,102 @@
+.phnavbarpopup {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  z-index: 5;
+  background: transparent;
+  top: 45px;
+  transform: translateY(0px);
+  animation-name: upanddown;
+  animation-duration: 0.3s;
+}
+.miandiv {
+  width: 100%;
+  max-width: 780px;
+  border-radius: 12px;
+  height: 650px;
+  background: var(--hover-background);
+  box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
+  overflow-y: auto;
+}
+header {
+  padding: 15px 24px 0 24px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: var(--hover-background);
+  .closebtnandheadingdiv {
+    display: flex;
+    align-items: center;
+    .closebtn {
+      display: inline-flex;
+      border-radius: 50%;
+      outline: none;
+      padding: 2.5px;
+      height: 32px;
+      width: 32px;
+      transition: all 0.3s ease;
+      border: 1px solid rgb(176, 176, 176);
+      background-color: rgba(255, 255, 255, 0.9);
+      align-items: center;
+      justify-content: center;
+      span {
+        margin-top: -3px;
+        img {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+    .headerbtnmaindiv {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      button {
+        border: none;
+        background: transparent;
+        font-size: var(--text-size);
+        line-height: 20px;
+        font-weight: 500;
+        padding: 5px 10px 0px;
+        color: rgb(113, 113, 113);
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-right: 0;
+      }
+      .headerline {
+        position: absolute;
+        left: 10px;
+        width: 40.6625px;
+        background: var(--black);
+        border: 1px solid var(--black);
+        border-radius: 1px;
+        transition: left 0.2s, width 0.2s;
+      }
+    }
+  }
+}
+.headerbutactive {
+  color: var(--black) !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .filterpop {
+    height: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .filterpop {
+    height: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .filterpop {
+    height: auto !important;
+  }
+}
