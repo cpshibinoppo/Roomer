@@ -18,11 +18,11 @@ export class HomeComponent implements OnInit {
   }
   off() {
     document.getElementById('overlay')!.classList.add('overlay');
-    //
   }
   hoff() {
     document.getElementById('overlay')!.classList.remove('overlay');
     this.navbar.restfun();
+    console.log('off');
   }
   loginandsighshowfn() {
     if (this.overlayid.classList.contains('overlaylogin')) {

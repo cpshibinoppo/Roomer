@@ -1,4 +1,4 @@
-<section class="navsection">
+<section class="navsection" id="navsection">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12">
@@ -122,32 +122,30 @@
                   <i class='bx bx-x'></i>
                 </button>
               </div>
-              <div class="line" id="line1"></div>
+              <div class="line"></div>
             </div>
             <div style="display: contents;" id="checkinout">
               <div class="col-2 d-flex justify-content-between position-relative">
-                <div class="checkindiv" id="checkindiv" (mouseover)='over(2)' (mouseout)='out(2)'
-                  (click)="activefun('checkin')">
+                <div class="checkindiv" id="checkindiv" (click)="activefun('checkin')">
                   <div class="w-100 ms-4" style="z-index: 2;">
                     <div class="hetext">Check in</div>
                     <div>Add dates</div>
                   </div>
                 </div>
-                <div class="line" id="line2"></div>
+                <div class="line"></div>
               </div>
               <div class="col-2 d-flex justify-content-between position-relative">
-                <div class="checkoutdiv" id="checkoutdiv" (mouseover)='over(3)' (mouseout)='out(3)'
-                  (click)="activefun('checkout')">
+                <div class="checkoutdiv" id="checkoutdiv" (click)="activefun('checkout')">
                   <div class="ms-4">
                     <div class="hetext">Check out</div>
                     <div>Add dates</div>
                   </div>
                 </div>
-                <div class="line" id="line3"></div>
+                <div class="line"></div>
               </div>
             </div>
             <div class="col-4  justify-content-between position-relative experienceshowclass" id="experienceshowid">
-              <div class="datediv" id="datediv" (mouseover)='over(5)' (mouseout)='out(5)' (click)="activefun('date')">
+              <div class="datediv" id="datediv" (click)="activefun('date')">
                 <div class="ms-4">
                   <div class="hetext">Date</div>
                   <div>Add dates</div>
@@ -155,7 +153,7 @@
               </div>
             </div>
             <div class="col-4 d-flex justify-content-between position-relative">
-              <div class="whodiv" id="whodiv" (mouseover)='over(4)' (mouseout)='out(4)' (click)="activefun('who')">
+              <div class="whodiv" id="whodiv" (click)="activefun('who')">
                 <div class="ms-4">
                   <div class="hetext">Who</div>
                   <div>Add guests</div>
@@ -308,7 +306,7 @@
     </div>
   </div>
 </section>
-<section class="subnavbarsection">
+<section class="subnavbarsection" id="subnavbarsection">
   <app-subnavbar></app-subnavbar>
 </section>
 <section class="navbarloiginsection" id="navbarloiginsection">

@@ -10,6 +10,8 @@ import { SubnavbarComponent } from './layout/subnavbar/subnavbar.component';
 import { SwiperModule } from 'swiper/angular';
 import { FilterpopComponent } from './pages/filterpop/filterpop.component';
 import { PhnavbarpopupComponent } from './layout/phnavbarpopup/phnavbarpopup.component';
+import { HotalcardComponent } from './layout/hotalcard/hotalcard.component';
+import { HotallistComponent } from './pages/hotallist/hotallist.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { PhnavbarpopupComponent } from './layout/phnavbarpopup/phnavbarpopup.com
     LogoinandsighupComponent,
     SubnavbarComponent,
     FilterpopComponent,
-    PhnavbarpopupComponent
+    PhnavbarpopupComponent,
+    HotalcardComponent,
+    HotallistComponent,
   ],
   imports: [
     BrowserModule,

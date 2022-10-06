@@ -16,9 +16,6 @@ export class NavbarComponent implements OnInit {
   @ViewChild('search') search: ElementRef<HTMLInputElement> | undefined;
   staysid: any;
   experienceid: any;
-  line1: any;
-  line2: any;
-  line3: any;
   where: any;
   checkin: any;
   checkout: any;
@@ -44,6 +41,8 @@ export class NavbarComponent implements OnInit {
   checkinandout: any;
   experienceshowid: any;
   navbarloiginsection: any;
+  subnavbar:any;
+  navsection:any;
   constructor(public homecom: HomeComponent, private renderer: Renderer2) {
     this.renderer.listen('window', 'click', (e: Event) => {
       if (this.menuBtnClick == false) {
@@ -76,6 +75,8 @@ export class NavbarComponent implements OnInit {
     this.checkinandout = document.getElementById('checkinout');
     this.experienceshowid = document.getElementById('experienceshowid');
     this.navbarloiginsection = document.getElementById('navbarloiginsection');
+    this.subnavbar = document.getElementById('subnavbarsection');
+    this.navsection = document.getElementById('navsection');
   }
   showsubnavbar(check: any) {
     this.menuBtnClick = true;
@@ -84,6 +85,8 @@ export class NavbarComponent implements OnInit {
     const navbar = document.getElementById('navbar');
     const test = document.getElementById('test');
     this.mapmaindiv.style.background = 'var(--icon-bacground)';
+    this.subnavbar.style.opacity = 0;
+    this.navsection.style.boxShadow = 'none';
     this.homecom.off();
     navbar!.style.display = 'none';
     sub!.style.display = 'block';
@@ -96,7 +99,6 @@ export class NavbarComponent implements OnInit {
     if (check == 'where') {
       this.where?.classList.add('active');
       this.mapshow = true;
-      // this.clearicon = true;
       this.search!.nativeElement.focus();
       aciveclass?.classList.remove('active');
     } else if (check == 'week') {
@@ -109,33 +111,11 @@ export class NavbarComponent implements OnInit {
       this.who?.classList.add('active');
     }
   }
-  over(n: any) {
-    this.line1 = document.getElementById('line1');
-    this.line2 = document.getElementById('line2');
-    this.line3 = document.getElementById('line3');
-    // if (n == 2) {
-    //   this.line1!.style.display = 'none';
-    // } else if (n == 3) {
-    //   this.line2!.style.display = 'none';
-    // } else if (n == 4) {
-    //   this.line3!.style.display = 'none';
-    // }
-  }
-  out(n: any) {
-    // this.line1!.style.display = 'block';
-    // this.line2!.style.display = 'block';
-    // this.line3!.style.display = 'block';
-  }
 
   activefun(check: any) {
     this.menuBtnClick = true;
     var aciveclass = document.querySelector('.active');
     this.mapmaindiv.style.background = 'var(--icon-bacground)';
-    // if (innerWidth < 980) {
-    //   this.searchiconshow = false;
-    // } else {
-    //   this.searchiconshow = true;
-    // }
     if (check == 'where') {
       this.where?.classList.add('active');
       this.mapshow = true;
@@ -210,6 +190,8 @@ export class NavbarComponent implements OnInit {
     navbar!.style.display = 'block';
     sub!.style.display = 'none';
     test!.style.display = 'none ';
+    this.subnavbar.style.opacity = 1;
+    this.navsection.style.boxShadow = 'rgb(0 0 0 / 16%) 0px 1px 4px';
   }
   showsubuser() {
     this.menuBtnClick = true;
