@@ -15,7 +15,6 @@
 .miandiv {
   width: 100%;
   max-width: 780px;
-  border-radius: 12px;
   height: inherit;
   background: var(--hover-background);
   box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
@@ -293,6 +292,87 @@ header {
   cursor: no-drop;
 }
 /* end guest*/
+.clearandsearchmiandiv {
+  animation: fadeInUp ease 0.7s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  position: sticky;
+  bottom: 0;
+}
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+footer {
+  background: #fff;
+  display: flex;
+  flex: 0 0 auto;
+  border-top: 1px solid rgb(235, 235, 235);
+  padding: 16px 24px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-color);
+  line-height: 20px;
+  font-weight: 600;
+  button {
+    margin: 0px -10px;
+    text-align: center;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    transition: all 0.5s ease;
+    border: none;
+    background: transparent;
+    font-weight: 500;
+    text-decoration: underline;
+    &:hover {
+      border: none !important;
+      background: var(--hover-background) !important;
+      color: var(--black) !important;
+    }
+    &:active {
+      transform: scale(0.75) !important;
+      border: none !important;
+      background: var(--black) !important;
+      color: var(--white) !important;
+    }
+  }
+  a {
+    display: flex;
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 14px 24px;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    background: var(--linear-background);
+    color: var(--white);
+    transform: scale(1);
+    .imgspan {
+      margin-right: 10px;
+      width: 16px;
+      height: 16px;
+    }
+    &:hover {
+      border: none !important;
+      background: var(--black) !important;
+      color: var(--white) !important;
+    }
+    &:active {
+      transform: scale(0.75) !important;
+      border: none !important;
+      background: var(--black) !important;
+      color: var(--white) !important;
+    }
+  }
+}
 
 ::-webkit-scrollbar {
   display: none;
