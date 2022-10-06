@@ -7,7 +7,7 @@ import { NavbarComponent } from 'src/app/layout/navbar/navbar.component';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  @ViewChild(NavbarComponent) child: any;
+  @ViewChild(NavbarComponent) navbar: any;
   constructor() {}
 
   overlayid: any;
@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   }
   hoff() {
     document.getElementById('overlay')!.classList.remove('overlay');
-    this.child.restfun();
+    this.navbar.restfun();
   }
   loginandsighshowfn() {
     if (this.overlayid.classList.contains('overlaylogin')) {

@@ -1,3 +1,4 @@
+import { NavbarComponent } from 'src/app/layout/navbar/navbar.component';
 import { Component, OnInit } from '@angular/core';
 import $ from 'jquery';
 @Component({
@@ -12,7 +13,7 @@ export class PhnavbarpopupComponent implements OnInit {
     infants: 0,
     pets: 0,
   };
-  constructor() {
+  constructor( public navbarcom:NavbarComponent) {
     $(document).ready(function () {
       $('.headerbtnmaindiv button').click(function () {
         var check = $(this).text();
@@ -45,5 +46,8 @@ export class PhnavbarpopupComponent implements OnInit {
       $('.where').css('display', 'block');
       $('.whereshowdiv').css('display', 'none');
     }
+  }
+  hidephnavbar(){
+    this.navbarcom.hidephnavbar();
   }
 }
