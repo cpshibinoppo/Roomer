@@ -1,0 +1,208 @@
+<section class="phnavbarpopup">
+  <div class="miandiv">
+    <header class="pb-3">
+      <div class="closebtnandheadingdiv">
+        <button class="closebtn" (click)="hidephnavbar()">
+          <span><img src="../../../assets/img/closeicon.svg" alt=""></span>
+        </button>
+        <div class="headerbtnmaindiv">
+          <div style="position: relative;">
+            <button class="headerbutactive">Stays</button>
+            <button>Experiences</button>
+            <div class="headerline"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="sectionselect">
+        <div class=" sectionbutmain where">
+          <div class="headbtn">
+            <button (click)="subshow('where')">
+              <span>Where</span>
+              <span class="headbtnsubtext">I'm flexible</span>
+            </button>
+          </div>
+        </div>
+        <div class="whereshowdiv">
+          <h2>
+            <div>Where to?</div>
+          </h2>
+          <div class="searchmaindiv pt-3">
+            <form action="">
+              <label for="">
+                <div class="sarchicondiv">
+                  <img src="../../../assets/img/drakseachicon.svg" alt="">
+                </div>
+                <input type="text" placeholder="Search destinations">
+              </label>
+            </form>
+          </div>
+          <div class="mapshow">
+            <div class="mapshowmaindiv">
+              <div class="mapcardmain">
+                <div class="mapcard">
+                  <button>
+                    <img src="../../../assets/img/map/map1.jpg" alt="">
+                  </button>
+                  <div class="maptextdiv">
+                    I'm flexible
+                  </div>
+                </div>
+              </div>
+              <div class="mapcardmain">
+                <div class="mapcard">
+                  <button>
+                    <img src="../../../assets/img/map/map2.jpg" alt="">
+                  </button>
+                  <div class="maptextdiv">
+                    Europe
+                  </div>
+                </div>
+              </div>
+              <div class="mapcardmain">
+                <div class="mapcard">
+                  <button>
+                    <img src="../../../assets/img/map/map3.jpg" alt="">
+                  </button>
+                  <div class="maptextdiv">
+                    United Kingdom
+                  </div>
+                </div>
+              </div>
+              <div class="mapcardmain">
+                <div class="mapcard">
+                  <button>
+                    <img src="../../../assets/img/map/map4.jpg" alt="">
+                  </button>
+                  <div class="maptextdiv">
+                    Southeast Asia
+                  </div>
+                </div>
+              </div>
+              <div class="mapcardmain">
+                <div class="mapcard">
+                  <button>
+                    <img src="../../../assets/img/map/map5.jpg" alt="">
+                  </button>
+                  <div class="maptextdiv">
+                    Indonesia
+                  </div>
+                </div>
+              </div>
+              <div class="mapcardmain">
+                <div class="mapcard">
+                  <button>
+                    <img src="../../../assets/img/map/map6.jpg" alt="">
+                  </button>
+                  <div class="maptextdiv">
+                    United States
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" sectionbutmain guest pt-3">
+          <div class="headbtn">
+            <button>
+              <span>When</span>
+              <span class="headbtnsubtext">Add dates</span>
+            </button>
+          </div>
+        </div>
+        <div class=" sectionbutmain pt-3">
+          <div class="headbtn">
+            <button (click)="subshow('guest')">
+              <span>Who</span>
+              <span class="headbtnsubtext">Add guests</span>
+            </button>
+          </div>
+        </div>
+        <div class="whosection mt-3">
+          <h2>
+            <div>Who is coming?</div>
+          </h2>
+          <div class="addguestsmaindiv">
+            <div class="subaddguest">
+              <div class="headtextdiv">
+                <h6>Adults</h6>
+                <p>Ages 13 or above</p>
+              </div>
+              <div class="btnmaindiv">
+                <button *ngIf="this.guests.adults !== 0" [disabled]="this.guests.children >= 1"
+                  (click)="this.guests.adults = this.guests.adults - 1"><span><img src="../../../assets/img/minus.svg"
+                      alt=""></span></button>
+                <button class="zero" *ngIf="this.guests.adults == 0" [disabled]="this.guests.adults == 0"><span><img
+                      src="../../../assets/img/minus.svg" alt=""></span></button>
+                <div><span>{{this.guests.adults}}</span></div>
+                <button (click)="this.guests.adults = this.guests.adults + 1"><span><img
+                      src="../../../assets/img/plus.svg" alt=""></span></button>
+              </div>
+            </div>
+            <div class="subaddguest mt-3">
+              <div class="headtextdiv">
+                <h6>Children</h6>
+                <p>Ages 2-12</p>
+              </div>
+              <div class="btnmaindiv">
+                <button *ngIf="this.guests.children !== 0"
+                  (click)="this.guests.children = this.guests.children - 1"><span><img
+                      src="../../../assets/img/minus.svg" alt=""></span></button>
+                <button class="zero" *ngIf="this.guests.children == 0" [disabled]="this.guests.children == 0"><span><img
+                      src="../../../assets/img/minus.svg" alt=""></span></button>
+                <div><span>{{this.guests.children}}</span></div>
+                <button (click)="this.guests.children = this.guests.children + 1;addadults()"><span><img
+                      src="../../../assets/img/plus.svg" alt=""></span></button>
+              </div>
+            </div>
+            <div class="subaddguest mt-3">
+              <div class="headtextdiv">
+                <h6>Infants</h6>
+                <p>Under 2</p>
+              </div>
+              <div class="btnmaindiv">
+                <button *ngIf="this.guests.infants !== 0"
+                  (click)="this.guests.infants = this.guests.infants - 1"><span><img src="../../../assets/img/minus.svg"
+                      alt=""></span></button>
+                <button class="zero" *ngIf="this.guests.infants == 0" [disabled]="this.guests.infants == 0"><span><img
+                      src="../../../assets/img/minus.svg" alt=""></span></button>
+                <div><span>{{this.guests.infants}}</span></div>
+                <button (click)="this.guests.infants = this.guests.infants + 1;addadults()"><span><img
+                      src="../../../assets/img/plus.svg" alt=""></span></button>
+              </div>
+            </div>
+            <div class="subaddguest petdiv mt-3">
+              <div class="headtextdiv">
+                <h6>Pets</h6>
+                <p><a href="">Bringing a service animal?</a></p>
+              </div>
+              <div class="btnmaindiv">
+                <button *ngIf="this.guests.pets !== 0" (click)="this.guests.pets = this.guests.pets - 1"><span><img
+                      src="../../../assets/img/minus.svg" alt=""></span></button>
+                <button class="zero" *ngIf="this.guests.pets == 0" [disabled]="this.guests.pets == 0"><span><img
+                      src="../../../assets/img/minus.svg" alt=""></span></button>
+                <div><span>{{this.guests.pets}}</span></div>
+                <button (click)="this.guests.pets = this.guests.pets + 1;addadults()"><span><img
+                      src="../../../assets/img/plus.svg" alt=""></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="clearandsearchmiandiv pt-2">
+      <footer>
+        <button class="clearbtn">
+          <div>
+            Clear all
+          </div>
+        </button>
+        <a href="">
+          <span class="imgspan"><img src="../../../assets/img/subseach.svg" alt=""></span>
+          <span>Search</span>
+        </a>
+      </footer>
+    </div>
+  </div>
+</section>

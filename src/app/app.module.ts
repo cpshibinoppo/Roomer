@@ -9,6 +9,7 @@ import { LogoinandsighupComponent } from './pages/logoinandsighup/logoinandsighu
 import { SubnavbarComponent } from './layout/subnavbar/subnavbar.component';
 import { SwiperModule } from 'swiper/angular';
 import { FilterpopComponent } from './pages/filterpop/filterpop.component';
+import { PhnavbarpopupComponent } from './layout/phnavbarpopup/phnavbarpopup.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FilterpopComponent } from './pages/filterpop/filterpop.component';
     NavbarComponent,
     LogoinandsighupComponent,
     SubnavbarComponent,
-    FilterpopComponent
+    FilterpopComponent,
+    PhnavbarpopupComponent
   ],
   imports: [
     BrowserModule,

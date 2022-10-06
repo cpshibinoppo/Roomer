@@ -273,4 +273,10 @@ export class NavbarComponent implements OnInit {
   showfliter(){
     this.homecom.showfilterpopupfun();
   }
+  showphnavbar(){
+    document.getElementById('phnavbarpopupsection')!.style.display = 'block';
+  }
+  hidephnavbar(){
+    document.getElementById('phnavbarpopupsection')!.style.display = 'none';
+  }
 }

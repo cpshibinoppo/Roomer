@@ -7,6 +7,7 @@ a {
   padding-top: 1rem;
   padding-bottom: 1rem;
   z-index: 1;
+  background: var(--white);
 }
 .navbarmaindiv {
   display: flex;
@@ -206,6 +207,7 @@ a {
     justify-content: space-between;
     .firstsection {
       display: flex;
+      width: -webkit-fill-available;
       .logodiv {
         align-self: center;
         img {
@@ -793,6 +795,12 @@ a {
 .navbarloiginsection {
   display: none;
 }
-// .subnavbarsection{
-//   box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
-// }
+.subnavbarsection {
+  position: fixed;
+  width: 100%;
+  top: 66px;
+  z-index: -1;
+}
+#phnavbarpopupsection {
+  display: none;
+}
