@@ -114,8 +114,10 @@ header {
     }
   }
 }
-.whereshowdiv {
+.where{
   display: none;
+}
+.whereshowdiv {
   background: var(--white);
   padding: 24px;
   box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 6px 20px rgb(0 0 0 / 20%);

@@ -16,8 +16,8 @@
     </header>
     <section>
       <div class="sectionselect">
-        <div class=" sectionbutmain gust">
-          <div class="headbtn" >
+        <div class=" sectionbutmain where">
+          <div class="headbtn">
             <button (click)="subshow('where')">
               <span>Where</span>
               <span class="headbtnsubtext">I'm flexible</span>
@@ -103,7 +103,7 @@
             </div>
           </div>
         </div>
-        <div class=" sectionbutmain pt-3">
+        <div class=" sectionbutmain guest pt-3">
           <div class="headbtn">
             <button>
               <span>When</span>
@@ -113,15 +113,15 @@
         </div>
         <div class=" sectionbutmain pt-3">
           <div class="headbtn">
-            <button>
+            <button (click)="subshow('guest')">
               <span>Who</span>
               <span class="headbtnsubtext">Add guests</span>
             </button>
           </div>
         </div>
-        <div class="whosection">
+        <div class="whosection mt-3">
           <h2>
-            <div>Where to?</div>
+            <div>Who is coming?</div>
           </h2>
           <div class="addguestsmaindiv">
             <div class="subaddguest">
