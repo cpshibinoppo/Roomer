@@ -1,0 +1,21 @@
+.swiper-wrap {
+  position: relative;
+  .swiper {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .swiper-wrapper {
+    display: grid !important;
+    gap: 0 !important;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+  }
+  .sliderbutton {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+  }
+}
