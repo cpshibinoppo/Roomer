@@ -1,13 +1,15 @@
-<section id="overlayid">
+<section>
   <app-navbar></app-navbar>
-  <div class="container">
-    <div class="row">
-      <div class="col-12" id="overlay" (click)="hoff()">
-
-      </div>
+</section>
+<section id="overlayid">
+  <section class="hotalcardlistsectionhome">
+    <div class="col-12" id="overlay" (click)="hoff()">
+      <section class="subnavbarsection">
+        <app-subnavbar></app-subnavbar>
+        <app-hotalcardlist></app-hotalcardlist>
+      </section>
     </div>
-  </div>
-</section>
-<section class="appfilterpopsection" id="filterpopupfun">
-  <app-filterpop></app-filterpop>
-</section>
+  </section>
+  <section class="appfilterpopsection" id="filterpopupfun">
+    <app-filterpop></app-filterpop>
+  </section>
