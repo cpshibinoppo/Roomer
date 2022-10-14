@@ -1,6 +1,6 @@
 .overlay {
   background-color: rgba(0, 0, 0, 0.25);
-  z-index: 2;
+  // z-index: 2;
   cursor: pointer;
 }
 .overlaylogin {
@@ -12,4 +12,11 @@
 }
 .appfilterpopsection{
   display: none;
+}
+.subnavbarsection {
+  position: fixed;
+  width: 100%;
+  top: 66px;
+  z-index: -1;
+  height: 100%;
 }
