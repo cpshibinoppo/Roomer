@@ -12,6 +12,8 @@ import { FilterpopComponent } from './pages/filterpop/filterpop.component';
 import { PhnavbarpopupComponent } from './layout/phnavbarpopup/phnavbarpopup.component';
 import { HotalcardComponent } from './layout/hotalcard/hotalcard.component';
 import { HotalcardlistComponent } from './pages/hotalcardlist/hotalcardlist.component';
+import { HomefooterComponent } from './layout/homefooter/homefooter.component';
+import { PhhomefooterComponent } from './layout/phhomefooter/phhomefooter.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { HotalcardlistComponent } from './pages/hotalcardlist/hotalcardlist.comp
     FilterpopComponent,
     PhnavbarpopupComponent,
     HotalcardComponent,
-    HotalcardlistComponent
+    HotalcardlistComponent,
+    HomefooterComponent,
+    PhhomefooterComponent
   ],
   imports: [
     BrowserModule,
