@@ -1,3 +1,5 @@
+@import "swiper/css";
+@import "swiper/css/navigation";
 .ch:nth-child(1) .sidercard button {
   color: black;
 
@@ -84,9 +86,9 @@
     }
   }
 }
-.swiper-backface-hidden .swiper-slide {
-  width: 65px !important;
-}
+// .swiper-backface-hidden .swiper-slide {
+//   width: 65px !important;
+// }
 .swiper-wrapper {
   display: grid !important;
   gap: 40px;
@@ -104,7 +106,7 @@
   background: var(--white);
 
   &::after {
-    font-size: 12px;
+    font-size: 12px !important;
     font-weight: bold;
     color: black;
     display: flex;
@@ -127,9 +129,10 @@
   }
 }
 .swiper-slide {
-  width: auto !important;
+  width: auto;
   margin: 0 !important;
 }
+
 /* slider img card end */
 .filterbtndiv {
   button {
@@ -205,46 +208,46 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
-  }
-  .filterbtndiv {
-    display: none;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
-  }
-  .filterbtndiv {
-    display: none;
-  }
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: flex;
-  }
-  .filterbtndiv {
-    display: block;
-  }
-  .swiper {
-    width: 95%;
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .swiper {
-    width: 90%;
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 1200px) {
-}
+// @media only screen and (max-width: 600px) {
+//   .swiper-button-next,
+//   .swiper-button-prev {
+//     display: none;
+//   }
+//   .filterbtndiv {
+//     display: none;
+//   }
+// }
+// @media only screen and (min-width: 600px) {
+//   .swiper-button-next,
+//   .swiper-button-prev {
+//     display: none;
+//   }
+//   .filterbtndiv {
+//     display: none;
+//   }
+//   .swiper {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+// @media only screen and (min-width: 768px) {
+//   .swiper-button-next,
+//   .swiper-button-prev {
+//     display: flex;
+//   }
+//   .filterbtndiv {
+//     display: block;
+//   }
+//   .swiper {
+//     width: 95%;
+//     height: 100%;
+//   }
+// }
+// @media only screen and (min-width: 992px) {
+//   .swiper {
+//     width: 90%;
+//     height: 100%;
+//   }
+// }
+// @media only screen and (min-width: 1200px) {
+// }

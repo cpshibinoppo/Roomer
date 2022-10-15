@@ -17,7 +17,7 @@ interface filterData {
   selector: 'app-subnavbar',
   templateUrl: './subnavbar.component.html',
   styleUrls: ['./subnavbar.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.None
 })
 export class SubnavbarComponent implements OnInit {
   filterData: filterData[] = filterdata;
