@@ -13,6 +13,7 @@ import { PhnavbarpopupComponent } from './layout/phnavbarpopup/phnavbarpopup.com
 import { HotalcardComponent } from './layout/hotalcard/hotalcard.component';
 import { HotalcardlistComponent } from './pages/hotalcardlist/hotalcardlist.component';
 import { HomefooterComponent } from './layout/homefooter/homefooter.component';
+import { PhhomefooterComponent } from './layout/phhomefooter/phhomefooter.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HomefooterComponent } from './layout/homefooter/homefooter.component';
     PhnavbarpopupComponent,
     HotalcardComponent,
     HotalcardlistComponent,
-    HomefooterComponent
+    HomefooterComponent,
+    PhhomefooterComponent
   ],
   imports: [
     BrowserModule,

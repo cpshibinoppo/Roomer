@@ -735,6 +735,9 @@ a {
 }
 /* end */
 @media only screen and (max-width: 600px) {
+  .navsection{
+    box-shadow: none;
+  }
   .subnavbarmaindiv {
     display: block;
   }
@@ -743,6 +746,9 @@ a {
   }
 }
 @media only screen and (min-width: 600px) {
+  .navsection{
+    box-shadow: none;
+  }
   .logodiv {
     width: auto !important;
   }
@@ -760,6 +766,9 @@ a {
   }
 }
 @media only screen and (min-width: 768px) {
+  .navsection{
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+  }
   .logodiv {
     width: auto !important;
   }
