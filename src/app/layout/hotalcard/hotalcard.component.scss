@@ -1,7 +1,8 @@
-@import "~swiper/css/pagination";
+@import "swiper/css/pagination";
 .maincard {
   width: 305px;
   height: 405px;
+  min-width: 100%;
 }
 .maincard:hover {
   .chbtn {
@@ -148,4 +149,46 @@
 }
 .swiper-pagination-bullet {
   opacity: 1 !important;
+}
+@media only screen and (max-width: 600px) {
+  .maincard {
+    width: 298px;
+    height: 384px;
+    min-width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .maincard {
+    width: 298px;
+    height: 384px;
+    min-width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .maincard {
+    width: 298px;
+    height: 384px;
+    min-width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .maincard {
+    width: 298px;
+    height: 384px;
+    min-width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .maincard {
+    width: 263px;
+    height: 350px;
+    min-width: 100%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .maincard {
+    width: 305px;
+    height: 405px;
+    min-width: 100%;
+  }
 }

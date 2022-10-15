@@ -1,7 +1,33 @@
-.hotalcardmaindiv{
+.hotalcardmaindiv {
   display: grid;
   column-gap: 20px;
   row-gap: 30px;
   grid-template-columns: auto auto auto auto;
   // justify-content: flex-start;
+}
+
+@media only screen and (max-width: 600px) {
+  .hotalcardmaindiv {
+    grid-template-columns: auto !important;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .hotalcardmaindiv {
+    grid-template-columns: auto !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hotalcardmaindiv {
+    grid-template-columns: auto auto !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hotalcardmaindiv {
+    grid-template-columns: auto auto auto !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hotalcardmaindiv {
+    grid-template-columns: auto auto auto auto !important;
+  }
 }
