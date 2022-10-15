@@ -3,6 +3,7 @@
   width: 305px;
   height: 405px;
   min-width: 100%;
+  position: relative;
 }
 .maincard:hover {
   .chbtn {
@@ -190,5 +191,25 @@
     width: 305px;
     height: 405px;
     min-width: 100%;
+  }
+}
+.likemaindiv {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+  button {
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    background: transparent;
+    margin: -2px 0 0;
+    padding: 2px 0 0 0;
+    img {
+      height: 24px;
+      width: 24px;
+    }
   }
 }
