@@ -5,7 +5,9 @@ import {
   Renderer2,
   ViewChild,
 } from '@angular/core';
+import { LoginsharedService } from 'src/app/shared/loginshared.service';
 import { HomeComponent } from 'src/app/pages/home/home.component';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -13,6 +15,8 @@ import { HomeComponent } from 'src/app/pages/home/home.component';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  clickEventsubscription: Subscription | undefined;
+
   @ViewChild('search') search: ElementRef<HTMLInputElement> | undefined;
   staysid: any;
   experienceid: any;
@@ -43,8 +47,12 @@ export class NavbarComponent implements OnInit {
   calendarshow = false;
   checkinandout: any;
   experienceshowid: any;
-  navbarloiginsection: any;
-  constructor(public homecom: HomeComponent, private renderer: Renderer2) {
+  subsVar: undefined;
+  invokeFirstComponentFunction: any;
+  constructor(public homecom: HomeComponent, private renderer: Renderer2, private sharedService: LoginsharedService) {
+    this.clickEventsubscription = this.sharedService.getClickEvent().subscribe(() => {
+      this.logoingshow();
+    })
     this.renderer.listen('window', 'click', (e: Event) => {
       if (this.menuBtnClick == false) {
         var aciveclass = document.querySelector('.active');
@@ -75,7 +83,6 @@ export class NavbarComponent implements OnInit {
     this.dateid = document.getElementById('datediv');
     this.checkinandout = document.getElementById('checkinout');
     this.experienceshowid = document.getElementById('experienceshowid');
-    this.navbarloiginsection = document.getElementById('navbarloiginsection');
   }
   showsubnavbar(check: any) {
     this.menuBtnClick = true;
@@ -262,21 +269,22 @@ export class NavbarComponent implements OnInit {
       aciveclass?.classList.remove('subactivebtn');
     }
   }
+  sam = false;
   logoingshow() {
-    this.navbarloiginsection.style.display = 'block';
+    this.sam = true;
     this.homecom.loginandsighshowfn();
   }
   logoingremove() {
-    this.navbarloiginsection.style.display = 'none';
+    this.sam = false;
     this.homecom.loginandsighshowfn();
   }
-  showfliter(){
+  showfliter() {
     this.homecom.showfilterpopupfun();
   }
-  showphnavbar(){
+  showphnavbar() {
     document.getElementById('phnavbarpopupsection')!.style.display = 'block';
   }
-  hidephnavbar(){
+  hidephnavbar() {
     document.getElementById('phnavbarpopupsection')!.style.display = 'none';
   }
 }
