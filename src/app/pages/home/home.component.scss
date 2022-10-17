@@ -57,6 +57,9 @@
   .subnabbardiv {
     box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
   }
+  .mapshowbuttonmaindiv {
+    display: none !important;
+  }
 }
 @media only screen and (min-width: 600px) {
   .homefooter {
@@ -68,6 +71,9 @@
   .subnabbardiv {
     box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
   }
+  .mapshowbuttonmaindiv {
+    display: none !important;
+  }
 }
 @media only screen and (min-width: 768px) {
   .homefooter {
@@ -78,6 +84,9 @@
   }
   .subnabbardiv {
     box-shadow: none;
+  }
+  .mapshowbuttonmaindiv {
+    display: flex !important;
   }
 }
 @media only screen and (min-width: 992px) {
