@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Injectable, OnInit, ViewChild } from '@angular/core';
 import { NavbarComponent } from 'src/app/layout/navbar/navbar.component';
 
 @Component({
@@ -6,6 +6,7 @@ import { NavbarComponent } from 'src/app/layout/navbar/navbar.component';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
+@Injectable({ providedIn: 'any' })
 export class HomeComponent implements OnInit {
   @ViewChild(NavbarComponent) navbar: any;
   constructor() {}
@@ -17,11 +18,11 @@ export class HomeComponent implements OnInit {
     this.overlayid = document.getElementById('overlayid');
   }
   off() {
-    document.getElementById('overlay')!.classList.add('overlay');
+    // document.getElementById('overlay')!.classList.add('overlay');
     //
   }
   hoff() {
-    document.getElementById('overlay')!.classList.remove('overlay');
+    // document.getElementById('overlay')!.classList.remove('overlay');
     this.navbar.restfun();
   }
   loginandsighshowfn() {

@@ -14,6 +14,7 @@ import { HotalcardComponent } from './layout/hotalcard/hotalcard.component';
 import { HotalcardlistComponent } from './pages/hotalcardlist/hotalcardlist.component';
 import { HomefooterComponent } from './layout/homefooter/homefooter.component';
 import { PhhomefooterComponent } from './layout/phhomefooter/phhomefooter.component';
+import { HotaldetailComponent } from './pages/hotaldetail/hotaldetail.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PhhomefooterComponent } from './layout/phhomefooter/phhomefooter.compon
     HotalcardComponent,
     HotalcardlistComponent,
     HomefooterComponent,
-    PhhomefooterComponent
+    PhhomefooterComponent,
+    HotaldetailComponent
   ],
   imports: [
     BrowserModule,

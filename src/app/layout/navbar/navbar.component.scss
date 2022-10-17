@@ -735,7 +735,7 @@ a {
 }
 /* end */
 @media only screen and (max-width: 600px) {
-  .navsection{
+  .navsection {
     box-shadow: none;
   }
   .subnavbarmaindiv {
@@ -746,7 +746,7 @@ a {
   }
 }
 @media only screen and (min-width: 600px) {
-  .navsection{
+  .navsection {
     box-shadow: none;
   }
   .logodiv {
@@ -766,7 +766,7 @@ a {
   }
 }
 @media only screen and (min-width: 768px) {
-  .navsection{
+  .navsection {
     box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
   }
   .logodiv {
@@ -803,4 +803,20 @@ a {
 }
 #phnavbarpopupsection {
   display: none;
+}
+.hotelnav {
+  max-width: 300px !important;
+  width: 300px;
+  .hotelnavbutn {
+    width: 100%;
+    justify-content: space-between;
+    div {
+      font-weight: 500;
+      color: var(--text-color);
+      font-size: 14px;
+    }
+    .searchspan {
+      margin-right: -5px !important;
+    }
+  }
 }

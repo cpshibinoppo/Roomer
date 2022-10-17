@@ -8,6 +8,7 @@ import {
 import { LoginsharedService } from 'src/app/shared/loginshared.service';
 import { HomeComponent } from 'src/app/pages/home/home.component';
 import { Subscription } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -49,7 +50,8 @@ export class NavbarComponent implements OnInit {
   experienceshowid: any;
   subsVar: undefined;
   invokeFirstComponentFunction: any;
-  constructor(public homecom: HomeComponent, private renderer: Renderer2, private sharedService: LoginsharedService) {
+  hotelnav:any
+  constructor(public homecom: HomeComponent, private renderer: Renderer2, private sharedService: LoginsharedService,private route: ActivatedRoute) {
     this.clickEventsubscription = this.sharedService.getClickEvent().subscribe(() => {
       this.logoingshow();
     })
@@ -71,6 +73,11 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.route.data.subscribe((data) => {
+      this.hotelnav = data;
+    });
+    console.log(this.hotelnav.test);
+
     this.staysid = document.getElementById('staysid');
     this.experienceid = document.getElementById('experienceid');
     this.autofocus = document.getElementById('autofocus');
