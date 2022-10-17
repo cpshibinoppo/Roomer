@@ -135,10 +135,11 @@
     }
   }
 }
-.texttt {
+.sliderimgmain {
   border-radius: 10px;
   overflow: hidden !important;
-  .testimg {
+  .sliderimg {
+    object-fit: cover;
     min-height: 305px;
   }
 }
