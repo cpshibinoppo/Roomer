@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './layout/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
+import { HotaldetailComponent } from './pages/hotaldetail/hotaldetail.component';
 
 const routes: Routes = [
-  {path:'',component:HomeComponent}
+  {path:'',component:HomeComponent},
+  {path:'hotel',component:HotaldetailComponent,data:{test:true}},
 ];
 
 @NgModule({

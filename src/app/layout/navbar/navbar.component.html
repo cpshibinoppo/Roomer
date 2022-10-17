@@ -11,7 +11,7 @@
           </div>
           <div class="col-6 col-lg-5 col-xl-6 d-flex justify-content-center">
             <div class="buttonmaindiv" id="navbar">
-              <div class="butdiv">
+              <div class="butdiv" *ngIf="!this.hotelnav.test">
                 <button type="button" (click)="showsubnavbar('where')">
                   <div>Anywhere</div>
                 </button>
@@ -22,6 +22,14 @@
                 <span class="line"></span>
                 <button class="serachbutmain" (click)="showsubnavbar('who')">
                   <div>Add guests</div>
+                  <div class="searchspan">
+                    <img src="../../../assets/img/searchicon.svg" alt="">
+                  </div>
+                </button>
+              </div>
+              <div class="butdiv hotelnav" *ngIf="this.hotelnav.test">
+                <button type="button" class="serachbutmain hotelnavbutn" (click)="showsubnavbar('where')">
+                  <div>Start your search</div>
                   <div class="searchspan">
                     <img src="../../../assets/img/searchicon.svg" alt="">
                   </div>
