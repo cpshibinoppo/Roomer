@@ -84,3 +84,42 @@
 }
 @media only screen and (min-width: 1200px) {
 }
+/* mapshow button */
+.mapshowbuttonmaindiv {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  bottom: 100px;
+  button {
+    display: inline-flex;
+    border-radius: 24px;
+    padding: 14px 19px;
+    outline: none;
+    border: none;
+    background: var(--text-color);
+    transition: all 0.25s ease;
+    &:hover {
+      scale: 1.1;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    span {
+      font-size: 14px;
+      line-height: var(--lineheight);
+      color: var(--white);
+      font-weight: 500;
+      display: flex;
+      div {
+        display: inline-flex;
+        margin-left: 8px;
+        align-self: center;
+        img {
+          display: block;
+          height: 16px;
+          width: 16px;
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+}
