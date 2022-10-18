@@ -261,6 +261,43 @@ nav {
         }
       }
     }
+    img:hover {
+      opacity: .8;
+      background-color: rgba(0, 0, 0, .5);
+
+    }
+  }
+}
+.showmorediv {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  z-index: 3;
+  button {
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    line-height: var(--lineheight);
+    font-weight: 500;
+    border-radius: 8px;
+    outline: none;
+    color: var(--text-color);
+    background: var(--white);
+    padding: 7px 15px;
+    border: 1px solid var(--text-color);
+    div {
+      display: flex;
+      align-items: center;
+      div{
+        margin-left: 8px;
+      }
+      img {
+        display: block;
+        height: 16px;
+        width: 16px;
+        fill: currentcolor;
+      }
+    }
   }
 }
 /* image collection end */
