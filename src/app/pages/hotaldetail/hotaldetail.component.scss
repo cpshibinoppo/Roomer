@@ -1,0 +1,122 @@
+/* navbar start */
+nav {
+  display:none;
+  .navmaindiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    .homediv {
+      a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 14px;
+        font-weight: 500;
+        padding: 8px;
+        line-height: var(--lineheight);
+        margin: 0px -8px;
+        .homesection {
+          display: flex;
+          align-items: center;
+          padding: 0px 8px;
+          letter-spacing: .5px;
+          .imgdiv {
+            padding-right: 8px;
+            img {
+              display: block;
+              fill: none;
+              height: 16px;
+              width: 16px;
+              stroke: currentcolor;
+              stroke-width: 4;
+              overflow: visible;
+            }
+          }
+        }
+      }
+    }
+    .senddiv {
+      display: flex;
+      padding-top: 6px;
+      padding-left: 8px;
+      padding-right: 8px;
+      .sendbtn {
+        margin-right: 20px;
+        button {
+          border: none;
+          outline: none;
+          background: transparent;
+          margin: 0;
+          padding: 0;
+          color: var(--text-color);
+          span {
+            img {
+              display: block;
+              fill: none;
+              height: 16px;
+              width: 16px;
+              stroke: currentcolor;
+              stroke-width: 2;
+              overflow: visible;
+            }
+          }
+        }
+      }
+      .heartbtn {
+        button {
+          border: none;
+          outline: none;
+          background: transparent;
+          margin: 0;
+          padding: 0;
+          color: var(--text-color);
+          span {
+            img {
+              display: block;
+              fill: none;
+              height: 16px;
+              width: 16px;
+              stroke: currentcolor;
+              stroke-width: 2;
+              overflow: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* navbar end */
+@media only screen and (max-width: 600px) {
+.navbarsection{
+  display: none;
+}
+nav{
+  display: block;
+}
+}
+@media only screen and (min-width: 600px) {
+  .navbarsection{
+    display: none;
+  }
+  nav{
+    display:block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .navbarsection{
+    display: block;
+  }
+  nav{
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+
+}
+@media only screen and (min-width: 1200px) {
+
+}
