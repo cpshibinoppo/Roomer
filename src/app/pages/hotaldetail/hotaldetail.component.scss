@@ -1,6 +1,6 @@
 /* navbar start */
 nav {
-  display:none;
+  display: none;
   .navmaindiv {
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@ nav {
           display: flex;
           align-items: center;
           padding: 0px 8px;
-          letter-spacing: .5px;
+          letter-spacing: 0.5px;
           .imgdiv {
             padding-right: 8px;
             img {
@@ -90,33 +90,205 @@ nav {
   }
 }
 /* navbar end */
+/* header start */
+.header {
+  .headrmaintextdiv {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: var(--text-size);
+    line-height: 20px;
+    span {
+      font-size: 26px;
+      line-height: 30px;
+      font-weight: 500;
+      h1 {
+        color: inherit;
+        font-size: 1em;
+        font-weight: inherit;
+        line-height: inherit;
+        margin: 0;
+        padding: 0;
+        display: inline;
+      }
+    }
+  }
+  .headresubtextdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .headersubtext {
+      display: flex;
+      flex-wrap: wrap;
+      .hearmainspan {
+        margin-top: 4px;
+        align-items: center;
+        display: inline-flex;
+        .headtextspan {
+          line-height: 20px;
+          color: rgb(34, 34, 34);
+          font-size: 14px;
+          font-weight: 600;
+        }
+        .headbtnspan {
+          color: rgb(34, 34, 34);
+          font-size: 14px;
+          line-height: 20px;
+          padding-left: 4px;
+          font-weight: 600;
+          button {
+            border: none;
+            background: transparent;
+            outline: none;
+            padding: 0;
+            margin: 0;
+            text-decoration: underline;
+            font-weight: 500;
+          }
+        }
+      }
+      .dotspan {
+        color: rgb(113, 113, 113);
+        margin: 8px 8px 0px;
+      }
+    }
+  }
+}
+.superhostspan {
+  font-weight: 400 !important;
+}
+.headratingspan {
+  font-weight: 500;
+}
+.testiconspan {
+  min-width: 14px;
+  margin-right: 3px;
+  display: inline-flex;
+  align-items: center;
+}
+.sharemaindiv {
+  height: 28px;
+  .shareandsavediv {
+    display: flex;
+    .sharediv {
+      margin-right: 20px;
+      button {
+        margin: 0px -8px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: var(--lineheight);
+        background: transparent;
+        outline: none;
+        border: none;
+        padding: 8px;
+        div {
+          display: flex;
+          align-items: center;
+          text-decoration: underline;
+          span {
+            margin-right: 8px;
+            img {
+              display: block;
+              fill: none;
+              height: 16px;
+              width: 16px;
+              stroke: currentcolor;
+              stroke-width: 2;
+              overflow: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* header end */
+/* image collection start */
+.collectionmaindiv {
+  width: 100%;
+  max-height: 330px;
+  height: 330px;
+  min-height: 297px;
+  overflow-y: hidden;
+  position: relative;
+  border-radius: 12px;
+  .collectionimgdiv {
+    width: 100%;
+    height: 100%;
+    .startimgdiv {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .centerimgdiv {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 25%;
+      height: 50%;
+      div {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .endimgdiv {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 25%;
+      height: 50%;
+      div {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+/* image collection end */
 @media only screen and (max-width: 600px) {
-.navbarsection{
-  display: none;
-}
-nav{
-  display: block;
-}
-}
-@media only screen and (min-width: 600px) {
-  .navbarsection{
+  .navbarsection {
     display: none;
   }
-  nav{
-    display:block;
+  nav {
+    display: block;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .navbarsection {
+    display: none;
+  }
+  nav {
+    display: block;
   }
 }
 @media only screen and (min-width: 768px) {
-  .navbarsection{
+  .navbarsection {
     display: block;
   }
-  nav{
+  nav {
     display: none;
   }
 }
 @media only screen and (min-width: 992px) {
-
 }
 @media only screen and (min-width: 1200px) {
-
 }
