@@ -416,6 +416,9 @@ nav {
   .collectionmaindiv {
     display: none;
   }
+  .phnavbarmaindiv{
+    display: flex;
+  }
 }
 @media only screen and (min-width: 600px) {
   .navbarsection {
@@ -428,6 +431,9 @@ nav {
     display: none;
   }
   .collectionmaindiv {
+    display: none;
+  }
+  .phnavbarmaindiv{
     display: none;
   }
 }
