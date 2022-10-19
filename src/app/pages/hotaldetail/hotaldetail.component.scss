@@ -331,6 +331,9 @@ nav {
   nav {
     display: block;
   }
+  .header {
+    display: none;
+  }
 }
 @media only screen and (min-width: 600px) {
   .navbarsection {
@@ -339,6 +342,9 @@ nav {
   nav {
     display: block;
   }
+  .header {
+    display: none;
+  }
 }
 @media only screen and (min-width: 768px) {
   .navbarsection {
@@ -346,6 +352,9 @@ nav {
   }
   nav {
     display: none;
+  }
+  .header {
+    display: block;
   }
 }
 @media only screen and (min-width: 992px) {
