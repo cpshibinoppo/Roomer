@@ -360,6 +360,18 @@ nav {
   object-fit: cover;
   aspect-ratio: 16/11;
 }
+.swiper-pagination{
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  background: rgba(0, 0, 0, 0.5);
+  color:var(--white);
+  z-index: 2;
+  padding: 3px 13px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
 
 /* slider end */
 .phnavbarmaindiv{
