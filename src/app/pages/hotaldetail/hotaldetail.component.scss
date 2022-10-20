@@ -1059,6 +1059,33 @@ nav {
   opacity: 0.5;
   cursor: no-drop;
 }
+.addgustsubtext{
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 16px;
+}
+.closebtn{
+  display: flex;
+  justify-content: flex-end !important;
+  button{
+    width: auto !important;
+    text-align: center;
+    font-size: var(--text-size);
+    line-height: 20px;
+    font-weight: 500;
+    outline: none;
+    border: none !important;
+    text-decoration: underline;
+    color:var(--text-color);
+    background: transparent;
+    padding: 10px !important;
+    transition: all 0.3s ease;
+    &:hover{
+      background: var(--hover-background) !important;
+    }
+  }
+}
 .show {
   opacity: 1 !important;
   display: block !important;
@@ -1067,6 +1094,21 @@ nav {
   }
 }
 /* add guest end */
+.reservebtnmaindiv{
+  padding-top: 10px;
+  button{
+    background:var(--linear-background);
+    font-size: var(--text-size);
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    outline: none;
+    padding: 14px 24px;
+    color:rgb(255, 255, 255);
+    border: none;
+    width: 100%;
+  }
+}
 /* price end */
 
 @media only screen and (max-width: 600px) {
