@@ -834,6 +834,143 @@ nav {
           }
         }
       }
+      .pricedatamaindiv {
+        margin-bottom: 16px;
+        position: relative;
+        div {
+          background-color: var(--white);
+          .checkinandoutmiandiv {
+            display: flex;
+            button {
+              border-radius: 8px;
+              position: relative;
+              display: flex;
+              width: 100%;
+              margin: 0;
+              padding: 0;
+              border: none;
+              outline: none;
+              background: transparent;
+              text-align: left;
+              .checkindiv {
+                width: 50%;
+                position: relative;
+                border: 1px solid var(--borderlight-color);
+                border-right: none;
+                border-top-left-radius: 8px;
+
+                .text {
+                  position: absolute;
+                  top: 4px;
+                  left: 12px;
+                  margin: 0;
+                  padding: 0;
+                  font-size: 10px;
+                  color: rgb(34, 34, 34);
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+                .datetext {
+                  border-radius: 8px;
+                  min-height: 56px;
+                  width: 100%;
+                  padding: 26px 12px 10px;
+                  font-size: 14px;
+                  line-height: var(--lineheight);
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+              }
+              .checkoutdiv {
+                position: relative;
+                width: 50%;
+                border-top-right-radius: 8px;
+                border: 1px solid var(--borderlight-color);
+                .text {
+                  position: absolute;
+                  top: 4px;
+                  left: 12px;
+                  margin: 0;
+                  padding: 0;
+                  font-size: 10px;
+                  color: rgb(34, 34, 34);
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+                .datetext {
+                  border-radius: 8px;
+                  min-height: 56px;
+                  width: 100%;
+                  padding: 26px 12px 10px;
+                  font-size: 14px;
+                  line-height: var(--lineheight);
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+          .gustdiv {
+            button {
+              border-radius: 8px;
+              position: relative;
+              display: flex;
+              width: 100%;
+              margin: 0;
+              padding: 0;
+              border: none;
+              outline: none;
+              background: transparent;
+              text-align: left;
+              .gust {
+                width: 100%;
+                position: relative;
+                border: 1px solid var(--borderlight-color);
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                border-top: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                div {
+                  border-radius: 8px;
+                  .text {
+                    position: absolute;
+                    top: 4px;
+                    left: 12px;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 10px;
+                    color: rgb(34, 34, 34);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                  }
+                  .datetext {
+                    border-radius: 8px;
+                    min-height: 56px;
+                    width: 100%;
+                    padding: 26px 12px 10px;
+                    font-size: 14px;
+                    line-height: var(--lineheight);
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                  }
+                }
+                .drowpdownicon{
+                  margin-right: 10px;
+                  font-size: 24px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -854,7 +991,7 @@ nav {
   .phnavbarmaindiv {
     display: flex;
   }
-  .pricecol{
+  .pricecol {
     display: none;
   }
 }
@@ -877,7 +1014,7 @@ nav {
   .slidermaindiv {
     display: block;
   }
-  .pricecol{
+  .pricecol {
     display: none;
   }
 }
@@ -897,15 +1034,15 @@ nav {
   .slidermaindiv {
     display: none;
   }
-  .pricecol{
+  .pricecol {
     display: block;
   }
-  .checkinpricediv{
+  .checkinpricediv {
     display: block !important;
   }
 }
 @media only screen and (min-width: 992px) {
-  .checkinpricediv{
+  .checkinpricediv {
     display: flex !important;
   }
 }

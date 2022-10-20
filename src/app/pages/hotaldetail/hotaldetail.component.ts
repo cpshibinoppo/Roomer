@@ -1,5 +1,5 @@
+import { Component, HostListener, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { NavbarComponent } from 'src/app/layout/navbar/navbar.component';
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { SwiperComponent } from "swiper/angular";
 
 @Component({
@@ -8,13 +8,22 @@ import { SwiperComponent } from "swiper/angular";
   styleUrls: ['./hotaldetail.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-
+@HostListener('window:resize', ['$event'])
 export class HotaldetailComponent implements OnInit {
   @ViewChild(NavbarComponent) navbar: any;
+  screenwidth:any
+  container:any;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.screenwidth = window.innerWidth;
+    if(this.screenwidth < 768){
+      console.log('less than 789');
+      this.container = '-fluid'
+    }
+    console.log(this.screenwidth);
+
   }
 
 }
