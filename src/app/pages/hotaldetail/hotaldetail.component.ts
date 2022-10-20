@@ -29,7 +29,7 @@ export class HotaldetailComponent implements OnInit {
       this.container = '-fluid'
     }
   }
-  showaddgust(){
+  showaddgust() {
     $(".addgust").toggleClass('show');
     $(".drowpdownicon").toggleClass('show');
   }

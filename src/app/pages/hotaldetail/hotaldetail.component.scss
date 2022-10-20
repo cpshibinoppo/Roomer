@@ -201,6 +201,9 @@ nav {
     }
   }
 }
+.headerphone {
+  border-bottom: 1px solid var(--borderlight-color);
+}
 /* header end */
 /* image collection start */
 .collectionmaindiv {
@@ -677,7 +680,7 @@ nav {
     }
   }
 }
-.sleepimgsection{
+.sleepimgsection {
   display: flex;
   justify-content: space-between;
 }
@@ -1150,13 +1153,12 @@ nav {
     }
   }
 }
-.totalprivemaindiv{
+.totalprivemaindiv {
   display: flex;
   justify-content: space-between;
   font-size: var(--text-size);
   line-height: 20px;
   font-weight: 500;
-
 }
 /* price end */
 
@@ -1178,6 +1180,16 @@ nav {
   }
   .pricecol {
     display: none;
+  }
+  .listmaindiv {
+    display: block;
+  }
+  .headerphone {
+    display: block !important;
+  }
+  .listshowall button,
+  .whereyousleepmaindiv .listshowallfea button {
+    width: 100% !important;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -1202,6 +1214,16 @@ nav {
   .pricecol {
     display: none;
   }
+  .listmaindiv {
+    display: block;
+  }
+  .headerphone {
+    display: block !important;
+  }
+  .listshowall button,
+  .whereyousleepmaindiv .listshowallfea button {
+    width: 100% !important;
+  }
 }
 @media only screen and (min-width: 768px) {
   .navbarsection {
@@ -1225,11 +1247,24 @@ nav {
   .checkinpricediv {
     display: block !important;
   }
+  .listmaindiv {
+    display: flex;
+  }
+  .headerphone {
+    display: none !important;
+  }
+  .listshowall button,
+  .whereyousleepmaindiv .listshowallfea button {
+    width: auto !important;
+  }
 }
 @media only screen and (min-width: 992px) {
   .checkinpricediv {
-    display: flex !important;
+    display: block !important;
   }
 }
 @media only screen and (min-width: 1200px) {
+  .checkinpricediv {
+    display: flex !important;
+  }
 }
