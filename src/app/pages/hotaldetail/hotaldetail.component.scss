@@ -201,6 +201,9 @@ nav {
     }
   }
 }
+.headerphone {
+  border-bottom: 1px solid var(--borderlight-color);
+}
 /* header end */
 /* image collection start */
 .collectionmaindiv {
@@ -592,6 +595,10 @@ nav {
   padding-top: 48px;
   padding-bottom: 100px;
   border-bottom: 1px solid var(--borderlight-color);
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   .textdiv {
     line-height: 26px;
     font-weight: 500;
@@ -610,11 +617,12 @@ nav {
   }
   .imgsection {
     width: 320px;
+    min-width: 290px;
     min-height: 50px;
     max-height: 215px;
+    margin-right: 15px;
     div {
       width: 100%;
-      height: 100%;
       button {
         background: transparent;
         border: none;
@@ -671,6 +679,10 @@ nav {
       }
     }
   }
+}
+.sleepimgsection {
+  display: flex;
+  justify-content: space-between;
 }
 /* whereyousleepmain end */
 /* placeoffer start */
@@ -765,7 +777,7 @@ nav {
 .pricelistmaindiv {
   border: 1px solid rgb(221, 221, 221);
   border-radius: 12px;
-  padding: 24px;
+  padding: 24px 24px 5px;
   box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
   .pricelistdiv {
     color: rgb(34, 34, 34);
@@ -834,10 +846,322 @@ nav {
           }
         }
       }
+      .pricedatamaindiv {
+        margin-bottom: 16px;
+        position: relative;
+        div {
+          background-color: var(--white);
+          .checkinandoutmiandiv {
+            display: flex;
+            button {
+              border-radius: 8px;
+              position: relative;
+              display: flex;
+              width: 100%;
+              margin: 0;
+              padding: 0;
+              border: none;
+              outline: none;
+              background: transparent;
+              text-align: left;
+              .checkindiv {
+                width: 50%;
+                position: relative;
+                border: 1px solid var(--borderlight-color);
+                border-right: none;
+                border-top-left-radius: 8px;
+
+                .text {
+                  position: absolute;
+                  top: 4px;
+                  left: 12px;
+                  margin: 0;
+                  padding: 0;
+                  font-size: 10px;
+                  color: rgb(34, 34, 34);
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+                .datetext {
+                  border-radius: 8px;
+                  min-height: 56px;
+                  width: 100%;
+                  padding: 26px 12px 10px;
+                  font-size: 14px;
+                  line-height: var(--lineheight);
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+              }
+              .checkoutdiv {
+                position: relative;
+                width: 50%;
+                border-top-right-radius: 8px;
+                border: 1px solid var(--borderlight-color);
+                .text {
+                  position: absolute;
+                  top: 4px;
+                  left: 12px;
+                  margin: 0;
+                  padding: 0;
+                  font-size: 10px;
+                  color: rgb(34, 34, 34);
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+                .datetext {
+                  border-radius: 8px;
+                  min-height: 56px;
+                  width: 100%;
+                  padding: 26px 12px 10px;
+                  font-size: 14px;
+                  line-height: var(--lineheight);
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+          .gustdiv {
+            position: relative;
+            button {
+              border-radius: 8px;
+              position: relative;
+              display: flex;
+              width: 100%;
+              margin: 0;
+              padding: 0;
+              border: none;
+              outline: none;
+              background: transparent;
+              text-align: left;
+              .gust {
+                width: 100%;
+                position: relative;
+                border: 1px solid var(--borderlight-color);
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                border-top: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                div {
+                  border-radius: 8px;
+                  .text {
+                    position: absolute;
+                    top: 4px;
+                    left: 12px;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 10px;
+                    color: rgb(34, 34, 34);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                  }
+                  .datetext {
+                    border-radius: 8px;
+                    min-height: 56px;
+                    width: 100%;
+                    padding: 26px 12px 10px;
+                    font-size: 14px;
+                    line-height: var(--lineheight);
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                  }
+                }
+                .drowpdownicon {
+                  margin-right: 10px;
+                  font-size: 24px;
+                  transition: all 0.5s ease;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
+/* add guest start */
+.addgust {
+  position: absolute;
+  width: 100%;
+  display: none;
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+.addguestsmaindiv {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  background: var(--white);
+  border-radius: 4px;
+  min-width: 280px;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 8px 16px rgb(0 0 0 / 15%);
+  margin-top: 12px;
+  padding: 16px;
+  .petdiv {
+    border: none !important;
+  }
+  .subaddguest {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    align-items: center;
+    .headtextdiv {
+      h6 {
+        font-size: var(--text-size);
+        line-height: 20px;
+        font-weight: 600;
+        // padding-bottom: 6px;
+      }
+      p {
+        color: var(--light-color);
+        font-weight: 300;
+        line-height: var(--lineheight);
+        font-size: 14px;
+        a {
+          color: rgb(113, 113, 113);
+          font-weight: 400;
+          text-decoration: underline;
+        }
+      }
+    }
+    .btnmaindiv {
+      display: inline-flex;
+      align-items: center;
+      width: 104px !important;
+      height: 32px !important;
+      justify-content: space-between;
+      button {
+        border: 1px solid rgb(176, 176, 176) !important;
+        width: 32px !important;
+        height: 32px;
+        outline: none;
+        border-radius: 50% !important;
+        background: rgb(255, 255, 255);
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        span {
+          height: 22px;
+          width: 22px;
+          padding: 5px;
+          img {
+            display: block;
+            fill: none;
+            height: 12px;
+            width: 12px;
+            stroke: currentcolor;
+            stroke-width: 5.33333;
+            overflow: visible;
+          }
+        }
+      }
+    }
+  }
+}
+.zero {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+.addgustsubtext {
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 16px;
+}
+.closebtn {
+  display: flex;
+  justify-content: flex-end !important;
+  button {
+    width: auto !important;
+    text-align: center;
+    font-size: var(--text-size);
+    line-height: 20px;
+    font-weight: 500;
+    outline: none;
+    border: none !important;
+    text-decoration: underline;
+    color: var(--text-color);
+    background: transparent;
+    padding: 10px !important;
+    transition: all 0.3s ease;
+    &:hover {
+      background: var(--hover-background) !important;
+    }
+  }
+}
+.show {
+  opacity: 1 !important;
+  display: block !important;
+  i {
+    transform: rotate(180deg);
+  }
+}
+/* add guest end */
+.reservebtnmaindiv {
+  padding-top: 10px;
+  button {
+    background: var(--linear-background);
+    font-size: var(--text-size);
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    outline: none;
+    padding: 14px 24px;
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 100%;
+  }
+}
+.youtext {
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+  color: rgb(34, 34, 34);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.priceamoutmaindiv {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  font-size: var(--text-size);
+  font-weight: 400;
+  line-height: 20px;
+
+  .roomrent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .buttonmin {
+      button {
+        border: none;
+        background: transparent;
+        outline: none;
+        text-decoration: underline 1px;
+        color: rgb(113, 113, 113);
+      }
+    }
+  }
+}
+.totalprivemaindiv {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-size);
+  line-height: 20px;
+  font-weight: 500;
+}
 /* price end */
+
 @media only screen and (max-width: 600px) {
   .navbarsection {
     display: none;
@@ -854,8 +1178,18 @@ nav {
   .phnavbarmaindiv {
     display: flex;
   }
-  .pricecol{
+  .pricecol {
     display: none;
+  }
+  .listmaindiv {
+    display: block;
+  }
+  .headerphone {
+    display: block !important;
+  }
+  .listshowall button,
+  .whereyousleepmaindiv .listshowallfea button {
+    width: 100% !important;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -877,8 +1211,18 @@ nav {
   .slidermaindiv {
     display: block;
   }
-  .pricecol{
+  .pricecol {
     display: none;
+  }
+  .listmaindiv {
+    display: block;
+  }
+  .headerphone {
+    display: block !important;
+  }
+  .listshowall button,
+  .whereyousleepmaindiv .listshowallfea button {
+    width: 100% !important;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -897,17 +1241,30 @@ nav {
   .slidermaindiv {
     display: none;
   }
-  .pricecol{
+  .pricecol {
     display: block;
   }
-  .checkinpricediv{
+  .checkinpricediv {
     display: block !important;
+  }
+  .listmaindiv {
+    display: flex;
+  }
+  .headerphone {
+    display: none !important;
+  }
+  .listshowall button,
+  .whereyousleepmaindiv .listshowallfea button {
+    width: auto !important;
   }
 }
 @media only screen and (min-width: 992px) {
-  .checkinpricediv{
-    display: flex !important;
+  .checkinpricediv {
+    display: block !important;
   }
 }
 @media only screen and (min-width: 1200px) {
+  .checkinpricediv {
+    display: flex !important;
+  }
 }
