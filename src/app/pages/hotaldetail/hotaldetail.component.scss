@@ -1059,16 +1059,16 @@ nav {
   opacity: 0.5;
   cursor: no-drop;
 }
-.addgustsubtext{
+.addgustsubtext {
   font-size: 12px;
   line-height: 16px;
   color: rgb(34, 34, 34);
   margin-bottom: 16px;
 }
-.closebtn{
+.closebtn {
   display: flex;
   justify-content: flex-end !important;
-  button{
+  button {
     width: auto !important;
     text-align: center;
     font-size: var(--text-size);
@@ -1077,11 +1077,11 @@ nav {
     outline: none;
     border: none !important;
     text-decoration: underline;
-    color:var(--text-color);
+    color: var(--text-color);
     background: transparent;
     padding: 10px !important;
     transition: all 0.3s ease;
-    &:hover{
+    &:hover {
       background: var(--hover-background) !important;
     }
   }
@@ -1094,19 +1094,51 @@ nav {
   }
 }
 /* add guest end */
-.reservebtnmaindiv{
+.reservebtnmaindiv {
   padding-top: 10px;
-  button{
-    background:var(--linear-background);
+  button {
+    background: var(--linear-background);
     font-size: var(--text-size);
     line-height: 20px;
     font-weight: 500;
     border-radius: 8px;
     outline: none;
     padding: 14px 24px;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     border: none;
     width: 100%;
+  }
+}
+.youtext {
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+  color: rgb(34, 34, 34);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.priceamoutmaindiv {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  font-size: var(--text-size);
+  font-weight: 400;
+  line-height: 20px;
+
+  .roomrent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .buttonmin {
+      button {
+        border: none;
+        background: transparent;
+        outline: none;
+        text-decoration: underline 1px;
+        color: rgb(113, 113, 113);
+      }
+    }
   }
 }
 /* price end */
