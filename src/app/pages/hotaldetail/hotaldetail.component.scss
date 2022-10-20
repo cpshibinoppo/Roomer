@@ -915,6 +915,7 @@ nav {
             }
           }
           .gustdiv {
+            position: relative;
             button {
               border-radius: 8px;
               position: relative;
@@ -962,9 +963,10 @@ nav {
                     white-space: nowrap;
                   }
                 }
-                .drowpdownicon{
+                .drowpdownicon {
                   margin-right: 10px;
                   font-size: 24px;
+                  transition: all 0.5s ease;
                 }
               }
             }
@@ -974,7 +976,99 @@ nav {
     }
   }
 }
+/* add guest start */
+.addgust {
+  position: absolute;
+  width: 100%;
+  display: none;
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+.addguestsmaindiv {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  background: var(--white);
+  border-radius: 4px;
+  min-width: 280px;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 8px 16px rgb(0 0 0 / 15%);
+  margin-top: 12px;
+  padding: 16px;
+  .petdiv {
+    border: none !important;
+  }
+  .subaddguest {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    align-items: center;
+    .headtextdiv {
+      h6 {
+        font-size: var(--text-size);
+        line-height: 20px;
+        font-weight: 600;
+        // padding-bottom: 6px;
+      }
+      p {
+        color: var(--light-color);
+        font-weight: 300;
+        line-height: var(--lineheight);
+        font-size: 14px;
+        a {
+          color: rgb(113, 113, 113);
+          font-weight: 400;
+          text-decoration: underline;
+        }
+      }
+    }
+    .btnmaindiv {
+      display: inline-flex;
+      align-items: center;
+      width: 104px !important;
+      height: 32px !important;
+      justify-content: space-between;
+      button {
+        border: 1px solid rgb(176, 176, 176) !important;
+        width: 32px !important;
+        height: 32px;
+        outline: none;
+        border-radius: 50% !important;
+        background: rgb(255, 255, 255);
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        span {
+          height: 22px;
+          width: 22px;
+          padding: 5px;
+          img {
+            display: block;
+            fill: none;
+            height: 12px;
+            width: 12px;
+            stroke: currentcolor;
+            stroke-width: 5.33333;
+            overflow: visible;
+          }
+        }
+      }
+    }
+  }
+}
+.zero {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+.show {
+  opacity: 1 !important;
+  display: block !important;
+  i {
+    transform: rotate(180deg);
+  }
+}
+/* add guest end */
 /* price end */
+
 @media only screen and (max-width: 600px) {
   .navbarsection {
     display: none;

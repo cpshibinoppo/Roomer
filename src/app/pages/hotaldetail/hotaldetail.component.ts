@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { NavbarComponent } from 'src/app/layout/navbar/navbar.component';
-import { SwiperComponent } from "swiper/angular";
+import $ from 'jquery';
 
 @Component({
   selector: 'app-hotaldetail',
@@ -11,19 +11,28 @@ import { SwiperComponent } from "swiper/angular";
 @HostListener('window:resize', ['$event'])
 export class HotaldetailComponent implements OnInit {
   @ViewChild(NavbarComponent) navbar: any;
-  screenwidth:any
-  container:any;
+  screenwidth: any
+  container: any;
+  guestshow = false;
+  guests = {
+    adults: 0,
+    children: 0,
+    infants: 0,
+    pets: 0,
+  };
 
   constructor() { }
 
   ngOnInit(): void {
     this.screenwidth = window.innerWidth;
-    if(this.screenwidth < 768){
-      console.log('less than 789');
+    if (this.screenwidth < 768) {
       this.container = '-fluid'
     }
-    console.log(this.screenwidth);
-
   }
+  showaddgust(){
+    $(".addgust").toggleClass('show');
+    $(".drowpdownicon").toggleClass('show');
+  }
+
 
 }
