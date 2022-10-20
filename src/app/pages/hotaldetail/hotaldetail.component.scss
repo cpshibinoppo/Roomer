@@ -592,6 +592,10 @@ nav {
   padding-top: 48px;
   padding-bottom: 100px;
   border-bottom: 1px solid var(--borderlight-color);
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   .textdiv {
     line-height: 26px;
     font-weight: 500;
@@ -610,11 +614,12 @@ nav {
   }
   .imgsection {
     width: 320px;
+    min-width: 290px;
     min-height: 50px;
     max-height: 215px;
+    margin-right: 15px;
     div {
       width: 100%;
-      height: 100%;
       button {
         background: transparent;
         border: none;
@@ -671,6 +676,10 @@ nav {
       }
     }
   }
+}
+.sleepimgsection{
+  display: flex;
+  justify-content: space-between;
 }
 /* whereyousleepmain end */
 /* placeoffer start */
