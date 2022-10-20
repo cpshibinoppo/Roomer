@@ -748,7 +748,7 @@ nav {
     }
   }
 }
-.accfeamaindiv{
+.accfeamaindiv {
   padding-bottom: 50px !important;
   border: none !important;
 }
@@ -761,6 +761,83 @@ nav {
   }
 }
 /* placeoffer end */
+/* price start */
+.pricelistmaindiv {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+  .pricelistdiv {
+    color: rgb(34, 34, 34);
+    font-weight: 400;
+    font-size: var(--text-size);
+    line-height: 20px;
+    .checkinmaindiv {
+      display: flex;
+      flex-direction: column;
+      .checkinpricediv {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 24px;
+        .price {
+          font-weight: 500;
+          font-size: var(--text-size);
+          line-height: 20px;
+          .pastprice {
+            color: rgb(113, 113, 113);
+            text-decoration: line-through;
+            font-weight: 500;
+            font-size: 22px;
+          }
+          .curruntprice {
+            font-weight: 600;
+            color: rgb(34, 34, 34);
+            margin-left: 3px;
+            margin-right: 3px;
+            font-size: 22px;
+          }
+          .pricetext {
+            font-weight: 400;
+            line-height: var(--lineheight);
+            font-size: 16px;
+          }
+        }
+        .reviews {
+          display: flex;
+          .starspan {
+            font-size: 12px;
+            text-align: center;
+          }
+          .reviewstext {
+            color: rgb(34, 34, 34);
+            padding-left: 4px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+          }
+          .rewiewbtn {
+            button {
+              outline: none;
+              border: none;
+              text-decoration: none;
+              padding: 0;
+              margin: 0;
+              background: transparent;
+              span {
+                padding-left: 4px;
+                font-weight: 500;
+                text-decoration: underline;
+                color: rgb(113, 113, 113);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* price end */
 @media only screen and (max-width: 600px) {
   .navbarsection {
     display: none;
@@ -776,6 +853,9 @@ nav {
   }
   .phnavbarmaindiv {
     display: flex;
+  }
+  .pricecol{
+    display: none;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -797,6 +877,9 @@ nav {
   .slidermaindiv {
     display: block;
   }
+  .pricecol{
+    display: none;
+  }
 }
 @media only screen and (min-width: 768px) {
   .navbarsection {
@@ -814,8 +897,17 @@ nav {
   .slidermaindiv {
     display: none;
   }
+  .pricecol{
+    display: block;
+  }
+  .checkinpricediv{
+    display: block !important;
+  }
 }
 @media only screen and (min-width: 992px) {
+  .checkinpricediv{
+    display: flex !important;
+  }
 }
 @media only screen and (min-width: 1200px) {
 }
