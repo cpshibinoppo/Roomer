@@ -804,6 +804,7 @@ nav {
           }
         }
         .reviews {
+          display: flex;
           .starspan {
             font-size: 12px;
             text-align: center;
@@ -853,6 +854,9 @@ nav {
   .phnavbarmaindiv {
     display: flex;
   }
+  .pricecol{
+    display: none;
+  }
 }
 @media only screen and (min-width: 600px) {
   .navbarsection {
@@ -873,6 +877,9 @@ nav {
   .slidermaindiv {
     display: block;
   }
+  .pricecol{
+    display: none;
+  }
 }
 @media only screen and (min-width: 768px) {
   .navbarsection {
@@ -890,8 +897,17 @@ nav {
   .slidermaindiv {
     display: none;
   }
+  .pricecol{
+    display: block;
+  }
+  .checkinpricediv{
+    display: block !important;
+  }
 }
 @media only screen and (min-width: 992px) {
+  .checkinpricediv{
+    display: flex !important;
+  }
 }
 @media only screen and (min-width: 1200px) {
 }
