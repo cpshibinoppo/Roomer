@@ -1322,6 +1322,9 @@ nav {
   .whereyousleepmaindiv .listshowallfea button {
     width: 100% !important;
   }
+  .footersection{
+    display: block;
+  }
 }
 @media only screen and (min-width: 600px) {
   .navbarsection {
@@ -1355,6 +1358,9 @@ nav {
   .whereyousleepmaindiv .listshowallfea button {
     width: 100% !important;
   }
+  .footersection{
+    display: block;
+  }
 }
 @media only screen and (min-width: 768px) {
   .navbarsection {
@@ -1387,6 +1393,9 @@ nav {
   .listshowall button,
   .whereyousleepmaindiv .listshowallfea button {
     width: auto !important;
+  }
+  .footersection{
+    display: none;
   }
 }
 @media only screen and (min-width: 992px) {

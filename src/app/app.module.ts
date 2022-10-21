@@ -15,6 +15,7 @@ import { HotalcardlistComponent } from './pages/hotalcardlist/hotalcardlist.comp
 import { HomefooterComponent } from './layout/homefooter/homefooter.component';
 import { PhhomefooterComponent } from './layout/phhomefooter/phhomefooter.component';
 import { HotaldetailComponent } from './pages/hotaldetail/hotaldetail.component';
+import { ReviewsComponent } from './layout/reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HotaldetailComponent } from './pages/hotaldetail/hotaldetail.component'
     HotalcardlistComponent,
     HomefooterComponent,
     PhhomefooterComponent,
-    HotaldetailComponent
+    HotaldetailComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
