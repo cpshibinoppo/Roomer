@@ -1,66 +1,66 @@
-.head{
+.head {
   margin-bottom: 32px;
   color: var(--text-color);
   font-weight: 600;
   font-size: 22px;
   line-height: 26px;
-  .starspan{
+  .starspan {
     margin-right: 8px;
     display: inline-flex;
-    i{
+    i {
       font-size: 19px;
     }
   }
-  .reviewconttext{
+  .reviewconttext {
     display: inline-flex;
-    h2{
+    h2 {
       font-size: 1em;
     }
   }
 }
-.hotelreviewlistmaindiv{
+.hotelreviewlistmaindiv {
   display: block;
   color: var(--text-color);
   font-weight: 400;
   font-size: var(--text-size);
   line-height: 20px;
   margin-bottom: 24px;
-  .hotelreviewlistdiv{
+  .hotelreviewlistdiv {
     display: flex;
     align-items: stretch;
     justify-content: flex-start;
     flex-wrap: wrap;
-    .hotelreviewlistcard{
+    .hotelreviewlistcard {
       padding-left: 8px;
       padding-right: 8px;
       margin-bottom: 16px;
       width: 41.6667% !important;
       margin-right: 8.33333% !important;
-      div{
+      div {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        .text{
+        .text {
           width: 100%;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap !important;
         }
-        .linediv{
+        .linediv {
           display: flex;
           flex-direction: row;
           align-items: center;
           margin-left: 12px;
           width: 50%;
-          .line{
+          .line {
             position: relative;
             height: 4px;
             width: 100%;
             margin-right: 4px;
             background: rgb(221, 221, 221);
             border-radius: 2px;
-            span{
+            span {
               position: absolute;
               top: 0;
               left: -5px;
@@ -69,7 +69,7 @@
               border-radius: 2px;
             }
           }
-          span{
+          span {
             font-size: 12px;
             color: rgb(34, 34, 34);
             font-weight: 600;
@@ -78,6 +78,26 @@
           }
         }
       }
+    }
+  }
+}
+.reviewofpeoplemiandiv {
+  display: block;
+  color: var(--text-color);
+  font-size: var(--font-size);
+  line-height: 20px;
+  font-weight: 400;
+  .repeoplediv{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .carddiv{
+      padding-left: 8px;
+      padding-right: 8px;
+      margin-bottom: 16px;
+      width: 41.6667% !important;
+      margin-right: 8.33333% !important;
     }
   }
 }

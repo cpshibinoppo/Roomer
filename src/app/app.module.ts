@@ -16,6 +16,7 @@ import { HomefooterComponent } from './layout/homefooter/homefooter.component';
 import { PhhomefooterComponent } from './layout/phhomefooter/phhomefooter.component';
 import { HotaldetailComponent } from './pages/hotaldetail/hotaldetail.component';
 import { ReviewsComponent } from './layout/reviews/reviews.component';
+import { ReiewscardComponent } from './layout/reiewscard/reiewscard.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ReviewsComponent } from './layout/reviews/reviews.component';
     HomefooterComponent,
     PhhomefooterComponent,
     HotaldetailComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    ReiewscardComponent
   ],
   imports: [
     BrowserModule,
