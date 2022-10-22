@@ -149,6 +149,7 @@
       scroll-padding: 24px;
       scroll-snap-type: x mandatory;
       margin-left: 8px;
+      flex-wrap: nowrap;
       .carddiv{
         max-width: 80%;
         flex: 0 0 80%;
