@@ -139,6 +139,19 @@
 //   }
 // }
 /* phone reviews end */
+.showmorebuttondiv{
+  margin-top: 24px;
+  button{
+    border-radius: 8px;
+    border: 1px solid var(--text-color);
+    background-color: var(--white);
+    padding: 13px 23px;
+    font-size: var(--text-size);
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+}
 @media only screen and (max-width: 600px) {
   .reviewofpeoplemiandiv{
     .repeoplediv{
@@ -168,6 +181,11 @@
   .head{
     margin-bottom: 10px;
   }
+  .showmorebuttondiv{
+    button{
+      width: 100%;
+    }
+  }
 }
 @media only screen and (min-width: 600px) {
   .reviewofpeoplemiandiv{
@@ -181,6 +199,11 @@
     .head{
     margin-bottom: 32px;
   }
+  .showmorebuttondiv{
+    button{
+      width: 100%;
+    }
+  }
 
 }
 @media only screen and (min-width: 768px) {
@@ -190,6 +213,11 @@
       .carddiv{
         width: 100% ;
       }
+    }
+  }
+  .showmorebuttondiv{
+    button{
+      width: auto;
     }
   }
 }
