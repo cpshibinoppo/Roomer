@@ -20,6 +20,7 @@ import { ReiewscardComponent } from './layout/reiewscard/reiewscard.component';
 import { MappageComponent } from './layout/map/mappage/mappage.component';
 import { MapcomComponent } from './layout/map/mapcom/mapcom.component';
 import { ThingsComponent } from './layout/things/things.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ThingsComponent } from './layout/things/things.component';
     ReiewscardComponent,
     MappageComponent,
     MapcomComponent,
-    ThingsComponent
+    ThingsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

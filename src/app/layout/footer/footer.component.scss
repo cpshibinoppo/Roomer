@@ -1,0 +1,115 @@
+.main {
+  flex-direction: row;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-left: -12px;
+  margin-right: -12px;
+  display: flex;
+  .footerlistmaindiv {
+    flex: 1 0 0%;
+    padding-left: 12px;
+    padding-right: 12px;
+    div {
+      color: rgb(34, 34, 34);
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 700;
+      h3 {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        margin-top: 16px;
+        a {
+          color: rgb(34, 34, 34);
+          font-size: 14px;
+          text-decoration: none;
+          transition: all 0.25s ease;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+.copymaindiv {
+  display: flex;
+  justify-content: space-between;
+  .copydiv {
+    text-align: left;
+    .copyre {
+      margin-right: 19px;
+      font-size: 14px;
+      line-height: 18px;
+      color: rgb(34, 34, 34);
+      display: inline-block;
+    }
+    .links {
+      display: inline-block !important;
+      margin-left: -19px !important;
+      span {
+        display: inline-block !important;
+        text-align: center !important;
+        width: 19px !important;
+        font-size: 14px !important;
+        line-height: 18px !important;
+      }
+      a {
+        color: rgb(34, 34, 34);
+        font-size: 14px;
+        line-height: var(--line-height);
+        text-decoration: none;
+        outline: none;
+      }
+    }
+  }
+}
+.socailmaindiv {
+  display: flex;
+  align-items: baseline;
+  .lanrup {
+    display: flex;
+    span {
+      margin-right: 24px;
+      button {
+        border: none;
+        outline: none;
+        color: rgb(34, 34, 34);
+        line-height: 18px;
+        font-size: 14px;
+        background: transparent;
+        display: flex;
+        .socalimg {
+          margin-right: 8px;
+          img {
+            display: block;
+            height: 16px;
+            width: 16px;
+            fill: currentcolor;
+          }
+        }
+        span{
+          font-weight: 600 !important;
+        }
+      }
+    }
+  }
+}
+.socalidiv{
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    li{
+      margin-right: 24px;
+      font-size: 20px;
+    }
+  }
+}
