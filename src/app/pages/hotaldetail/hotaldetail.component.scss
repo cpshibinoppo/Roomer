@@ -1293,6 +1293,168 @@ nav {
   }
 }
 /* footer price end */
+/* map start */
+.mappagesection {
+  border: 1px solid var(--borderlight-color);
+}
+/* map end */
+/* hoster details start */
+.hosterfullsectiondiv {
+  padding-top: 48px;
+  padding-bottom: 80px;
+  .hosterfullnamemaindiv {
+    margin-bottom: 24px;
+    justify-content: initial;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    .hosterimg {
+      margin-right: 16px;
+      div {
+        height: 64px;
+        width: 64px;
+        a {
+          div {
+            display: inline-block;
+            vertical-align: bottom;
+            height: 64px;
+            width: 64px;
+            border-radius: 50%;
+            background: rgb(221, 221, 221);
+            overflow: hidden;
+            min-height: 1px;
+            img {
+              object-fit: cover;
+              vertical-align: bottom;
+              height: 100%;
+              width: 100%;
+              position: static;
+            }
+          }
+        }
+      }
+    }
+    .hostername {
+      color: var(--text-color);
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+      }
+      div {
+        padding-top: 8px;
+        color: var(--light-color);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        span {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+.fullofcontain {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  .containsection {
+    width: 42%;
+  }
+  .coutacthostmaindiv {
+    width: 42%;
+  }
+}
+.containmaindiv {
+  display: flex;
+  margin-bottom: 12px;
+  flex-flow: row wrap;
+  div {
+    display: flex;
+    align-items: center;
+    .funiconspan {
+      color: var(--text-color);
+      font-size: 20px;
+      min-width: 20px;
+      img {
+        display: block;
+        height: 16px;
+        width: 16px;
+        fill: currentcolor;
+      }
+    }
+    .text {
+      margin-left: 8px;
+    }
+  }
+}
+.hosterdetalmaindiv {
+  margin-bottom: 24px;
+  .headtext {
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: var(--text-size);
+    line-height: 20px;
+    h3 {
+      font-size: 1em;
+    }
+  }
+  .subtextmaindiv {
+    font-weight: 400;
+    font-size: var(--text-size);
+    word-break: break-word;
+  }
+}
+.responsemaindiv {
+  div {
+    margin-bottom: 16px;
+  }
+}
+.contacthostbtndiv {
+  margin-top: 32px;
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: var(--text-size);
+    line-height: 20px;
+    border: 1px solid var(--text-color);
+    padding: 13px 23px;
+    background: var(--white);
+    outline: none;
+    border-radius: 8px;
+  }
+}
+.protectmaindiv {
+  margin-top: 24px;
+  max-width: 300px;
+  div {
+    margin-left: 0;
+    margin-right: 16px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      display: block;
+      height: 24px;
+      width: 24px;
+      fill: rgb(227, 28, 95);
+      stroke: currentcolor;
+    }
+  }
+}
+/* hoster details end */
 @media only screen and (max-width: 600px) {
   .navbarsection {
     display: none;
@@ -1322,8 +1484,33 @@ nav {
   .whereyousleepmaindiv .listshowallfea button {
     width: 100% !important;
   }
-  .footersection{
+  .footersection {
     display: block;
+  }
+  .fullofcontain {
+    .containsection {
+      width: 100% !important;
+    }
+    .coutacthostmaindiv {
+      width: 100% !important;
+    }
+  }
+  .contacthostbtndiv {
+    display: flex;
+    a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .protectmaindiv {
+    max-width: none;
+    div {
+      flex-direction: row-reverse;
+      .imgdiv {
+        margin-left: 16px;
+        margin-right: 0;
+      }
+    }
   }
 }
 @media only screen and (min-width: 600px) {
@@ -1358,8 +1545,16 @@ nav {
   .whereyousleepmaindiv .listshowallfea button {
     width: 100% !important;
   }
-  .footersection{
+  .footersection {
     display: block;
+  }
+  .fullofcontain {
+    .containsection {
+      width: 100% !important;
+    }
+    .coutacthostmaindiv {
+      width: 100% !important;
+    }
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1394,13 +1589,29 @@ nav {
   .whereyousleepmaindiv .listshowallfea button {
     width: auto !important;
   }
-  .footersection{
+  .footersection {
     display: none;
+  }
+  .fullofcontain {
+    .containsection {
+      width: 100% !important;
+    }
+    .coutacthostmaindiv {
+      width: 100% !important;
+    }
   }
 }
 @media only screen and (min-width: 992px) {
   .checkinpricediv {
     display: block !important;
+  }
+  .fullofcontain {
+    .containsection {
+      width: 42% !important;
+    }
+    .coutacthostmaindiv {
+      width: 42% !important;
+    }
   }
 }
 @media only screen and (min-width: 1200px) {

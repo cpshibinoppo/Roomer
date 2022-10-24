@@ -17,6 +17,8 @@ import { PhhomefooterComponent } from './layout/phhomefooter/phhomefooter.compon
 import { HotaldetailComponent } from './pages/hotaldetail/hotaldetail.component';
 import { ReviewsComponent } from './layout/reviews/reviews.component';
 import { ReiewscardComponent } from './layout/reiewscard/reiewscard.component';
+import { MappageComponent } from './layout/map/mappage/mappage.component';
+import { MapcomComponent } from './layout/map/mapcom/mapcom.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { ReiewscardComponent } from './layout/reiewscard/reiewscard.component';
     PhhomefooterComponent,
     HotaldetailComponent,
     ReviewsComponent,
-    ReiewscardComponent
+    ReiewscardComponent,
+    MappageComponent,
+    MapcomComponent
   ],
   imports: [
     BrowserModule,
