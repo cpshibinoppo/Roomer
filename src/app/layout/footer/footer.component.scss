@@ -94,22 +94,204 @@
             fill: currentcolor;
           }
         }
-        span{
+        span {
           font-weight: 600 !important;
         }
       }
     }
   }
 }
-.socalidiv{
-  ul{
+.socalidiv {
+  ul {
     padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
-    li{
+    li {
       margin-right: 24px;
       font-size: 20px;
     }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    display: block;
+    padding-top: 10px ;
+    .footerlistmaindiv {
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid rgb(221, 221, 221);
+      h3{
+        font-size: 14px !important;
+      }
+      ul {
+        display: block;
+        flex-wrap: wrap;
+        margin-left: -12px !important;
+        margin-right: -12px !important;
+        li {
+          flex-basis: 33.3333%;
+          padding-left: 12px;
+          padding-right: 12px;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+  .copysectin{
+    display: flex;
+    justify-content: center;
+  }
+  .copymaindiv{
+    display: block ;
+    text-align: center;
+  }
+  .copydiv{
+    display: none;
+  }
+  .socalidiv{
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .main {
+    display: block;
+    padding-top: 20px ;
+    .footerlistmaindiv {
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid rgb(221, 221, 221);
+      h3{
+        font-size: 14px !important;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -12px !important;
+        margin-right: -12px !important;
+        li {
+          flex-basis: 33.3333%;
+          padding-left: 12px;
+          padding-right: 12px;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+  .copysectin{
+    display: flex;
+    justify-content: center;
+  }
+  .copymaindiv{
+    display: block ;
+    text-align: center;
+  }
+  .copydiv{
+    display: flex;
+  }
+  .socalidiv{
+    display: flex;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main {
+    display: block;
+    padding-top: 20px ;
+    .footerlistmaindiv {
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid rgb(221, 221, 221);
+      h3{
+        font-size: 14px !important;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -12px !important;
+        margin-right: -12px !important;
+        li {
+          flex-basis: 33.3333%;
+          padding-left: 12px;
+          padding-right: 12px;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+  .copysectin{
+    display: flex;
+    justify-content: center;
+  }
+  .copymaindiv{
+    display: block ;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main {
+    display: block;
+    padding-top: 20px ;
+    .footerlistmaindiv {
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid rgb(221, 221, 221);
+      h3{
+        font-size: 14px !important;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -12px !important;
+        margin-right: -12px !important;
+        li {
+          flex-basis: 33.3333%;
+          padding-left: 12px;
+          padding-right: 12px;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+  .copysectin{
+    display: flex;
+    justify-content: center;
+  }
+  .copymaindiv{
+    display: block ;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main {
+    display: flex;
+    padding-top: 48px ;
+    .footerlistmaindiv {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+      h3{
+        font-size: 18px !important;
+      }
+      ul {
+        display: block;
+        flex-wrap: wrap;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        li {
+          flex-basis: 33.3333%;
+          padding-left: 0;
+          padding-right: 0;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+  .copysectin{
+    display: block;
+    justify-content: flex-start;
+  }
+  .copymaindiv{
+    display: flex ;
+    text-align: left;
   }
 }
