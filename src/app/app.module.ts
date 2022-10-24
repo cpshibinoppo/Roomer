@@ -19,6 +19,7 @@ import { ReviewsComponent } from './layout/reviews/reviews.component';
 import { ReiewscardComponent } from './layout/reiewscard/reiewscard.component';
 import { MappageComponent } from './layout/map/mappage/mappage.component';
 import { MapcomComponent } from './layout/map/mapcom/mapcom.component';
+import { ThingsComponent } from './layout/things/things.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { MapcomComponent } from './layout/map/mapcom/mapcom.component';
     ReviewsComponent,
     ReiewscardComponent,
     MappageComponent,
-    MapcomComponent
+    MapcomComponent,
+    ThingsComponent
   ],
   imports: [
     BrowserModule,
