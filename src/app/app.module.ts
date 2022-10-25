@@ -21,6 +21,8 @@ import { MappageComponent } from './layout/map/mappage/mappage.component';
 import { MapcomComponent } from './layout/map/mapcom/mapcom.component';
 import { ThingsComponent } from './layout/things/things.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { HostComponent } from './pages/host/host.component';
+import { HostindroducionComponent } from './pages/hostindroducion/hostindroducion.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { FooterComponent } from './layout/footer/footer.component';
     MappageComponent,
     MapcomComponent,
     ThingsComponent,
-    FooterComponent
+    FooterComponent,
+    HostComponent,
+    HostindroducionComponent
   ],
   imports: [
     BrowserModule,
