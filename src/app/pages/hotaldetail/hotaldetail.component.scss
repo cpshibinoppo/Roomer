@@ -1232,6 +1232,7 @@ nav {
 /* footer price start */
 .footermaindiv {
   position: fixed;
+  z-index: 5;
   width: 100%;
   bottom: 0;
   padding-left: 24px;
@@ -1298,13 +1299,19 @@ nav {
 /* footer price end */
 /* map start */
 .mappagesection {
-  border: 1px solid var(--borderlight-color);
+  .container {
+    border-bottom: 1px solid var(--borderlight-color);
+  }
 }
 /* map end */
 /* hoster details start */
 .hosterfullsectiondiv {
   padding-top: 48px;
-  padding-bottom: 80px;
+  padding-bottom: 35px;
+  .container {
+    border-bottom: 1px solid var(--borderlight-color);
+    padding-bottom: 3rem;
+  }
   .hosterfullnamemaindiv {
     margin-bottom: 24px;
     justify-content: initial;
@@ -1459,7 +1466,7 @@ nav {
 }
 /* hoster details end */
 /* footer start */
-footer {
+.footersectionmain {
   background: rgb(247, 247, 247);
   position: relative;
   border-top: 1px solid rgb(221, 221, 221);
@@ -1522,6 +1529,10 @@ footer {
       }
     }
   }
+  .hosterfullsectiondiv {
+    padding-top: 48px;
+    padding-bottom: 0px;
+  }
 }
 @media only screen and (min-width: 600px) {
   .navbarsection {
@@ -1566,6 +1577,10 @@ footer {
       width: 100% !important;
     }
   }
+  .hosterfullsectiondiv {
+    padding-top: 48px;
+    padding-bottom: 0px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .navbarsection {
@@ -1609,6 +1624,10 @@ footer {
     .coutacthostmaindiv {
       width: 100% !important;
     }
+  }
+  .hosterfullsectiondiv {
+    padding-top: 48px;
+    padding-bottom: 35px;
   }
 }
 @media only screen and (min-width: 992px) {

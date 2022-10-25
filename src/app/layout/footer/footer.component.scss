@@ -66,6 +66,9 @@
         line-height: var(--line-height);
         text-decoration: none;
         outline: none;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -92,6 +95,7 @@
             height: 16px;
             width: 16px;
             fill: currentcolor;
+            cursor: pointer;
           }
         }
         span {
@@ -110,18 +114,19 @@
     li {
       margin-right: 24px;
       font-size: 20px;
+      cursor: pointer;
     }
   }
 }
 @media only screen and (max-width: 600px) {
   .main {
     display: block;
-    padding-top: 10px ;
+    padding-top: 10px;
     .footerlistmaindiv {
       padding-bottom: 24px;
       margin-bottom: 24px;
       border-bottom: 1px solid rgb(221, 221, 221);
-      h3{
+      h3 {
         font-size: 14px !important;
       }
       ul {
@@ -138,30 +143,30 @@
       }
     }
   }
-  .copysectin{
+  .copysectin {
     display: flex;
     justify-content: center;
   }
-  .copymaindiv{
-    display: block ;
+  .copymaindiv {
+    display: block;
     text-align: center;
   }
-  .copydiv{
+  .copydiv {
     display: none;
   }
-  .socalidiv{
+  .socalidiv {
     display: none;
   }
 }
 @media only screen and (min-width: 600px) {
   .main {
     display: block;
-    padding-top: 20px ;
+    padding-top: 20px;
     .footerlistmaindiv {
       padding-bottom: 24px;
       margin-bottom: 24px;
       border-bottom: 1px solid rgb(221, 221, 221);
-      h3{
+      h3 {
         font-size: 14px !important;
       }
       ul {
@@ -178,30 +183,30 @@
       }
     }
   }
-  .copysectin{
+  .copysectin {
     display: flex;
     justify-content: center;
   }
-  .copymaindiv{
-    display: block ;
+  .copymaindiv {
+    display: block;
     text-align: center;
   }
-  .copydiv{
+  .copydiv {
     display: flex;
   }
-  .socalidiv{
+  .socalidiv {
     display: flex;
   }
 }
 @media only screen and (min-width: 768px) {
   .main {
     display: block;
-    padding-top: 20px ;
+    padding-top: 20px;
     .footerlistmaindiv {
       padding-bottom: 24px;
       margin-bottom: 24px;
       border-bottom: 1px solid rgb(221, 221, 221);
-      h3{
+      h3 {
         font-size: 14px !important;
       }
       ul {
@@ -218,24 +223,24 @@
       }
     }
   }
-  .copysectin{
+  .copysectin {
     display: flex;
     justify-content: center;
   }
-  .copymaindiv{
-    display: block ;
+  .copymaindiv {
+    display: block;
     text-align: center;
   }
 }
 @media only screen and (min-width: 992px) {
   .main {
     display: block;
-    padding-top: 20px ;
+    padding-top: 20px;
     .footerlistmaindiv {
       padding-bottom: 24px;
       margin-bottom: 24px;
       border-bottom: 1px solid rgb(221, 221, 221);
-      h3{
+      h3 {
         font-size: 14px !important;
       }
       ul {
@@ -252,24 +257,24 @@
       }
     }
   }
-  .copysectin{
+  .copysectin {
     display: flex;
     justify-content: center;
   }
-  .copymaindiv{
-    display: block ;
+  .copymaindiv {
+    display: block;
     text-align: center;
   }
 }
 @media only screen and (min-width: 1200px) {
   .main {
     display: flex;
-    padding-top: 48px ;
+    padding-top: 48px;
     .footerlistmaindiv {
       padding-bottom: 0;
       margin-bottom: 0;
       border-bottom: none;
-      h3{
+      h3 {
         font-size: 18px !important;
       }
       ul {
@@ -286,12 +291,12 @@
       }
     }
   }
-  .copysectin{
+  .copysectin {
     display: block;
     justify-content: flex-start;
   }
-  .copymaindiv{
-    display: flex ;
+  .copymaindiv {
+    display: flex;
     text-align: left;
   }
 }
