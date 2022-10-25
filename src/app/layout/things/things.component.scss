@@ -34,11 +34,11 @@
         margin: 0;
         li {
           list-style-type: none;
-          padding-top: .5rem;
-          div{
+          padding-top: 0.5rem;
+          div {
             display: flex;
-            span{
-              a{
+            span {
+              a {
                 color: var(--light-color);
                 font-weight: 600;
               }
@@ -49,25 +49,102 @@
     }
   }
 }
-.showmorebtn{
+.showmorebtn {
   margin-top: 24px;
-  button{
+  button {
     border: none;
     outline: none;
     background: transparent;
-    span{
+    span {
       display: inline-flex;
       vertical-align: bottom;
       flex-direction: row;
       align-items: center;
-      .text{
+      .text {
         text-decoration: underline;
       }
-      span{
-        i{
+      span {
+        i {
           font-size: 20px;
         }
       }
     }
+  }
+}
+/* ph things start */
+.phthingsmaindiv {
+  padding-top: 24px;
+  .phthingsdiv {
+    button {
+      position: relative;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid var(--borderlight-color);
+      background: transparent;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      .conmaindiv {
+        padding-bottom: 24px;
+        padding-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .phtext {
+          text-align: left;
+          .phmaintext {
+            color: var(--text-color);
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 26px;
+            h2 {
+              padding: 0;
+              margin: 0;
+              font-size: 1em;
+            }
+          }
+          .phsubtext {
+            margin-top: 8px;
+            color: var(--light-color);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+.arrowmandiv {
+  padding-left: 8px;
+  font-size: 28px;
+}
+/* ph things end */
+@media only screen and (max-width: 600px) {
+  .phthingsmaindiv {
+    display: block;
+  }
+  .main {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .phthingsmaindiv {
+    display: block;
+  }
+  .main {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .phthingsmaindiv {
+    display: none;
+  }
+  .main {
+    display: block;
   }
 }
