@@ -1533,6 +1533,9 @@ nav {
     padding-top: 48px;
     padding-bottom: 0px;
   }
+  .thingssection{
+    padding-bottom: 0;
+  }
 }
 @media only screen and (min-width: 600px) {
   .navbarsection {
@@ -1581,6 +1584,9 @@ nav {
     padding-top: 48px;
     padding-bottom: 0px;
   }
+  .thingssection{
+    padding-bottom: 0;
+  }
 }
 @media only screen and (min-width: 768px) {
   .navbarsection {
@@ -1628,6 +1634,9 @@ nav {
   .hosterfullsectiondiv {
     padding-top: 48px;
     padding-bottom: 35px;
+  }
+  .thingssection{
+    padding-bottom: 2rem;
   }
 }
 @media only screen and (min-width: 992px) {
