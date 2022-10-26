@@ -1,3 +1,4 @@
+import { HostindroducionComponent } from './pages/hostindroducion/hostindroducion.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './layout/navbar/navbar.component';
@@ -7,6 +8,7 @@ import { HotaldetailComponent } from './pages/hotaldetail/hotaldetail.component'
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'hotel',component:HotaldetailComponent,data:{test:true}},
+  {path:'Hostindroducion',component:HostindroducionComponent},
 ];
 
 @NgModule({
