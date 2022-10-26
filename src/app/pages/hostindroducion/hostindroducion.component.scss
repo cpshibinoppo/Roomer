@@ -8,6 +8,7 @@ html {
 }
 .sectionone {
   position: relative;
+  overflow: hidden;
   .logo {
     display: inline;
     position: fixed;
@@ -246,7 +247,61 @@ html {
     }
   }
 }
+.closebtnmaindiv {
+  button {
+    display: inline-flex;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    &::before {
+      content: "" !important;
+      display: block !important;
+      position: absolute !important;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      width: 32px !important;
+      height: 32px !important;
+      border-radius: 50% !important;
+      background: rgb(0, 0, 0) !important;
+      opacity: 0.4 !important;
+    }
+    span {
+      position: relative;
+      img {
+        display: block;
+        fill: none;
+        height: 16px;
+        width: 16px;
+        stroke: rgb(255, 255, 255);
+        stroke-width: 4;
+        overflow: visible;
+      }
+    }
+  }
+}
+.closebtnmaindiv {
+  display: none !important;
+}
 @media only screen and (max-width: 760px) {
+  .sectionone {
+    overflow: unset;
+  }
+  .exitbuttondiv,
+  .logomaindiv {
+    display: none !important;
+  }
+  .closebtnmaindiv {
+    display: block !important;
+  }
   .textmaincol {
     border-radius: 12px 12px 0px 0px !important;
     z-index: 2;
