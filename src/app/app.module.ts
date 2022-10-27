@@ -23,6 +23,7 @@ import { ThingsComponent } from './layout/things/things.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HostComponent } from './pages/host/host.component';
 import { HostindroducionComponent } from './pages/hostindroducion/hostindroducion.component';
+import { From1Component } from './layout/hostform/from1/from1.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { HostindroducionComponent } from './pages/hostindroducion/hostindroducio
     ThingsComponent,
     FooterComponent,
     HostComponent,
-    HostindroducionComponent
+    HostindroducionComponent,
+    From1Component
   ],
   imports: [
     BrowserModule,
