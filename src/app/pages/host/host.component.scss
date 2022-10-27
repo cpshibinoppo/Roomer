@@ -185,3 +185,53 @@
     }
   }
 }
+.buttommainsection{
+  position: fixed;
+  width: 50vw;
+  bottom: 0;
+.bottombarmiandiv{
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-top: 1px solid var(--borderlight-color);
+  .backbuttonmaindiv{
+    margin-left: 48px;
+    button{
+      margin: 0;
+      padding: 10px;
+      position: relative;
+      font-size: var(--text-size);
+      line-height: 20px;
+      font-weight: 600;
+      outline: none;
+      border: none;
+      background: transparent;
+      text-decoration: underline;
+      margin-left: -10px;
+      margin-right: -10px;
+      color: var(--text-color);
+    }
+  }
+  .nextbuttonmaindiv{
+    margin-right: 48px;
+    button{
+      cursor: not-allowed;
+      border: none;
+      background: var(--light-background);
+      color: var(--white);
+      margin: 0;
+      padding: 14px 24px 14px 24px;
+      position: relative;
+      font-size: var(--text-size);
+      line-height: 20px;
+      font-weight: 600;
+      outline: none;
+      text-decoration: none;
+      border-radius: 8px;
+
+    }
+  }
+}
+}
