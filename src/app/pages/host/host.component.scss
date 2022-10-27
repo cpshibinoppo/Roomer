@@ -1,19 +1,19 @@
-.col-6{
+.col-6 {
   padding: 0;
   margin: 0;
 }
-.sectioncolone{
+.sectioncolone {
   background-image: url(../../../assets/img/host/backgroundimg.webp);
   background-size: 100% 100%;
   width: 100%;
   height: 100vh;
   position: relative;
-  .logomaindiv{
+  .logomaindiv {
     display: inline;
     position: fixed;
     top: 32px;
     left: 48px;
-    a{
+    a {
       display: inline-flex;
       border: none;
       color: var(--white);
@@ -22,9 +22,9 @@
       width: 40px;
       height: 40px;
       align-items: center;
-      span{
+      span {
         position: relative;
-        img{
+        img {
           display: block;
           height: 32px;
           width: 32px;
@@ -33,7 +33,7 @@
       }
     }
   }
-  .questionmaindiv{
+  .questionmaindiv {
     width: 50%;
     height: 100vh;
     max-height: 100%;
@@ -43,76 +43,79 @@
     justify-content: center;
     display: flex;
     min-height: 30%;
-    .questiondiv{
+    .questiondiv {
       margin-left: min(10%, 56px);
       max-width: 75%;
       margin-bottom: unset;
       margin-right: 24px;
       width: 100%;
       color: var(--white);
-      h1{
+      h1 {
         font-size: 48px;
         line-height: 56px;
         margin-bottom: 12px;
         font-weight: 600;
-
       }
     }
   }
 }
-.topbarmiansection{
+.topbarmiansection {
   z-index: 2;
   width: 50vw;
   position: fixed;
   left: 50%;
   top: 0px;
   right: 0px;
-  .topbarmiandiv{
+  .topbarmiandiv {
     padding: 32px 48px 0px;
     display: flex;
     justify-content: flex-end;
     background-color: var(--white);
     height: 88px;
-    .helpmaindiv{
+    .helpmaindiv {
       flex: none;
       padding-right: 16px;
-      .userandhelpmaindiv{
+      .userandhelpmaindiv {
         display: flex;
         align-items: center;
-        .usermaindiv{
+        .usermaindiv {
           display: flex;
           justify-content: flex-end;
           margin-right: 12px;
           margin-left: 48px;
-          button{
+          button {
             display: inline-flex;
             font-size: 12px;
             line-height: 16px;
             padding: 4px 22px 4px 2px;
-            background:var(--white);
-            box-shadow: 0px 0px 0px 1px #dddddd inset, 0px 2px 4px rgb(0 0 0 / 18%) !important;
+            background: var(--white);
+            box-shadow: 0px 0px 0px 1px #dddddd inset,
+              0px 2px 4px rgb(0 0 0 / 18%) !important;
             align-items: center;
             border: none;
             outline: none;
             border-radius: 100px;
             font-weight: 600;
-            .askimgspan{
+            transition: all 0.3s ease;
+            &:hover {
+              box-shadow: 0px 0px 0px 1px #dddddd inset,
+                0px 6px 16px rgb(0 0 0 / 12%) !important;
+            }
+            .askimgspan {
               margin-left: -18px;
               margin-right: 12px;
-              span{
-                right: -18px;
-                z-index: 3;
+              span {
                 display: inline-block;
                 position: relative;
                 border: 1px solid var(--white);
                 border-radius: 50%;
-                div{
+                div {
                   display: inline-block;
                   height: 22px;
                   width: 22px;
                   min-height: 1px;
                   border-radius: 50%;
-                  img{
+                  img {
                     object-fit: cover;
                     vertical-align: bottom;
                     border-radius: 50%;
@@ -125,10 +128,10 @@
             }
           }
         }
-        .helpdiv{
+        .helpdiv {
           display: inline;
           position: relative;
-          button{
+          button {
             border: none;
             outline: none;
             background-color: var(--hover-background);
@@ -144,7 +147,9 @@
             font-size: 12px;
             line-height: 16px;
             font-weight: 600;
-            div{
+            height: 32px;
+            align-items: center;
+            div {
               display: flex;
               flex-direction: column;
             }
@@ -152,9 +157,9 @@
         }
       }
     }
-    .saveandexitdiv{
+    .saveandexitdiv {
       margin-right: 0px;
-      button{
+      button {
         border: none;
         outline: none;
         background-color: var(--hover-background);
@@ -170,7 +175,9 @@
         font-size: 12px;
         line-height: 16px;
         font-weight: 600;
-        div{
+        height: 32px;
+        align-items: center;
+        div {
           display: flex;
           flex-direction: column;
         }
