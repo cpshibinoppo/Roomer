@@ -44,6 +44,7 @@
       height: 32px;
       justify-content: center;
       align-items: center;
+      display: none;
       &::before {
         content: "";
         display: block;
@@ -289,6 +290,9 @@
     display: none;
   }
 }
+.phoneaskbutton {
+  display: none;
+}
 @media only screen and (max-width: 770px) {
   .usermaindiv {
     display: none !important;
@@ -300,6 +304,8 @@
     width: 100% !important;
     height: 45vh !important;
     .questiondiv {
+      margin-left: 24px !important;
+      margin-bottom: 20px !important;
       h1 {
         font-size: 26px !important;
         line-height: 30px !important;
@@ -312,8 +318,13 @@
     background-image: url(../../../assets/img/host/backgroudimg2.webp);
   }
   .logomaindiv {
+    top: 15px !important;
+    left: 15px !important;
     a {
       display: none !important;
+    }
+    button {
+      display: flex !important;
     }
   }
   .helpdiv,
@@ -340,45 +351,26 @@
   .topbarmiandiv {
     padding: 15px 20px 0px !important;
   }
-  .logomaindiv {
-    top: 15px !important;
-    left: 15px !important;
+  .saveandexitdiv {
+    display: none !important;
+  }
+  .phoneaskbutton {
+    display: block !important;
+  }
+  .conandsection {
+    margin-top: 25px;
+    overflow: unset;
+  }
+  .formcolmaindiv {
+    border-radius: 12px 12px 0px 0px !important;
+    z-index: 3;
+    margin-top: -10px;
+    background-color: var(--white);
   }
 }
-// @media only screen and (min-width: 600px) {
-//   .usermaindiv {
-//     display: none !important;
-//   }
-//   .buttommainsection {
-//     width: 100vw;
-//   }
-//   .questionmaindiv {
-//     width: 100% !important;
-//     height: 45vh !important;
-//     .questiondiv {
-//       h1 {
-//         font-size: 26px !important;
-//         line-height: 30px !important;
-//         margin-bottom: 0 !important;
-//       }
-//     }
-//   }
-//   .sectioncolone {
-//     height: 30vh;
-//     background-image: url(../../../assets/img/host/backgroudimg2.webp);
-//   }
-//   .logomaindiv {
-//     a {
-//       display: none !important;
-//     }
-//   }
-//   // .logomaindiv{
-//   //   top: 15px !important;
-//   //   left: 15px !important;
-//   // }
-// }
 @media only screen and (min-width: 770px) {
-  .usermaindiv {
+  .usermaindiv,
+  .phoneaskbutton {
     display: none !important;
   }
   .buttommainsection {
@@ -403,11 +395,13 @@
     a {
       display: block !important;
     }
+    button {
+      display: none !important;
+    }
   }
-  // .logomaindiv{
-  //   top: 32px !important;
-  //   left: 48px !important;
-  // }
+  .saveandexitdiv {
+    display: block !important;
+  }
 }
 @media only screen and (min-width: 992px) {
   .usermaindiv {
