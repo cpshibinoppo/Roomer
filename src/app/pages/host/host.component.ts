@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { From1Component } from 'src/app/layout/hostform/from1/from1.component';
-
+import { FormService } from 'src/app/shared/form.service';
+import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-host',
   templateUrl: './host.component.html',
@@ -8,12 +8,22 @@ import { From1Component } from 'src/app/layout/hostform/from1/from1.component';
 })
 export class HostComponent implements OnInit {
 
-  constructor(public from1com:From1Component) { }
+  constructor(public formser:FormService) { }
+  clickEventsubscription:Subscription | undefined;
 
+  buttonchang = false;
   ngOnInit(): void {
-    if(this.from1com.nextbutton){
-      console.log('sc');
-    }
+    // if(this.from1com.nextbutton){
+    //   console.log('sc');
+    // }
+    this.clickEventsubscription=this.formser.getClickEvent().subscribe(()=>{
+      this.buttontruecheck();
+      })
   }
-
+buttontruecheck(){
+  this.buttonchang = true;
+  // if(this.from1com.nextbutton){
+    //   console.log('sc');
+    // }
+}
 }
