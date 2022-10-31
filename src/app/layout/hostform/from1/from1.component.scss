@@ -75,7 +75,7 @@
 .active {
   border: transparent;
   box-shadow: rgb(34 34 34) 0px 0px 0px 2px;
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(247, 247, 247) !important;
 }
 /* active styles end */
 @media only screen and (max-width: 760px) {
