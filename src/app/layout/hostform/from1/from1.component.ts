@@ -7,13 +7,17 @@ import $ from 'jquery';
   styleUrls: ['./from1.component.scss']
 })
 export class From1Component implements OnInit {
+  nextbutton = true;
 
   constructor() { }
 
   ngOnInit(): void {
-    $('button').click(function () {
+    $('.formonecardmaindiv button').click(function () {
       $('.active').removeClass('active');
       $(this).addClass('active');
     })
+  }
+  buttonactive(){
+    this.nextbutton = true;
   }
 }
