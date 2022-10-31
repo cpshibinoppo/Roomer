@@ -1,7 +1,5 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 
-import $ from 'jquery';
-import { SwiperComponent } from 'swiper/angular';
 import SwiperCore, { Navigation,Pagination } from "swiper";
 
 SwiperCore.use([Navigation,Pagination]);

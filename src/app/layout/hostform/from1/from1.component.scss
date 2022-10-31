@@ -29,6 +29,11 @@
           width: 100%;
           padding: 0;
           outline: none;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            border-color: transparent !important;
+            box-shadow: rgb(34 34 34) 0px 0px 0px 2px !important;
+          }
           .cardtext {
             margin: 16px 16px 16px 24px;
             text-align: left;
@@ -66,13 +71,15 @@
     }
   }
 }
-@media only screen and (max-width: 600px) {
+/* active styles start */
+.active {
+  border: transparent;
+  box-shadow: rgb(34 34 34) 0px 0px 0px 2px;
+  background-color: rgb(247, 247, 247);
 }
-@media only screen and (min-width: 600px) {
-}
-@media only screen and (min-width: 768px) {
-}
-@media only screen and (min-width: 992px) {
-}
-@media only screen and (min-width: 1200px) {
+/* active styles end */
+@media only screen and (max-width: 760px) {
+  .main {
+    padding-bottom: 5rem;
+  }
 }
