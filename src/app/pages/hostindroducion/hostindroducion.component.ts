@@ -26,4 +26,7 @@ export class HostindroducionComponent implements OnInit {
       this.playicon = true;
     }
   }
+  buttonlink(){
+    location.href = "/Host"
+  }
 }
