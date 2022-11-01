@@ -26,6 +26,8 @@ import { HostindroducionComponent } from './pages/hostindroducion/hostindroducio
 import { From1Component } from './layout/hostform/from1/from1.component';
 import { Form2Component } from './layout/hostform/form2/form2.component';
 import { Form3Component } from './layout/hostform/form3/form3.component';
+import { Form4Component } from './layout/hostform/form4/form4.component';
+import { Form5Component } from './layout/hostform/form5/form5.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { Form3Component } from './layout/hostform/form3/form3.component';
     HostindroducionComponent,
     From1Component,
     Form2Component,
-    Form3Component
+    Form3Component,
+    Form4Component,
+    Form5Component
   ],
   imports: [
     BrowserModule,
