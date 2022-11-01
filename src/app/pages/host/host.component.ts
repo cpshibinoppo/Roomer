@@ -25,6 +25,9 @@ export class HostComponent implements OnInit {
   buttonclick() {
     this.buttoncheck = true;
     $(".nextbuttonmaindiv button").removeClass("buttonactive")
+    $('.form2maindiv').css('display', 'block');
+    $('.form1maindiv').css('display', 'none');
+    $('.questiondiv h1').text('Which of these best describes your place?')
   }
   backbuttonclick() {
     this.loc.back();
