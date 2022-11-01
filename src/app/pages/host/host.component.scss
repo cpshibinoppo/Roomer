@@ -293,6 +293,10 @@
 .phoneaskbutton {
   display: none;
 }
+.buttonactive {
+  cursor: pointer !important;
+  background-color: black !important;
+}
 @media only screen and (max-width: 770px) {
   .usermaindiv {
     display: none !important;
