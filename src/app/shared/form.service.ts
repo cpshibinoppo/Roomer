@@ -10,7 +10,7 @@ export class FormService {
   sendClickEvent() {
     this.subject.next(null);
   }
-  getClickEvent(): Observable<any>{
+  getClickEvent(): Observable<any> {
     return this.subject.asObservable();
   }
 }

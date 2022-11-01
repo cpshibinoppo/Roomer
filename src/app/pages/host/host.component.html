@@ -1,7 +1,7 @@
 <section>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-md-6 col-lg-6" style="padding: 0;">
+      <div class="col-12 col-md-6 col-lg-6" style="padding: 0">
         <div class="sectioncolone">
           <div class="logomaindiv">
             <a href="/">
@@ -11,7 +11,7 @@
             </a>
             <button>
               <span>
-                <img src="../../../assets/img/host/clolseicon.svg" alt="">
+                <img src="../../../assets/img/host/clolseicon.svg" alt="" />
               </span>
             </button>
           </div>
@@ -22,7 +22,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-6 formcolmaindiv" style="padding: 0;">
+      <div class="col-12 col-md-6 col-lg-6 formcolmaindiv" style="padding: 0">
         <section class="conandsection">
           <app-from1></app-from1>
         </section>
@@ -86,10 +86,12 @@
           <div class="buttommainsection">
             <div class="bottombarmiandiv">
               <div class="backbuttonmaindiv">
-                <button>Back</button>
+                <button (click)="backbuttonclick()">Back</button>
               </div>
               <div class="nextbuttonmaindiv">
-                <button>Next</button>
+                <button [disabled]="this.buttoncheck" (click)="buttonclick()">
+                  Next
+                </button>
               </div>
             </div>
           </div>
