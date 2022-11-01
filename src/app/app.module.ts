@@ -25,6 +25,7 @@ import { HostComponent } from './pages/host/host.component';
 import { HostindroducionComponent } from './pages/hostindroducion/hostindroducion.component';
 import { From1Component } from './layout/hostform/from1/from1.component';
 import { Form2Component } from './layout/hostform/form2/form2.component';
+import { Form3Component } from './layout/hostform/form3/form3.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { Form2Component } from './layout/hostform/form2/form2.component';
     HostComponent,
     HostindroducionComponent,
     From1Component,
-    Form2Component
+    Form2Component,
+    Form3Component
   ],
   imports: [
     BrowserModule,
