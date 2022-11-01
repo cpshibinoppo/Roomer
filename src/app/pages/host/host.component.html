@@ -24,7 +24,12 @@
       </div>
       <div class="col-12 col-md-6 col-lg-6 formcolmaindiv" style="padding: 0">
         <section class="conandsection">
-          <app-from1></app-from1>
+          <div class="form1maindiv">
+            <app-from1></app-from1>
+          </div>
+          <div id="te" class="form2maindiv">
+            <app-form2></app-form2>
+          </div>
         </section>
         <div class="sectioncoltwo">
           <div class="topbarmiansection">
@@ -86,10 +91,10 @@
           <div class="buttommainsection">
             <div class="bottombarmiandiv">
               <div class="backbuttonmaindiv">
-                <button (click)="backbuttonclick()">Back</button>
+                <button [routerLink]="['..']">Back</button>
               </div>
               <div class="nextbuttonmaindiv">
-                <button [disabled]="this.buttoncheck" (click)="buttonclick()">
+                <button formtarget="te" [disabled]="this.buttoncheck" (click)="buttonclick()">
                   Next
                 </button>
               </div>
