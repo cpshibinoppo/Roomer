@@ -32,6 +32,10 @@
         align-items: center;
         width: 30%;
         min-height: 68px;
+        &:hover {
+          border-color: transparent !important;
+          box-shadow: rgb(34 34 34) 0px 0px 0px 2px !important;
+        }
         .iconimgdiv {
           width: 64px;
           height: 64px;
@@ -56,4 +60,9 @@
       }
     }
   }
+}
+.active {
+  border: transparent;
+  box-shadow: rgb(34 34 34) 0px 0px 0px 2px;
+  background-color: rgb(247, 247, 247) !important;
 }
