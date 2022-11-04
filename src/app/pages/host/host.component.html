@@ -24,17 +24,21 @@
       </div>
       <div class="col-12 col-md-6 col-lg-6 formcolmaindiv" style="padding: 0">
         <section class="conandsection">
-          <!-- <div class="form1maindiv">
-            <app-form1></app-form1>
+          <div class="form1maindiv">
+            <!-- <app-form1></app-form1> -->
           </div>
-          <div  class="form2maindiv">
-            <app-form2></app-form2>
+          <div class="form2maindiv">
+            <!-- <app-form2></app-form2> -->
           </div>
           <div class="form3maindiv">
-            <app-form3></app-form3>
-          </div> -->
-          <!-- <app-form5></app-form5> -->
-          <!-- <app-form6></app-form6> -->
+            <!-- <app-form3></app-form3> -->
+          </div>
+          <app-form1></app-form1>
+          <app-form2></app-form2>
+          <app-form3></app-form3>
+          <app-form4></app-form4>
+          <app-form5></app-form5>
+          <app-form6></app-form6>
           <app-form7></app-form7>
         </section>
         <div class="sectioncoltwo">
@@ -100,7 +104,7 @@
                 <button [routerLink]="['..']">Back</button>
               </div>
               <div class="nextbuttonmaindiv">
-                <button  [disabled]="this.buttoncheck" (click)="buttonclick()">
+                <button [disabled]="this.buttoncheck" (click)="buttonclick()">
                   Next
                 </button>
               </div>

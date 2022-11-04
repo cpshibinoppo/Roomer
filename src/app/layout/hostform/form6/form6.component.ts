@@ -11,8 +11,7 @@ export class Form6Component implements OnInit {
 
   ngOnInit(): void {
     $('.boxmandiv button').click(function () {
-      $('.active').removeClass('active');
-      $(this).addClass('active');
+      $(this).toggleClass('active');
     })
   }
   buttonactive() {

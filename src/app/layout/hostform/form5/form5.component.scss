@@ -9,7 +9,7 @@
   }
   .subaddguest {
     display: flex;
-    min-width: 330px;
+    // min-width: 330px;
     justify-content: space-between;
     align-items: center;
     .headtextdiv {
@@ -61,3 +61,8 @@
   cursor: no-drop;
 }
 /* end */
+@media only screen and (max-width: 768px) {
+  .addguestsmaindiv {
+    padding: 5px 10px;
+  }
+}
