@@ -1,1 +1,17 @@
-<p>form7 works!</p>
+<div class="maindiv">
+  <div class="photoboxmaindiv">
+    <div class="photoboxdiv">
+      <div class="boxdiv">
+        <div class="imgdiv">
+          <img src="../../../../assets/img/host/imgphoto.svg" alt="" />
+        </div>
+        <div class="maintext">Drag your photos here</div>
+        <div class="subdiv">Choose at least 5 photos</div>
+        <div class="uploadmaindiv">
+          <input type="file" multiple accept="image/*" #file>
+          <button (click)="file.click()">Upload from your device</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
