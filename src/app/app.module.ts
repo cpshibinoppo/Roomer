@@ -23,9 +23,13 @@ import { ThingsComponent } from './layout/things/things.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HostComponent } from './pages/host/host.component';
 import { HostindroducionComponent } from './pages/hostindroducion/hostindroducion.component';
-import { From1Component } from './layout/hostform/from1/from1.component';
 import { Form2Component } from './layout/hostform/form2/form2.component';
 import { Form3Component } from './layout/hostform/form3/form3.component';
+import { Form4Component } from './layout/hostform/form4/form4.component';
+import { Form5Component } from './layout/hostform/form5/form5.component';
+import { Form6Component } from './layout/hostform/form6/form6.component';
+import { Form7Component } from './layout/hostform/form7/form7.component';
+import { Form1Component } from './layout/hostform/form1/form1.component';
 
 @NgModule({
   declarations: [
@@ -49,9 +53,13 @@ import { Form3Component } from './layout/hostform/form3/form3.component';
     FooterComponent,
     HostComponent,
     HostindroducionComponent,
-    From1Component,
     Form2Component,
-    Form3Component
+    Form3Component,
+    Form4Component,
+    Form5Component,
+    Form6Component,
+    Form7Component,
+    Form1Component
   ],
   imports: [
     BrowserModule,

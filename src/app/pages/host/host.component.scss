@@ -298,6 +298,10 @@
   background-color: black !important;
 }
 @media only screen and (max-width: 770px) {
+  .conandsection {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   .usermaindiv {
     display: none !important;
   }
@@ -417,6 +421,6 @@
     display: block !important;
   }
 }
-.form2maindiv{
-  display: none ;
+.form2maindiv {
+  display: none;
 }
