@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormService } from 'src/app/shared/form.service';
 @Component({
   selector: 'app-form6',
   templateUrl: './form6.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Form6Component implements OnInit {
 
-  constructor() { }
+  constructor(private sharedService: FormService) { }
 
   ngOnInit(): void {
     $('.boxmandiv button').click(function () {
@@ -15,5 +15,7 @@ export class Form6Component implements OnInit {
       $(this).addClass('active');
     })
   }
-
+  buttonactive() {
+    this.sharedService.sendClickEvent();
+  }
 }
