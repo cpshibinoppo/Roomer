@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,6 +31,8 @@ import { Form5Component } from './layout/hostform/form5/form5.component';
 import { Form6Component } from './layout/hostform/form6/form6.component';
 import { Form7Component } from './layout/hostform/form7/form7.component';
 import { Form1Component } from './layout/hostform/form1/form1.component';
+import { Form8Component } from './layout/hostform/form8/form8.component';
+import { Form9Component } from './layout/hostform/form9/form9.component';
 
 @NgModule({
   declarations: [
@@ -59,11 +62,14 @@ import { Form1Component } from './layout/hostform/form1/form1.component';
     Form5Component,
     Form6Component,
     Form7Component,
-    Form1Component
+    Form1Component,
+    Form8Component,
+    Form9Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     SwiperModule
   ],
   providers: [],
