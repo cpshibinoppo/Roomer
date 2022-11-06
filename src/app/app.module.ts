@@ -34,6 +34,8 @@ import { Form1Component } from './layout/hostform/form1/form1.component';
 import { Form8Component } from './layout/hostform/form8/form8.component';
 import { Form9Component } from './layout/hostform/form9/form9.component';
 import { Form10Component } from './layout/hostform/form10/form10.component';
+import { Form11Component } from './layout/hostform/form11/form11.component';
+import { Form12Component } from './layout/hostform/form12/form12.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +68,9 @@ import { Form10Component } from './layout/hostform/form10/form10.component';
     Form1Component,
     Form8Component,
     Form9Component,
-    Form10Component
+    Form10Component,
+    Form11Component,
+    Form12Component
   ],
   imports: [
     BrowserModule,
