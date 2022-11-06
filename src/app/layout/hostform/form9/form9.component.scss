@@ -1,0 +1,84 @@
+.maindiv {
+  .formmaindiv {
+    padding-top: 32px;
+    padding-bottom: 24px;
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .formdiv {
+      .headingdiv {
+        padding-left: 6px;
+        padding-bottom: 12px;
+        display: flex;
+        h2 {
+          margin-top: 0;
+          font-size: 20px;
+          line-height: 26px;
+          font-weight: 500;
+          color: rgb(34, 34, 34);
+          letter-spacing: 1px;
+        }
+      }
+      .buttonmaindiv {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 445px;
+        min-width: min(300px, 100vw);
+        align-items: center;
+        justify-content: flex-start;
+        .buttondiv {
+          padding-left: 6px;
+          padding-right: 6px;
+          padding-bottom: 12px;
+          button {
+            text-align: center;
+            border: 1px solid var(--borderlight-color);
+            background-color: rgb(255, 255, 255);
+            outline: none;
+            padding: 0 18px;
+            margin: 0;
+            color: rgb(34, 34, 34);
+            position: relative;
+            border-radius: 32px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row-reverse;
+            flex: 1 1 0%;
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            &:hover {
+              color: rgb(0, 0, 0) !important;
+              border-color: rgb(0, 0, 0) !important;
+            }
+            .butcon {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              .con {
+                font-size: var(--text-size);
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                .imgdiv {
+                  margin-right: 12px;
+                  img {
+                    display: block;
+                    height: 24px;
+                    width: 24px;
+                    fill: currentcolor;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
