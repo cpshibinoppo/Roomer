@@ -1,0 +1,31 @@
+<div class="maindiv">
+  <div class="formmaindiv">
+    <div class="formdiv">
+      <div class="boxmaindiv">
+        <h2>
+          <label for="">Create your description</label>
+        </h2>
+        <div class="inputmainbox">
+          <form action="">
+            <textarea (input)="inputvalcheck($event)" rows="3">
+You'll have a great time at this comfortable place to stay.</textarea
+            >
+          </form>
+        </div>
+        <div class="inputvaludiv">
+          <div>
+            <span>{{ this.typingindex }} / 500</span>
+          </div>
+        </div>
+        <div class="errormaindiv" *ngIf="this.error">
+          <div class="errordiv">
+            <span>
+              <img src="../../../../assets/img/host/Erroricon.svg" alt="" />
+            </span>
+            <span>The maximum number of characters allowed is 50.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

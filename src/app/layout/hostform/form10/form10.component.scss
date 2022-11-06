@@ -1,0 +1,99 @@
+.maindiv {
+  margin-top: auto;
+  margin-bottom: auto;
+  .formmaindiv {
+    padding-top: 0px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 720px;
+    min-width: 100px;
+    .formdiv {
+      width: 100%;
+      .boxmaindiv {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        h2 {
+          margin: 0;
+          padding-bottom: 24px;
+          label {
+            font-size: 24px;
+            line-height: 28px;
+            color: rgb(34, 34, 34);
+            font-weight: 500;
+            padding: 0;
+          }
+        }
+        .inputmainbox {
+          width: 100%;
+          box-shadow: grey 0px 0px 0px 1px inset;
+          border-radius: 8px;
+          textarea {
+            padding: 24px;
+            max-height: 50vh;
+            color: rgb(34, 34, 34);
+            display: block;
+            min-width: 100%;
+            max-width: 100%;
+            border: none;
+            outline: none;
+            background: transparent;
+            min-height: 175px;
+            border-radius: 8px;
+            font-size: 18px;
+            line-height: 28px;
+            overflow-y: hidden;
+            font-weight: 400;
+            &:focus-visible {
+              border: 2px solid var(--black);
+            }
+          }
+        }
+        .inputvaludiv {
+          display: flex;
+          justify-content: flex-start;
+          padding-top: 16px;
+          width: 100%;
+          font-size: 14px;
+          line-height: var(--lineheight);
+          color: rgb(113, 113, 113);
+          font-weight: 600;
+          span {
+            border: 0;
+            padding: 0;
+          }
+        }
+        .errormaindiv {
+          height: 0px;
+          margin-top: 16px;
+          .errordiv {
+            display: flex;
+            color: rgb(193, 53, 21);
+            font-size: 12px;
+            line-height: var(--sublineheight);
+            font-weight: 400;
+            span {
+              margin-right: 8px;
+              img {
+                display: block;
+                height: 16px;
+                width: 16px;
+                fill: currentcolor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.errorbox {
+  border-radius: 8px !important;
+  background-color: rgb(255, 248, 246) !important;
+  box-shadow: firebrick 0px 0px 0px 1px inset !important;
+}

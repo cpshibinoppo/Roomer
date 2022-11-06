@@ -33,6 +33,7 @@ import { Form7Component } from './layout/hostform/form7/form7.component';
 import { Form1Component } from './layout/hostform/form1/form1.component';
 import { Form8Component } from './layout/hostform/form8/form8.component';
 import { Form9Component } from './layout/hostform/form9/form9.component';
+import { Form10Component } from './layout/hostform/form10/form10.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { Form9Component } from './layout/hostform/form9/form9.component';
     Form7Component,
     Form1Component,
     Form8Component,
-    Form9Component
+    Form9Component,
+    Form10Component
   ],
   imports: [
     BrowserModule,
