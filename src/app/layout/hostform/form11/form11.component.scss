@@ -27,10 +27,9 @@
           line-height: 20px;
           min-height: unset;
           .minbutton {
-            cursor: not-allowed !important;
-            color: rgb(235, 235, 235) !important;
-            border-color: rgb(235, 235, 235) !important;
-            background: rgb(255, 255, 255) !important;
+            cursor: not-allowed;
+            color: rgb(235, 235, 235);
+            border-color: rgb(235, 235, 235);
           }
           button {
             width: 48px;
@@ -257,4 +256,11 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+.activecheckbox {
+  background: var(--white) !important;
+}
+.active {
+  border: 1px solid rgb(113, 113, 113) !important;
+  cursor: pointer !important;
 }

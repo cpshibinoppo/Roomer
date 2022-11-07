@@ -3,7 +3,12 @@
     <div class="topmaindiv">
       <div class="priceboxdiv">
         <div class="mainbox">
-          <button class="minbutton">
+          <button
+            class="minbutton"
+            [ngClass]="{ active: !this.decrbutton }"
+            [disabled]="this.decrbutton"
+            (click)="decrease()"
+          >
             <span>
               <img src="../../../../assets/img/host/minus.svg" alt="" />
             </span>
@@ -12,12 +17,17 @@
             <div class="inputmaindiv">
               <label>
                 <div>
-                  <input type="number" placeholder="₹00" />
+                  <input
+                    (input)="inputvalucheck($event)"
+                    type="number"
+                    placeholder="₹00"
+                    value="{{ this.inputvalu }}"
+                  />
                 </div>
               </label>
             </div>
           </div>
-          <button class="maxbutton">
+          <button class="maxbutton" (click)="increase()">
             <span>
               <img src="../../../../assets/img/host/plus.svg" alt="" />
             </span>
@@ -25,7 +35,7 @@
         </div>
         <div class="subtext">Per night</div>
       </div>
-      <div class="errormaindiv">
+      <div class="errormaindiv" *ngIf="this.error">
         <div class="errordiv">
           <span class="errorimg">
             <img src="../../../../assets/img/host/Erroricon.svg" alt="" />
@@ -51,7 +61,7 @@
     </div>
     <div class="bottomdiv">
       <div class="botdiv">
-        <label for="">
+        <label for="checkid">
           <div class="botconmaindiv">
             <div class="linkdiv">
               <div>
@@ -60,9 +70,9 @@
                 <button>Learn more</button>
               </div>
             </div>
-            <div class="inputdiv">
+            <div class="inputdiv" (click)="checkboxcheckfu()">
               <span class="inputspan">
-                <input type="checkbox" checked />
+                <input type="checkbox" id="checkid" checked />
                 <span class="tickspan">
                   <span>
                     <svg
