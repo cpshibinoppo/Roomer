@@ -1,0 +1,105 @@
+<div class="maindiv">
+  <div class="pricemaindiv">
+    <div class="topmaindiv">
+      <div class="priceboxdiv">
+        <div class="mainbox">
+          <button
+            class="minbutton"
+            [ngClass]="{ active: !this.decrbutton }"
+            [disabled]="this.decrbutton"
+            (click)="decrease()"
+          >
+            <span>
+              <img src="../../../../assets/img/host/minus.svg" alt="" />
+            </span>
+          </button>
+          <div class="box">
+            <div class="inputmaindiv">
+              <label>
+                <div>
+                  <input
+                    (input)="inputvalucheck($event)"
+                    type="number"
+                    placeholder="₹00"
+                    value="{{ this.inputvalu }}"
+                  />
+                </div>
+              </label>
+            </div>
+          </div>
+          <button class="maxbutton" (click)="increase()">
+            <span>
+              <img src="../../../../assets/img/host/plus.svg" alt="" />
+            </span>
+          </button>
+        </div>
+        <div class="subtext">Per night</div>
+      </div>
+      <div class="errormaindiv" *ngIf="this.error">
+        <div class="errordiv">
+          <span class="errorimg">
+            <img src="../../../../assets/img/host/Erroricon.svg" alt="" />
+          </span>
+          <span>Please enter a base price between ₹820 and ₹8,19,670.</span>
+        </div>
+      </div>
+      <div class="textmaindiv">
+        <div class="textdiv">
+          <span
+            >Keep in mind that places like yours in your area usually range from
+            ₹1,243 to ₹2,072</span
+          >
+          <div>
+            <button>
+              <span>
+                <img src="../../../../assets/img/host/infoicon.svg" alt="" />
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottomdiv">
+      <div class="botdiv">
+        <label for="checkid">
+          <div class="botconmaindiv">
+            <div class="linkdiv">
+              <div>
+                Offer a 20% discount for your first 3 guests to help you get
+                booked faster.
+                <button>Learn more</button>
+              </div>
+            </div>
+            <div class="inputdiv" (click)="checkboxcheckfu()">
+              <span class="inputspan">
+                <input type="checkbox" id="checkid" checked />
+                <span class="tickspan">
+                  <span>
+                    <svg
+                      viewBox="0 0 32 32"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: none;
+                        height: 16px;
+                        width: 16px;
+                        stroke: currentcolor;
+                        stroke-width: 4;
+                        overflow: visible;
+                      "
+                    >
+                      <path fill="none" d="m4 16.5 8 8 16-16"></path>
+                    </svg>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>

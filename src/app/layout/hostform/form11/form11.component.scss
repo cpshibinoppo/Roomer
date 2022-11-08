@@ -1,0 +1,266 @@
+.maindiv {
+  .pricemaindiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    margin: auto;
+    .topmaindiv {
+      .priceboxdiv {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .mainbox {
+          display: inline-flex;
+          align-items: center;
+          justify-content: space-between;
+          width: unset;
+          height: unset;
+          color: rgb(34, 34, 34);
+          font-weight: 400;
+          font-size: var(--text-size);
+          line-height: 20px;
+          min-height: unset;
+          .minbutton {
+            cursor: not-allowed;
+            color: rgb(235, 235, 235);
+            border-color: rgb(235, 235, 235);
+          }
+          button {
+            width: 48px;
+            height: 48px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            display: inline-flex;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            border: 1px solid rgb(113, 113, 113);
+            outline: none;
+            align-items: center;
+            justify-content: center;
+            background: rgb(255, 255, 255);
+            border-radius: 50%;
+            span {
+              height: 22px;
+              width: 22px;
+              padding: 5px;
+              img {
+                display: block;
+                fill: none;
+                height: 12px;
+                width: 12px;
+                stroke: currentcolor;
+                stroke-width: 5.33333;
+                overflow: visible;
+              }
+            }
+          }
+          .box {
+            position: relative;
+            text-align: center;
+            min-width: 48px;
+            .inputmaindiv {
+              position: relative;
+              display: flex;
+              min-height: auto;
+              width: 100%;
+              margin: 0;
+              border: none;
+              color: var(--black);
+              font-size: var(--font-size);
+              line-height: 20px;
+              font-weight: 400;
+              label {
+                position: relative;
+                flex: 1 1 0%;
+                padding: 0;
+                div {
+                  display: flex;
+                  margin-top: 0;
+                  border-radius: 8px;
+                  box-shadow: rgb(176 176 176) 0px 0px 0px 1px inset;
+                  color: rgb(34, 34, 34);
+                  background: rgb(255, 255, 255);
+                  margin-left: 32px;
+                  margin-right: 32px;
+                  input {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    padding: 0;
+                    margin: 8px 12px;
+                    min-height: 1px;
+                    background: transparent;
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 80px;
+                    text-align: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .subtext {
+          font-size: var(--text-size);
+          line-height: 20px;
+          padding-top: 12px;
+          font-weight: 400;
+        }
+      }
+      .errormaindiv {
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+        .errordiv {
+          display: flex;
+          color: rgb(193, 53, 21);
+          font-size: 12px;
+          line-height: var(--sublineheight);
+          font-weight: 400;
+          .errorimg {
+            margin-right: 8px;
+            img {
+              display: block;
+              height: 16px;
+              width: 16px;
+              fill: currentcolor;
+            }
+          }
+        }
+      }
+      .textmaindiv {
+        display: flex;
+        justify-content: center;
+        .textdiv {
+          padding-top: 32px;
+          font-size: 22px;
+          line-height: 30px;
+          text-align: center;
+          max-width: 360px;
+          font-weight: 500;
+          width: 85%;
+          div {
+            position: relative;
+            display: inline-block;
+            padding-left: 8px;
+            button {
+              display: inline-block;
+              border-radius: 50%;
+              border: none;
+              outline: none;
+              margin: 0;
+              padding: 0;
+              color: rgb(34, 34, 34);
+              position: relative;
+              background: transparent;
+              span {
+                position: relative;
+                img {
+                  display: block;
+                  height: 16px;
+                  width: 16px;
+                  fill: currentcolor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottomdiv {
+      margin-top: 72px;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid var(--borderlight-color);
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 20px 14px;
+      margin-bottom: 12px;
+      .botdiv {
+        padding-top: 0;
+        padding-bottom: 0;
+        label {
+          .botconmaindiv {
+            display: flex;
+            .linkdiv {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              flex: 1 1 auto;
+              width: 100%;
+              div {
+                color: rgb(34, 34, 34);
+                font-size: var(--text-size);
+                line-height: 20px;
+                button {
+                  border: none;
+                  outline: none;
+                  background: transparent;
+                  margin: 0;
+                  padding: 0;
+                  color: rgb(34, 34, 34);
+                  text-decoration: underline;
+                  font-weight: 600;
+                }
+              }
+            }
+            .inputdiv {
+              margin-left: 16px;
+              .inputspan {
+                position: relative;
+                display: inline-block;
+                padding: 0;
+                input {
+                  position: absolute;
+                  opacity: 0;
+                }
+                .tickspan {
+                  display: inline-block;
+                  height: 24px;
+                  width: 24px;
+                  border: 1px solid rgb(34, 34, 34);
+                  text-align: center;
+                  color: rgb(255, 255, 255);
+                  overflow: hidden;
+                  border-radius: 4px;
+                  background: rgb(34, 34, 34);
+                  span {
+                    display: block;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    margin-top: 2px;
+                    margin-left: 3px;
+                    color: rgb(255, 255, 255);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.activecheckbox {
+  background: var(--white) !important;
+}
+.active {
+  border: 1px solid rgb(113, 113, 113) !important;
+  cursor: pointer !important;
+}

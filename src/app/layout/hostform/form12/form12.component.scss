@@ -1,0 +1,165 @@
+.maindiv {
+  width: 100%;
+  .formmaindiv {
+    padding-top: 32px;
+    background-color: rgb(255, 255, 255);
+    max-width: 600px;
+    margin: auto;
+    font-size: var(--text-size);
+    line-height: 20px;
+    .topmaindiv {
+      margin-bottom: 48px;
+      .heading {
+        font-size: 22px;
+        line-height: 26px;
+        display: flex;
+        padding-bottom: 8px;
+        font-weight: 600;
+        h2 {
+          font-size: 22px;
+          line-height: 26px;
+          padding-right: 8px;
+          display: flex;
+          align-items: center;
+          margin: 0;
+        }
+        .infodiv {
+          margin-top: 0;
+          align-items: center;
+          position: relative;
+          display: flex;
+          button {
+            display: inline-block;
+            border-radius: 50%;
+            outline: none;
+            border: none;
+            margin: 0;
+            padding: 0;
+            color: rgb(34, 34, 34);
+            position: relative;
+            background: transparent;
+            span {
+              position: relative;
+              img {
+                display: block;
+                height: 16px;
+                width: 16px;
+                fill: currentcolor;
+              }
+            }
+          }
+        }
+      }
+      .checkboxlistingmaindiv {
+        margin-top: 16px;
+        .listdiv {
+          margin-bottom: 24px;
+          .listcarddiv {
+            padding-top: 0;
+            padding-bottom: 0;
+            label {
+              width: 100%;
+              cursor: pointer;
+              .listcard {
+                display: flex;
+                .cardtextdiv {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  flex: 1 1 auto;
+                  width: 100%;
+                  div {
+                    color: rgb(34, 34, 34);
+                    font-size: 17px;
+                    line-height: 20px;
+                  }
+                }
+                .checkboxdiv {
+                  margin-left: 16px;
+                  .checkboxmainspan {
+                    position: relative;
+                    display: inline-block;
+                    padding: 0;
+                    input {
+                      position: absolute;
+                      opacity: 0;
+                    }
+                    .checkboxspan {
+                      display: inline-block;
+                      border: 1px solid rgb(176, 176, 176);
+                      height: 24px;
+                      width: 24px;
+                      background: rgb(255, 255, 255);
+                      text-align: center;
+                      border-radius: 4px;
+                      vertical-align: top;
+                      transition: all 0.2s ease;
+                      span {
+                        display: block;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        margin-top: 2px;
+                        margin-left: 3px;
+                        color: rgb(255, 255, 255);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottommiandiv {
+      margin-bottom: 0;
+      border-top: 1px solid var(--borderlight-color);
+      padding-top: 48px;
+      .headingdiv {
+        font-size: 22px !important;
+        line-height: 26px !important;
+        display: flex;
+        padding-bottom: 8px !important;
+        font-weight: 600 !important;
+        h2 {
+          font-size: 22px !important;
+          line-height: 26px !important;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          padding-right: 8px;
+          font-weight: 600;
+        }
+      }
+      .linksmaindiv {
+        font-size: var(--text-size);
+        line-height: 24px;
+        color: rgb(113, 113, 113);
+        padding-bottom: 32px;
+        letter-spacing: 0.5px;
+        .linksmainspan {
+          span {
+            color: var(--text-color);
+            text-decoration: underline;
+            a {
+              color: var(--text-color);
+              text-decoration: none;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.listcarddiv:hover .checkboxspan {
+  border-color: rgb(34, 34, 34) !important;
+}
+.classtest {
+  .checkboxspan {
+    background: rgb(34, 34, 34) !important;
+    color: rgb(255, 255, 255) !important;
+  }
+}

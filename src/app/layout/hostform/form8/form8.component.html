@@ -1,0 +1,57 @@
+<div class="maindiv">
+  <div class="formmaindiv">
+    <div class="formdiv">
+      <div class="boxmaindiv">
+        <h2>
+          <label for="">Create your on title</label>
+        </h2>
+        <div class="subtext">
+          Your listing title should highlight what makes your place special.
+          <a href="">Review listing title guidelines.</a>
+        </div>
+        <div
+          class="inputmainbox"
+          [ngClass]="{
+            errorbox:
+              this.error ||
+              (f.textareaformcontrol.valid && f.textareaformcontrol.value)
+          }"
+        >
+          <form action="" [formGroup]="textareaform">
+            <textarea
+              formControlName="textareaformcontrol"
+              (input)="inputvalcheck($event)"
+              rows="3"
+              placeholder="Lovely condo with hot tub"
+            ></textarea>
+          </form>
+        </div>
+        <div class="inputvaludiv">
+          <div>
+            <span>{{ this.typingindex }} / 50</span>
+          </div>
+        </div>
+        <div
+          class="errormaindiv"
+          *ngIf="
+            this.error ||
+            (f.textareaformcontrol.valid && f.textareaformcontrol.value)
+          "
+        >
+          <div class="errordiv">
+            <span>
+              <img src="../../../../assets/img/host/Erroricon.svg" alt="" />
+            </span>
+            <span *ngIf="this.error">
+              The maximum number of characters allowed is 50.</span
+            >
+            <span *ngIf="this.f.textareaformcontrol.valid"
+              >For security reasons, phone numbers aren't allowed in
+              titles.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
