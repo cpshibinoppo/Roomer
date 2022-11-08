@@ -170,3 +170,13 @@
     }
   }
 }
+@media only screen and (max-width: 760px) {
+ .fullboxdiv{
+  width: 100% !important;
+  max-width: unset !important;
+ }
+ .boxmiandiv{
+  width: 100% !important;
+  padding-bottom: 4rem;
+ }
+}
