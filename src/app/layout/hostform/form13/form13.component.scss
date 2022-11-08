@@ -1,0 +1,172 @@
+.maindiv {
+  .fullboxmaindiv {
+    height: calc(90vh - calc(88px + 82px)) !important;
+    display: flex;
+    align-items: center;
+    .fullboxdiv {
+      border: 1px solid #ebebeb;
+      box-shadow: 0px 6px 16px rgb(0 0 0 / 12%);
+      width: 336px;
+      max-width: 90%;
+      height: 100%;
+      min-height: 400px;
+      max-height: 680px;
+      padding: 12px;
+      border-radius: 32px;
+      background: var(--white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      .boxmiandiv {
+        overflow-y: scroll;
+        border: 1px solid #ebebeb;
+        width: 312px;
+        max-width: 100%;
+        height: 100%;
+        min-height: 376px;
+        max-height: 656px;
+        border-radius: 24px;
+        background-color: var(--white);
+        outline: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        .box {
+          color: var(--text-color);
+          .imgmiandiv {
+            border-radius: 24px 24px 0 0;
+            .imgdiv {
+              padding-top: 66%;
+              position: relative;
+              div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                  object-fit: cover;
+                  border-radius: 24px 24px 0 0;
+                  height: 100%;
+                  width: 100%;
+                  position: static;
+                }
+              }
+            }
+          }
+          h1 {
+            margin-left: 24px !important;
+            margin-right: 24px !important;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #ebebeb;
+            font-size: 26px;
+            line-height: 30px;
+            font-weight: 600;
+            word-wrap: break-word !important;
+            margin: 0px;
+          }
+          .hosterdetmaindiv {
+            margin-left: 24px;
+            margin-right: 24px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #ebebeb;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .hostertext {
+              max-width: 70%;
+              h2 {
+                margin-top: 0;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 600;
+                word-wrap: break-word !important;
+                margin-bottom: 0;
+              }
+            }
+            .hosterimgdiv {
+              align-self: flex-start;
+              div {
+                display: inline-block;
+                vertical-align: bottom;
+                height: 40px;
+                width: 40px;
+                min-height: 1px;
+                border-radius: 50px;
+                img {
+                  object-fit: cover;
+                  vertical-align: bottom;
+                  border-radius: 50px;
+                  width: 100%;
+                  height: 100%;
+                  position: static;
+                }
+              }
+            }
+          }
+          .roomsmaindiv {
+            margin-left: 24px;
+            margin-right: 24px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #ebebeb;
+            font-size: var(--text-size);
+            line-height: 20px;
+            font-weight: 400;
+          }
+          .discrtion {
+            margin-left: 24px;
+            margin-right: 24px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #ebebeb;
+            font-size: 14px;
+            line-height: var(--lineheight);
+            font-weight: 400;
+            overflow-wrap: break-word;
+          }
+          .loctionmiandiv {
+            padding-bottom: 40px;
+            margin-left: 24px;
+            margin-right: 24px;
+            padding-top: 32px;
+            h2 {
+              margin-top: 0;
+              font-size: var(--text-size);
+              line-height: 20px;
+              font-weight: 600;
+              margin-bottom: 0;
+            }
+            h3 {
+              font-size: var(--text-size);
+              line-height: 20px;
+              color: var(--text-color);
+              margin-top: 24px;
+              margin-bottom: 0;
+              font-weight: 400;
+            }
+            div {
+              font-size: 12px;
+              line-height: var(--sublineheight);
+              color: var(--light-color);
+              margin-top: 8px;
+              .linkspan {
+                a {
+                  color: var(--light-color);
+                  text-decoration: underline;
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
