@@ -85,6 +85,9 @@
 }
 /* heading end */
 /* firstsection start */
+.maincolrow {
+  justify-content: space-between;
+}
 .firstmiandiv {
   position: relative;
   margin: 0;
@@ -124,7 +127,7 @@
           }
         }
         .couponmaindiv {
-          font-size: 16px;
+          font-size: var(--text-size);
           line-height: 20px;
           button {
             background: transparent;
@@ -135,6 +138,27 @@
             text-decoration: underline;
             font-weight: 600;
             outline: none;
+          }
+        }
+        .requestbuttonmaindiv {
+          button {
+            margin: 0px;
+            text-align: center;
+            width: auto;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 600;
+            border-radius: 8px;
+            outline: none;
+            padding: 16px 32px;
+            border: none;
+            background: linear-gradient(
+              to right,
+              rgb(230, 30, 77) 0%,
+              rgb(227, 28, 95) 50%,
+              rgb(215, 4, 102) 100%
+            );
+            color: rgb(255, 255, 255);
           }
         }
       }
@@ -185,7 +209,7 @@
               border: 1px solid rgb(176, 176, 176);
               border-radius: 8px;
               .buttonmiandiv {
-                font-size: 16px;
+                font-size: var(--text-size);
                 line-height: 24px;
                 letter-spacing: normal;
                 color: rgb(72, 72, 72);
@@ -269,7 +293,7 @@
               ul {
                 padding: 0;
                 li {
-                  font-size: 16px;
+                  font-size: var(--text-size);
                   line-height: 24px;
                   letter-spacing: normal;
                   color: rgb(72, 72, 72);
@@ -284,6 +308,69 @@
                   background-color: rgb(242, 242, 242);
                 }
               }
+            }
+          }
+          .cancellationpolicymaindiv {
+            font-size: var(--text-size);
+            line-height: 20px;
+            .cancellationhaeddiv {
+              font-size: 22px;
+              line-height: 26px;
+              font-weight: 600;
+            }
+            button {
+              background: transparent;
+              border: 0px;
+              margin: 0px;
+              padding: 0px;
+              color: rgb(34, 34, 34);
+              text-decoration: underline;
+              font-weight: 600;
+              outline: none;
+            }
+          }
+          .calendermaindiv {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            .calenderimgmaindiv {
+              height: 40px;
+              width: 40px;
+              margin-left: 0;
+              margin-right: 24px;
+              flex: 0 0 auto;
+              img {
+                display: block;
+                height: 32px;
+                width: 32px;
+                fill: rgb(227, 28, 95);
+                stroke: currentcolor;
+              }
+            }
+            .calendertextmaindiv {
+              font-size: var(--text-size);
+              line-height: 20px;
+              .mainspan {
+                margin-right: 0px;
+                display: block;
+                font-weight: 600;
+                font-size: var(--text-size);
+                line-height: 20px;
+                margin-bottom: 0px;
+              }
+            }
+          }
+          .policytextmain {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            line-height: var(--sublineheight);
+            font-size: 12px;
+            span {
+              color: rgb(34, 34, 34);
+              font-weight: 600;
+              cursor: pointer;
+              margin: 0;
+              padding: 0;
             }
           }
         }
@@ -316,6 +403,19 @@
     }
   }
 }
+.requesttext {
+  padding-top: 32px;
+  padding-bottom: 5px;
+}
+.addbutton {
+  button {
+    text-decoration: none !important;
+    border: 1px solid var(--text-color) !important;
+    border-radius: 8px !important;
+    padding: 7px 15px !important;
+  }
+}
+
 /* firstsection end */
 .hfontclear {
   font-size: 1em;
@@ -327,7 +427,160 @@
   border-top-style: solid;
   border-top-color: var(--borderlight-color);
 }
+.spacediv {
+  padding-top: 24px;
+}
+/* price card start */
+.pricecardcol {
+  position: relative;
+}
+.pricecardmainsection {
+  position: sticky;
+  top: 80px;
+  z-index: 1;
+  width: 100%;
+  display: inline-block;
+  padding-right: 1px;
+  .pricecardmaindiv {
+    margin-bottom: 88px;
+    padding: 24px;
+    border: 1px solid var(--borderlight-color);
+    border-radius: 12px;
+    color: rgb(34, 34, 34);
+    font-size: var(--text-size);
+    line-height: 20px;
+    .imgsectionmaindiv {
+      padding-bottom: 24px;
+      .imgsectiondiv {
+        flex-direction: row;
+        display: flex;
+        .imgmaindiv {
+          width: 124px;
+          height: 106px;
+          position: relative;
+          flex-grow: 0;
+          flex-shrink: 0;
+          overflow: hidden;
+          border-radius: 8px;
+          .imgdiv {
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+            width: 100%;
+            min-height: 1px;
+            img {
+              object-fit: cover;
+              vertical-align: middle;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .imgtextsectionmaindiv {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-left: 12px;
+          .maintext {
+            .toptext {
+              overflow: clip;
+              font-size: 12px;
+              line-height: var(--sublineheight);
+              text-overflow: ellipsis;
+              color: rgb(113, 113, 113);
+            }
+            .middletext{
+              font-size: 14px;
+              line-height: var(--lineheight);
+              text-overflow: ellipsis;
+              word-break: break-word;
+              margin-top: 4px;
+            }
+          }
+          .subtextmain {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            color:var(--text-color);
+            .subtext{
+              margin-right: 8px;
+              display: inline;
+              .subtextspanmain{
+                display: flex;
+                align-items: center;
+                font-weight: 400 ;
+                font-size: 12px ;
+                line-height: var(--sublineheight) ;
+                .rivetext{
+                  margin-left: 3px;
+                  margin-right: 3px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .aircovermaindiv{
+      .aircoverdiv{
+        padding-top: 24px;
+        padding-bottom: 24px;
+        .aircovertextdiv{
+          font-size: 16px;
+          line-height: 20px;
+          display: flex;
+          .aircoverimg{
+            line-height: 16px;
+            margin-left: 10px;
+            img{
+              width: auto;
+              height: 13px;
+              margin-right: 1px;
+            }
+          }
+        }
+      }
+    }
+    .priceheadmiandiv{
+      .priceheaddiv{
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+    .priceamoutmaindiv {
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgb(235, 235, 235);
+      font-size: var(--text-size);
+      font-weight: 400;
+      line-height: 20px;
 
+      .roomrent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .buttonmin {
+          button {
+            border: none;
+            background: transparent;
+            outline: none;
+            text-decoration: underline 1px;
+            color: rgb(113, 113, 113);
+          }
+        }
+      }
+    }
+    .totalprivemaindiv {
+      display: flex;
+      justify-content: space-between;
+      font-size: var(--text-size);
+      line-height: 20px;
+      font-weight: 500;
+    }
+  }
+}
+/* price card end */
 @media only screen and (max-width: 767px) {
   .navbarmaindivdiv {
     display: none;
