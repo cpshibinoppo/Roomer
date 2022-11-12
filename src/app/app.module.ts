@@ -37,6 +37,7 @@ import { Form10Component } from './layout/hostform/form10/form10.component';
 import { Form11Component } from './layout/hostform/form11/form11.component';
 import { Form12Component } from './layout/hostform/form12/form12.component';
 import { Form13Component } from './layout/hostform/form13/form13.component';
+import { BookingComponent } from './pages/booking/booking.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { Form13Component } from './layout/hostform/form13/form13.component';
     Form10Component,
     Form11Component,
     Form12Component,
-    Form13Component
+    Form13Component,
+    BookingComponent
   ],
   imports: [
     BrowserModule,

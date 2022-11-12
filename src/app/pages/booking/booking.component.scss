@@ -1,0 +1,612 @@
+/* navbar start */
+.navbarmaindivdiv {
+  .navbardiv {
+    height: 80px;
+    box-shadow: rgb(235 235 235) 0px 1px 0px;
+    padding-left: 24px;
+    a {
+      outline: none;
+      align-items: center;
+      display: inline-flex;
+      height: 80px;
+      position: relative;
+      vertical-align: middle;
+      .mainlogodiv {
+        img {
+          display: block;
+          height: 32px;
+          width: 102px;
+        }
+      }
+      .sublogodiv {
+        display: none;
+        width: 30px;
+        height: 32px;
+      }
+    }
+  }
+}
+/* navbar end */
+/* heading start */
+.headingmaindiv {
+  padding-bottom: 32px;
+  section {
+    .headingdiv {
+      padding-top: 64px;
+      padding-bottom: 16px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .arrordiv {
+        padding-right: 32px;
+        display: flex;
+        a {
+          display: inline-block;
+          border-radius: 50%;
+          outline: none;
+          margin: 0;
+          padding: 0;
+          color: rgb(34, 34, 34);
+          position: relative;
+          transition: all 0.3s ease;
+          &:hover::before {
+            content: "" !important;
+            display: block !important;
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            width: 48px !important;
+            height: 48px !important;
+            border-radius: 50% !important;
+            background: rgb(247, 247, 247) !important;
+          }
+          span {
+            position: relative;
+            img {
+              display: block;
+              fill: none;
+              height: 16px;
+              width: 16px;
+              stroke: currentcolor;
+              stroke-width: 3;
+              overflow: visible;
+            }
+          }
+        }
+      }
+      .headingtextdiv {
+        font-size: 32px;
+        line-height: 36px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+/* heading end */
+/* firstsection start */
+.maincolrow {
+  justify-content: space-between;
+}
+.firstmiandiv {
+  position: relative;
+  margin: 0;
+  .firstdiv {
+    margin-bottom: 64px;
+    .yourtripboxhead {
+      .yourtriptextdiv {
+        padding-bottom: 24px;
+        .triptext {
+          font-size: 22px;
+          line-height: 26px;
+          font-weight: 600;
+        }
+        .datesmaindiv {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          .datestextmaindiv {
+            padding-right: 24px;
+            .maintext {
+              font-weight: 600;
+            }
+            .subtext {
+              margin-top: 8px;
+              white-space: pre-wrap !important;
+            }
+          }
+          .datesbutton {
+            button {
+              border: none;
+              outline: none;
+              background: transparent;
+              text-decoration: underline;
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+        .couponmaindiv {
+          font-size: var(--text-size);
+          line-height: 20px;
+          button {
+            background: transparent;
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+            color: rgb(34, 34, 34);
+            text-decoration: underline;
+            font-weight: 600;
+            outline: none;
+          }
+        }
+        .requestbuttonmaindiv {
+          button {
+            margin: 0px;
+            text-align: center;
+            width: auto;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 600;
+            border-radius: 8px;
+            outline: none;
+            padding: 16px 32px;
+            border: none;
+            background: linear-gradient(
+              to right,
+              rgb(230, 30, 77) 0%,
+              rgb(227, 28, 95) 50%,
+              rgb(215, 4, 102) 100%
+            );
+            color: rgb(255, 255, 255);
+          }
+        }
+      }
+    }
+    .paywithboxhead {
+      .paywithtextdiv {
+        margin-top: 8px;
+        .paywithcol {
+          padding-top: 32px;
+          padding-bottom: 24px;
+          .paywithdiv {
+            .payflexdiv {
+              display: flex;
+              margin-bottom: 24px;
+              .textdiv {
+                color: rgb(34, 34, 34);
+                font-weight: 600;
+                margin-right: 24px;
+                font-size: 22px;
+                line-height: 26px;
+                margin-bottom: 4px;
+              }
+              .imgmaindiv {
+                flex: 1 1 0% !important;
+                display: flex !important;
+                justify-content: flex-end !important;
+                align-items: center !important;
+                span {
+                  margin-right: 6px;
+                  img {
+                    height: 9px;
+                  }
+                }
+              }
+            }
+          }
+          .creditcardboxmain {
+            position: relative;
+            button {
+              display: block;
+              width: 100% !important;
+              background: rgb(255, 255, 255);
+              margin: 0px;
+              padding: 0px !important;
+              text-align: left;
+              outline: none;
+              transition: border 150ms ease-out 0s;
+              border: 1px solid rgb(176, 176, 176);
+              border-radius: 8px;
+              .buttonmiandiv {
+                font-size: var(--text-size);
+                line-height: 24px;
+                letter-spacing: normal;
+                color: rgb(72, 72, 72);
+                padding: 16px 40px 16px 16px;
+                font-weight: normal;
+                cursor: pointer;
+                display: block;
+                position: relative;
+                text-align: left;
+                width: 100%;
+                overflow-wrap: break-word;
+                .buttondiv {
+                  display: flex;
+                  align-items: center;
+                  width: 100%;
+                  border-spacing: 0px;
+                  .cardimgmian {
+                    float: left;
+                    margin-top: -9px;
+                    height: 24px;
+                    margin-right: 16px;
+                    img {
+                      display: block;
+                      height: 33px;
+                      width: 33px;
+                      fill: rgb(176, 176, 176);
+                    }
+                  }
+                  .creditordebitdiv {
+                    display: table-cell;
+                    width: 100%;
+                    vertical-align: middle;
+                  }
+                }
+              }
+            }
+            span {
+              pointer-events: none;
+              position: absolute;
+              top: 0px;
+              right: 20px;
+              height: 100%;
+              .arrormiandiv {
+                display: table;
+                position: relative;
+                height: 100%;
+                .arrorsubdiv {
+                  display: table-cell;
+                  vertical-align: middle;
+                  div {
+                    transform: rotate(270deg);
+                    img {
+                      height: 16px;
+                      width: 16px;
+                      display: block;
+                      fill: rgb(72, 72, 72);
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .paydropdownmain {
+            position: relative;
+            display: none;
+            .paydropdownul {
+              opacity: 1;
+              top: 4px;
+              display: block;
+              width: 100%;
+              background: rgb(255, 255, 255);
+              border: 1px solid rgb(176, 176, 176);
+              border-radius: 8px;
+              position: absolute;
+              margin: 0px;
+              padding: 0px;
+              box-shadow: rgb(0 0 0 / 5%) 0px 3px 9px 3px;
+              list-style: none;
+              overflow-y: scroll;
+              max-height: 424px;
+              ul {
+                padding: 0;
+                li {
+                  font-size: var(--text-size);
+                  line-height: 24px;
+                  letter-spacing: normal;
+                  color: rgb(72, 72, 72);
+                  padding: 16px 40px 16px 16px;
+                  font-weight: normal;
+                  cursor: pointer;
+                  display: block;
+                  position: relative;
+                  text-align: left;
+                  width: 100%;
+                  overflow-wrap: break-word;
+                  background-color: rgb(242, 242, 242);
+                }
+              }
+            }
+          }
+          .cancellationpolicymaindiv {
+            font-size: var(--text-size);
+            line-height: 20px;
+            .cancellationhaeddiv {
+              font-size: 22px;
+              line-height: 26px;
+              font-weight: 600;
+            }
+            button {
+              background: transparent;
+              border: 0px;
+              margin: 0px;
+              padding: 0px;
+              color: rgb(34, 34, 34);
+              text-decoration: underline;
+              font-weight: 600;
+              outline: none;
+            }
+          }
+          .calendermaindiv {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            .calenderimgmaindiv {
+              height: 40px;
+              width: 40px;
+              margin-left: 0;
+              margin-right: 24px;
+              flex: 0 0 auto;
+              img {
+                display: block;
+                height: 32px;
+                width: 32px;
+                fill: rgb(227, 28, 95);
+                stroke: currentcolor;
+              }
+            }
+            .calendertextmaindiv {
+              font-size: var(--text-size);
+              line-height: 20px;
+              .mainspan {
+                margin-right: 0px;
+                display: block;
+                font-weight: 600;
+                font-size: var(--text-size);
+                line-height: 20px;
+                margin-bottom: 0px;
+              }
+            }
+          }
+          .policytextmain {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            line-height: var(--sublineheight);
+            font-size: 12px;
+            span {
+              color: rgb(34, 34, 34);
+              font-weight: 600;
+              cursor: pointer;
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.dropdowncredit {
+  display: flex !important;
+  align-items: center !important;
+  button {
+    background: transparent !important;
+    border: none !important;
+    .buttonmiandiv {
+      padding: 0 !important;
+    }
+  }
+  span {
+    top: -15px !important;
+  }
+}
+.droptick {
+  div {
+    transform: rotate(0deg) !important;
+    img {
+      height: 48px !important;
+      width: 48px !important;
+      display: block;
+      overflow: visible;
+    }
+  }
+}
+.requesttext {
+  padding-top: 32px;
+  padding-bottom: 5px;
+}
+.addbutton {
+  button {
+    text-decoration: none !important;
+    border: 1px solid var(--text-color) !important;
+    border-radius: 8px !important;
+    padding: 7px 15px !important;
+  }
+}
+
+/* firstsection end */
+.hfontclear {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+.line {
+  border-top: 1px;
+  border-top-style: solid;
+  border-top-color: var(--borderlight-color);
+}
+.spacediv {
+  padding-top: 24px;
+}
+/* price card start */
+.pricecardcol {
+  position: relative;
+}
+.pricecardmainsection {
+  position: sticky;
+  top: 80px;
+  z-index: 1;
+  width: 100%;
+  display: inline-block;
+  padding-right: 1px;
+  .pricecardmaindiv {
+    margin-bottom: 88px;
+    padding: 24px;
+    border: 1px solid var(--borderlight-color);
+    border-radius: 12px;
+    color: rgb(34, 34, 34);
+    font-size: var(--text-size);
+    line-height: 20px;
+    .imgsectionmaindiv {
+      padding-bottom: 24px;
+      .imgsectiondiv {
+        flex-direction: row;
+        display: flex;
+        .imgmaindiv {
+          width: 124px;
+          height: 106px;
+          position: relative;
+          flex-grow: 0;
+          flex-shrink: 0;
+          overflow: hidden;
+          border-radius: 8px;
+          .imgdiv {
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+            width: 100%;
+            min-height: 1px;
+            img {
+              object-fit: cover;
+              vertical-align: middle;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .imgtextsectionmaindiv {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-left: 12px;
+          .maintext {
+            .toptext {
+              overflow: clip;
+              font-size: 12px;
+              line-height: var(--sublineheight);
+              text-overflow: ellipsis;
+              color: rgb(113, 113, 113);
+            }
+            .middletext{
+              font-size: 14px;
+              line-height: var(--lineheight);
+              text-overflow: ellipsis;
+              word-break: break-word;
+              margin-top: 4px;
+            }
+          }
+          .subtextmain {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            color:var(--text-color);
+            .subtext{
+              margin-right: 8px;
+              display: inline;
+              .subtextspanmain{
+                display: flex;
+                align-items: center;
+                font-weight: 400 ;
+                font-size: 12px ;
+                line-height: var(--sublineheight) ;
+                .rivetext{
+                  margin-left: 3px;
+                  margin-right: 3px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .aircovermaindiv{
+      .aircoverdiv{
+        padding-top: 24px;
+        padding-bottom: 24px;
+        .aircovertextdiv{
+          font-size: 16px;
+          line-height: 20px;
+          display: flex;
+          .aircoverimg{
+            line-height: 16px;
+            margin-left: 10px;
+            img{
+              width: auto;
+              height: 13px;
+              margin-right: 1px;
+            }
+          }
+        }
+      }
+    }
+    .priceheadmiandiv{
+      .priceheaddiv{
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+    .priceamoutmaindiv {
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgb(235, 235, 235);
+      font-size: var(--text-size);
+      font-weight: 400;
+      line-height: 20px;
+
+      .roomrent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .buttonmin {
+          button {
+            border: none;
+            background: transparent;
+            outline: none;
+            text-decoration: underline 1px;
+            color: rgb(113, 113, 113);
+          }
+        }
+      }
+    }
+    .totalprivemaindiv {
+      display: flex;
+      justify-content: space-between;
+      font-size: var(--text-size);
+      line-height: 20px;
+      font-weight: 500;
+    }
+  }
+}
+/* price card end */
+@media only screen and (max-width: 767px) {
+  .navbarmaindivdiv {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbardiv {
+    a {
+      .mainlogodiv {
+        display: none;
+      }
+      .sublogodiv {
+        display: block !important;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .navbardiv {
+    a {
+      .mainlogodiv {
+        display: block;
+      }
+      .sublogodiv {
+        display: none !important;
+      }
+    }
+  }
+}

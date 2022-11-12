@@ -33,6 +33,8 @@ export class HotaldetailComponent implements OnInit {
     $(".addgust").toggleClass('show');
     $(".drowpdownicon").toggleClass('show');
   }
-
+  buttonlink() {
+    location.href = "/booking"
+  }
 
 }
