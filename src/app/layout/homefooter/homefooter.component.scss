@@ -65,3 +65,11 @@
   white-space: nowrap;
   font-weight: 500;
 }
+@media only screen and (max-width: 768px) {
+  .footersectionone{
+    flex-direction: column-reverse;
+  }
+  .firstsection{
+    padding-top: 10px ;
+  }
+}
