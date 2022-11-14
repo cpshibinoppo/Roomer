@@ -1,3 +1,4 @@
+
 import {
   Component,
   ElementRef,
@@ -76,7 +77,6 @@ export class NavbarComponent implements OnInit {
     this.route.data.subscribe((data) => {
       this.hotelnav = data;
     });
-    console.log(this.hotelnav.test);
 
     this.staysid = document.getElementById('staysid');
     this.experienceid = document.getElementById('experienceid');

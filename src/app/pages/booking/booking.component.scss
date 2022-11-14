@@ -354,8 +354,6 @@
                 margin-right: 0px;
                 display: block;
                 font-weight: 600;
-                font-size: var(--text-size);
-                line-height: 20px;
                 margin-bottom: 0px;
               }
             }
@@ -430,6 +428,7 @@
 .spacediv {
   padding-top: 24px;
 }
+
 /* price card start */
 .pricecardcol {
   position: relative;
@@ -489,7 +488,7 @@
               text-overflow: ellipsis;
               color: rgb(113, 113, 113);
             }
-            .middletext{
+            .middletext {
               font-size: 14px;
               line-height: var(--lineheight);
               text-overflow: ellipsis;
@@ -501,17 +500,17 @@
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            color:var(--text-color);
-            .subtext{
+            color: var(--text-color);
+            .subtext {
               margin-right: 8px;
               display: inline;
-              .subtextspanmain{
+              .subtextspanmain {
                 display: flex;
                 align-items: center;
-                font-weight: 400 ;
-                font-size: 12px ;
-                line-height: var(--sublineheight) ;
-                .rivetext{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: var(--sublineheight);
+                .rivetext {
                   margin-left: 3px;
                   margin-right: 3px;
                 }
@@ -521,18 +520,18 @@
         }
       }
     }
-    .aircovermaindiv{
-      .aircoverdiv{
+    .aircovermaindiv {
+      .aircoverdiv {
         padding-top: 24px;
         padding-bottom: 24px;
-        .aircovertextdiv{
+        .aircovertextdiv {
           font-size: 16px;
           line-height: 20px;
           display: flex;
-          .aircoverimg{
+          .aircoverimg {
             line-height: 16px;
             margin-left: 10px;
-            img{
+            img {
               width: auto;
               height: 13px;
               margin-right: 1px;
@@ -541,8 +540,8 @@
         }
       }
     }
-    .priceheadmiandiv{
-      .priceheaddiv{
+    .priceheadmiandiv {
+      .priceheaddiv {
         padding-top: 24px;
         padding-bottom: 24px;
         font-size: 22px;
@@ -565,8 +564,9 @@
             border: none;
             background: transparent;
             outline: none;
-            text-decoration: underline 1px;
+            text-decoration: underline;
             color: rgb(113, 113, 113);
+            padding: 2px 0;
           }
         }
       }
@@ -581,9 +581,108 @@
   }
 }
 /* price card end */
+/* phone sectiton start */
+.headsectionmaindiv {
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  .headsectiondiv {
+    background: white;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    z-index: 1;
+    .headdiv {
+      margin-right: auto;
+      button {
+        display: inline-block;
+        margin: 0px -8px;
+        position: relative;
+        text-align: center;
+        width: auto;
+        font-size: 14px;
+        line-height: var(--lineheight);
+        font-weight: 600;
+        outline: none;
+        padding: 8px;
+        border: none;
+        background: transparent;
+        color: var(--text-color);
+        div {
+          flex: 1 1 0%;
+          display: flex;
+          align-items: center;
+          padding: 0px 8px;
+          color: rgb(34, 34, 34);
+          max-width: 100%;
+          img {
+            display: block;
+            fill: none;
+            height: 16px;
+            width: 16px;
+            stroke: currentcolor;
+            stroke-width: 4;
+            overflow: visible;
+          }
+        }
+      }
+      .texthead {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        font-weight: 800;
+      }
+    }
+  }
+}
+.phpricecardminsection {
+  padding: 0 !important;
+  border: none !important;
+}
+.phpaywithcol {
+  border-bottom: 1px solid var(--borderlight-color);
+}
+.phcouponmaindiv {
+  padding-top: 1rem;
+}
+.phcalendertextmaindiv {
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+.phrow {
+  display: none;
+}
+/* phone sectiton end */
 @media only screen and (max-width: 767px) {
   .navbarmaindivdiv {
     display: none;
+  }
+  .calenderimgmaindiv {
+    width: 24px !important;
+    height: 24px !important;
+    img {
+      width: 24px !important;
+      height: 24px !important;
+    }
+  }
+  .requestbuttonmaindiv {
+    button {
+      width: 100% !important;
+    }
+  }
+  .maincolrow {
+    display: none;
+  }
+  .testrow {
+    display: none;
+  }
+  .phrow {
+    display: block;
   }
 }
 @media only screen and (max-width: 992px) {

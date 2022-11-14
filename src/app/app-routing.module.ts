@@ -12,7 +12,7 @@ const routes: Routes = [
   {path:'hotel',component:HotaldetailComponent,data:{test:true}},
   {path:'Hostindroducion',component:HostindroducionComponent},
   {path:'Host',component:HostComponent},
-  {path:'booking',component:BookingComponent}
+  {path:'booking',component:BookingComponent,data:{test:false}}
 ];
 
 @NgModule({
