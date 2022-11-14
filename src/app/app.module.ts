@@ -38,6 +38,9 @@ import { Form11Component } from './layout/hostform/form11/form11.component';
 import { Form12Component } from './layout/hostform/form12/form12.component';
 import { Form13Component } from './layout/hostform/form13/form13.component';
 import { BookingComponent } from './pages/booking/booking.component';
+import { UserComponent } from './pages/user/user.component';
+import { PhoneuserComponent } from './layout/phoneuser/phoneuser.component';
+import { PcuserComponent } from './layout/pcuser/pcuser.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +77,10 @@ import { BookingComponent } from './pages/booking/booking.component';
     Form11Component,
     Form12Component,
     Form13Component,
-    BookingComponent
+    BookingComponent,
+    UserComponent,
+    PhoneuserComponent,
+    PcuserComponent
   ],
   imports: [
     BrowserModule,
