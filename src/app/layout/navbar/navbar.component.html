@@ -10,7 +10,7 @@
             </div>
           </div>
           <div class="col-6 col-lg-5 col-xl-6 d-flex justify-content-center">
-            <div class="buttonmaindiv" id="navbar">
+            <div class="buttonmaindiv" id="navbar" *ngIf="!this.hotelnav.usernav">
               <div class="butdiv" *ngIf="!this.hotelnav.test">
                 <button type="button" (click)="showsubnavbar('where')">
                   <div>Anywhere</div>
@@ -316,7 +316,7 @@
     </div>
   </div>
 </section>
-<section class="navbarloiginsection" *ngIf="this.sam" >
+<section class="navbarloiginsection" *ngIf="this.sam">
   <app-logoinandsighup></app-logoinandsighup>
 </section>
 <section id="phnavbarpopupsection">

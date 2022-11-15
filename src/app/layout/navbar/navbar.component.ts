@@ -77,7 +77,6 @@ export class NavbarComponent implements OnInit {
     this.route.data.subscribe((data) => {
       this.hotelnav = data;
     });
-
     this.staysid = document.getElementById('staysid');
     this.experienceid = document.getElementById('experienceid');
     this.autofocus = document.getElementById('autofocus');
