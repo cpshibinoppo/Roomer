@@ -254,3 +254,24 @@
     }
   }
 }
+
+.footer {
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  animation-name: footerpop;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+@keyframes footerpop {
+  from {
+    bottom: -70px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
