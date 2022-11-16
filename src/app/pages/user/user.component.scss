@@ -1,0 +1,17 @@
+.pcuserdiv {
+  display: block;
+}
+
+.phoneuserdiv {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .pcuserdiv {
+    display: none !important;
+  }
+
+  .phoneuserdiv {
+    display: block !important;
+  }
+}
