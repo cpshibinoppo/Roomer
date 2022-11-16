@@ -71,16 +71,33 @@
             </div>
             <div class="submaindiv" *ngIf="this.subusershow">
               <div class="sigdrdiv">
-                <ul>
+                <ul style="display:none ;">
                   <li (click)="logoingshow()"><a class="signlinka">Sign up</a></li>
                   <li (click)="logoingshow()"><a>Log in</a></li>
+                  <li (click)="logoingshow()"><a class="signlinka">Trips</a></li>
+                  <li (click)="logoingshow()"><a>Wishlists</a></li>
+                </ul>
+                <ul>
+                  <li (click)="logoingshow()"><a class="signlinka">Messages</a></li>
+                  <li (click)="logoingshow()"><a>Notifications</a></li>
                 </ul>
               </div>
               <div class="pt-2">
-                <ul>
+                <ul style="display: none;">
                   <li><a href="">Host your home</a></li>
                   <li class="mt-1"><a href="">Host an experience</a></li>
                   <li class="mt-1"><a href="">Help</a></li>
+                </ul>
+                <ul>
+                  <li><a href="">Manage listings</a></li>
+                  <li class="mt-1"><a href="">Host an experience</a></li>
+                  <li class="mt-1"><a href="user">Account</a></li>
+                </ul>
+              </div>
+              <div class="helpdiv pt-2">
+                <ul>
+                  <li class="mt-1"><a href="">Help</a></li>
+                  <li class="mt-1"><a href="">Log out</a></li>
                 </ul>
               </div>
             </div>

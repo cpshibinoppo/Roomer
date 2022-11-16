@@ -9,23 +9,29 @@ a {
   z-index: 1;
   background: var(--white);
 }
+
 .navbarmaindiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   .logodiv {
     color: var(--logo-color);
     width: 115px;
+
     .sublogo {
       display: none;
     }
+
     .logo {
       display: block;
     }
+
     img {
       width: 100%;
     }
   }
+
   .buttonmaindiv {
     border: 1px solid var(--light-background);
     border-radius: 40px;
@@ -38,11 +44,14 @@ a {
     animation-duration: 0.5s;
     transform: translateY(0px);
     animation-name: nav;
+
     &:hover {
       box-shadow: var(--hover-boxshadow);
     }
+
     .butdiv {
       display: flex;
+
       button {
         border: none;
         background: none;
@@ -51,16 +60,19 @@ a {
         font-weight: 400;
         padding: 0px 10px;
       }
+
       .line {
         background-color: var(--light-background);
         height: 30px;
         width: 1px;
       }
+
       .serachbutmain {
         color: var(--light-color);
         align-items: center;
         display: flex;
         font-weight: 300;
+
         .searchspan {
           background-color: var(--logo-color);
           color: var(--white);
@@ -69,6 +81,7 @@ a {
           height: 32px;
           width: 32px;
           margin-left: 10px;
+
           img {
             display: block;
             fill: none;
@@ -80,19 +93,23 @@ a {
       }
     }
   }
+
   @keyframes nav {
     from {
       transform: translateY(60px);
       transform: scale(0);
     }
+
     to {
       transform: translateY(0px);
       transform: scale(1);
     }
   }
+
   .usermaindiv {
     display: flex;
     align-items: center;
+
     .hostdiv {
       font-size: var(--text-size);
       line-height: var(line-height);
@@ -101,28 +118,34 @@ a {
       padding: 12px;
       border-radius: 22px;
       transition: all 0.3s ease;
+
       &:hover {
         background-color: var(--hover-background);
       }
+
       a {
         color: var(--text-color);
       }
     }
+
     .landiv {
       height: fit-content;
       padding: 12px;
       border-radius: 22px;
       transition: all 0.3s ease;
+
       img {
         display: block;
         height: 16px;
         width: 16px;
         fill: currentcolor;
       }
+
       &:hover {
         background-color: var(--hover-background);
       }
     }
+
     .userdiv {
       button {
         display: flex;
@@ -136,21 +159,25 @@ a {
         align-items: center;
         vertical-align: middle;
         transition: all 0.3s;
+
         &:hover {
           box-shadow: var(--hover-boxshadow);
         }
       }
+
       .usericon {
         margin-left: 12px;
         height: 30px;
         position: relative;
         width: 30px;
         z-index: 1;
+
         img {
           display: block;
           fill: currentcolor;
         }
       }
+
       .menuicon {
         display: block;
         fill: none;
@@ -163,7 +190,9 @@ a {
     }
   }
 }
+
 .submaindiv {
+  overflow: auto;
   position: absolute;
   top: 70px;
   background-color: var(--white);
@@ -172,32 +201,45 @@ a {
   padding: 5px 0 5px 0;
   height: 220px;
   z-index: 3;
+
   div {
     font-weight: 400;
+
     ul {
       list-style: none;
       padding: 0;
+
       li {
         padding: 5px 75px 5px 25px;
+
         &:hover {
           background: var(--hover-background);
         }
+
         a {
           color: var(--light-color);
         }
       }
     }
   }
+
   .sigdrdiv {
     border-bottom: 1px solid var(--icon-bacground);
   }
+
+  .helpdiv {
+    border-top: 1px solid var(--icon-bacground);
+  }
+
   .signlinka {
     color: var(--black) !important;
   }
 }
+
 /* sub navbar start*/
 .subnavbarmaindiv {
   display: none;
+
   .subnavdiv {
     border: 0.5px solid rgba(0, 0, 0, 0.08);
     box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
@@ -205,17 +247,21 @@ a {
     padding: 10px 5px 10px 20px;
     display: flex;
     justify-content: space-between;
+
     .firstsection {
       display: flex;
       width: -webkit-fill-available;
+
       .logodiv {
         align-self: center;
+
         img {
           display: block;
           height: 16px;
           width: 16px;
         }
       }
+
       .textmaindiv {
         .headtext {
           font-size: 15px;
@@ -223,15 +269,18 @@ a {
           line-height: 20px;
           color: var(--text-color);
         }
+
         .submaintext {
           display: flex;
           font-size: 12px;
           line-height: 16px;
           color: var(--light-color);
           min-width: 0;
+
           .textcon {
             display: flex;
             min-width: 50px;
+
             span {
               overflow: hidden;
               text-overflow: ellipsis;
@@ -241,6 +290,7 @@ a {
         }
       }
     }
+
     .flitermaindiv {
       border: 1px solid var(--light-background);
       border-radius: 25px;
@@ -250,6 +300,7 @@ a {
       height: 36px;
       justify-content: center;
       width: 36px;
+
       .fliterimgdiv {
         img {
           display: block;
@@ -260,6 +311,7 @@ a {
     }
   }
 }
+
 /* end */
 /* sub btn start */
 .subbuttonmiandiv {
@@ -269,6 +321,7 @@ a {
 
   .subbtn {
     transform: scale(1);
+
     button {
       background: none;
       border: none;
@@ -278,6 +331,7 @@ a {
       font-weight: 400;
       margin-left: 15px;
       transition: all 0.2s ease;
+
       div {
         &::after {
           content: "";
@@ -292,8 +346,10 @@ a {
           transition: transform 0.3s ease;
         }
       }
+
       &:hover {
         color: var(--light-color);
+
         div {
           &::after {
             transform: scaleX(1);
@@ -302,12 +358,15 @@ a {
         }
       }
     }
+
     div {
       width: fit-content;
       position: relative;
     }
+
     .subactivebtn {
       color: var(--text-color);
+
       &::after {
         content: "";
         height: 2px;
@@ -323,16 +382,19 @@ a {
     }
   }
 }
+
 @keyframes subnav {
   from {
     transform: translateY(-70px);
     transform: scale(0);
   }
+
   to {
     transform: translateY(0px);
     transform: scale(1);
   }
 }
+
 /* end*/
 /* map section start */
 
@@ -342,14 +404,17 @@ a {
   animation-duration: 0.5s;
   animation-name: dropdownnavani;
 }
+
 @keyframes dropdownnavani {
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(1);
   }
 }
+
 .mapmaindiv {
   display: flex;
   justify-content: space-between;
@@ -358,14 +423,17 @@ a {
   border: 1px solid var(--light-background);
   border-radius: 40px;
   height: 60px;
+
   .wherediv {
     width: 100%;
     cursor: pointer;
     display: flex;
+
     &:hover {
       .line {
         display: none !important;
       }
+
       ::after {
         background-color: var(--icon-bacground);
         border: 1px solid transparent;
@@ -379,6 +447,7 @@ a {
         z-index: -1;
       }
     }
+
     input {
       outline: none;
       border: none;
@@ -386,9 +455,11 @@ a {
       width: 80%;
     }
   }
+
   .clearicondiv {
     z-index: 2;
     margin-right: 15px;
+
     button {
       background: var(--icon-bacground);
       border: none;
@@ -396,18 +467,22 @@ a {
       padding: 2.5px;
       height: 25px;
       width: 25px;
+
       i {
         font-size: 20px;
       }
     }
   }
+
   .checkindiv {
     z-index: 2;
     cursor: pointer;
+
     &:hover {
-      + .line {
+      +.line {
         display: none !important;
       }
+
       ::after {
         background-color: var(--hoverup);
         border: 1px solid transparent;
@@ -422,13 +497,16 @@ a {
       }
     }
   }
+
   .checkoutdiv {
     z-index: 2;
     cursor: pointer;
+
     &:hover {
-      + .line {
+      +.line {
         display: none !important;
       }
+
       ::after {
         background-color: var(--hoverup);
         border: 1px solid transparent;
@@ -443,14 +521,17 @@ a {
       }
     }
   }
+
   .datediv {
     z-index: 2;
     cursor: pointer;
     width: 100%;
+
     &:hover {
-      + .line {
+      +.line {
         display: none !important;
       }
+
       ::after {
         background-color: var(--hoverup);
         border: 1px solid transparent;
@@ -465,17 +546,20 @@ a {
       }
     }
   }
+
   .line {
     background-color: var(--light-background);
     height: 30px;
     width: 1px;
   }
+
   .hetext {
     color: var(--text-color);
     font-size: var(--subtext);
     line-height: var(--sublineheight);
     font-weight: 600;
   }
+
   div {
     color: var(--light-color);
     font-size: 15px;
@@ -483,16 +567,19 @@ a {
     font-weight: 300;
     align-items: center;
   }
+
   .whodiv {
     z-index: 2;
     display: flex;
     height: 45px;
     cursor: pointer;
+
     .whosubdiv {
       display: flex;
       justify-content: space-between;
       width: 100%;
     }
+
     &:hover {
       ::after {
         background-color: var(--hoverup);
@@ -509,8 +596,10 @@ a {
     }
   }
 }
+
 .norseardiv {
   margin-right: 7px;
+
   button {
     background-color: var(--logo-color);
     color: var(--white);
@@ -519,6 +608,7 @@ a {
     border: none;
     height: 45px;
     width: 45px;
+
     img {
       display: block;
       fill: none;
@@ -528,23 +618,28 @@ a {
     }
   }
 }
+
 .seadivmain {
   position: absolute;
   right: 5px;
   top: 0px;
 }
+
 .seadiv {
   display: flex;
   background: var(--linear-background);
   padding: 13px 15px 13px 10px;
   border-radius: 24px;
+
   span {
     height: 16px;
     width: 16px;
+
     img {
       width: 100%;
     }
   }
+
   div {
     color: var(--white);
     font-size: var(--text-size);
@@ -552,6 +647,7 @@ a {
     line-height: var(--sublineheight);
   }
 }
+
 .active {
   &:hover {
     ::after {
@@ -568,6 +664,7 @@ a {
       z-index: -1 !important;
     }
   }
+
   ::after {
     background-color: var(--white) !important;
     border: 1px solid #fff;
@@ -582,6 +679,7 @@ a {
     z-index: -1;
   }
 }
+
 /* end */
 /* map start */
 .mapshowmaindiv {
@@ -592,6 +690,7 @@ a {
   z-index: 5;
   border-radius: 32px;
   padding: 16px 32px;
+
   .mapimgmain {
     grid-column-gap: 5px;
     column-gap: 15px;
@@ -600,9 +699,11 @@ a {
     grid-template-columns: repeat(3, min-content);
     grid-row-gap: 24px;
     row-gap: 24px;
+
     .mapcard {
       height: 158px;
       width: 132px;
+
       .mapimg {
         border: 1px solid rgb(221, 221, 221);
         outline: none;
@@ -612,13 +713,16 @@ a {
         margin: 0;
         overflow: hidden;
         transition: all 0.3s ease;
+
         &:hover {
           border: 1px solid var(--black);
         }
+
         img {
           width: 100%;
         }
       }
+
       div {
         font-size: 14px;
         line-height: var(--lineheight);
@@ -627,6 +731,7 @@ a {
     }
   }
 }
+
 /* end */
 /* add guest */
 .addguestsmaindiv {
@@ -637,15 +742,18 @@ a {
   margin-top: 12px;
   padding: 20px 32px;
   right: 5px;
+
   .petdiv {
     border: none !important;
   }
+
   .subaddguest {
     display: flex;
     min-width: 330px;
     justify-content: space-between;
     border-bottom: 1px solid rgb(235, 235, 235);
     align-items: center;
+
     .headtextdiv {
       h6 {
         font-size: var(--text-size);
@@ -653,11 +761,13 @@ a {
         font-weight: 600;
         // padding-bottom: 6px;
       }
+
       p {
         color: var(--light-color);
         font-weight: 300;
         line-height: var(--lineheight);
         font-size: 14px;
+
         a {
           color: rgb(113, 113, 113);
           font-weight: 400;
@@ -665,12 +775,14 @@ a {
         }
       }
     }
+
     .btnmaindiv {
       display: inline-flex;
       align-items: center;
       width: 104px !important;
       height: 32px !important;
       justify-content: space-between;
+
       button {
         border: 1px solid rgb(176, 176, 176);
         width: 32px;
@@ -681,6 +793,7 @@ a {
         display: inline-flex;
         align-items: center;
         justify-content: center;
+
         span {
           height: 35px;
           width: 22px;
@@ -690,10 +803,12 @@ a {
     }
   }
 }
+
 .zero {
   opacity: 0.5;
   cursor: no-drop;
 }
+
 /* end */
 /* calendar start */
 .maincalendtordiv {
@@ -706,6 +821,7 @@ a {
     padding-right: 4px;
     display: flex;
     justify-content: space-between;
+
     button {
       border: none;
       background: transparent;
@@ -718,103 +834,130 @@ a {
       margin-bottom: 4px;
       border-radius: 100px;
       width: 150px;
+
       &:hover {
         background-color: var(--white);
       }
     }
   }
+
   .headbtnacive {
     background: var(--white) !important;
   }
 }
+
 /* end */
 /* experienceshowid */
 .experienceshowclass {
   display: none;
   z-index: 5;
 }
+
 /* end */
 @media only screen and (max-width: 600px) {
   .navsection {
     box-shadow: none;
   }
+
   .subnavbarmaindiv {
     display: block;
   }
+
   .navbarmaindiv {
     display: none;
   }
 }
+
 @media only screen and (min-width: 600px) {
   .navsection {
     box-shadow: none;
   }
+
   .logodiv {
     width: auto !important;
   }
+
   .logo {
     display: none !important;
   }
+
   .sublogo {
     display: block !important;
   }
+
   .subnavbarmaindiv {
     display: block;
   }
+
   .navbarmaindiv {
     display: none;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .navsection {
     box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
   }
+
   .logodiv {
     width: auto !important;
   }
+
   .logo {
     display: none !important;
   }
+
   .sublogo {
     display: block !important;
   }
+
   .subnavbarmaindiv {
     display: none;
   }
+
   .navbarmaindiv {
     display: flex;
   }
 }
+
 @media only screen and (min-width: 992px) {
   .logo {
     display: none !important;
   }
+
   .sublogo {
     display: block !important;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .logo {
     display: block !important;
   }
+
   .sublogo {
     display: none !important;
   }
 }
+
 #phnavbarpopupsection {
   display: none;
 }
+
 .hotelnav {
   max-width: 300px !important;
   width: 300px;
+
   .hotelnavbutn {
     width: 100%;
     justify-content: space-between;
+
     div {
       font-weight: 500;
       color: var(--text-color);
       font-size: 14px;
     }
+
     .searchspan {
       margin-right: -5px !important;
     }
