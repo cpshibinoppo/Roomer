@@ -38,3 +38,32 @@
     }
   }
 }
+.footer {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  animation-name: footerpop;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+@keyframes footerpop {
+  from {
+    bottom: -70px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  app-navbar{
+    display: none;
+  }
+  .footer{
+    display: block !important;
+  }
+}
