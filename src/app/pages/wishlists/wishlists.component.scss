@@ -1,12 +1,14 @@
-.nowishlistmaindiv{
+.wishlistmaindiv {
   margin: 36px 0 24px;
-  .wishlistheadingdiv{
+
+  .wishlistheadingdiv {
     margin-bottom: 36px;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    h1{
+
+    h1 {
       margin-top: 20px;
       margin-bottom: 15px;
       font-weight: 700;
@@ -15,21 +17,25 @@
       color: rgb(34, 34, 34);
     }
   }
-  .wishlistcondiv{
+
+  .nowishlistcondiv {
     margin-top: 32px;
     max-width: 496px;
-    h2{
+
+    h2 {
       font-size: 1em;
       margin: 0;
       padding: 0;
-      div{
+
+      div {
         font-size: 22px;
         line-height: 26px;
         font-weight: 600;
         color: rgb(34, 34, 34);
       }
     }
-    p{
+
+    p {
       margin-top: 16px;
       font-size: 14px;
       line-height: 20px;
@@ -37,7 +43,122 @@
       margin-top: 24px;
     }
   }
+.imgcollotionmaindiv{
+  display: block;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: -5px;
+    padding: 0;
+
+    li {
+      margin-left: 0;
+      width: 31%;
+      margin: 0 11px 22px;
+      display: flex;
+
+      a {
+        width: 100%;
+        text-decoration: none;
+
+        .cardmaindiv {
+          width: 100%;
+
+          .cardimgmaindiv {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            border-radius: 16px;
+            padding-top: 52%;
+
+            .mainimgdiv {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 67%;
+              height: 100%;
+              padding-right: 1px;
+              div{
+                display: inline-block;
+                vertical-align: bottom;
+                height: 100%;
+                width: 100%;
+                min-height: 1px;
+                img{
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+
+            .subimgdiv {
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 33%;
+              height: 50%;
+              padding-bottom: 1px;
+              padding-left: 1px;
+              img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+              div{
+                display: inline-block;
+                vertical-align: bottom;
+                height: 100%;
+                width: 100%;
+                min-height: 1px;
+              }
+            }
+
+            .bottomimg {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              width: 33%;
+              height: 50%;
+              padding-top: 1px;
+              padding-left: 1px;
+              div{
+                display: inline-block;
+                vertical-align: bottom;
+                height: 100%;
+                width: 100%;
+                min-height: 1px;
+                img{
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+
+          .cardtextmaindiv {
+            display: flex;
+            padding-top: 12px;
+            padding-bottom: 16px;
+            height: 88px;
+            div{
+              font-size: 22px;
+              line-height: 26px;
+              font-weight: 600;
+              color: rgb(34, 34, 34);
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
+}
+
 .footer {
   display: none;
   position: absolute;
@@ -59,11 +180,96 @@
     opacity: 1;
   }
 }
+.phoneimgcollotionmain{
+  .wishlistscarddiv{
+    text-decoration: none;
+    .carddiv{
+      display: flex ;
+      justify-content: space-between ;
+      align-items: center ;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      .boxdiv{
+        display: flex;
+        .boximgmaindiv{
+          margin-right: 16px;
+          div{
+            border-radius:8px ;
+            overflow: hidden;
+            display: inline-block;
+            height: 64px;
+            width: 64px;
+            min-height: 1px;
+            img{
+              object-fit: cover;
+              height: 100% ;
+              width: 100% ;
+              position: static ;
+            }
+          }
+        }
+        .boxtextmandiv{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex: 1 1 auto;
+          width: 100%;
+          .textdiv{
+            color: rgb(34, 34, 34);
+            font-size: var(--text-size);
+            line-height: 20px;
+            div{
+              color: rgb(34, 34, 34);
+              font-size: var(--text-size);
+              line-height: 20px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 768px) {
-  app-navbar{
+  app-navbar {
     display: none;
   }
-  .footer{
+
+  .footer {
     display: block !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+.imgcollotionmaindiv{
+  display: none !important;
+}
+}
+@media only screen and (min-width: 600px) {
+  .imgcollotionmaindiv{
+    li{
+      width: calc(47% - 11px) !important;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .imgcollotionmaindiv{
+    li{
+      width: calc(48% - 11px) !important;
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  .imgcollotionmaindiv{
+    li{
+      width: calc(48% - 11px) !important;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .imgcollotionmaindiv{
+    li{
+      width: 31% !important;
+    }
   }
 }
