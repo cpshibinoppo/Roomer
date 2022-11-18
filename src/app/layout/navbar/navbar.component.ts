@@ -51,8 +51,8 @@ export class NavbarComponent implements OnInit {
   experienceshowid: any;
   subsVar: undefined;
   invokeFirstComponentFunction: any;
-  hotelnav:any
-  constructor(public homecom: HomeComponent, private renderer: Renderer2, private sharedService: LoginsharedService,private route: ActivatedRoute) {
+  hotelnav: any
+  constructor(public homecom: HomeComponent, private renderer: Renderer2, private sharedService: LoginsharedService, private route: ActivatedRoute) {
     this.clickEventsubscription = this.sharedService.getClickEvent().subscribe(() => {
       this.logoingshow();
     })
@@ -216,6 +216,7 @@ export class NavbarComponent implements OnInit {
     }
   }
   restfun() {
+    var aciveclass = document.querySelector('.active');
     this.menuBtnClick = true;
     const sub = document.getElementById('subnav');
     const navbar = document.getElementById('navbar');
@@ -223,6 +224,10 @@ export class NavbarComponent implements OnInit {
     navbar!.style.display = 'block';
     sub!.style.display = 'none';
     test!.style.display = 'none ';
+    aciveclass?.classList.remove('active');
+    this.mapshow = false;
+    this.calendarshow = false;
+    this.guestshow = false;
   }
   showsubuser() {
     this.menuBtnClick = true;
