@@ -42,6 +42,7 @@ import { UserComponent } from './pages/user/user.component';
 import { PhoneuserComponent } from './layout/phoneuser/phoneuser.component';
 import { PcuserComponent } from './layout/pcuser/pcuser.component';
 import { WishlistsComponent } from './pages/wishlists/wishlists.component';
+import { PersonalinfoComponent } from './layout/userdetails/personalinfo/personalinfo.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +83,8 @@ import { WishlistsComponent } from './pages/wishlists/wishlists.component';
     UserComponent,
     PhoneuserComponent,
     PcuserComponent,
-    WishlistsComponent
+    WishlistsComponent,
+    PersonalinfoComponent
   ],
   imports: [
     BrowserModule,
