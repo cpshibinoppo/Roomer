@@ -11,5 +11,8 @@ export class PersonalinfoComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  backfunction() {
+    history.back();
+  }
 
 }
