@@ -11,8 +11,6 @@ export class PhhomefooterComponent implements OnInit {
 
   ngOnInit(): void {
     $('a').click(function(){
-      console.log('link clicked');
-
       $(this).addClass('activelink')
     })
   }

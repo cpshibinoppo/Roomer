@@ -1,6 +1,7 @@
 import { Component, Injectable, OnInit, ViewChild } from '@angular/core';
 import { NavbarComponent } from 'src/app/layout/navbar/navbar.component';
-
+import AOS from "aos";
+AOS.init();
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

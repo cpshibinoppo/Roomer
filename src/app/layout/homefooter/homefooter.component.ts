@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomefooterComponent implements OnInit {
 
-  paycheck:any
+  paycheck: any
 
   constructor(private route: ActivatedRoute) { }
 
@@ -15,7 +15,6 @@ export class HomefooterComponent implements OnInit {
     this.route.data.subscribe((data) => {
       this.paycheck = data;
     });
-    console.log(this.paycheck.test);
   }
 
 }
