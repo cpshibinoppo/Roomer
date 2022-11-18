@@ -14,5 +14,9 @@ export class PersonalinfoComponent implements OnInit {
   backfunction() {
     history.back();
   }
+  nameedit() {
+    console.log('edit name');
 
+    $(".nameinput").css("display", "block");
+  }
 }

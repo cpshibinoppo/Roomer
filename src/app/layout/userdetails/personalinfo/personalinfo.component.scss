@@ -88,7 +88,7 @@ header {
 
           .cardtexttop {
             color: rgb(32, 32, 32);
-            font-size: var(--font-size);
+            font-size: var(--text-size);
             line-height: 20px;
           }
 
@@ -154,7 +154,7 @@ header {
 
     .subcolsubtext {
       margin-top: 16px;
-      font-size: var(--font-size);
+      font-size: var(--text-size);
       color: rgb(113, 113, 113);
     }
 
@@ -166,8 +166,101 @@ header {
 }
 
 /* medlle end */
+.inputmainsection {
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  .inputmaindiv {
+    padding-left: 8px;
+    padding-right: 8px;
+
+    .inputdiv {
+      position: relative;
+      display: flex;
+      min-height: 56px;
+      width: 100%;
+      border: none;
+      color: rgb(255, 255, 255);
+      border-radius: 8px;
+      box-shadow: rgb(176 176 176) 0px 0px 0px 1px inset;
+      font-size: var(--text-size);
+      line-height: 20px;
+      font-weight: 400;
+
+      label {
+        position: relative;
+        flex: 1 1 0%;
+        padding: 0;
+
+        .toptextmain {
+          position: absolute;
+          top: 8px;
+          left: 12px;
+          right: 12px;
+          margin: 0;
+          padding: 0;
+          color: rgb(113, 113, 113);
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 400;
+
+          .toptext {
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+
+        .inputdivbox {
+          display: flex;
+          opacity: 1;
+
+          input {
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 0;
+            margin: 26px 12px 6px;
+            background: transparent;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.savebuttondiv {
+  margin-bottom: 24px;
+
+  button {
+    margin: 0;
+    position: relative;
+    width: auto;
+    font-size: var(--text-size);
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    outline: none;
+    padding: 14px 24px;
+    border: none;
+    background: var(--text-color);
+    color: var(--white);
+  }
+}
+
 /* common styles */
 .backbuttonsection {
+  display: none;
+}
+
+.nameinput {
   display: none;
 }
 
