@@ -3,9 +3,47 @@
   column-gap: 20px;
   row-gap: 50px;
   grid-template-columns: auto auto auto auto;
+
+  div {
+    position: relative;
+  }
 }
-a{
+
+a {
   text-decoration: none;
+}
+
+.likemaindiv {
+  width: 32px;
+  height: 32px;
+  position: absolute !important;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+
+  button {
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    background: transparent;
+    margin: -2px 0 0;
+    padding: 2px 0 0 0;
+
+    svg {
+      height: 24px;
+      width: 24px;
+      fill: rgba(0, 0, 0, 0.5);
+      stroke: var(--white);
+      stroke-width: 2;
+      overflow: visible;
+    }
+  }
+}
+
+.ative {
+  svg {
+    fill: red !important;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -13,21 +51,25 @@ a{
     grid-template-columns: auto !important;
   }
 }
+
 @media only screen and (min-width: 600px) {
   .hotalcardmaindiv {
     grid-template-columns: auto !important;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .hotalcardmaindiv {
     grid-template-columns: auto auto !important;
   }
 }
+
 @media only screen and (min-width: 992px) {
   .hotalcardmaindiv {
     grid-template-columns: auto auto auto !important;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .hotalcardmaindiv {
     grid-template-columns: auto auto auto auto !important;

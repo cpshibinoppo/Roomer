@@ -1,24 +1,30 @@
 @import "swiper/css/pagination";
+
 .maincard {
   width: 305px;
   height: 390px;
   min-width: 100%;
   position: relative;
 }
+
 .maincard:hover {
   .chbtn {
+
     .swiper-button-next,
     .swiper-button-prev {
       opacity: 1;
     }
   }
 }
+
 .swiper-wrap {
   position: relative;
+
   .swiper {
     width: 100% !important;
     height: 100% !important;
   }
+
   .swiper-wrapper {
     display: grid !important;
     gap: 0 !important;
@@ -26,14 +32,17 @@
     justify-content: flex-start;
   }
 }
+
 .cardtextmaindiv {
   display: flex;
   justify-content: space-between;
   padding-top: 0.5rem;
+
   .textmain {
     .cardheaddiv {
       line-height: 20px;
       overflow: clip;
+
       .cardheadtext {
         overflow: hidden;
         color: var(--text-color);
@@ -46,8 +55,10 @@
         word-break: break-all;
         font-size: 16px;
       }
+
       .cardsubtext {
         display: grid;
+
         span {
           color: var(--light-color);
           font-size: 15px;
@@ -56,14 +67,17 @@
         }
       }
     }
+
     .pricemain {
       div {
         line-height: 35px;
+
         .pricetext {
           color: var(--text-color);
           font-size: 16px;
           font-weight: 500;
         }
+
         .pricesubtext {
           color: rgb(34, 34, 34);
           font-size: 15px;
@@ -73,14 +87,17 @@
       }
     }
   }
+
   .starmaindiv {
     div {
       display: flex;
       align-items: center;
       color: var(--text-color);
+
       .star {
         font-size: 12px;
       }
+
       .startext {
         font-size: 15px;
         line-height: 19px;
@@ -89,7 +106,9 @@
     }
   }
 }
+
 .chbtn {
+
   .swiper-button-next,
   .swiper-button-prev {
     opacity: 0;
@@ -98,6 +117,7 @@
     top: 50%;
     background: transparent !important;
     transition: all 0.25s ease;
+
     &:hover::after {
       border-color: rgba(0, 0, 0, 0.08) !important;
       background-color: rgb(255, 255, 255) !important;
@@ -106,6 +126,7 @@
         rgb(0 0 0 / 12%) 0px 6px 16px !important;
       transform: scale(1.04) !important;
     }
+
     &::after {
       font-size: 12px !important;
       font-weight: bold;
@@ -124,6 +145,7 @@
         rgb(0 0 0 / 18%) 0px 2px 4px;
       transition: all 0.25s ease;
     }
+
     &::before {
       content: "";
       position: absolute;
@@ -135,23 +157,29 @@
     }
   }
 }
+
 .sliderimgmain {
   border-radius: 10px;
   overflow: hidden !important;
+
   .sliderimg {
     object-fit: cover;
     min-height: 305px;
   }
 }
+
 .swiper-pagination-bullet-active-main {
   background: var(--white) !important;
 }
+
 .swiper-pagination-bullet {
   background-color: white;
 }
+
 .swiper-pagination-bullet {
   opacity: 1 !important;
 }
+
 @media only screen and (max-width: 600px) {
   .maincard {
     width: 298px;
@@ -159,6 +187,7 @@
     min-width: 100%;
   }
 }
+
 @media only screen and (min-width: 600px) {
   .maincard {
     width: 298px;
@@ -166,6 +195,7 @@
     min-width: 100%;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .maincard {
     width: 298px;
@@ -173,6 +203,7 @@
     min-width: 100%;
   }
 }
+
 @media only screen and (min-width: 992px) {
   .maincard {
     width: 298px;
@@ -180,6 +211,7 @@
     min-width: 100%;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .maincard {
     width: 263px;
@@ -187,30 +219,11 @@
     min-width: 100%;
   }
 }
+
 @media only screen and (min-width: 1400px) {
   .maincard {
     width: 305px;
     height: 385px;
     min-width: 100%;
-  }
-}
-.likemaindiv {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  z-index: 1;
-  button {
-    border: none;
-    border-radius: 50%;
-    width: 32px;
-    background: transparent;
-    margin: -2px 0 0;
-    padding: 2px 0 0 0;
-    img {
-      height: 24px;
-      width: 24px;
-    }
   }
 }

@@ -41,6 +41,7 @@ import { BookingComponent } from './pages/booking/booking.component';
 import { UserComponent } from './pages/user/user.component';
 import { PhoneuserComponent } from './layout/phoneuser/phoneuser.component';
 import { PcuserComponent } from './layout/pcuser/pcuser.component';
+import { WishlistsComponent } from './pages/wishlists/wishlists.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,8 @@ import { PcuserComponent } from './layout/pcuser/pcuser.component';
     BookingComponent,
     UserComponent,
     PhoneuserComponent,
-    PcuserComponent
+    PcuserComponent,
+    WishlistsComponent
   ],
   imports: [
     BrowserModule,

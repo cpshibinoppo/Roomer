@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { HotaldetailComponent } from './pages/hotaldetail/hotaldetail.component';
 import { BookingComponent } from './pages/booking/booking.component';
 import { UserComponent } from './pages/user/user.component';
+import { WishlistsComponent } from './pages/wishlists/wishlists.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path:'Hostindroducion',component:HostindroducionComponent},
   {path:'Host',component:HostComponent},
   {path:'booking',component:BookingComponent,data:{test:false}},
-  {path:'user',component:UserComponent,data:{usernav:true}}
+  {path:'user',component:UserComponent,data:{usernav:true}},
+  {path:'wishlists',component:WishlistsComponent,data:{usernav:true}}
 ];
 
 @NgModule({
