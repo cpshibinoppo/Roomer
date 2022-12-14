@@ -43,6 +43,7 @@ import { PhoneuserComponent } from './layout/phoneuser/phoneuser.component';
 import { PcuserComponent } from './layout/pcuser/pcuser.component';
 import { WishlistsComponent } from './pages/wishlists/wishlists.component';
 import { PersonalinfoComponent } from './layout/userdetails/personalinfo/personalinfo.component';
+import { ShowmoreimgComponent } from './layout/showmoreimg/showmoreimg.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import { PersonalinfoComponent } from './layout/userdetails/personalinfo/persona
     PhoneuserComponent,
     PcuserComponent,
     WishlistsComponent,
-    PersonalinfoComponent
+    PersonalinfoComponent,
+    ShowmoreimgComponent
   ],
   imports: [
     BrowserModule,
