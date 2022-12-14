@@ -1,0 +1,82 @@
+.navSection {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    position: sticky;
+    top: 0;
+
+    .backbutton {
+        button {
+            border: none;
+            background: transparent;
+            outline: none;
+            padding: 0;
+            margin: 0;
+            border-radius: 50%;
+
+            span {
+                img {
+                    display: block;
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+    }
+
+    .buttonsdiv {
+        display: flex;
+        justify-content: flex-end;
+
+        .buttondiv {
+            margin-right: 20px;
+
+            button {
+                margin: 0 -8px;
+                border: none;
+                outline: none;
+                text-decoration: underline;
+                background: transparent;
+                width: auto;
+                font-size: var(subtext);
+                font-weight: 600;
+                line-height: var(--lineheight);
+                padding: 8px;
+                color: var(--text-color);
+
+                div {
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        margin: 8px;
+
+                        img {
+                            height: 16px;
+                            width: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navSection {
+        padding: 5px 15px !important;
+    }
+
+    .savebutton {
+        display: none;
+    }
+
+    .sharetext {
+        display: none !important;
+    }
+
+    .sharebutton {
+        margin-right: 0 !important;
+    }
+}
