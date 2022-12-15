@@ -36,5 +36,9 @@ export class HotaldetailComponent implements OnInit {
   buttonlink() {
     location.href = "/booking"
   }
+  showallimagefun() {
+    console.log('showallimagefun');
+    alert('showallimagefun');
+  }
 
 }

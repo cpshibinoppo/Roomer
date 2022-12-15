@@ -1,6 +1,7 @@
 /* navbar start */
 nav {
   display: none;
+
   .navmaindiv {
     display: flex;
     justify-content: space-between;
@@ -9,6 +10,7 @@ nav {
     padding-left: 16px;
     padding-right: 16px;
     border-bottom: 1px solid rgb(235, 235, 235);
+
     .homediv {
       a {
         text-decoration: none;
@@ -18,13 +20,16 @@ nav {
         padding: 8px;
         line-height: var(--lineheight);
         margin: 0px -8px;
+
         .homesection {
           display: flex;
           align-items: center;
           padding: 0px 8px;
           letter-spacing: 0.5px;
+
           .imgdiv {
             padding-right: 8px;
+
             img {
               display: block;
               fill: none;
@@ -38,13 +43,16 @@ nav {
         }
       }
     }
+
     .senddiv {
       display: flex;
       padding-top: 6px;
       padding-left: 8px;
       padding-right: 8px;
+
       .sendbtn {
         margin-right: 20px;
+
         button {
           border: none;
           outline: none;
@@ -52,6 +60,7 @@ nav {
           margin: 0;
           padding: 0;
           color: var(--text-color);
+
           span {
             img {
               display: block;
@@ -65,6 +74,7 @@ nav {
           }
         }
       }
+
       .heartbtn {
         button {
           border: none;
@@ -73,6 +83,7 @@ nav {
           margin: 0;
           padding: 0;
           color: var(--text-color);
+
           span {
             img {
               display: block;
@@ -89,6 +100,7 @@ nav {
     }
   }
 }
+
 /* navbar end */
 /* header start */
 .header {
@@ -97,10 +109,12 @@ nav {
     font-weight: 400;
     font-size: var(--text-size);
     line-height: 20px;
+
     span {
       font-size: 26px;
       line-height: 30px;
       font-weight: 500;
+
       h1 {
         color: inherit;
         font-size: 1em;
@@ -112,29 +126,35 @@ nav {
       }
     }
   }
+
   .headresubtextdiv {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .headersubtext {
       display: flex;
       flex-wrap: wrap;
+
       .hearmainspan {
         margin-top: 4px;
         align-items: center;
         display: inline-flex;
+
         .headtextspan {
           line-height: 20px;
           color: rgb(34, 34, 34);
           font-size: 14px;
           font-weight: 600;
         }
+
         .headbtnspan {
           color: rgb(34, 34, 34);
           font-size: 14px;
           line-height: 20px;
           padding-left: 4px;
           font-weight: 600;
+
           button {
             border: none;
             background: transparent;
@@ -146,6 +166,7 @@ nav {
           }
         }
       }
+
       .dotspan {
         color: rgb(113, 113, 113);
         margin: 8px 8px 0px;
@@ -153,24 +174,31 @@ nav {
     }
   }
 }
+
 .superhostspan {
   font-weight: 400 !important;
 }
+
 .headratingspan {
   font-weight: 500;
 }
+
 .testiconspan {
   min-width: 14px;
   margin-right: 3px;
   display: inline-flex;
   align-items: center;
 }
+
 .sharemaindiv {
   height: 28px;
+
   .shareandsavediv {
     display: flex;
+
     .sharediv {
       margin-right: 20px;
+
       button {
         margin: 0px -8px;
         font-size: 14px;
@@ -180,12 +208,15 @@ nav {
         outline: none;
         border: none;
         padding: 8px;
+
         div {
           display: flex;
           align-items: center;
           text-decoration: underline;
+
           span {
             margin-right: 8px;
+
             img {
               display: block;
               fill: none;
@@ -201,9 +232,11 @@ nav {
     }
   }
 }
+
 .headerphone {
   border-bottom: 1px solid var(--borderlight-color);
 }
+
 /* header end */
 /* image collection start */
 .collectionmaindiv {
@@ -215,9 +248,14 @@ nav {
   position: relative;
   border-radius: 12px;
   z-index: -1;
+
   .collectionimgdiv {
+    position: absolute;
+    top: 0;
+    z-index: 1;
     width: 100%;
     height: 100%;
+
     .startimgdiv {
       position: absolute;
       top: 0;
@@ -227,21 +265,25 @@ nav {
       position: absolute;
       top: 0;
       left: 0;
+
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
     }
+
     .centerimgdiv {
       position: absolute;
       top: 0;
       left: 50%;
       width: 25%;
       height: 50%;
+
       div {
         width: 100%;
         height: 100%;
+
         img {
           width: 100%;
           height: 100%;
@@ -249,15 +291,18 @@ nav {
         }
       }
     }
+
     .endimgdiv {
       position: absolute;
       top: 0;
       right: 0;
       width: 25%;
       height: 50%;
+
       div {
         width: 100%;
         height: 100%;
+
         img {
           width: 100%;
           height: 100%;
@@ -265,6 +310,7 @@ nav {
         }
       }
     }
+
     button {
       border: none;
       background: transparent;
@@ -276,6 +322,7 @@ nav {
       text-align: left;
       position: relative;
     }
+
     .overlay {
       position: absolute;
       top: 0;
@@ -287,6 +334,7 @@ nav {
       z-index: 200;
       transition: all 0.25s ease;
     }
+
     button:hover {
       .overlay {
         display: block;
@@ -295,11 +343,13 @@ nav {
     }
   }
 }
+
 .showmorediv {
   position: absolute;
   bottom: 24px;
   right: 24px;
   z-index: 3;
+
   button {
     display: inline-block;
     margin: 0;
@@ -312,12 +362,15 @@ nav {
     background: var(--white);
     padding: 7px 15px;
     border: 1px solid var(--text-color);
+
     div {
       display: flex;
       align-items: center;
+
       div {
         margin-left: 8px;
       }
+
       img {
         display: block;
         height: 16px;
@@ -327,6 +380,7 @@ nav {
     }
   }
 }
+
 /* slider strart */
 @import "swiper/css";
 
@@ -342,6 +396,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+
   button {
     border: none;
     background: transparent;
@@ -354,9 +409,11 @@ nav {
     position: relative;
   }
 }
+
 .siderimgdiv {
   width: 100%;
 }
+
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -364,6 +421,7 @@ nav {
   object-fit: cover;
   aspect-ratio: 16/11;
 }
+
 .swiper-pagination {
   position: absolute;
   bottom: 24px;
@@ -388,6 +446,7 @@ nav {
   z-index: 2;
   height: 68px;
   padding: 16px 13px 25px;
+
   .phbtnslider {
     box-shadow: transparent 0px 0px 0px 1px, transparent 0px 0px 0px 4px,
       rgb(0 0 0 / 18%) 0px 2px 4px;
@@ -401,6 +460,7 @@ nav {
     justify-content: center;
     height: 36px;
     width: 36px;
+
     img {
       display: block;
       fill: none;
@@ -411,24 +471,29 @@ nav {
       overflow: visible;
     }
   }
+
   .phsenddiv {
     display: flex;
     align-items: center;
   }
+
   .phsendicon {
     margin-right: 12px;
   }
 }
+
 /* image collection end */
 /* hostername div start */
 .centercontainer {
   border-bottom: 1px solid var(--borderlight-color);
 }
+
 .hosternamemaindiv {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--borderlight-color);
   padding-bottom: 24px;
+
   .hosternamediv {
     .hostername {
       color: rgb(34, 34, 34);
@@ -436,6 +501,7 @@ nav {
       font-size: 22px;
       line-height: 26px;
       margin-bottom: 8px;
+
       h2 {
         color: inherit !important;
         font-size: 1em !important;
@@ -445,11 +511,14 @@ nav {
         padding: 0px !important;
       }
     }
+
     ol {
       margin: 0;
       padding: 0;
+
       li {
         display: inline-block;
+
         span {
           color: var(--text-color);
           font-weight: 400;
@@ -459,10 +528,12 @@ nav {
       }
     }
   }
+
   .hosterimgmiandiv {
     .hoterimagediv {
       font-size: 28px;
       position: relative;
+
       button {
         border: none;
         background: transparent;
@@ -470,17 +541,20 @@ nav {
         padding: 0;
         outline: none;
         border-radius: 50%;
+
         div {
           height: 56px;
           width: 56px;
           border-radius: 50%;
           background: rgb(221, 221, 221);
           overflow: hidden;
+
           .imgdiv {
             display: inline-block;
             height: 100%;
             width: 100%;
             min-height: 1px;
+
             img {
               object-fit: cover;
               height: 100%;
@@ -494,10 +568,12 @@ nav {
     }
   }
 }
+
 .subsimgmaindiv {
   position: absolute;
   right: -10px;
   bottom: 8px;
+
   img {
     height: 1em;
     width: 1em;
@@ -505,17 +581,21 @@ nav {
     fill: currentcolor;
   }
 }
+
 /* hostname div end */
 /* hotel function start */
 .speckmaindiv {
   padding-top: 32px;
   padding-bottom: 32px;
   border-bottom: 1px solid var(--borderlight-color);
+
   .listmaindiv {
     display: flex;
     margin-bottom: 24px !important;
+
     .imgdiv {
       min-width: 24px;
+
       img {
         display: block;
         height: 24px;
@@ -523,8 +603,10 @@ nav {
         fill: currentcolor;
       }
     }
+
     .listtext {
       margin-left: 16px;
+
       .maintext {
         line-height: 20px;
         margin-bottom: 4px;
@@ -532,6 +614,7 @@ nav {
         font-size: var(--text-size);
         color: rgb(34, 34, 34);
       }
+
       .subtext {
         color: rgb(113, 113, 113);
         font-weight: 400;
@@ -541,30 +624,36 @@ nav {
     }
   }
 }
+
 /* hotel function end */
 /* aircover start */
 .aircoverdivmian {
   padding-top: 32px;
   padding-bottom: 32px;
   border-bottom: 1px solid var(--borderlight-color);
+
   .aircoverdiv {
     font-size: var(--text-size);
     line-height: 20px;
     color: var(--text-color);
     font-weight: 400;
+
     h2 {
       margin: 0;
       padding: 0;
       font-size: 1em;
+
       img {
         height: 26px;
         margin-bottom: 16px;
       }
     }
+
     div {
       margin-bottom: 16px;
       font-size: var(--text-size);
     }
+
     button {
       background: transparent;
       border: none;
@@ -574,12 +663,15 @@ nav {
       border-radius: 4px;
       text-decoration: underline;
       font-weight: 500;
+
       .showmorespan {
         display: flex;
+
         .showmoreimgdiv {
           height: 12px;
           width: 12px;
           display: block;
+
           img {
             width: 100%;
             height: 100%;
@@ -590,6 +682,7 @@ nav {
     }
   }
 }
+
 /* aircover end */
 /* whereyousleepmain start */
 .whereyousleepmaindiv {
@@ -597,33 +690,40 @@ nav {
   padding-bottom: 100px;
   border-bottom: 1px solid var(--borderlight-color);
   overflow: auto;
+
   &::-webkit-scrollbar {
     display: none;
   }
+
   .textdiv {
     line-height: 26px;
     font-weight: 500;
     font-size: 22px;
+
     h2 {
       margin: 0;
       padding: 0;
       font-size: 1em;
     }
   }
+
   .subtexthead {
     font-size: var(--text-size);
     line-height: 20px;
     margin-top: 15px;
     color: rgb(113, 113, 113);
   }
+
   .imgsection {
     width: 320px;
     min-width: 290px;
     min-height: 50px;
     max-height: 215px;
     margin-right: 15px;
+
     div {
       width: 100%;
+
       button {
         background: transparent;
         border: none;
@@ -633,6 +733,7 @@ nav {
         margin: 0;
         width: 100%;
         height: 100%;
+
         img {
           object-fit: cover;
           border-radius: 8px;
@@ -642,6 +743,7 @@ nav {
         }
       }
     }
+
     .imgtext {
       .maintext {
         font-weight: 500;
@@ -650,6 +752,7 @@ nav {
         margin-top: 16px;
         font-size: var(--text-size);
       }
+
       .subtext {
         color: rgb(34, 34, 34);
         margin-top: 4px;
@@ -659,21 +762,25 @@ nav {
       }
     }
   }
+
   .listshowallfea {
     color: var(--text-color);
     margin-top: 5rem;
     font-weight: 400;
     font-size: var(--text-size);
     line-height: 20px;
+
     button {
       border-radius: 8px;
       border: 1px solid var(--text-color);
       padding: 13px 23px;
       background: var(--white);
       transition: all 0.25s ease;
+
       &:hover {
         background: var(--hover-background);
       }
+
       &:active {
         animation-name: buttonclick;
         animation-duration: 0.3s;
@@ -681,10 +788,12 @@ nav {
     }
   }
 }
+
 .sleepimgsection {
   display: flex;
   justify-content: space-between;
 }
+
 /* whereyousleepmain end */
 /* placeoffer start */
 .placeoffermaindiv {
@@ -692,16 +801,19 @@ nav {
   padding-bottom: 48px;
   border-bottom: 1px solid var(--borderlight-color);
 }
+
 .headtext {
   color: var(--text-color);
   font-size: 22px;
   font-weight: 500;
+
   h2 {
     margin: 0;
     padding: 0;
     font-size: 1em;
   }
 }
+
 .listmaindiv {
   display: flex;
   margin-left: -6px;
@@ -710,26 +822,31 @@ nav {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
+
   .list {
     padding-left: 8px;
     padding-right: 8px;
     width: 50%;
+
     div {
       padding-bottom: 10px;
       justify-content: flex-end;
       flex-direction: row-reverse;
       display: flex;
       align-items: center;
+
       .listtext {
         line-height: 20px;
         font-size: var(--text-size);
         font-weight: 400;
         color: var(--text-color);
       }
+
       .imgdiv {
         margin-right: 16px;
         margin-left: 0;
         min-width: 24px;
+
         img {
           display: block;
           height: 24px;
@@ -740,73 +857,88 @@ nav {
     }
   }
 }
+
 .listshowall {
   color: var(--text-color);
   margin-top: 24px;
   font-weight: 400;
   font-size: var(--text-size);
   line-height: 20px;
+
   button {
     border-radius: 8px;
     border: 1px solid var(--text-color);
     padding: 13px 23px;
     background: var(--white);
     transition: all 0.25s ease;
+
     &:hover {
       background: var(--hover-background);
     }
+
     &:active {
       animation-name: buttonclick;
       animation-duration: 0.3s;
     }
   }
 }
+
 .accfeamaindiv {
   padding-bottom: 50px !important;
   border: none !important;
 }
+
 @keyframes buttonclick {
   from {
     transform: scale(0.9);
   }
+
   to {
     transform: scale(1);
   }
 }
+
 /* placeoffer end */
 /* price start */
 .pricecolsection {
   position: sticky;
   top: 25px;
 }
+
 .pricelistmaindiv {
   border: 1px solid rgb(221, 221, 221);
   border-radius: 12px;
   padding: 24px 24px 5px;
   box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+
   .pricelistdiv {
     color: rgb(34, 34, 34);
     font-weight: 400;
     font-size: var(--text-size);
     line-height: 20px;
+
     .checkinmaindiv {
       display: flex;
       flex-direction: column;
+
       .checkinpricediv {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         margin-bottom: 24px;
+
         .price {
           font-weight: 500;
           font-size: var(--text-size);
           line-height: 20px;
+
           .pastprice {
             color: rgb(113, 113, 113);
             text-decoration: line-through;
             font-weight: 500;
             font-size: 22px;
           }
+
           .curruntprice {
             font-weight: 600;
             color: rgb(34, 34, 34);
@@ -814,18 +946,22 @@ nav {
             margin-right: 3px;
             font-size: 22px;
           }
+
           .pricetext {
             font-weight: 400;
             line-height: var(--lineheight);
             font-size: 16px;
           }
         }
+
         .reviews {
           display: flex;
+
           .starspan {
             font-size: 12px;
             text-align: center;
           }
+
           .reviewstext {
             color: rgb(34, 34, 34);
             padding-left: 4px;
@@ -833,6 +969,7 @@ nav {
             font-size: 14px;
             line-height: 18px;
           }
+
           .rewiewbtn {
             button {
               outline: none;
@@ -841,6 +978,7 @@ nav {
               padding: 0;
               margin: 0;
               background: transparent;
+
               span {
                 padding-left: 4px;
                 font-weight: 500;
@@ -851,13 +989,17 @@ nav {
           }
         }
       }
+
       .pricedatamaindiv {
         margin-bottom: 16px;
         position: relative;
+
         div {
           background-color: var(--white);
+
           .checkinandoutmiandiv {
             display: flex;
+
             button {
               border-radius: 8px;
               position: relative;
@@ -869,6 +1011,7 @@ nav {
               outline: none;
               background: transparent;
               text-align: left;
+
               .checkindiv {
                 width: 50%;
                 position: relative;
@@ -889,6 +1032,7 @@ nav {
                   text-overflow: ellipsis;
                   white-space: nowrap;
                 }
+
                 .datetext {
                   border-radius: 8px;
                   min-height: 56px;
@@ -900,11 +1044,13 @@ nav {
                   white-space: nowrap;
                 }
               }
+
               .checkoutdiv {
                 position: relative;
                 width: 50%;
                 border-top-right-radius: 8px;
                 border: 1px solid var(--borderlight-color);
+
                 .text {
                   position: absolute;
                   top: 4px;
@@ -918,6 +1064,7 @@ nav {
                   text-overflow: ellipsis;
                   white-space: nowrap;
                 }
+
                 .datetext {
                   border-radius: 8px;
                   min-height: 56px;
@@ -931,8 +1078,10 @@ nav {
               }
             }
           }
+
           .gustdiv {
             position: relative;
+
             button {
               border-radius: 8px;
               position: relative;
@@ -944,6 +1093,7 @@ nav {
               outline: none;
               background: transparent;
               text-align: left;
+
               .gust {
                 width: 100%;
                 position: relative;
@@ -954,8 +1104,10 @@ nav {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+
                 div {
                   border-radius: 8px;
+
                   .text {
                     position: absolute;
                     top: 4px;
@@ -969,6 +1121,7 @@ nav {
                     text-overflow: ellipsis;
                     white-space: nowrap;
                   }
+
                   .datetext {
                     border-radius: 8px;
                     min-height: 56px;
@@ -980,6 +1133,7 @@ nav {
                     white-space: nowrap;
                   }
                 }
+
                 .drowpdownicon {
                   margin-right: 10px;
                   font-size: 24px;
@@ -993,11 +1147,13 @@ nav {
     }
   }
 }
+
 .repotmaaindiv {
   margin-top: 24px;
   text-align: center;
   justify-content: center;
   display: flex;
+
   button {
     margin: 0;
     padding: 0;
@@ -1010,8 +1166,10 @@ nav {
     font-size: 14px;
     font-weight: 400;
     color: var(--light-color);
+
     .imgspan {
       margin-right: 16px;
+
       img {
         display: block;
         height: 16px;
@@ -1021,6 +1179,7 @@ nav {
     }
   }
 }
+
 /* add guest start */
 .addgust {
   position: absolute;
@@ -1029,6 +1188,7 @@ nav {
   opacity: 0;
   transition: all 0.25s ease;
 }
+
 .addgustsesction {
   .addguestsmaindiv {
     position: absolute;
@@ -1040,14 +1200,17 @@ nav {
     box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 8px 16px rgb(0 0 0 / 15%);
     margin-top: 12px;
     padding: 16px;
+
     .petdiv {
       border: none !important;
     }
+
     .subaddguest {
       display: flex;
       justify-content: space-between;
       border-bottom: 1px solid rgb(235, 235, 235);
       align-items: center;
+
       .headtextdiv {
         h6 {
           font-size: var(--text-size);
@@ -1055,11 +1218,13 @@ nav {
           font-weight: 600;
           // padding-bottom: 6px;
         }
+
         p {
           color: var(--light-color);
           font-weight: 300;
           line-height: var(--lineheight);
           font-size: 14px;
+
           a {
             color: rgb(113, 113, 113);
             font-weight: 400;
@@ -1067,12 +1232,14 @@ nav {
           }
         }
       }
+
       .btnmaindiv {
         display: inline-flex;
         align-items: center;
         width: 104px !important;
         height: 32px !important;
         justify-content: space-between;
+
         button {
           border: 1px solid rgb(176, 176, 176) !important;
           width: 32px !important;
@@ -1083,10 +1250,12 @@ nav {
           display: inline-flex !important;
           align-items: center !important;
           justify-content: center !important;
+
           span {
             height: 22px;
             width: 22px;
             padding: 5px;
+
             img {
               display: block;
               fill: none;
@@ -1102,19 +1271,23 @@ nav {
     }
   }
 }
+
 .zero {
   opacity: 0.5;
   cursor: no-drop;
 }
+
 .addgustsubtext {
   font-size: 12px;
   line-height: 16px;
   color: rgb(34, 34, 34);
   margin-bottom: 16px;
 }
+
 .closebtn {
   display: flex;
   justify-content: flex-end !important;
+
   button {
     width: auto !important;
     text-align: center;
@@ -1128,21 +1301,26 @@ nav {
     background: transparent;
     padding: 10px !important;
     transition: all 0.3s ease;
+
     &:hover {
       background: var(--hover-background) !important;
     }
   }
 }
+
 .show {
   opacity: 1 !important;
   display: block !important;
+
   i {
     transform: rotate(180deg);
   }
 }
+
 /* add guest end */
 .reservebtnmaindiv {
   padding-top: 10px;
+
   button {
     background: var(--linear-background);
     font-size: var(--text-size);
@@ -1156,6 +1334,7 @@ nav {
     width: 100%;
   }
 }
+
 .youtext {
   padding-top: 8px;
   display: flex;
@@ -1165,6 +1344,7 @@ nav {
   font-size: 14px;
   line-height: 18px;
 }
+
 .priceamoutmaindiv {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -1177,6 +1357,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .buttonmin {
       button {
         border: none;
@@ -1188,6 +1369,7 @@ nav {
     }
   }
 }
+
 .totalprivemaindiv {
   display: flex;
   justify-content: space-between;
@@ -1195,29 +1377,36 @@ nav {
   line-height: 20px;
   font-weight: 500;
 }
+
 .offerdiv {
   border: 1px solid var(--borderlight-color);
   border-radius: 12px;
   padding: 24px;
   box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+
   .offer {
     display: flex;
     justify-content: space-between;
+
     .offertext {
       color: rgb(34, 34, 34);
       margin-right: 25px;
       font-size: var(--text-size);
       line-height: 20px;
+
       .blodtext {
         font-weight: 500;
       }
+
       span {
         font-weight: 300;
       }
     }
+
     .offerimg {
       width: 32px;
       height: 32px;
+
       img {
         display: block;
         height: 32px;
@@ -1228,6 +1417,7 @@ nav {
     }
   }
 }
+
 /* price end */
 /* footer price start */
 .footermaindiv {
@@ -1245,6 +1435,7 @@ nav {
   min-height: 80px;
   animation-name: footeranimation;
   animation-duration: 1s;
+
   .fooetpricediv {
     .pricediv {
       font-size: var(--text-size);
@@ -1252,18 +1443,22 @@ nav {
       align-items: baseline;
       font-weight: 400;
       flex-wrap: wrap;
+
       .price {
         font-size: 18px;
         font-weight: 500;
       }
+
       .pricetext {
         font-weight: 400;
         line-height: 18px;
       }
     }
+
     .datebtn {
       font-size: 14px;
       line-height: 18px;
+
       button {
         background: transparent;
         border: none;
@@ -1274,6 +1469,7 @@ nav {
       }
     }
   }
+
   .footerpricebtn {
     button {
       background: var(--linear-background);
@@ -1288,14 +1484,17 @@ nav {
     }
   }
 }
+
 @keyframes footeranimation {
   from {
     transform: translateY(70px);
   }
+
   to {
     transform: translateY(0);
   }
 }
+
 /* footer price end */
 /* map start */
 .mappagesection {
@@ -1303,26 +1502,32 @@ nav {
     border-bottom: 1px solid var(--borderlight-color);
   }
 }
+
 /* map end */
 /* hoster details start */
 .hosterfullsectiondiv {
   padding-top: 48px;
   padding-bottom: 35px;
+
   .container {
     border-bottom: 1px solid var(--borderlight-color);
     padding-bottom: 3rem;
   }
+
   .hosterfullnamemaindiv {
     margin-bottom: 24px;
     justify-content: initial;
     align-items: center;
     display: flex;
     flex-direction: row;
+
     .hosterimg {
       margin-right: 16px;
+
       div {
         height: 64px;
         width: 64px;
+
         a {
           div {
             display: inline-block;
@@ -1333,6 +1538,7 @@ nav {
             background: rgb(221, 221, 221);
             overflow: hidden;
             min-height: 1px;
+
             img {
               object-fit: cover;
               vertical-align: bottom;
@@ -1344,22 +1550,26 @@ nav {
         }
       }
     }
+
     .hostername {
       color: var(--text-color);
       font-weight: 600;
       font-size: 22px;
       line-height: 26px;
+
       h2 {
         margin: 0;
         padding: 0;
         font-size: 1em;
       }
+
       div {
         padding-top: 8px;
         color: var(--light-color);
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;
+
         span {
           margin: 0;
           padding: 0;
@@ -1368,30 +1578,37 @@ nav {
     }
   }
 }
+
 .fullofcontain {
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
+
   .containsection {
     width: 42%;
   }
+
   .coutacthostmaindiv {
     width: 42%;
   }
 }
+
 .containmaindiv {
   display: flex;
   margin-bottom: 12px;
   flex-flow: row wrap;
+
   div {
     display: flex;
     align-items: center;
+
     .funiconspan {
       color: var(--text-color);
       font-size: 20px;
       min-width: 20px;
+
       img {
         display: block;
         height: 16px;
@@ -1399,36 +1616,44 @@ nav {
         fill: currentcolor;
       }
     }
+
     .text {
       margin-left: 8px;
     }
   }
 }
+
 .hosterdetalmaindiv {
   margin-bottom: 24px;
+
   .headtext {
     margin-bottom: 8px;
     color: var(--text-color);
     font-weight: 600;
     font-size: var(--text-size);
     line-height: 20px;
+
     h3 {
       font-size: 1em;
     }
   }
+
   .subtextmaindiv {
     font-weight: 400;
     font-size: var(--text-size);
     word-break: break-word;
   }
 }
+
 .responsemaindiv {
   div {
     margin-bottom: 16px;
   }
 }
+
 .contacthostbtndiv {
   margin-top: 32px;
+
   a {
     text-decoration: none;
     color: var(--text-color);
@@ -1442,9 +1667,11 @@ nav {
     border-radius: 8px;
   }
 }
+
 .protectmaindiv {
   margin-top: 24px;
   max-width: 300px;
+
   div {
     margin-left: 0;
     margin-right: 16px;
@@ -1455,6 +1682,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     img {
       display: block;
       height: 24px;
@@ -1464,6 +1692,7 @@ nav {
     }
   }
 }
+
 /* hoster details end */
 /* footer start */
 .footersectionmain {
@@ -1471,189 +1700,250 @@ nav {
   position: relative;
   border-top: 1px solid rgb(221, 221, 221);
 }
+
 /* footer end */
 @media only screen and (max-width: 600px) {
   .navbarsection {
     display: none;
   }
+
   nav {
     display: none;
   }
+
   .header {
     display: none;
   }
+
   .collectionmaindiv {
     display: none;
   }
+
   .phnavbarmaindiv {
     display: flex;
   }
+
   .pricecol {
     display: none;
   }
+
   .listmaindiv {
     display: block;
   }
+
   .headerphone {
     display: block !important;
   }
+
   .listshowall button,
   .whereyousleepmaindiv .listshowallfea button {
     width: 100% !important;
   }
+
   .footersection {
     display: block;
   }
+
   .fullofcontain {
     .containsection {
       width: 100% !important;
     }
+
     .coutacthostmaindiv {
       width: 100% !important;
     }
   }
+
   .contacthostbtndiv {
     display: flex;
+
     a {
       width: 100%;
       text-align: center;
     }
   }
+
   .protectmaindiv {
     max-width: none;
+
     div {
       flex-direction: row-reverse;
+
       .imgdiv {
         margin-left: 16px;
         margin-right: 0;
       }
     }
   }
+
   .hosterfullsectiondiv {
     padding-top: 48px;
     padding-bottom: 0px;
   }
+
   .thingssection {
     padding-bottom: 0;
   }
 }
+
 @media only screen and (min-width: 600px) {
   .navbarsection {
     display: none;
   }
+
   nav {
     display: block;
   }
+
   .header {
     display: none;
   }
+
   .collectionmaindiv {
     display: none;
   }
+
   .phnavbarmaindiv {
     display: none;
   }
+
   .slidermaindiv {
     display: block;
   }
+
   .pricecol {
     display: none;
   }
+
   .listmaindiv {
     display: block;
   }
+
   .headerphone {
     display: block !important;
   }
+
   .listshowall button,
   .whereyousleepmaindiv .listshowallfea button {
     width: 100% !important;
   }
+
   .footersection {
     display: block;
   }
+
   .fullofcontain {
     .containsection {
       width: 100% !important;
     }
+
     .coutacthostmaindiv {
       width: 100% !important;
     }
   }
+
   .hosterfullsectiondiv {
     padding-top: 48px;
     padding-bottom: 0px;
   }
+
   .thingssection {
     padding-bottom: 0;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .navbarsection {
     display: block;
   }
+
   nav {
     display: none;
   }
+
   .header {
     display: block;
   }
+
   .collectionmaindiv {
     display: block;
   }
+
   .slidermaindiv {
     display: none;
   }
+
   .pricecol {
     display: block;
   }
+
   .checkinpricediv {
     display: block !important;
   }
+
   .listmaindiv {
     display: flex;
   }
+
   .headerphone {
     display: none !important;
   }
+
   .listshowall button,
   .whereyousleepmaindiv .listshowallfea button {
     width: auto !important;
   }
+
   .footersection {
     display: none;
   }
+
   .fullofcontain {
     .containsection {
       width: 100% !important;
     }
+
     .coutacthostmaindiv {
       width: 100% !important;
     }
   }
+
   .hosterfullsectiondiv {
     padding-top: 48px;
     padding-bottom: 35px;
   }
+
   .thingssection {
     padding-bottom: 2rem;
   }
 }
+
 @media only screen and (min-width: 992px) {
   .checkinpricediv {
     display: block !important;
   }
+
   .fullofcontain {
     .containsection {
       width: 42% !important;
     }
+
     .coutacthostmaindiv {
       width: 42% !important;
     }
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .checkinpricediv {
     display: flex !important;
   }
+}
+
+.showmorephotos {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: none;
+  background-color: var(--white);
 }
