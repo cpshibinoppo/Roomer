@@ -20,7 +20,6 @@ const routes: Routes = [
   {path:'user',component:UserComponent,data:{usernav:true}},
   {path:'wishlists',component:WishlistsComponent,data:{usernav:true}},
   {path:'userinfo',component:PersonalinfoComponent,data:{usernav:true}},
-  {path:'showmore',component:ShowmoreimgComponent}
 ];
 
 @NgModule({
