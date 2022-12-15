@@ -52,6 +52,7 @@ export class NavbarComponent implements OnInit {
   subsVar: undefined;
   invokeFirstComponentFunction: any;
   hotelnav: any
+  userlogincheck = false;
   constructor(public homecom: HomeComponent, private renderer: Renderer2, private sharedService: LoginsharedService, private route: ActivatedRoute) {
     this.clickEventsubscription = this.sharedService.getClickEvent().subscribe(() => {
       this.logoingshow();
@@ -283,11 +284,11 @@ export class NavbarComponent implements OnInit {
   sam = false;
   logoingshow() {
     this.sam = true;
-    this.homecom.loginandsighshowfn();
+    // this.homecom.loginandsighshowfn();
   }
   logoingremove() {
     this.sam = false;
-    this.homecom.loginandsighshowfn();
+    // this.homecom.loginandsighshowfn();
   }
   showfliter() {
     this.homecom.showfilterpopupfun();

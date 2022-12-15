@@ -47,7 +47,7 @@ export class HotaldetailComponent implements OnInit {
     location.href = "/booking"
   }
   backfun() {
-    $('.main').css('display', 'block');
+    $('.main').css('display' , 'flex');
     $('.showmorephotos').css('animation-name', 'showdown');
     setTimeout(function () {
       $('.showmorephotos').css('display', 'none');
