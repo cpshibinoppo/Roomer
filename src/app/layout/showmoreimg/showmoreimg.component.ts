@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HotaldetailComponent } from 'src/app/pages/hotaldetail/hotaldetail.component';
 
 @Component({
   selector: 'app-showmoreimg',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowmoreimgComponent implements OnInit {
 
-  constructor() { }
+  constructor(public hotelcom:HotaldetailComponent) { }
 
   ngOnInit(): void {
+  }
+  backfun(){
+    this.hotelcom.backfun();
   }
 
 }

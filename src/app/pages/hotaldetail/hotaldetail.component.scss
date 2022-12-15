@@ -1,3 +1,7 @@
+.main {
+  transition: all 2s ease;
+}
+
 /* navbar start */
 nav {
   display: none;
@@ -1940,10 +1944,41 @@ nav {
   }
 }
 
+.footersectionmain {
+  transition: all 2s ease;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .showmorephotos {
   position: absolute;
   top: 0;
   width: 100%;
   display: none;
   background-color: var(--white);
+  animation-duration: 2s;
+}
+
+@keyframes showup {
+  from {
+    top: 50%;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes showdown {
+  from {
+    top: 0;
+    opacity: 1;
+  }
+
+  to {
+    top: 50%;
+    opacity: 0;
+  }
 }

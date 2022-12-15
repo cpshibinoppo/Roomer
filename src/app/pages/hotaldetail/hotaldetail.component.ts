@@ -28,6 +28,16 @@ export class HotaldetailComponent implements OnInit {
     if (this.screenwidth < 768) {
       this.container = '-fluid'
     }
+    $('.showmorediv').click(function () {
+      $('.main').css('opacity', '0');
+      $('.showmorephotos').css('animation-name', 'showup');
+      $('.showmorephotos').css('display', 'block');
+      $('.footersectionmain ').css('padding', '0');
+      setTimeout(function () {
+        $('.main').css('display', 'none');
+      }, 2000);
+    });
+
   }
   showaddgust() {
     $(".addgust").toggleClass('show');
@@ -36,9 +46,14 @@ export class HotaldetailComponent implements OnInit {
   buttonlink() {
     location.href = "/booking"
   }
-  showallimagefun() {
-    console.log('showallimagefun');
-    alert('showallimagefun');
+  backfun() {
+    $('.main').css('display', 'block');
+    $('.showmorephotos').css('animation-name', 'showdown');
+    setTimeout(function () {
+      $('.showmorephotos').css('display', 'none');
+      $('.footersectionmain ').css('padding', '1rem');
+      $('.main').css('opacity', '1');
+    }, 1000);
   }
 
 }
