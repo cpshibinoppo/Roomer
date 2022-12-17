@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class HotalcardlistComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit(): void {
     $('.likemaindiv button').click(function () {
       $(this).toggleClass('ative')
