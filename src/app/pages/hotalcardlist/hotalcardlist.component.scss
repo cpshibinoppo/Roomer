@@ -1,8 +1,9 @@
 .hotalcardmaindiv {
   display: grid;
   column-gap: 20px;
-  row-gap: 50px;
+  row-gap: 80px;
   grid-template-columns: auto auto auto auto;
+  padding-bottom: 5rem;
 
   div {
     position: relative;

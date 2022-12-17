@@ -12,9 +12,18 @@
 .miandiv {
   max-width: 565px;
   border-radius: 12px;
-  height: 650px;
+  height: 550px;
   box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
   overflow-y: auto;
+}
+.otpmaindiv{
+  position: relative;
+  width: 100%;
+  max-width: 568px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
 }
 header {
   padding: 15px 24px 0 24px;
@@ -64,6 +73,13 @@ header {
       margin-bottom: 8px;
       padding-top: 1rem;
       padding-bottom: 1rem;
+    }
+    h2{
+      margin-top: 8px;
+      margin-bottom: 24px;
+      font-weight: 400;
+      font-size: var(--text-size);
+      line-height: 24px;
     }
   }
   .inputmiandiv {
@@ -161,6 +177,12 @@ header {
   }
 }
 .autologinmaindiv {
+  button{
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+  }
   .autologdiv {
     border: 1px solid var(--text-color);
     padding: 13px 23px;
@@ -194,4 +216,93 @@ header {
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+/* otp start */
+.otpmaindiv{
+  height: fit-content;
+  min-width: 250px;
+}
+.otpinputmiandiv{
+  max-width: 183px;
+  .otpinputmain{
+    position: relative;
+    cursor: text;
+    display: flex;
+    min-height: 56px;
+    width: 100%;
+    margin: 0;
+    border: none;
+    color: rgb(34, 34, 34);
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: rgb(176 176 176) 0px 0px 0px 1px inset;
+    font-size: var(--text-size);
+    line-height: 20px;
+    font-weight: 400;
+    align-items: center;
+    .otpinputlable{
+      position: relative;
+      flex: 1 1 0%;
+      padding: 0;
+      .otpinput{
+        display: flex;
+        input{
+          width: calc(100% - 20px);
+          border: none;
+          padding: 0;
+          margin: 0 -19px 0px 19px;
+          min-height: 1px;
+          background: transparent;
+          font-size: var(--text-size);
+          line-height: 20px;
+          letter-spacing: 18px;
+          outline: none;
+          &::placeholder{
+            font: 20px/3 sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
+.buttonsmaindiv{
+  border-top: 1px solid rgb(235, 235, 235);
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% + 48px);
+  margin-left: -24px;
+  margin-bottom: -24px;
+  padding: 16px 24px;
+  margin-top: 48px;
+  .morebutton{
+    border: none;
+    outline: none;
+    background: transparent;
+    text-decoration: underline;
+    margin: 0px -10px;
+    padding: 10px;
+    font-size: var(--text-size);
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    &:hover{
+      background: var(--hover-background);
+      color: var(--black);
+    }
+  }
+  .continuebutton{
+    font-size: var(--text-size);
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--white);
+    padding: 14px 24px;
+    border-radius: 8px;
+    background: var(--text-color);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      background: var(--black);
+    }
+  }
 }
