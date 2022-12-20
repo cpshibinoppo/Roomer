@@ -11,5 +11,5 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
       Aos.init();
     }
-  title = 'Airbnb';
+  title = 'Roomer';
 }

@@ -121,6 +121,7 @@
   width: 100%;
   justify-content: center;
   bottom: 100px;
+  z-index: -1;
 
   button {
     display: inline-flex;

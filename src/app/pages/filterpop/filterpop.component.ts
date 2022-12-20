@@ -8,7 +8,7 @@ import $ from 'jquery';
   styleUrls: ['./filterpop.component.scss'],
 })
 export class FilterpopComponent implements OnInit {
-  constructor(public homecom:HomeComponent) {}
+  constructor(public homecom: HomeComponent) { }
   numberarraty = ['Any', 1, 2, 3, 4, 5, 6, 7, '8+'];
   ngOnInit(): void {
     $(document).ready(function () {
@@ -46,7 +46,7 @@ export class FilterpopComponent implements OnInit {
       $(this).addClass('roomactive');
     });
   }
-  hidefillter(){
-this.homecom.hidefilterpopupfun();
+  hidefillter() {
+    this.homecom.hidefilterpopupfun();
   }
 }

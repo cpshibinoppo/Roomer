@@ -201,9 +201,11 @@ a {
   padding: 5px 0 5px 0;
   height: 220px;
   z-index: 3;
-&::-webkit-scrollbar {
-  display: none;
-}
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   div {
     font-weight: 400;
 

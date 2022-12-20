@@ -12,14 +12,15 @@ import { PersonalinfoComponent } from './layout/userdetails/personalinfo/persona
 import { ShowmoreimgComponent } from './layout/showmoreimg/showmoreimg.component';
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
-  {path:'hotel',component:HotaldetailComponent,data:{test:true}},
-  {path:'Hostindroducion',component:HostindroducionComponent},
-  {path:'Host',component:HostComponent},
-  {path:'booking',component:BookingComponent,data:{test:false}},
-  {path:'user',component:UserComponent,data:{usernav:true}},
-  {path:'wishlists',component:WishlistsComponent,data:{usernav:true}},
-  {path:'userinfo',component:PersonalinfoComponent,data:{usernav:true}},
+  { path: "", redirectTo: "/home", pathMatch: "full" },
+  { path: 'home', component: HomeComponent },
+  { path: 'hotel', component: HotaldetailComponent, data: { test: true } },
+  { path: 'Hostindroducion', component: HostindroducionComponent },
+  { path: 'Host', component: HostComponent },
+  { path: 'booking', component: BookingComponent, data: { test: false } },
+  { path: 'user', component: UserComponent, data: { usernav: true } },
+  { path: 'wishlists', component: WishlistsComponent, data: { usernav: true } },
+  { path: 'userinfo', component: PersonalinfoComponent, data: { usernav: true } },
 ];
 
 @NgModule({

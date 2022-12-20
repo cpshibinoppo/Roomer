@@ -2,17 +2,20 @@
   padding: 0;
   margin: 0;
 }
+
 .sectioncolone {
   background-image: url(../../../assets/img/host/backgroundimg.webp);
   background-size: 100% 100%;
   width: 100%;
   height: 100vh;
   position: relative;
+
   .logomaindiv {
     display: inline;
     position: fixed;
     top: 32px;
     left: 48px;
+
     a {
       display: inline-flex;
       border: none;
@@ -22,16 +25,19 @@
       width: 40px;
       height: 40px;
       align-items: center;
+
       span {
         position: relative;
+
         img {
           display: block;
-          height: 32px;
-          width: 32px;
+          height: 40px;
+          width: 80px;
           fill: white;
         }
       }
     }
+
     button {
       display: inline-flex;
       border-radius: 50%;
@@ -45,6 +51,7 @@
       justify-content: center;
       align-items: center;
       display: none;
+
       &::before {
         content: "";
         display: block;
@@ -59,9 +66,11 @@
         background-color: var(--white);
         opacity: 0.2;
       }
+
       span {
         position: relative;
         opacity: 1;
+
         img {
           display: block;
           fill: none;
@@ -74,6 +83,7 @@
       }
     }
   }
+
   .questionmaindiv {
     width: 50%;
     height: 100vh;
@@ -84,6 +94,7 @@
     justify-content: center;
     display: flex;
     min-height: 30%;
+
     .questiondiv {
       margin-left: min(10%, 56px);
       max-width: 75%;
@@ -91,6 +102,7 @@
       margin-right: 24px;
       width: 100%;
       color: var(--white);
+
       h1 {
         font-size: 48px;
         line-height: 56px;
@@ -100,6 +112,7 @@
     }
   }
 }
+
 .topbarmiansection {
   z-index: 2;
   width: 50vw;
@@ -107,22 +120,27 @@
   left: 50%;
   top: 0px;
   right: 0px;
+
   .topbarmiandiv {
     padding: 32px 48px 0px;
     display: flex;
     justify-content: flex-end;
     height: 88px;
+
     .helpmaindiv {
       flex: none;
       padding-right: 16px;
+
       .userandhelpmaindiv {
         display: flex;
         align-items: center;
+
         .usermaindiv {
           display: flex;
           justify-content: flex-end;
           margin-right: 12px;
           margin-left: 48px;
+
           button {
             display: inline-flex;
             font-size: 12px;
@@ -137,24 +155,29 @@
             border-radius: 100px;
             font-weight: 600;
             transition: all 0.3s ease;
+
             &:hover {
               box-shadow: 0px 0px 0px 1px #dddddd inset,
                 0px 6px 16px rgb(0 0 0 / 12%) !important;
             }
+
             .askimgspan {
               margin-left: -18px;
               margin-right: 12px;
+
               span {
                 display: inline-block;
                 position: relative;
                 border: 1px solid var(--white);
                 border-radius: 50%;
+
                 div {
                   display: inline-block;
                   height: 22px;
                   width: 22px;
                   min-height: 1px;
                   border-radius: 50%;
+
                   img {
                     object-fit: cover;
                     vertical-align: bottom;
@@ -168,9 +191,11 @@
             }
           }
         }
+
         .helpdiv {
           display: inline;
           position: relative;
+
           button {
             border: none;
             outline: none;
@@ -189,6 +214,7 @@
             font-weight: 600;
             height: 32px;
             align-items: center;
+
             div {
               display: flex;
               flex-direction: column;
@@ -197,9 +223,11 @@
         }
       }
     }
+
     .saveandexitdiv {
       margin-right: 0px;
       position: relative;
+
       button {
         border: none;
         outline: none;
@@ -218,6 +246,7 @@
         font-weight: 600;
         height: 32px;
         align-items: center;
+
         div {
           display: flex;
           flex-direction: column;
@@ -226,11 +255,13 @@
     }
   }
 }
+
 .buttommainsection {
   position: fixed;
   width: 50vw;
   bottom: 0;
   background: var(--white);
+
   .bottombarmiandiv {
     padding-top: 16px;
     display: flex;
@@ -238,8 +269,10 @@
     justify-content: space-between;
     padding-bottom: 16px;
     border-top: 1px solid var(--borderlight-color);
+
     .backbuttonmaindiv {
       margin-left: 48px;
+
       button {
         margin: 0;
         padding: 10px;
@@ -256,8 +289,10 @@
         color: var(--text-color);
       }
     }
+
     .nextbuttonmaindiv {
       margin-right: 48px;
+
       button {
         cursor: not-allowed;
         border: none;
@@ -276,6 +311,7 @@
     }
   }
 }
+
 .conandsection {
   margin-top: 88px;
   padding-left: 48px;
@@ -286,34 +322,43 @@
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+
   &::-webkit-scrollbar {
     display: none;
   }
 }
+
 .phoneaskbutton {
   display: none;
 }
+
 .buttonactive {
   cursor: pointer !important;
   background-color: black !important;
 }
+
 @media only screen and (max-width: 770px) {
   .conandsection {
     padding-left: 24px;
     padding-right: 24px;
   }
+
   .usermaindiv {
     display: none !important;
   }
+
   .buttommainsection {
     width: 100vw;
   }
+
   .questionmaindiv {
     width: 100% !important;
     height: 45vh !important;
+
     .questiondiv {
       margin-left: 24px !important;
       margin-bottom: 20px !important;
+
       h1 {
         font-size: 26px !important;
         line-height: 30px !important;
@@ -321,28 +366,35 @@
       }
     }
   }
+
   .sectioncolone {
     height: 30vh;
     background-image: url(../../../assets/img/host/backgroudimg2.webp);
   }
+
   .logomaindiv {
     top: 15px !important;
     left: 15px !important;
+
     a {
       display: none !important;
     }
+
     button {
       display: flex !important;
     }
   }
+
   .helpdiv,
   .saveandexitdiv {
     div {
       position: relative;
     }
+
     button {
       background-color: transparent !important;
       color: var(--white) !important;
+
       &::before {
         content: "" !important;
         position: absolute !important;
@@ -356,19 +408,24 @@
       }
     }
   }
+
   .topbarmiandiv {
     padding: 15px 20px 0px !important;
   }
+
   .saveandexitdiv {
     display: none !important;
   }
+
   .phoneaskbutton {
     display: block !important;
   }
+
   .conandsection {
     margin-top: 25px;
     overflow: unset;
   }
+
   .formcolmaindiv {
     border-radius: 12px 12px 0px 0px !important;
     z-index: 3;
@@ -376,17 +433,22 @@
     background-color: var(--white);
   }
 }
+
 @media only screen and (min-width: 770px) {
+
   .usermaindiv,
   .phoneaskbutton {
     display: none !important;
   }
+
   .buttommainsection {
     width: 50vw;
   }
+
   .questionmaindiv {
     width: 50% !important;
     height: 100vh !important;
+
     .questiondiv {
       h1 {
         font-size: 48px !important;
@@ -395,35 +457,43 @@
       }
     }
   }
+
   .sectioncolone {
     height: 100vh;
     background-image: url(../../../assets/img/host/backgroundimg.webp);
   }
+
   .logomaindiv {
     a {
       display: block !important;
     }
+
     button {
       display: none !important;
     }
   }
+
   .saveandexitdiv {
     display: block !important;
   }
 }
+
 @media only screen and (min-width: 992px) {
   .usermaindiv {
     display: none !important;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .usermaindiv {
     display: block !important;
   }
 }
+
 .form2maindiv {
   display: none;
 }
+
 app-form8,
 app-form7,
 app-form9,

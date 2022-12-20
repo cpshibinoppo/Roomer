@@ -1,5 +1,6 @@
 .maindiv {
   margin-top: 0;
+
   .firstsection {
     margin-left: auto;
     margin-right: auto;
@@ -7,17 +8,20 @@
     margin-bottom: 32px;
     max-width: 656px;
     width: 100%;
+
     h2 {
       font-size: 22px;
       line-height: 26px;
       font-weight: 600;
       margin-bottom: 15px;
     }
+
     .boxmandiv {
       margin-top: 24px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+
       button {
         padding-top: 24px;
         padding-bottom: 40px;
@@ -32,16 +36,19 @@
         align-items: center;
         width: 30%;
         min-height: 68px;
+
         &:hover {
           border-color: transparent !important;
           box-shadow: rgb(34 34 34) 0px 0px 0px 2px !important;
         }
+
         .iconimgdiv {
           width: 64px;
           height: 64px;
           display: flex;
           align-items: center;
           justify-content: center;
+
           img {
             display: block;
             height: 52px;
@@ -49,6 +56,7 @@
             fill: currentcolor;
           }
         }
+
         .textdiv {
           font-size: var(--text-size);
           line-height: var(--lineheight);
@@ -61,21 +69,24 @@
     }
   }
 }
+
 .active {
   border: transparent;
   box-shadow: rgb(34 34 34) 0px 0px 0px 2px;
   background-color: rgb(247, 247, 247) !important;
 }
+
 @media only screen and (max-width: 768px) {
   .maindiv {
     padding-bottom: 3rem;
+
     .firstsection {
       .boxmandiv {
         button {
           margin: 0 6px 12px !important;
           padding-top: 12px !important;
           padding-bottom: 24px !important;
-          flex: 0 1 calc(50% - 12px) !important ;
+          flex: 0 1 calc(50% - 12px) !important;
         }
       }
     }

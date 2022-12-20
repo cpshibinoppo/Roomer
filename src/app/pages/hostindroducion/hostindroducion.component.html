@@ -6,10 +6,7 @@
           <div class="logo logomaindiv">
             <a href="">
               <span>
-                <img
-                  src="../../../assets/img/host/logo.svg"
-                  alt=""
-                />
+                <img src="../../../assets/img/host/logo.png" alt="" />
               </span>
             </a>
           </div>
@@ -22,15 +19,9 @@
           </div>
           <div class="videomiandiv">
             <div>
-              <video
-                autoplay
-                crossorigin="anonymous"
-                playsinline
-                preload="auto"
-                id="my_video_1"
-                src="https://a0.muscache.com/v/8b/04/8b0456c7-13f8-54bc-889a-7cf549f144a3/8b0456c713f854bc889a7cf549f144a3_4000k_1.mp4?imformat=h265"
-                type="video/mp4"
-              ></video>
+              <video autoplay crossorigin="anonymous" playsinline preload="auto" id="my_video_1"
+                src="../../../assets/img/tripvido.mp4"
+                type="video/mp4"></video>
             </div>
             <div class="linerdiv"></div>
             <div class="playbuttondivmain">
@@ -41,25 +32,14 @@
                       <div>Play full video</div>
                     </div>
                     <div class="playicon">
-                      <img
-                        src="../../../assets/img/host/hostindroducion/playicon.svg"
-                        alt=""
-                      />
+                      <img src="../../../assets/img/host/hostindroducion/playicon.svg" alt="" />
                     </div>
                   </button>
                 </span>
                 <button class="platbutton" (click)="playPause()">
                   <span>
-                    <img
-                      *ngIf="!this.playicon"
-                      src="../../../assets/img/host/hostindroducion/playicon.svg"
-                      alt=""
-                    />
-                    <img
-                      *ngIf="this.playicon"
-                      src="../../../assets/img/host/hostindroducion/pauseicon.svg"
-                      alt=""
-                    />
+                    <img *ngIf="!this.playicon" src="../../../assets/img/host/hostindroducion/playicon.svg" alt="" />
+                    <img *ngIf="this.playicon" src="../../../assets/img/host/hostindroducion/pauseicon.svg" alt="" />
                   </span>
                 </button>
               </div>

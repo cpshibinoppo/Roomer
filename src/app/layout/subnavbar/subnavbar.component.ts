@@ -21,7 +21,7 @@ interface filterData {
 })
 export class SubnavbarComponent implements OnInit {
   filterData: filterData[] = filterdata;
-  constructor(public homecom:HomeComponent) {}
+  constructor(public homecom: HomeComponent) { }
   @ViewChild('swiper', { static: false }) swiper?: SwiperComponent;
   ngOnInit(): void {
     $(document).ready(function () {
@@ -44,7 +44,7 @@ export class SubnavbarComponent implements OnInit {
       },
     },
   };
-  showfliter(){
+  showfliter() {
     this.homecom.showfilterpopupfun();
   }
 }

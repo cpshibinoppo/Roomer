@@ -4,6 +4,7 @@
     height: 80px;
     box-shadow: rgb(235 235 235) 0px 1px 0px;
     padding-left: 24px;
+
     a {
       outline: none;
       align-items: center;
@@ -11,6 +12,7 @@
       height: 80px;
       position: relative;
       vertical-align: middle;
+
       .mainlogodiv {
         img {
           display: block;
@@ -18,6 +20,7 @@
           width: 102px;
         }
       }
+
       .sublogodiv {
         display: none;
         width: 30px;
@@ -26,10 +29,12 @@
     }
   }
 }
+
 /* navbar end */
 /* heading start */
 .headingmaindiv {
   padding-bottom: 32px;
+
   section {
     .headingdiv {
       padding-top: 64px;
@@ -37,9 +42,11 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+
       .arrordiv {
         padding-right: 32px;
         display: flex;
+
         a {
           display: inline-block;
           border-radius: 50%;
@@ -49,6 +56,7 @@
           color: rgb(34, 34, 34);
           position: relative;
           transition: all 0.3s ease;
+
           &:hover::before {
             content: "" !important;
             display: block !important;
@@ -61,8 +69,10 @@
             border-radius: 50% !important;
             background: rgb(247, 247, 247) !important;
           }
+
           span {
             position: relative;
+
             img {
               display: block;
               fill: none;
@@ -75,6 +85,7 @@
           }
         }
       }
+
       .headingtextdiv {
         font-size: 32px;
         line-height: 36px;
@@ -83,38 +94,48 @@
     }
   }
 }
+
 /* heading end */
 /* firstsection start */
 .maincolrow {
   justify-content: space-between;
 }
+
 .firstmiandiv {
   position: relative;
   margin: 0;
+
   .firstdiv {
     margin-bottom: 64px;
+
     .yourtripboxhead {
       .yourtriptextdiv {
         padding-bottom: 24px;
+
         .triptext {
           font-size: 22px;
           line-height: 26px;
           font-weight: 600;
         }
+
         .datesmaindiv {
           display: flex;
           justify-content: space-between;
           align-items: baseline;
+
           .datestextmaindiv {
             padding-right: 24px;
+
             .maintext {
               font-weight: 600;
             }
+
             .subtext {
               margin-top: 8px;
               white-space: pre-wrap !important;
             }
           }
+
           .datesbutton {
             button {
               border: none;
@@ -126,9 +147,11 @@
             }
           }
         }
+
         .couponmaindiv {
           font-size: var(--text-size);
           line-height: 20px;
+
           button {
             background: transparent;
             border: 0px;
@@ -140,6 +163,7 @@
             outline: none;
           }
         }
+
         .requestbuttonmaindiv {
           button {
             margin: 0px;
@@ -152,27 +176,29 @@
             outline: none;
             padding: 16px 32px;
             border: none;
-            background: linear-gradient(
-              to right,
-              rgb(230, 30, 77) 0%,
-              rgb(227, 28, 95) 50%,
-              rgb(215, 4, 102) 100%
-            );
+            background: linear-gradient(to right,
+                rgb(230, 30, 77) 0%,
+                rgb(227, 28, 95) 50%,
+                rgb(215, 4, 102) 100%);
             color: rgb(255, 255, 255);
           }
         }
       }
     }
+
     .paywithboxhead {
       .paywithtextdiv {
         margin-top: 8px;
+
         .paywithcol {
           padding-top: 32px;
           padding-bottom: 24px;
+
           .paywithdiv {
             .payflexdiv {
               display: flex;
               margin-bottom: 24px;
+
               .textdiv {
                 color: rgb(34, 34, 34);
                 font-weight: 600;
@@ -181,13 +207,16 @@
                 line-height: 26px;
                 margin-bottom: 4px;
               }
+
               .imgmaindiv {
                 flex: 1 1 0% !important;
                 display: flex !important;
                 justify-content: flex-end !important;
                 align-items: center !important;
+
                 span {
                   margin-right: 6px;
+
                   img {
                     height: 9px;
                   }
@@ -195,8 +224,10 @@
               }
             }
           }
+
           .creditcardboxmain {
             position: relative;
+
             button {
               display: block;
               width: 100% !important;
@@ -208,6 +239,7 @@
               transition: border 150ms ease-out 0s;
               border: 1px solid rgb(176, 176, 176);
               border-radius: 8px;
+
               .buttonmiandiv {
                 font-size: var(--text-size);
                 line-height: 24px;
@@ -221,16 +253,19 @@
                 text-align: left;
                 width: 100%;
                 overflow-wrap: break-word;
+
                 .buttondiv {
                   display: flex;
                   align-items: center;
                   width: 100%;
                   border-spacing: 0px;
+
                   .cardimgmian {
                     float: left;
                     margin-top: -9px;
                     height: 24px;
                     margin-right: 16px;
+
                     img {
                       display: block;
                       height: 33px;
@@ -238,6 +273,7 @@
                       fill: rgb(176, 176, 176);
                     }
                   }
+
                   .creditordebitdiv {
                     display: table-cell;
                     width: 100%;
@@ -246,21 +282,26 @@
                 }
               }
             }
+
             span {
               pointer-events: none;
               position: absolute;
               top: 0px;
               right: 20px;
               height: 100%;
+
               .arrormiandiv {
                 display: table;
                 position: relative;
                 height: 100%;
+
                 .arrorsubdiv {
                   display: table-cell;
                   vertical-align: middle;
+
                   div {
                     transform: rotate(270deg);
+
                     img {
                       height: 16px;
                       width: 16px;
@@ -272,9 +313,11 @@
               }
             }
           }
+
           .paydropdownmain {
             position: relative;
             display: none;
+
             .paydropdownul {
               opacity: 1;
               top: 4px;
@@ -290,8 +333,10 @@
               list-style: none;
               overflow-y: scroll;
               max-height: 424px;
+
               ul {
                 padding: 0;
+
                 li {
                   font-size: var(--text-size);
                   line-height: 24px;
@@ -310,14 +355,17 @@
               }
             }
           }
+
           .cancellationpolicymaindiv {
             font-size: var(--text-size);
             line-height: 20px;
+
             .cancellationhaeddiv {
               font-size: 22px;
               line-height: 26px;
               font-weight: 600;
             }
+
             button {
               background: transparent;
               border: 0px;
@@ -329,16 +377,19 @@
               outline: none;
             }
           }
+
           .calendermaindiv {
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
+
             .calenderimgmaindiv {
               height: 40px;
               width: 40px;
               margin-left: 0;
               margin-right: 24px;
               flex: 0 0 auto;
+
               img {
                 display: block;
                 height: 32px;
@@ -347,9 +398,11 @@
                 stroke: currentcolor;
               }
             }
+
             .calendertextmaindiv {
               font-size: var(--text-size);
               line-height: 20px;
+
               .mainspan {
                 margin-right: 0px;
                 display: block;
@@ -358,11 +411,13 @@
               }
             }
           }
+
           .policytextmain {
             margin-top: 8px;
             margin-bottom: 8px;
             line-height: var(--sublineheight);
             font-size: 12px;
+
             span {
               color: rgb(34, 34, 34);
               font-weight: 600;
@@ -376,23 +431,29 @@
     }
   }
 }
+
 .dropdowncredit {
   display: flex !important;
   align-items: center !important;
+
   button {
     background: transparent !important;
     border: none !important;
+
     .buttonmiandiv {
       padding: 0 !important;
     }
   }
+
   span {
     top: -15px !important;
   }
 }
+
 .droptick {
   div {
     transform: rotate(0deg) !important;
+
     img {
       height: 48px !important;
       width: 48px !important;
@@ -401,10 +462,12 @@
     }
   }
 }
+
 .requesttext {
   padding-top: 32px;
   padding-bottom: 5px;
 }
+
 .addbutton {
   button {
     text-decoration: none !important;
@@ -420,11 +483,13 @@
   margin: 0;
   padding: 0;
 }
+
 .line {
   border-top: 1px;
   border-top-style: solid;
   border-top-color: var(--borderlight-color);
 }
+
 .spacediv {
   padding-top: 24px;
 }
@@ -433,6 +498,7 @@
 .pricecardcol {
   position: relative;
 }
+
 .pricecardmainsection {
   position: sticky;
   top: 80px;
@@ -440,6 +506,7 @@
   width: 100%;
   display: inline-block;
   padding-right: 1px;
+
   .pricecardmaindiv {
     margin-bottom: 88px;
     padding: 24px;
@@ -448,11 +515,14 @@
     color: rgb(34, 34, 34);
     font-size: var(--text-size);
     line-height: 20px;
+
     .imgsectionmaindiv {
       padding-bottom: 24px;
+
       .imgsectiondiv {
         flex-direction: row;
         display: flex;
+
         .imgmaindiv {
           width: 124px;
           height: 106px;
@@ -461,12 +531,14 @@
           flex-shrink: 0;
           overflow: hidden;
           border-radius: 8px;
+
           .imgdiv {
             display: inline-block;
             vertical-align: middle;
             height: 100%;
             width: 100%;
             min-height: 1px;
+
             img {
               object-fit: cover;
               vertical-align: middle;
@@ -475,11 +547,13 @@
             }
           }
         }
+
         .imgtextsectionmaindiv {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           padding-left: 12px;
+
           .maintext {
             .toptext {
               overflow: clip;
@@ -488,6 +562,7 @@
               text-overflow: ellipsis;
               color: rgb(113, 113, 113);
             }
+
             .middletext {
               font-size: 14px;
               line-height: var(--lineheight);
@@ -496,20 +571,24 @@
               margin-top: 4px;
             }
           }
+
           .subtextmain {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             color: var(--text-color);
+
             .subtext {
               margin-right: 8px;
               display: inline;
+
               .subtextspanmain {
                 display: flex;
                 align-items: center;
                 font-weight: 400;
                 font-size: 12px;
                 line-height: var(--sublineheight);
+
                 .rivetext {
                   margin-left: 3px;
                   margin-right: 3px;
@@ -520,17 +599,21 @@
         }
       }
     }
+
     .aircovermaindiv {
       .aircoverdiv {
         padding-top: 24px;
         padding-bottom: 24px;
+
         .aircovertextdiv {
           font-size: 16px;
           line-height: 20px;
           display: flex;
+
           .aircoverimg {
             line-height: 16px;
             margin-left: 10px;
+
             img {
               width: auto;
               height: 13px;
@@ -540,6 +623,7 @@
         }
       }
     }
+
     .priceheadmiandiv {
       .priceheaddiv {
         padding-top: 24px;
@@ -548,6 +632,7 @@
         line-height: 26px;
       }
     }
+
     .priceamoutmaindiv {
       padding-bottom: 25px;
       border-bottom: 1px solid rgb(235, 235, 235);
@@ -559,6 +644,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .buttonmin {
           button {
             border: none;
@@ -571,6 +657,7 @@
         }
       }
     }
+
     .totalprivemaindiv {
       display: flex;
       justify-content: space-between;
@@ -580,6 +667,7 @@
     }
   }
 }
+
 /* price card end */
 /* phone sectiton start */
 .headsectionmaindiv {
@@ -587,6 +675,7 @@
   position: sticky;
   top: 0;
   z-index: 4;
+
   .headsectiondiv {
     background: white;
     display: flex;
@@ -596,8 +685,10 @@
     padding-right: 16px;
     position: relative;
     z-index: 1;
+
     .headdiv {
       margin-right: auto;
+
       button {
         display: inline-block;
         margin: 0px -8px;
@@ -612,6 +703,7 @@
         border: none;
         background: transparent;
         color: var(--text-color);
+
         div {
           flex: 1 1 0%;
           display: flex;
@@ -619,6 +711,7 @@
           padding: 0px 8px;
           color: rgb(34, 34, 34);
           max-width: 100%;
+
           img {
             display: block;
             fill: none;
@@ -630,6 +723,7 @@
           }
         }
       }
+
       .texthead {
         position: absolute;
         transform: translate(-50%, -50%);
@@ -640,69 +734,85 @@
     }
   }
 }
+
 .phpricecardminsection {
   padding: 0 !important;
   border: none !important;
 }
+
 .phpaywithcol {
   border-bottom: 1px solid var(--borderlight-color);
 }
+
 .phcouponmaindiv {
   padding-top: 1rem;
 }
+
 .phcalendertextmaindiv {
   font-size: 12px !important;
   line-height: 16px !important;
 }
+
 .phrow {
   display: none;
 }
+
 /* phone sectiton end */
 @media only screen and (max-width: 767px) {
   .navbarmaindivdiv {
     display: none;
   }
+
   .calenderimgmaindiv {
     width: 24px !important;
     height: 24px !important;
+
     img {
       width: 24px !important;
       height: 24px !important;
     }
   }
+
   .requestbuttonmaindiv {
     button {
       width: 100% !important;
     }
   }
+
   .maincolrow {
     display: none;
   }
+
   .testrow {
     display: none;
   }
+
   .phrow {
     display: block;
   }
 }
+
 @media only screen and (max-width: 992px) {
   .navbardiv {
     a {
       .mainlogodiv {
         display: none;
       }
+
       .sublogodiv {
         display: block !important;
       }
     }
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .navbardiv {
     a {
       .mainlogodiv {
         display: block;
       }
+
       .sublogodiv {
         display: none !important;
       }

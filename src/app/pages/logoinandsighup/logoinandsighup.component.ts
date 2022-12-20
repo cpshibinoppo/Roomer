@@ -16,16 +16,16 @@ export class LogoinandsighupComponent implements OnInit {
   phoneinputid: any;
   loginphonenumber = false;
   submitted = false;
-  constructor(public navbarcom: NavbarComponent,private fb:FormBuilder,private http: HttpClient) {}
+  constructor(public navbarcom: NavbarComponent, private fb: FormBuilder, private http: HttpClient) { }
 
   ngOnInit(): void {
     this.numberinpid = document.getElementById('numberinpid');
     this.phoneinputid = document.getElementById('phoneinputid');
   }
   loginForm = this.fb.group({
-    usernumber: new FormControl('',[Validators.required, Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$')])
+    usernumber: new FormControl('', [Validators.required, Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$')])
   });
-  get f(){
+  get f() {
     return this.loginForm.controls;
   }
   inputshowing() {
@@ -40,10 +40,10 @@ export class LogoinandsighupComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
     if (this.loginForm.invalid) {
-        return;
+      return;
     }
     // alert(this.loginForm.value);
-    return this.http.post('http://localhost:8000/api/login',this.loginForm.value).subscribe({
+    return this.http.post('http://localhost:8000/api/login', this.loginForm.value).subscribe({
       next: (response) => this.loginphonenumber = true,
       // next: (response) => console.log(response),
       error: (response) => console.log(response)

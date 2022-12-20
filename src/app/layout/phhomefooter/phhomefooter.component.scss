@@ -62,3 +62,14 @@ nav {
     color: var(--text-color) !important;
   }
 }
+
+.tripimg {
+  display: block;
+  fill: none;
+  height: 40px;
+  width: 40px;
+  stroke: currentcolor;
+  stroke-width: 2.66667;
+  overflow: visible;
+  filter: invert(0.7);
+}

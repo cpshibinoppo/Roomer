@@ -165,6 +165,8 @@
   .sliderimg {
     object-fit: cover;
     min-height: 305px;
+    height: 100%;
+    max-height: 305px;
   }
 }
 
