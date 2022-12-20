@@ -3,12 +3,8 @@
     <div class="topmaindiv">
       <div class="priceboxdiv">
         <div class="mainbox">
-          <button
-            class="minbutton"
-            [ngClass]="{ active: !this.decrbutton }"
-            [disabled]="this.decrbutton"
-            (click)="decrease()"
-          >
+          <button class="minbutton" [ngClass]="{ active: !this.decrbutton }" [disabled]="this.decrbutton"
+            (click)="decrease()">
             <span>
               <img src="../../../../assets/img/host/minus.svg" alt="" />
             </span>
@@ -17,12 +13,8 @@
             <div class="inputmaindiv">
               <label>
                 <div>
-                  <input
-                    (input)="inputvalucheck($event)"
-                    type="number"
-                    placeholder="₹00"
-                    value="{{ this.inputvalu }}"
-                  />
+                  <input (input)="inputvalucheck($event)" type="number" placeholder="₹00"
+                    value="{{ this.inputvalu }}" />
                 </div>
               </label>
             </div>
@@ -45,10 +37,8 @@
       </div>
       <div class="textmaindiv">
         <div class="textdiv">
-          <span
-            >Keep in mind that places like yours in your area usually range from
-            ₹1,243 to ₹2,072</span
-          >
+          <span>Keep in mind that places like yours in your area usually range from
+            ₹1,243 to ₹2,072</span>
           <div>
             <button>
               <span>
@@ -75,13 +65,8 @@
                 <input type="checkbox" id="checkid" checked />
                 <span class="tickspan">
                   <span>
-                    <svg
-                      viewBox="0 0 32 32"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true"
-                      role="presentation"
-                      focusable="false"
-                      style="
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                      focusable="false" style="
                         display: block;
                         fill: none;
                         height: 16px;
@@ -89,8 +74,7 @@
                         stroke: currentcolor;
                         stroke-width: 4;
                         overflow: visible;
-                      "
-                    >
+                      ">
                       <path fill="none" d="m4 16.5 8 8 16-16"></path>
                     </svg>
                   </span>

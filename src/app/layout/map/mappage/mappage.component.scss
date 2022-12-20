@@ -1,11 +1,13 @@
 .mapmainsection {
   padding-top: 3rem;
+
   .headtextmaindiv {
     color: var(--text-color);
     font-size: 24px;
     font-weight: 600;
     line-height: 26px;
     padding-bottom: 2rem;
+
     h2 {
       margin: 0;
       padding: 0;
@@ -14,24 +16,27 @@
   }
 }
 
-.subtextmain{
+.subtextmain {
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  .textmain{
+
+  .textmain {
     margin-bottom: 16px;
     color: rgb(34, 34, 34);
     font-weight: 600;
     line-height: 20px;
     min-height: 20px;
-    h3{
+
+    h3 {
       font-size: 1em;
     }
   }
-  .subtext{
+
+  .subtext {
     line-height: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -39,29 +44,34 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
-  }
-  .buttonmaindiv{
-    padding-top: 1rem;
-    margin-bottom: 16px;
-    button{
-      outline: none;
-      border: none;
-      background: none;
-      margin: 0;
-      padding: 0;
-      font-weight: 600;
-      font-size: 17px;
-      span{
-        align-items: center;
-        display: inline-flex;
-        flex-direction: row;
-        .btntext{
-          text-decoration: underline;
-        }
-        .btnicon{
-          margin-left: 4px;
-          font-size: 20px;
-        }
+}
+
+.buttonmaindiv {
+  padding-top: 1rem;
+  margin-bottom: 16px;
+
+  button {
+    outline: none;
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 17px;
+
+    span {
+      align-items: center;
+      display: inline-flex;
+      flex-direction: row;
+
+      .btntext {
+        text-decoration: underline;
+      }
+
+      .btnicon {
+        margin-left: 4px;
+        font-size: 20px;
       }
     }
   }
+}

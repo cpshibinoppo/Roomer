@@ -8,6 +8,7 @@
     height: 100%;
     max-width: 500px;
     margin: auto;
+
     .topmaindiv {
       .priceboxdiv {
         padding-top: 0;
@@ -15,6 +16,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         .mainbox {
           display: inline-flex;
           align-items: center;
@@ -26,11 +28,13 @@
           font-size: var(--text-size);
           line-height: 20px;
           min-height: unset;
+
           .minbutton {
             cursor: not-allowed;
             color: rgb(235, 235, 235);
             border-color: rgb(235, 235, 235);
           }
+
           button {
             width: 48px;
             height: 48px;
@@ -46,10 +50,12 @@
             justify-content: center;
             background: rgb(255, 255, 255);
             border-radius: 50%;
+
             span {
               height: 22px;
               width: 22px;
               padding: 5px;
+
               img {
                 display: block;
                 fill: none;
@@ -61,10 +67,12 @@
               }
             }
           }
+
           .box {
             position: relative;
             text-align: center;
             min-width: 48px;
+
             .inputmaindiv {
               position: relative;
               display: flex;
@@ -76,10 +84,12 @@
               font-size: var(--font-size);
               line-height: 20px;
               font-weight: 400;
+
               label {
                 position: relative;
                 flex: 1 1 0%;
                 padding: 0;
+
                 div {
                   display: flex;
                   margin-top: 0;
@@ -89,6 +99,7 @@
                   background: rgb(255, 255, 255);
                   margin-left: 32px;
                   margin-right: 32px;
+
                   input {
                     width: 100%;
                     border: none;
@@ -107,6 +118,7 @@
             }
           }
         }
+
         .subtext {
           font-size: var(--text-size);
           line-height: 20px;
@@ -114,18 +126,22 @@
           font-weight: 400;
         }
       }
+
       .errormaindiv {
         margin-top: 8px;
         display: flex;
         justify-content: center;
+
         .errordiv {
           display: flex;
           color: rgb(193, 53, 21);
           font-size: 12px;
           line-height: var(--sublineheight);
           font-weight: 400;
+
           .errorimg {
             margin-right: 8px;
+
             img {
               display: block;
               height: 16px;
@@ -135,9 +151,11 @@
           }
         }
       }
+
       .textmaindiv {
         display: flex;
         justify-content: center;
+
         .textdiv {
           padding-top: 32px;
           font-size: 22px;
@@ -146,10 +164,12 @@
           max-width: 360px;
           font-weight: 500;
           width: 85%;
+
           div {
             position: relative;
             display: inline-block;
             padding-left: 8px;
+
             button {
               display: inline-block;
               border-radius: 50%;
@@ -160,8 +180,10 @@
               color: rgb(34, 34, 34);
               position: relative;
               background: transparent;
+
               span {
                 position: relative;
+
                 img {
                   display: block;
                   height: 16px;
@@ -174,6 +196,7 @@
         }
       }
     }
+
     .bottomdiv {
       margin-top: 72px;
       background-color: rgb(255, 255, 255);
@@ -185,22 +208,27 @@
       width: 100%;
       padding: 20px 14px;
       margin-bottom: 12px;
+
       .botdiv {
         padding-top: 0;
         padding-bottom: 0;
+
         label {
           .botconmaindiv {
             display: flex;
+
             .linkdiv {
               display: flex;
               flex-direction: column;
               justify-content: center;
               flex: 1 1 auto;
               width: 100%;
+
               div {
                 color: rgb(34, 34, 34);
                 font-size: var(--text-size);
                 line-height: 20px;
+
                 button {
                   border: none;
                   outline: none;
@@ -213,16 +241,20 @@
                 }
               }
             }
+
             .inputdiv {
               margin-left: 16px;
+
               .inputspan {
                 position: relative;
                 display: inline-block;
                 padding: 0;
+
                 input {
                   position: absolute;
                   opacity: 0;
                 }
+
                 .tickspan {
                   display: inline-block;
                   height: 24px;
@@ -233,6 +265,7 @@
                   overflow: hidden;
                   border-radius: 4px;
                   background: rgb(34, 34, 34);
+
                   span {
                     display: block;
                     align-items: center;
@@ -252,14 +285,17 @@
     }
   }
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 .activecheckbox {
   background: var(--white) !important;
 }
+
 .active {
   border: 1px solid rgb(113, 113, 113) !important;
   cursor: pointer !important;

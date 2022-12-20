@@ -4,14 +4,17 @@
   border-radius: 32px;
   margin-top: 12px;
   padding: 20px 32px;
+
   .petdiv {
     border: none !important;
   }
+
   .subaddguest {
     display: flex;
     // min-width: 330px;
     justify-content: space-between;
     align-items: center;
+
     .headtextdiv {
       h6 {
         font-size: var(--text-size);
@@ -19,11 +22,13 @@
         font-weight: 600;
         // padding-bottom: 6px;
       }
+
       p {
         color: var(--light-color);
         font-weight: 300;
         line-height: var(--lineheight);
         font-size: 14px;
+
         a {
           color: rgb(113, 113, 113);
           font-weight: 400;
@@ -31,12 +36,14 @@
         }
       }
     }
+
     .btnmaindiv {
       display: inline-flex;
       align-items: center;
       width: 104px !important;
       height: 32px !important;
       justify-content: space-between;
+
       button {
         border: 1px solid rgb(176, 176, 176);
         width: 32px;
@@ -47,6 +54,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+
         span {
           height: 35px;
           width: 22px;
@@ -56,10 +64,12 @@
     }
   }
 }
+
 .zero {
   opacity: 0.5;
   cursor: no-drop;
 }
+
 /* end */
 @media only screen and (max-width: 768px) {
   .addguestsmaindiv {

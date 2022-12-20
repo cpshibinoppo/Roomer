@@ -1,5 +1,6 @@
 @import "swiper/css";
 @import "swiper/css/navigation";
+
 .ch:nth-child(1) .sidercard button {
   color: black;
 
@@ -12,6 +13,7 @@
     width: 100%;
     background-color: black !important;
   }
+
   .filetimgdiv {
     span {
       img {
@@ -20,11 +22,13 @@
     }
   }
 }
+
 .subnavbarmainsection {
   display: flex;
   align-items: center;
   z-index: -5;
 }
+
 /* slider start */
 .swiper {
   width: 90%;
@@ -55,10 +59,12 @@
     font-size: 12px;
     font-weight: 500;
     transition: all 0.4s ease;
+
     &:hover {
       img {
         filter: contrast(1) !important;
       }
+
       &::after {
         content: "";
         position: absolute;
@@ -69,16 +75,20 @@
         background-color: var(--light-background);
       }
     }
+
     .filetimgdiv {
       span {
         display: flex;
         justify-content: center;
+
         img {
           filter: contrast(calc(13 / 44));
         }
       }
+
       .cardtext {
         text-align: center;
+
         span {
           white-space: nowrap;
         }
@@ -86,6 +96,7 @@
     }
   }
 }
+
 // .swiper-backface-hidden .swiper-slide {
 //   width: 65px !important;
 // }
@@ -95,9 +106,11 @@
   grid-auto-flow: column;
   justify-content: flex-start;
 }
+
 .swiper-button-disabled {
   display: none !important;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--black);
@@ -118,6 +131,7 @@
     justify-content: center;
     padding: 15px;
   }
+
   &::before {
     content: "";
     position: absolute;
@@ -128,6 +142,7 @@
     z-index: -2;
   }
 }
+
 .swiper-slide {
   width: auto;
   margin: 0 !important;
@@ -142,12 +157,14 @@
     border-radius: 12px;
     height: 48px;
     min-width: 48px;
+
     span {
       display: grid;
       justify-items: center;
       grid-auto-flow: column;
       gap: 8px;
       align-items: center;
+
       img {
         display: block;
         height: 14px;
@@ -156,6 +173,7 @@
     }
   }
 }
+
 .ch:nth-child(1) .sidercard button {
   color: black;
 
@@ -168,6 +186,7 @@
     width: 100%;
     background-color: black !important;
   }
+
   .filetimgdiv {
     span {
       img {
@@ -182,6 +201,7 @@
   transform: scale(1);
   animation-name: buttonclick;
   animation-duration: 0.5s;
+
   &::after {
     content: "";
     position: absolute;
@@ -191,6 +211,7 @@
     width: 100%;
     background-color: black !important;
   }
+
   .filetimgdiv {
     span {
       img {
@@ -199,55 +220,68 @@
     }
   }
 }
+
 @keyframes buttonclick {
   from {
     transform: scale(0.8);
   }
+
   to {
     transform: scale(1);
   }
 }
 
 @media only screen and (max-width: 600px) {
+
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
   }
+
   .filterbtndiv {
     display: none;
   }
 }
+
 @media only screen and (min-width: 600px) {
+
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
   }
+
   .filterbtndiv {
     display: none;
   }
+
   .swiper {
     width: 100%;
     height: 100%;
   }
 }
+
 @media only screen and (min-width: 768px) {
+
   .swiper-button-next,
   .swiper-button-prev {
     display: flex;
   }
+
   .filterbtndiv {
     display: block;
   }
+
   .swiper {
     width: 95%;
     height: 100%;
   }
 }
+
 @media only screen and (min-width: 992px) {
   .swiper {
     width: 90%;
     height: 100%;
   }
 }
-@media only screen and (min-width: 1200px) {
-}
+
+@media only screen and (min-width: 1200px) {}

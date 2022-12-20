@@ -5,6 +5,7 @@
     font-weight: 600;
     font-size: var(--text-size);
     line-height: 26px;
+
     h2 {
       margin: 0;
       padding: 0;
@@ -12,31 +13,39 @@
     }
   }
 }
+
 .containetmandiv {
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
   width: 100%;
+
   .rulesmaindiv {
     width: 34%;
+
     div {
       margin-right: 10px;
       color: var(--text-color);
       font-weight: 400;
       font-size: 17px;
       line-height: 20px;
+
       p {
         margin-bottom: 16px;
         font-weight: 600;
       }
+
       ul {
         padding: 0;
         margin: 0;
+
         li {
           list-style-type: none;
           padding-top: 0.5rem;
+
           div {
             display: flex;
+
             span {
               a {
                 color: var(--light-color);
@@ -49,20 +58,25 @@
     }
   }
 }
+
 .showmorebtn {
   margin-top: 24px;
+
   button {
     border: none;
     outline: none;
     background: transparent;
+
     span {
       display: inline-flex;
       vertical-align: bottom;
       flex-direction: row;
       align-items: center;
+
       .text {
         text-decoration: underline;
       }
+
       span {
         i {
           font-size: 20px;
@@ -71,9 +85,11 @@
     }
   }
 }
+
 /* ph things start */
 .phthingsmaindiv {
   padding-top: 24px;
+
   .phthingsdiv {
     button {
       position: relative;
@@ -85,25 +101,30 @@
       padding: 0;
       width: 100%;
       height: 100%;
+
       .conmaindiv {
         padding-bottom: 24px;
         padding-top: 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .phtext {
           text-align: left;
+
           .phmaintext {
             color: var(--text-color);
             font-weight: 600;
             font-size: 22px;
             line-height: 26px;
+
             h2 {
               padding: 0;
               margin: 0;
               font-size: 1em;
             }
           }
+
           .phsubtext {
             margin-top: 8px;
             color: var(--light-color);
@@ -119,31 +140,38 @@
     }
   }
 }
+
 .arrowmandiv {
   padding-left: 8px;
   font-size: 28px;
 }
+
 /* ph things end */
 @media only screen and (max-width: 600px) {
   .phthingsmaindiv {
     display: block;
   }
+
   .main {
     display: none;
   }
 }
+
 @media only screen and (min-width: 600px) {
   .phthingsmaindiv {
     display: block;
   }
+
   .main {
     display: none;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .phthingsmaindiv {
     display: none;
   }
+
   .main {
     display: block;
   }

@@ -8,11 +8,11 @@ import { HotaldetailComponent } from 'src/app/pages/hotaldetail/hotaldetail.comp
 })
 export class ShowmoreimgComponent implements OnInit {
 
-  constructor(public hotelcom:HotaldetailComponent) { }
+  constructor(public hotelcom: HotaldetailComponent) { }
 
   ngOnInit(): void {
   }
-  backfun(){
+  backfun() {
     this.hotelcom.backfun();
   }
 

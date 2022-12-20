@@ -10,7 +10,7 @@ export class PhhomefooterComponent implements OnInit {
 
 
   ngOnInit(): void {
-    $('a').click(function(){
+    $('a').click(function () {
       $(this).addClass('activelink')
     })
   }

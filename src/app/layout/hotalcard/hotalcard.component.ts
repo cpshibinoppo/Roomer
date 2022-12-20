@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 
-import SwiperCore, { Navigation,Pagination } from "swiper";
+import SwiperCore, { Navigation, Pagination } from "swiper";
 
-SwiperCore.use([Navigation,Pagination]);
+SwiperCore.use([Navigation, Pagination]);
 @Component({
   selector: 'app-hotalcard',
   templateUrl: './hotalcard.component.html',

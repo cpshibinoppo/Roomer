@@ -4,14 +4,17 @@
   background-color: var(--white);
   border-top: 1px solid var(--light-background);
 }
+
 .footersectionone {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   .firstsection {
     color: var(--text-color);
     font-size: 14px;
     line-height: var(--lineheight);
+
     .dot {
       display: inline-block;
       width: 19px;
@@ -19,6 +22,7 @@
       font-size: 14px;
       line-height: var(--lineheight);
     }
+
     a {
       color: var(--text-color);
       text-decoration: none;
@@ -27,14 +31,18 @@
       line-height: var(--lineheight);
     }
   }
+
   .secondsection {
     display: flex;
     align-items: center;
+
     div {
       display: flex;
       align-items: center;
+
       .mainspan {
         margin-right: 24px;
+
         button {
           border: none;
           background: transparent;
@@ -52,6 +60,7 @@
     }
   }
 }
+
 .supportbutton {
   border: none;
   background: transparent;
@@ -65,11 +74,13 @@
   white-space: nowrap;
   font-weight: 500;
 }
+
 @media only screen and (max-width: 768px) {
-  .footersectionone{
+  .footersectionone {
     flex-direction: column-reverse;
   }
-  .firstsection{
-    padding-top: 10px ;
+
+  .firstsection {
+    padding-top: 10px;
   }
 }
