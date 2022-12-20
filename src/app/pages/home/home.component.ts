@@ -10,7 +10,7 @@ AOS.init();
 @Injectable({ providedIn: 'any' })
 export class HomeComponent implements OnInit {
   @ViewChild(NavbarComponent) navbar: any;
-  constructor() {}
+  constructor() { }
 
   overlayid: any;
   ngOnInit(): void {
@@ -33,10 +33,10 @@ export class HomeComponent implements OnInit {
       this.overlayid.classList.add('overlaylogin');
     }
   }
-  showfilterpopupfun(){
+  showfilterpopupfun() {
     document.getElementById('filterpopupfun')!.style.display = 'block';
   }
-  hidefilterpopupfun(){
+  hidefilterpopupfun() {
     document.getElementById('filterpopupfun')!.style.display = 'none';
   }
 }

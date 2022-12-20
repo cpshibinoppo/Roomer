@@ -7,12 +7,14 @@ import { LoginsharedService } from 'src/app/shared/loginshared.service';
 })
 export class PhhomefooterComponent implements OnInit {
   constructor(private loginsharedService: LoginsharedService) { }
+  public wishlists = "/wishlists";
+  public home = '/home';
+  public user = "/user";
+
 
 
   ngOnInit(): void {
-    $('a').click(function () {
-      $(this).addClass('activelink')
-    })
+
   }
   showsighin() {
     this.loginsharedService.sendClickEvent();

@@ -12,6 +12,7 @@
   animation-name: upanddown;
   animation-duration: 0.3s;
 }
+
 .miandiv {
   width: 100%;
   max-width: 780px;
@@ -21,6 +22,7 @@
   box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
   overflow-y: auto;
 }
+
 header {
   padding: 15px 24px 0 24px;
   width: 100%;
@@ -29,9 +31,11 @@ header {
   z-index: 5;
   background: var(--white);
   border-bottom: 1px solid rgb(235, 235, 235);
+
   .closebtnandheadingdiv {
     display: flex;
     align-items: center;
+
     button {
       background: transparent;
       border: none;
@@ -40,13 +44,16 @@ header {
       height: 25px;
       width: 25px;
       transition: all 0.3s ease;
+
       i {
         font-size: 20px;
       }
+
       &:hover {
         background: var(--icon-bacground);
       }
     }
+
     h1 {
       font-size: 1rem;
       margin: 0;
@@ -57,19 +64,23 @@ header {
     }
   }
 }
+
 .consection {
   padding: 20px 24px;
   padding-bottom: 2rem;
 }
+
 .typeplacemaindiv {
   padding-bottom: 1.5rem;
   border-bottom: 1px solid rgb(235, 235, 235);
+
   h2 {
     font-size: 1.4em;
     line-height: inherit;
     margin: 0;
     font-weight: 500;
   }
+
   p {
     margin-top: 24px;
     margin-bottom: 16px;
@@ -78,31 +89,38 @@ header {
     font-weight: 500;
     color: var(--text-color);
   }
+
   .typeplaceselect {
     display: inline-grid;
     gap: 10px 50px;
     width: 100%;
     grid-template-columns: repeat(var(--filter-column_number, 1), 1fr);
+
     .typecard {
       display: flex;
+
       &:hover {
-        + .checkboxdiv {
+        +.checkboxdiv {
           span {
             border-color: red;
           }
         }
       }
+
       .checkboxdiv {
         margin-right: 16px !important;
+
         span {
           position: relative;
           display: inline-block;
           cursor: pointer;
           padding: 0;
+
           input {
             position: absolute;
             opacity: 0;
           }
+
           span {
             display: inline-block;
             border: 1px solid rgb(176, 176, 176);
@@ -114,6 +132,7 @@ header {
             overflow: hidden;
             vertical-align: top;
             transition: border 0.3s ease;
+
             span {
               display: block;
               align-items: center;
@@ -124,6 +143,7 @@ header {
               margin-left: 3px;
               background: transparent;
               border: none;
+
               img {
                 display: block;
                 height: 16px;
@@ -133,13 +153,16 @@ header {
           }
         }
       }
+
       .typecardtext {
         cursor: pointer;
+
         .maintext {
           color: rgb(34, 34, 34);
           font-size: var(--sublineheight);
           line-height: 20px;
         }
+
         .subtext {
           color: rgb(113, 113, 113);
           font-size: var(--subtext);
@@ -150,35 +173,43 @@ header {
     }
   }
 }
+
 .typecard:hover .spancheck {
   border: 1px solid black !important;
 }
+
 .activecheckbox {
   background: rgb(34, 34, 34) !important;
 }
+
 .roomandbedsmaindiv {
   border-bottom: 1px solid rgb(235, 235, 235);
   padding-bottom: 1.5rem;
+
   h2 {
     font-size: 1.4em;
     line-height: inherit;
     margin: 0;
     font-weight: 500;
   }
+
   .roombedcarddiv {
     p {
       font-size: var(--text-size);
       line-height: 20px;
       color: var(--light-color);
     }
+
     .roombedcardbtndiv {
       display: flex;
       overflow-y: auto;
+
       .btnmain {
         display: inline-block;
         padding-right: 10px;
         padding: 4px;
         padding-bottom: 4px;
+
         button {
           background: rgb(255, 255, 255);
           outline: none;
@@ -190,9 +221,11 @@ header {
           min-width: 59px;
           line-height: var(--sublineheight);
           transition: all 0.4s ease-in-out;
+
           &:hover {
             border-color: var(--black);
           }
+
           span {
             font-size: 14px;
             font-weight: 400;
@@ -204,48 +237,60 @@ header {
     }
   }
 }
+
 .roomactive {
   background: rgb(34, 34, 34) !important;
   border: rgb(34, 34, 34) !important;
+
   span {
     color: rgb(255, 255, 255) !important;
   }
 }
+
 .fistbtn:nth-child(1) button {
   background: rgb(34, 34, 34) !important;
   border: rgb(34, 34, 34) !important;
+
   span {
     color: rgb(255, 255, 255) !important;
   }
 }
+
 .fistbtnbeds:nth-child(1) button {
   background: rgb(34, 34, 34) !important;
   border: rgb(34, 34, 34) !important;
+
   span {
     color: rgb(255, 255, 255) !important;
   }
 }
+
 .fistbtnbat:nth-child(1) button {
   background: rgb(34, 34, 34) !important;
   border: rgb(34, 34, 34) !important;
+
   span {
     color: rgb(255, 255, 255) !important;
   }
 }
+
 .propertymaindiv {
   border-bottom: 1px solid rgb(235, 235, 235);
   padding-bottom: 1.5rem;
+
   h2 {
     font-size: 1.4em;
     line-height: inherit;
     margin: 0;
     font-weight: 500;
   }
+
   .propercon {
     display: grid !important;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, auto) !important;
     gap: 16px !important;
+
     .propertycardmaindivcard {
       .procardbtn {
         border: 1px solid rgba(176, 176, 176, 0.5);
@@ -256,9 +301,11 @@ header {
         width: 100%;
         height: 100%;
         transition: all 0.5s ease;
+
         &:hover {
           border-color: black;
         }
+
         .procardmain {
           .procard {
             padding: 16px;
@@ -268,10 +315,12 @@ header {
             min-height: 120px;
             width: 100%;
             height: 100%;
+
             img {
               width: 32px;
               height: 32px;
             }
+
             .protext {
               font-size: var(--text-size);
               line-height: 20px;
@@ -284,37 +333,45 @@ header {
     }
   }
 }
+
 .propertyactive {
   border-color: var(--black) !important;
   background-color: rgb(247, 247, 247) !important;
   animation-name: buttonclick;
   animation-duration: 0.3s;
 }
+
 @keyframes buttonclick {
   from {
     transform: scale(0.9);
   }
+
   to {
     transform: scale(1);
   }
 }
+
 @keyframes upanddown {
   from {
     transform: translateY(700px);
   }
+
   to {
     transform: translateY(0px);
   }
 }
+
 .amenitiesseclect {
   gap: 20px 50px !important;
 }
+
 .showmorelink {
   color: rgb(34, 34, 34);
   font-size: var(--text-size);
   font-weight: 600;
   line-height: 20px;
 }
+
 .bookingopmiandiv {
   h2 {
     font-size: 1.4em;
@@ -322,6 +379,7 @@ header {
     margin: 0;
     font-weight: 500;
   }
+
   .bookingcardmain {
     .bookingcard {
       padding-top: 12px;
@@ -330,6 +388,7 @@ header {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       .bookingcardtext {
         .bookingmaintext {
           color: rgb(34, 34, 34);
@@ -337,6 +396,7 @@ header {
           font-size: var(--text-color);
           line-height: 20px;
         }
+
         .bookingsubtext {
           padding-top: 4px;
           font-size: 14px;
@@ -345,9 +405,11 @@ header {
           color: rgb(113, 113, 113);
         }
       }
+
       .bookingbuttondiv {
         min-width: 50px;
         margin-left: 12px;
+
         button {
           border-radius: 32px;
           border: 1px solid rgb(176, 176, 176);
@@ -357,6 +419,7 @@ header {
           min-width: 48px;
           position: relative;
           height: 32px;
+
           div {
             background: rgb(255, 255, 255);
             border-radius: 50%;
@@ -373,6 +436,7 @@ header {
             transition: -ms-transform 250ms ease-in-out 0s,
               -webkit-transform 250ms ease-in-out 0s,
               transform 250ms ease-in-out 0s !important;
+
             img {
               display: none;
               width: 12px;
@@ -384,23 +448,28 @@ header {
     }
   }
 }
+
 .bookingactive {
   background-color: rgb(34, 34, 34) !important;
   border-color: rgb(34, 34, 34) !important;
+
   div {
     border-color: rgb(34, 34, 34) !important;
     transform: translate3d(16px, 0px, 0px) !important;
+
     img {
       display: block !important;
     }
   }
 }
+
 .footersection {
   position: sticky;
   bottom: 0;
   width: 100%;
   background: #fff;
 }
+
 footer {
   display: flex;
   flex: 0 0 auto;
@@ -411,6 +480,7 @@ footer {
   font-size: var(--text-color);
   line-height: 20px;
   font-weight: 600;
+
   button {
     margin: 0px -10px;
     text-align: center;
@@ -422,11 +492,13 @@ footer {
     background: transparent;
     font-weight: 500;
     text-decoration: underline;
+
     &:hover {
       border: none !important;
       background: var(--hover-background) !important;
       color: var(--black) !important;
     }
+
     &:active {
       transform: scale(0.75) !important;
       border: none !important;
@@ -434,6 +506,7 @@ footer {
       color: var(--white) !important;
     }
   }
+
   a {
     margin: 0px;
     text-align: center;
@@ -445,11 +518,13 @@ footer {
     background: var(--text-color);
     color: var(--white);
     transform: scale(1);
+
     &:hover {
       border: none !important;
       background: var(--black) !important;
       color: var(--white) !important;
     }
+
     &:active {
       transform: scale(0.75) !important;
       border: none !important;
@@ -461,14 +536,14 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .typeplaceselect {
-    grid-template-columns: repeat(
-      var(--filter-column_numbersub, 1),
-      1fr
-    ) !important;
+    grid-template-columns: repeat(var(--filter-column_numbersub, 1),
+        1fr) !important;
   }
+
   .propercon {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+
   .filterpop {
     height: 100% !important;
   }
@@ -476,14 +551,14 @@ footer {
 
 @media only screen and (min-width: 600px) {
   .typeplaceselect {
-    grid-template-columns: repeat(
-      var(--filter-column_numbersub, 1),
-      1fr
-    ) !important;
+    grid-template-columns: repeat(var(--filter-column_numbersub, 1),
+        1fr) !important;
   }
+
   .propercon {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+
   .filterpop {
     height: 100% !important;
   }
@@ -491,14 +566,14 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .typeplaceselect {
-    grid-template-columns: repeat(
-      var(--filter-column_number, 1),
-      1fr
-    ) !important;
+    grid-template-columns: repeat(var(--filter-column_number, 1),
+        1fr) !important;
   }
+
   .propercon {
-    grid-template-columns: repeat(4, 1fr) !important ;
+    grid-template-columns: repeat(4, 1fr) !important;
   }
+
   .filterpop {
     height: auto !important;
   }

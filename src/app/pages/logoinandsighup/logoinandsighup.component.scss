@@ -9,6 +9,7 @@
   background: transparent;
   top: 15px;
 }
+
 .miandiv {
   max-width: 565px;
   border-radius: 12px;
@@ -16,7 +17,8 @@
   box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
   overflow-y: auto;
 }
-.otpmaindiv{
+
+.otpmaindiv {
   position: relative;
   width: 100%;
   max-width: 568px;
@@ -25,6 +27,7 @@
   border-radius: 12px;
   box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
 }
+
 header {
   padding: 15px 24px 0 24px;
   width: 100%;
@@ -32,9 +35,11 @@ header {
   top: 0;
   background: var(--white);
   border-bottom: 1px solid rgb(235, 235, 235);
+
   .closebtnandheadingdiv {
     display: flex;
     align-items: center;
+
     button {
       background: transparent;
       border: none;
@@ -43,13 +48,16 @@ header {
       height: 25px;
       width: 25px;
       transition: all 0.3s ease;
+
       i {
         font-size: 20px;
       }
+
       &:hover {
         background: var(--icon-bacground);
       }
     }
+
     h1 {
       font-size: 1rem;
       margin: 0;
@@ -60,6 +68,7 @@ header {
     }
   }
 }
+
 .inputmiansection {
   background: var(--white);
   padding: 15px 24px 25px 24px;
@@ -74,7 +83,8 @@ header {
       padding-top: 1rem;
       padding-bottom: 1rem;
     }
-    h2{
+
+    h2 {
       margin-top: 8px;
       margin-bottom: 24px;
       font-weight: 400;
@@ -82,21 +92,26 @@ header {
       line-height: 24px;
     }
   }
+
   .inputmiandiv {
     .inpbox {
       border: 0.5px solid black;
       border-radius: 12px;
+
       .selectmiandiv {
         padding: 0.5rem 1rem;
         border-bottom: 0.5px solid black;
+
         label {
           width: 100%;
+
           .selectheadtext {
             color: rgb(113, 113, 113);
             font-size: var(--subtext);
             line-height: 20px;
             font-weight: 400;
           }
+
           .selectdiv {
             select {
               border: none;
@@ -106,22 +121,27 @@ header {
           }
         }
       }
+
       .phoneinputdiv {
         padding: 0.5rem 1rem;
         height: 60px;
         display: flex;
         align-items: center;
+
         label {
           width: 100%;
         }
+
         .phonetext {
           color: rgb(113, 113, 113);
           font-size: var(--text-size);
           line-height: 20px;
           font-weight: 400;
         }
+
         .numberinpdiv {
           display: none;
+
           input {
             width: 100%;
             border: none;
@@ -130,6 +150,7 @@ header {
         }
       }
     }
+
     .continuebtndiv {
       button {
         background: var(--linear-background);
@@ -150,15 +171,18 @@ header {
 
 .phoneinputdivactive {
   display: block !important;
+
   .phonetextactive {
-    font-size: var(--subtext) !important ;
+    font-size: var(--subtext) !important;
   }
 }
+
 .or {
   display: flex;
   align-items: center;
   margin: 16px 0px !important;
   color: var(--light-color);
+
   &::before {
     content: "" !important;
     display: block !important;
@@ -167,6 +191,7 @@ header {
     background-color: rgb(221, 221, 221) !important;
     margin-right: 16px !important;
   }
+
   &::after {
     content: "" !important;
     display: block !important;
@@ -176,13 +201,15 @@ header {
     margin-left: 16px !important;
   }
 }
+
 .autologinmaindiv {
-  button{
+  button {
     border: none;
     background: transparent;
     width: 100%;
     outline: none;
   }
+
   .autologdiv {
     border: 1px solid var(--text-color);
     padding: 13px 23px;
@@ -192,16 +219,20 @@ header {
     font-weight: 600 !important;
     font-size: 14px !important;
     transition: all 0.3s ease;
+
     &:hover {
       background-color: var(--hover-background);
     }
+
     .iconimagediv {
       height: 25px;
       width: 25px;
+
       img {
         width: 100%;
       }
     }
+
     .autologintext {
       display: flex;
       width: 100%;
@@ -213,18 +244,22 @@ header {
     }
   }
 }
+
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 /* otp start */
-.otpmaindiv{
+.otpmaindiv {
   height: fit-content;
   min-width: 250px;
 }
-.otpinputmiandiv{
+
+.otpinputmiandiv {
   max-width: 183px;
-  .otpinputmain{
+
+  .otpinputmain {
     position: relative;
     cursor: text;
     display: flex;
@@ -240,13 +275,16 @@ input::-webkit-inner-spin-button {
     line-height: 20px;
     font-weight: 400;
     align-items: center;
-    .otpinputlable{
+
+    .otpinputlable {
       position: relative;
       flex: 1 1 0%;
       padding: 0;
-      .otpinput{
+
+      .otpinput {
         display: flex;
-        input{
+
+        input {
           width: calc(100% - 20px);
           border: none;
           padding: 0;
@@ -257,7 +295,8 @@ input::-webkit-inner-spin-button {
           line-height: 20px;
           letter-spacing: 18px;
           outline: none;
-          &::placeholder{
+
+          &::placeholder {
             font: 20px/3 sans-serif;
           }
         }
@@ -265,7 +304,8 @@ input::-webkit-inner-spin-button {
     }
   }
 }
-.buttonsmaindiv{
+
+.buttonsmaindiv {
   border-top: 1px solid rgb(235, 235, 235);
   display: flex;
   justify-content: space-between;
@@ -274,7 +314,8 @@ input::-webkit-inner-spin-button {
   margin-bottom: -24px;
   padding: 16px 24px;
   margin-top: 48px;
-  .morebutton{
+
+  .morebutton {
     border: none;
     outline: none;
     background: transparent;
@@ -287,12 +328,14 @@ input::-webkit-inner-spin-button {
     border-radius: 8px;
     color: var(--text-color);
     transition: all 0.3s ease;
-    &:hover{
+
+    &:hover {
       background: var(--hover-background);
       color: var(--black);
     }
   }
-  .continuebutton{
+
+  .continuebutton {
     font-size: var(--text-size);
     line-height: 20px;
     font-weight: 600;
@@ -301,7 +344,8 @@ input::-webkit-inner-spin-button {
     border-radius: 8px;
     background: var(--text-color);
     transition: all 0.3s ease-in-out;
-    &:hover{
+
+    &:hover {
       background: var(--black);
     }
   }
