@@ -45,6 +45,8 @@ import { PcuserComponent } from './layout/pcuser/pcuser.component';
 import { WishlistsComponent } from './pages/wishlists/wishlists.component';
 import { PersonalinfoComponent } from './layout/userdetails/personalinfo/personalinfo.component';
 import { ShowmoreimgComponent } from './layout/showmoreimg/showmoreimg.component';
+import { inject } from '@vercel/analytics';
+inject();
 
 @NgModule({
   declarations: [
@@ -99,5 +101,4 @@ import { ShowmoreimgComponent } from './layout/showmoreimg/showmoreimg.component
   providers: [],
   bootstrap: [AppComponent]
 })
-
 export class AppModule { }
