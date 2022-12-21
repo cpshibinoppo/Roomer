@@ -12,17 +12,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 >Roomer Features
 >
-> * Search for last-minute accommodation.
+> * Airbnb Componint.
 >
-> * Save favourite rental homes and places.
->
-> * Invite friends with one click to plan a trip together.
->
-> * Booking accommodations, including date, check-in time and other details.
->
-> * Real-time alerts and booking notifications
->
-> * Ratings and reviews to share experiences
+> * Advanced Filtwe options.
+
+
 
 ## 🏄‍♂️ Demo ##
 
