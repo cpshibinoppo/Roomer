@@ -44,7 +44,7 @@ export class HotaldetailComponent implements OnInit {
     $(".drowpdownicon").toggleClass('show');
   }
   buttonlink() {
-    location.href = "/booking"
+    location.href = "booking"
   }
   backfun() {
     $('.main').css('display', 'flex');
