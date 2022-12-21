@@ -104,3 +104,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * [Swiper](https://github.com/nolimits4web/swiper/blob/master/LICENSE)
 * [Aos](https://github.com/michalsnik/aos/blob/next/LICENSE)
 * [jQuery](https://jquery.org/license/)
+* [Unsplash](https://unsplash.com/license)
+* [Pexels](https://www.pexels.com/license/)
